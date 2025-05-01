@@ -1,0 +1,9 @@
+Fix project introduction. Be greeted with an introduction, asked to describe type of campaign or select random, asked to create a character.
+ensure user is given campaign id 
+Create a save function & set up runtime memory storage. Story so far, character sheet, locations, key people, world events
+test continuing campaign given campaign id. Should this be the same assitant code or change the intro to give this as an option
+Web app - easy light weight web app, maybe unity. There are probably some chat gpt assistant web app templates somewhere
+
+Further items:
+define scene on entry, save key info to a scene save (e.g. if there is a meeting somewhere, are there guards, what is the risk level, are there predefined outcomes beased on obvious player routes)
+embedings for context in campaign to improve results and recall over long campaign.

@@ -1,0 +1,52 @@
+# fly.toml for tnl-api-blue-snow-1079
+app = "tnl-api-blue-snow-1079"
+primary_region = "ord"
+
+#############################
+#  1. BUILD IMAGE SETTINGS  #
+#############################
+[build]
+  dockerfile = "Dockerfile"
+
+#############################
+#  2. APP-WIDE ENV VARS     #
+#############################
+# The value here is overwritten at run-time by `fly secrets set`
+[env]
+  DATABASE_URL = "unused-placeholder"
+  PYTHONUNBUFFERED = "1"
+
+#############################
+#  3. HTTP SERVICE SETTINGS #
+#############################
+[http_service]
+  internal_port = 8080
+  force_https   = true
+  auto_stop_machines = "stop"
+  auto_start_machines = true
+  min_machines_running = 0
+  processes = ["app"]
+
+  # <––– 3a. Concurrency guard –––>
+  [http_service.concurrency]
+    type       = "requests"
+    hard_limit = 50          # refuse >50 simultaneous requests per VM
+    soft_limit = 40          # start routing new traffic to other VMs first
+
+  # <––– 3b. Basic health-check –––>
+  [[http_service.checks]]
+    grace_period = "5s"
+    interval     = "15s"
+    method       = "GET"
+    path         = "/health"     # implement a 200-OK route in FastAPI
+    protocol     = "http"
+    timeout      = "2s"
+    restart_limit = 0            # don’t restart on a single failure
+
+#############################
+#  4. DEFAULT MACHINE SIZE  #
+#############################
+[[vm]]
+  cpu_kind = "shared"
+  cpus     = 1          # 1 shared vCPU
+  memory   = "1024mb"   # 1 GiB RAM
