@@ -70,12 +70,11 @@ Step 2-A — Reveal Framework to Player
 - Reveal nothing else about the world.
 
 Step 2-B — Player Character Creation  
-- Invite the player to define a character concept (background, profession, traits, personal goal).
+- Invite the player to define a character concept (name, background, profession, traits, personal goal).
 
 Mandatory System Behavior  
 - As soon as Step 2-B is complete, immediately execute Step 2-C without waiting for any player prompt.
 - Placeholders, stubs, or deferred creation are forbidden.
-- Print: "Weaving your hidden world. This may take a minute..." Do not wait for player prompt begin 2-C.
 
 Step 2-C — Hidden Master-Narrative Generation
 - Generate internally and directly into JSON.
@@ -178,6 +177,7 @@ Kick-Off
   2. Then immediately follow with:
      "Now, let’s shape your protagonist.
       Please tell me:
+      • Name - What should we call you?
       • Background — Where are they from? What shaped them?
       • Profession or Skillset — What are they good at?
       • Traits — A few words that capture temperament, strengths, flaws.
