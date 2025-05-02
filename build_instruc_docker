@@ -1,0 +1,5 @@
+docker build --no-cache -t registry.fly.io/tnl-api:$(git rev-parse --short HEAD) .
+fly auth whoami
+flyctl auth docker
+docker push registry.fly.io/tnl-api:$(git rev-parse --short HEAD)
+fly deploy --image registry.fly.io/tnl-api:$(git rev-parse --short HEAD)
