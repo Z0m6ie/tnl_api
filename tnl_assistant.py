@@ -10,6 +10,8 @@ SUPABASE_BASE_URL = "https://tnl-api-blue-snow-1079.fly.dev"
 
 openai.api_key = OPENAI_API_KEY
 
+stored_campaign_id = None
+
 # === HELPER FUNCTIONS ===
 
 def generate_campaign_id():
@@ -73,8 +75,9 @@ Step 2-B — Player Character Creation
 Mandatory System Behavior  
 - As soon as Step 2-B is complete, immediately execute Step 2-C without waiting for any player prompt.
 - Placeholders, stubs, or deferred creation are forbidden.
+- Print: "Weaving your hidden world. This may take a minute..." Do not wait for player prompt begin 2-C.
 
-Step 2-C — Hidden Master-Narrative Generation  
+Step 2-C — Hidden Master-Narrative Generation
 - Generate internally and directly into JSON.
 - Initialize a JSON object named SEED_MEMORY with the key "narrative_story" as an empty string.
 - Maintain an internal chunk_order counter starting at 0.
@@ -133,6 +136,10 @@ Vault Save — Mandatory
   - campaign_id (only after the first chunk)
 - Send each chunk only after the corresponding narrative section is fully built.
 - Wait for acknowledgment before proceeding with the next chunk.
+- After all chunks are saved, display:
+  "Your world has been fully woven.
+  📌 Campaign ID: <campaign_id>
+  Keep this safe — it allows you to resume your journey anytime."
 - Never reveal any hidden world information in chat.
 - Wait for "continue" before beginning the first gameplay scene.
 
@@ -156,8 +163,29 @@ Resume the campaign seamlessly without exposing hidden data.
 ### Player Support
 
 Kick-Off  
-- On request, help the player choose Genre, Tone, and Story Type.
-- Guide them through player character creation afterward.
+- Begin with:
+  "Welcome to The Narrative Loom (TNL) — your simulation-first Dungeon Master. Play anything from a cyberpunk heist-thriller to a dark fairytale revenge story.
+  Select a [Genre], [Tone], [Story Type], or ask for a surprise."
+
+- Wait for the player to respond with either a full selection or the word "surprise".
+
+- Once that is received:
+  1. Confirm their selection by responding with:
+     Genre: "<genre>"
+     Tone: "<tone>"
+     Broad Story Type: "<short description of the campaign style>"
+
+  2. Then immediately follow with:
+     "Now, let’s shape your protagonist.
+      Please tell me:
+      • Background — Where are they from? What shaped them?
+      • Profession or Skillset — What are they good at?
+      • Traits — A few words that capture temperament, strengths, flaws.
+      • Personal Goal — What they want — not what fate demands.
+      Or say 'surprise me' and I’ll generate one for you."
+
+- Once the concept is summarized, ask:
+  "Ready to lock it in? If so, I’ll weave the world around them. If not, tell me what to adjust or say 'surprise me'."
 
 Continuation  
 - When the player uploads a campaign ID (future functionality), load SEED_MEMORY and RUNTIME_STATE via external functions and resume play seamlessly.
@@ -266,7 +294,9 @@ def load_from_supabase(campaign_id):
     return response.json()
 
 def handle_tool_calls(thread_id, run):
+    global stored_campaign_id
     outputs = []
+
     for tool_call in run.required_action.submit_tool_outputs.tool_calls:
         name = tool_call.function.name
         args = json.loads(tool_call.function.arguments)
@@ -276,7 +306,13 @@ def handle_tool_calls(thread_id, run):
                 cid = args.get("campaign_id")
                 order = args["chunk_order"]
                 chunk = args["seed_chunk"]
+
+                # Send to Supabase
                 saved_cid = save_to_supabase(cid, order, chunk)
+
+                # Store first campaign_id
+                if not cid:
+                    stored_campaign_id = saved_cid
                 outputs.append({
                     "tool_call_id": tool_call.id,
                     "output": f"Chunk saved to campaign {saved_cid}"
@@ -309,31 +345,47 @@ def handle_tool_calls(thread_id, run):
 # === MAIN EXECUTION FLOW ===
 
 def run_campaign_interactively():
+    global stored_campaign_id
     assistant_id = create_tnl_assistant()
     thread_id = create_thread()
     print("🧵 Campaign started. Type 'stop' to end.\n")
 
-    default_msg = (
-        "Genre: Dark Fairytale`nTone: Tragic`nStory Type: Revenge`n`n"
-        "Character concept:`n- Background: Disavowed noble`n- Profession: Forest witch`n"
-        "- Traits: cunning, patient, merciless`n- Personal goal: Vengeance on the high priest who cursed her family"
-    )
+    # 1️⃣ Kick off the assistant with a system prompt
+    intro_trigger = "Start a new campaign."
+    add_user_message(thread_id, intro_trigger)
 
-    user_input = input("🎮 You: ") or default_msg.replace("`n", "\n")
+    # 2️⃣ Run and handle assistant's initial intro message
+    run_id = run_assistant(thread_id, assistant_id)
+    run = poll_run_status(thread_id, run_id)
 
+    while run.status == "requires_action":
+        handle_tool_calls(thread_id, run)
+        run = poll_run_status(thread_id, run.id)
+
+    if run.status == "failed":
+        print("❌ Assistant run failed.")
+        return
+
+    messages = openai.beta.threads.messages.list(thread_id=thread_id)
+    assistant_messages = [
+        m for m in messages.data if m.role == "assistant"
+    ]
+    if assistant_messages:
+        latest = sorted(assistant_messages, key=lambda m: m.created_at)[-1]
+        print(f"\n🤖 Assistant:\n{latest.content[0].text.value}\n")
+
+    # 3️⃣ Begin interactive loop
     while True:
+        user_input = input("🎮 You: ")
         if user_input.strip().lower() in ["stop", "exit", "quit"]:
             print("👋 Campaign ended.")
             break
 
-        # 1️⃣ send user message
         add_user_message(thread_id, user_input)
 
-        # 2️⃣ run assistant
         run_id = run_assistant(thread_id, assistant_id)
         run = poll_run_status(thread_id, run_id)
 
-        # 3️⃣ handle tool calls until run truly completes
         while run.status == "requires_action":
             handle_tool_calls(thread_id, run)
             run = poll_run_status(thread_id, run.id)
@@ -342,21 +394,20 @@ def run_campaign_interactively():
             print("❌ Assistant run failed.")
             break
 
-        # 4️⃣ fetch latest assistant reply safely
+        # Show the assistant's message
         messages = openai.beta.threads.messages.list(thread_id=thread_id)
         assistant_messages = [
             m for m in messages.data if m.role == "assistant"
         ]
-        if not assistant_messages:
-            print("ℹ️  Run completed but no assistant text was returned.")
-        else:
-            latest = sorted(
-                assistant_messages, key=lambda m: m.created_at
-            )[-1]
+        if assistant_messages:
+            latest = sorted(assistant_messages, key=lambda m: m.created_at)[-1]
             print(f"\n🤖 Assistant:\n{latest.content[0].text.value}\n")
 
-        # 5️⃣ get next user input
-        user_input = input("🎮 You: ")
+        # ⬇️ Now show campaign ID if it was just created
+       # if stored_campaign_id:
+        #    print(f"📌 Campaign ID: {stored_campaign_id}")
+        #    print("💾 Keep this safe — it allows you to resume your journey anytime.\n")
+        #    stored_campaign_id = None
 
 
 def resume_campaign(campaign_id):
