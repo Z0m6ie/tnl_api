@@ -3,6 +3,7 @@ import uuid
 import json
 import requests
 import time
+import tiktoken
 
 # === CONFIGURATION ===
 OPENAI_API_KEY = "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"
@@ -11,11 +12,57 @@ SUPABASE_BASE_URL = "https://tnl-api-blue-snow-1079.fly.dev"
 openai.api_key = OPENAI_API_KEY
 
 stored_campaign_id = None
+runtime = {}
+
+SB_BASE = f"{SUPABASE_BASE_URL}/v1"
+
+# helpers that guarantee a schema‑complete payload
+# --------------------------------------------------------------------
+def _complete_char_sheet(cs: dict | None) -> dict:
+    """Return a character_sheet that satisfies all required keys."""
+    base = {
+        "name":       "",
+        "class":      "",
+        "background": "",
+        "stats":      {},      # can stay empty until we know numbers
+        "traits":     []
+    }
+    if cs:
+        base.update(cs)
+    return base
+
+def _safe_list(v):
+    """Always return a list (jsonschema needs arrays, not null)."""
+    return v if isinstance(v, list) else []
+
+runtime = {
+    "character_sheet": _complete_char_sheet(None),
+    "inventory": [],
+    "abilities": [],
+    "locations": [],
+    "key_people": [],
+    "world_events": [],
+    "last_msg_id": None,
+}
 
 # === HELPER FUNCTIONS ===
 
 def generate_campaign_id():
     return str(uuid.uuid4())
+
+def query_similar_chunks(campaign_id, query_text, top_k=8):
+    """Retrieve top-k most similar chunks for a campaign using cosine distance."""
+    query_embed = openai.embeddings.create(
+        model=EMBED_MODEL, input=[query_text]
+    ).data[0].embedding
+
+    r = requests.post(
+        f"{SB_BASE}/match_chunks",
+        json={"campaign_id": campaign_id, "embedding": query_embed, "top_k": top_k},
+        headers={"Content-Type": "application/json"},
+    )
+    r.raise_for_status()
+    return r.json()  # ✅ FIXED: no longer assume a dict with ["matches"]
 
 def create_tnl_assistant():
     instructions = """
@@ -71,6 +118,8 @@ Step 2-A — Reveal Framework to Player
 
 Step 2-B — Player Character Creation  
 - Invite the player to define a character concept (name, background, profession, traits, personal goal).
+❗ Immediately AFTER summarising the character concept and BEFORE you ask “Ready to lock it in?” you MUST call the function update_character_sheet with the COMPLETE character_sheet object.
+- When you introduce a new protagonist or the user asks to update details, CALL the tool **update_character_sheet** exactly once with the FULL JSON object. Do not simply describe the changes in prose.
 
 Mandatory System Behavior  
 - As soon as Step 2-B is complete, immediately execute Step 2-C without waiting for any player prompt.
@@ -121,7 +170,7 @@ Step 2-E — Create RUNTIME_STATE
 - Create a JSON object named RUNTIME_STATE to track all mutable gameplay data:
   - Player stats, abilities, inventory, wounds/conditions
   - Discovered NPCs, locations, faction standings, completed events, flags
-- Update RUNTIME_STATE freely as play evolves.
+- Update RUNTIME_STATE freely as play evolves by calling **update_runtime_state**
 
 Seed Memory Lock  
 - SEED_MEMORY must never be regenerated, paraphrased, or revealed in chat.
@@ -143,12 +192,16 @@ Vault Save — Mandatory
 - Wait for "continue" before beginning the first gameplay scene.
 
 Runtime Save — Ongoing (Planned)  
-- After approximately 10,000 words of dialogue or any significant state change, serialize RUNTIME_STATE and call save_runtime_state (when available).
+- After approximately 10,000 words of dialogue or any significant state change, serialize RUNTIME_STATE and call **update_runtime_state**.
 
 Vault Restore — When Provided a Campaign ID (Planned)  
 When the player provides a campaign ID:
 Load SEED_MEMORY and RUNTIME_STATE using available external functions.
 Resume the campaign seamlessly without exposing hidden data.
+
+update_character_sheet
+When new character facts are confirmed (or the player finalises a concept) call **update_character_sheet** with the full character_sheet you know so far. Do not wait for the player to ask.
+Whenever new information is provided to the character about themselves or the world call **update_character_sheet** and call **update_runtime_state** and populate the runtime inventory, abilities, known locations, and key people."
 
 ---
 
@@ -210,11 +263,11 @@ END OF INSTRUCTIONS
                         "properties": {
                             "campaign_id": {
                                 "type": "string",
-                                "description": "Leave blank to create new campaign"
+                                "description": "Leave blank to create a new campaign"
                             },
                             "chunk_order": {
                                 "type": "integer",
-                                "description": "The order of the chunk"
+                                "description": "The order index of this seed chunk"
                             },
                             "seed_chunk": {
                                 "type": "string",
@@ -229,7 +282,7 @@ END OF INSTRUCTIONS
                 "type": "function",
                 "function": {
                     "name": "load_campaign",
-                    "description": "Retrieve a campaign's full data by ID.",
+                    "description": "Retrieve an existing campaign’s data by ID.",
                     "parameters": {
                         "type": "object",
                         "properties": {
@@ -239,6 +292,40 @@ END OF INSTRUCTIONS
                             }
                         },
                         "required": ["campaign_id"]
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "update_character_sheet",
+                    "description": "Replace or merge the current character sheet with new values.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "character_sheet": {
+                                "type": "object",
+                                "description": "A full or partial character_sheet object that meets the database schema. Omit fields you don’t want to change."
+                            }
+                        },
+                        "required": ["character_sheet"]
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "update_runtime_state",
+                    "description": "Update any aspect of the runtime state including abilities, inventory, locations, key people, or world events.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "inventory": {"type": "array", "items": {"type": "string"}},
+                            "abilities": {"type": "array", "items": {"type": "string"}},
+                            "locations": {"type": "array", "items": {"type": "string"}},
+                            "key_people": {"type": "array", "items": {"type": "string"}},
+                            "world_events": {"type": "array", "items": {"type": "string"}}
+                        }
                     }
                 }
             }
@@ -258,9 +345,23 @@ def add_user_message(thread_id, message):
     )
 
 def run_assistant(thread_id, assistant_id):
+    context = ""
+    if stored_campaign_id:
+        last_user_msg = runtime.get("last_user_msg", "")
+        try:
+            matches = query_similar_chunks(stored_campaign_id, last_user_msg)
+            context = "\n".join(m["chunk"] for m in matches)
+        except Exception as e:
+            print(f"⚠️ Embedding context fetch failed: {e}")
+
+    #print(f"\n📎 Injected Context:\n{context[:1000]}...\n")
     run = openai.beta.threads.runs.create(
         thread_id=thread_id,
-        assistant_id=assistant_id
+        assistant_id=assistant_id,
+        additional_instructions=(
+            f"Use the following prior context as background knowledge:\n\n{context}"
+            if context else None
+        )
     )
     return run.id
 
@@ -270,6 +371,20 @@ def poll_run_status(thread_id, run_id):
         if run.status in ["completed", "requires_action", "failed"]:
             return run
         time.sleep(1)
+
+# ---------- Supabase runtime helpers ----------
+def save_runtime_state(campaign_id, assistant_id, thread_id, state_json=None):
+    r = requests.post(f"{SB_BASE}/save_runtime_state",
+                      json={"campaign_id": campaign_id,
+                            "assistant_id": assistant_id,
+                            "thread_id": thread_id,
+                            "state_json": state_json})
+    r.raise_for_status()
+
+def load_runtime_state(campaign_id):
+    r = requests.get(f"{SB_BASE}/load_runtime_state/{campaign_id}")
+    r.raise_for_status()
+    return r.json()
 
 def save_to_supabase(campaign_id, chunk_order, seed_chunk):
     payload = {
@@ -293,6 +408,42 @@ def load_from_supabase(campaign_id):
         raise Exception(f"Failed to load campaign: {response.text}")
     return response.json()
 
+EMBED_MODEL = "text-embedding-3-small"
+
+def chunk_text(text, max_tok=600):
+    enc = tiktoken.encoding_for_model(EMBED_MODEL)
+    ids = enc.encode(text)
+    for i in range(0, len(ids), max_tok):
+        yield enc.decode(ids[i:i+max_tok])
+
+def embed_and_store(campaign_id, text):
+    chunks = list(chunk_text(text))
+    if not chunks:
+        return
+    vecs = openai.embeddings.create(model=EMBED_MODEL, input=chunks).data
+    rows = [{"campaign_id": campaign_id, "chunk": c, "embedding": v.embedding}
+            for c, v in zip(chunks, vecs)]
+    # Use internal FastAPI route instead of Supabase REST
+    r = requests.post(f"{SB_BASE}/bulk_embed", json=rows,
+                  headers={"Content-Type": "application/json"})
+    r.raise_for_status()
+
+def build_snapshot(full_message_text, assistant_id, thread_id):
+    return {
+        "story_so_far": full_message_text or "",
+        "character_sheet": _complete_char_sheet(runtime.get("character_sheet")),
+        "inventory":      _safe_list(runtime.get("inventory")),
+        "abilities":      _safe_list(runtime.get("abilities")),
+        "locations":      _safe_list(runtime.get("locations")),
+        "key_people":     _safe_list(runtime.get("key_people")),
+        "world_events":   _safe_list(runtime.get("world_events")),
+        "openai": {
+            "assistant_id": assistant_id,
+            "thread_id":    thread_id,
+            "last_message_id": runtime.get("last_msg_id", "")
+        }
+    }
+
 def handle_tool_calls(thread_id, run):
     global stored_campaign_id
     outputs = []
@@ -307,12 +458,14 @@ def handle_tool_calls(thread_id, run):
                 order = args["chunk_order"]
                 chunk = args["seed_chunk"]
 
-                # Send to Supabase
+                # Save to Supabase
                 saved_cid = save_to_supabase(cid, order, chunk)
+                embed_and_store(saved_cid, chunk)
 
-                # Store first campaign_id
+                # ✅ Only store campaign_id locally if this was the first chunk
                 if not cid:
                     stored_campaign_id = saved_cid
+
                 outputs.append({
                     "tool_call_id": tool_call.id,
                     "output": f"Chunk saved to campaign {saved_cid}"
@@ -324,6 +477,34 @@ def handle_tool_calls(thread_id, run):
                     "tool_call_id": tool_call.id,
                     "output": json.dumps(data)[:1000]  # truncate for safety
                 })
+
+            elif name == "update_character_sheet":
+                raw = args.get("character_sheet", None)
+
+                # Defensive fallback if assistant sends unwrapped fields
+                if raw is None:
+                    raw = args  # assume assistant sent the character sheet directly
+
+                runtime["character_sheet"] = _complete_char_sheet({
+                    **runtime.get("character_sheet", {}),
+                    **raw
+                })
+
+                outputs.append({
+                    "tool_call_id": tool_call.id,
+                    "output": "Character sheet updated"
+                })
+                print(f"🔧 {tool_call.function.name}  args={args}")
+            
+            elif name == "update_runtime_state":
+                for key in ["inventory", "abilities", "locations", "key_people", "world_events"]:
+                    if key in args:
+                        runtime[key] = _safe_list(args[key])
+                outputs.append({
+                    "tool_call_id": tool_call.id,
+                    "output": "Runtime state updated"
+                })
+                print(f"🔧 {tool_call.function.name}  args={args}")
 
         except Exception as e:
             # Log the problem and still reply so the run can complete
@@ -367,12 +548,22 @@ def run_campaign_interactively():
         return
 
     messages = openai.beta.threads.messages.list(thread_id=thread_id)
-    assistant_messages = [
-        m for m in messages.data if m.role == "assistant"
-    ]
+    assistant_messages = [m for m in messages.data if m.role == "assistant"]
     if assistant_messages:
         latest = sorted(assistant_messages, key=lambda m: m.created_at)[-1]
         print(f"\n🤖 Assistant:\n{latest.content[0].text.value}\n")
+        runtime["last_msg_id"] = latest.id
+        recap = latest.content[0].text.value  # full, not sliced
+        snap = build_snapshot(recap, assistant_id, thread_id)
+
+        openai_meta = snap.get("openai", {})
+        if stored_campaign_id and openai_meta.get("thread_id") and openai_meta.get("assistant_id"):
+            print("💾 Saving initial runtime state...")
+            save_runtime_state(stored_campaign_id, assistant_id, thread_id, snap)
+            embed_and_store(stored_campaign_id, latest.content[0].text.value)
+        else:
+            print("⚠️ Skipped saving — missing OpenAI metadata.")
+            print(json.dumps(openai_meta, indent=2))
 
     # 3️⃣ Begin interactive loop
     while True:
@@ -380,7 +571,7 @@ def run_campaign_interactively():
         if user_input.strip().lower() in ["stop", "exit", "quit"]:
             print("👋 Campaign ended.")
             break
-
+        runtime["last_user_msg"] = user_input
         add_user_message(thread_id, user_input)
 
         run_id = run_assistant(thread_id, assistant_id)
@@ -394,14 +585,24 @@ def run_campaign_interactively():
             print("❌ Assistant run failed.")
             break
 
-        # Show the assistant's message
         messages = openai.beta.threads.messages.list(thread_id=thread_id)
-        assistant_messages = [
-            m for m in messages.data if m.role == "assistant"
-        ]
+        assistant_messages = [m for m in messages.data if m.role == "assistant"]
         if assistant_messages:
             latest = sorted(assistant_messages, key=lambda m: m.created_at)[-1]
             print(f"\n🤖 Assistant:\n{latest.content[0].text.value}\n")
+            runtime["last_msg_id"] = latest.id
+            recap = latest.content[0].text.value  # full, not sliced
+            snap = build_snapshot(recap, assistant_id, thread_id)
+
+            openai_meta = snap.get("openai", {})
+            if stored_campaign_id and openai_meta.get("thread_id") and openai_meta.get("assistant_id"):
+                print("💾 Saving runtime state...")
+                save_runtime_state(stored_campaign_id, assistant_id, thread_id, snap)
+                embed_and_store(stored_campaign_id, latest.content[0].text.value)
+            else:
+                print("⚠️ Skipped saving — missing OpenAI metadata.")
+                print(json.dumps(openai_meta, indent=2))
+
 
         # ⬇️ Now show campaign ID if it was just created
        # if stored_campaign_id:
@@ -409,26 +610,38 @@ def run_campaign_interactively():
         #    print("💾 Keep this safe — it allows you to resume your journey anytime.\n")
         #    stored_campaign_id = None
 
-
-def resume_campaign(campaign_id):
-    assistant_id = create_tnl_assistant()
-    thread_id = create_thread()
-
-    print(f"🔄 Resuming campaign: {campaign_id}")
-
-    msg = f"Load campaign {campaign_id}"
-    add_user_message(thread_id, msg)
-
-    run_id = run_assistant(thread_id, assistant_id)
+def poll_until_done(thread_id, run_id):
     run = poll_run_status(thread_id, run_id)
-
-    if run.status == "requires_action":
+    while run.status == "requires_action":
         handle_tool_calls(thread_id, run)
-        print("✅ Tool call handled, Assistant continued.")
-    elif run.status == "completed":
-        print("✅ Run completed.")
-    else:
-        print(f"❌ Run failed with status: {run.status}")
+        run = poll_run_status(thread_id, run.id)
+    return run
+
+def interactive_loop(thread_id, assistant_id, campaign_id):
+    while True:
+        user = input("🎮 You: ")
+        if user.strip().lower() in ["stop","quit","exit"]:
+            print("👋 Session ended.")
+            break
+        add_user_message(thread_id, user)
+        run_id = run_assistant(thread_id, assistant_id)
+        run = poll_until_done(thread_id, run_id)
+        msgs = openai.beta.threads.messages.list(thread_id=thread_id)
+        latest = sorted([m for m in msgs.data if m.role=="assistant"],
+                        key=lambda m: m.created_at)[-1]
+        print(f"\n🤖 Assistant:\n{latest.content[0].text.value}\n")
+        snap = build_snapshot(latest.content[0].text.value[:500],
+                              assistant_id, thread_id)
+        save_runtime_state(campaign_id, assistant_id, thread_id, snap)
+        embed_and_store(stored_campaign_id, latest.content[0].text.value)
+
+def resume_campaign(cid):
+    rs = load_runtime_state(cid)
+    assistant_id, thread_id = rs["assistant_id"], rs["thread_id"]
+    add_user_message(thread_id, "Recap my current situation briefly, then wait.")
+    run  = run_assistant(thread_id, assistant_id)
+    poll_until_done(thread_id, run.id)
+    interactive_loop(thread_id, assistant_id, cid)
 
 # === USAGE EXAMPLES ===
 

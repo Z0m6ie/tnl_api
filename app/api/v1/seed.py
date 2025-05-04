@@ -1,6 +1,8 @@
-from fastapi import APIRouter, Request, HTTPException, status
+from fastapi import APIRouter, Request, HTTPException, status, Body
 from pydantic import BaseModel, Field
 from uuid import UUID, uuid4
+import json  
+from typing import List 
 
 import app.utils as utils   # unchanged
 
@@ -71,3 +73,92 @@ async def load_campaign(campaign_id: str, request: Request):
         "campaign_id": campaign_id,
         "chunks": [{"order": r[0], "text": r[1]} for r in rows],
     }
+
+
+# ---------- models ----------
+class RuntimeStateIn(BaseModel):
+    campaign_id: str
+    assistant_id: str
+    thread_id: str
+    state_json: dict | None = None
+
+# ---------- routes ----------
+@router.post("/save_runtime_state", status_code=200)
+async def save_runtime_state(payload: RuntimeStateIn, request: Request):
+    pool = request.app.state.pool
+    q = """
+    INSERT INTO runtime_states (campaign_id, assistant_id, thread_id, state_json)
+    VALUES (
+        $1,
+        $2,
+        $3,
+        coalesce(
+            nullif($4, '{}'::jsonb),
+            '{"story_so_far": "", "character_sheet":{"name":"","class":"","stats":{},"traits":[]}, "inventory": [], "abilities": [], "locations": [], "key_people": [], "world_events": [], "openai":{"assistant_id":"","thread_id":"","last_message_id":""}}'::jsonb
+        )
+    )
+    ON CONFLICT (campaign_id)
+    DO UPDATE SET
+        assistant_id = excluded.assistant_id,
+        thread_id    = excluded.thread_id,
+        state_json   = excluded.state_json,
+        updated_at   = now();
+    """
+    async with pool.acquire() as conn:           # ← safer pool usage
+        await conn.execute(q, payload.campaign_id, payload.assistant_id,
+                           payload.thread_id, json.dumps(payload.state_json or {}))
+    return {"status": "OK"}
+
+@router.get("/load_runtime_state/{campaign_id}")
+async def load_runtime_state(campaign_id: str, request: Request):
+    pool = request.app.state.pool
+    async with pool.acquire() as conn:           # ← mirror pattern
+        row = await conn.fetchrow(
+            "SELECT assistant_id, thread_id, state_json FROM runtime_states WHERE campaign_id=$1",
+            campaign_id)
+    if not row:
+        raise HTTPException(404, "runtime_state not found")
+    return dict(row)
+
+@router.post("/bulk_embed", status_code=200)
+async def bulk_embed(payload: list[dict], request: Request):
+    pool = request.app.state.pool
+    # 👇 cast parameter 3 to vector
+    q = """
+        INSERT INTO embeddings (campaign_id, chunk, embedding)
+        VALUES ($1, $2, $3::vector)
+    """
+    async with pool.acquire() as conn:
+        await conn.executemany(
+            q,
+            [(
+                row["campaign_id"],
+                row["chunk"],
+                "[" + ",".join(str(x) for x in row["embedding"]) + "]"  # 👈 text‑encode
+            ) for row in payload]
+        )
+    return {"status": "OK"}
+
+class EmbeddingQuery(BaseModel):
+    campaign_id: str
+    embedding: List[float]
+    top_k: int = 8
+
+@router.post("/query_embeddings", status_code=200)
+async def query_embeddings(payload: EmbeddingQuery, request: Request):
+    async with request.app.state.pool.acquire() as conn:
+        # ✅ Convert list[float] to string for SQL casting into vector type
+        emb_str = "[" + ",".join(str(x) for x in payload.embedding) + "]"
+        q = """
+            SELECT id, chunk
+            FROM embeddings
+            WHERE campaign_id = $1
+            ORDER BY embedding <#> $2::vector
+            LIMIT $3
+        """
+        rows = await conn.fetch(q, payload.campaign_id, emb_str, payload.top_k)
+        return [{"id": row["id"], "chunk": row["chunk"]} for row in rows]
+
+@router.post("/match_chunks", status_code=200)
+async def match_chunks(payload: EmbeddingQuery, request: Request):
+    return await query_embeddings(payload, request)
