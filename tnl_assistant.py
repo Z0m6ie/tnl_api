@@ -94,6 +94,17 @@ Consequences Matter
 - Information can be partial, misleading, or false.
 - Failure is real. Dead ends exist. Reward persistence and cleverness.
 
+Constraint-Based Success Evaluation
+- Player actions must align with established traits, skills, context, and prior decisions.
+- Attempts that exceed these bounds should fail, incur cost, or deliver only partial results — unless a strong, in-world rationale is provided.
+- If the player makes a logical case for an improbable action, evaluate it based on:
+  - Character capability and situational fit
+  - Stakes and potential consequences
+  - Narrative plausibility and earned leverage
+- The higher the impact or improbability, the greater the risk of failure.
+- Avoid cinematic overreach unless earned through prior play.
+- When an action fails, briefly explain why in-world — not “because the rules say so,” but as cause-effect in context.
+
 Player-Driven Inquiry  
 - Let the player’s suspicions, questions, and strategies drive exploration.
 
@@ -348,11 +359,12 @@ def run_assistant(thread_id, assistant_id):
     context = ""
     if stored_campaign_id:
         last_user_msg = runtime.get("last_user_msg", "")
-        try:
-            matches = query_similar_chunks(stored_campaign_id, last_user_msg)
-            context = "\n".join(m["chunk"] for m in matches)
-        except Exception as e:
-            print(f"⚠️ Embedding context fetch failed: {e}")
+        if last_user_msg and last_user_msg.strip():  # ✅ ensure valid text
+            try:
+                matches = query_similar_chunks(stored_campaign_id, last_user_msg)
+                context = "\n".join(m["chunk"] for m in matches)
+            except Exception as e:
+                print(f"⚠️ Embedding context fetch failed: {e}")
 
     #print(f"\n📎 Injected Context:\n{context[:1000]}...\n")
     run = openai.beta.threads.runs.create(
@@ -384,7 +396,16 @@ def save_runtime_state(campaign_id, assistant_id, thread_id, state_json=None):
 def load_runtime_state(campaign_id):
     r = requests.get(f"{SB_BASE}/load_runtime_state/{campaign_id}")
     r.raise_for_status()
-    return r.json()
+    full = r.json()
+
+    # full is expected to be like {"state_json": {...}, "campaign_id": ..., etc.}
+    state_json = full.get("state_json")
+
+    # If state_json is a string, parse it
+    if isinstance(state_json, str):
+        state_json = json.loads(state_json)
+
+    return state_json or {}
 
 def save_to_supabase(campaign_id, chunk_order, seed_chunk):
     payload = {
@@ -526,16 +547,50 @@ def handle_tool_calls(thread_id, run):
 # === MAIN EXECUTION FLOW ===
 
 def run_campaign_interactively():
-    global stored_campaign_id
-    assistant_id = create_tnl_assistant()
-    thread_id = create_thread()
+    global stored_campaign_id, runtime
     print("🧵 Campaign started. Type 'stop' to end.\n")
 
-    # 1️⃣ Kick off the assistant with a system prompt
+    choice = input("Start a new campaign or resume an existing one? (new/resume): ").strip().lower()
+    if choice == "resume":
+        cid = input("Enter your campaign ID: ").strip()
+        try:
+            rs = load_runtime_state(cid)
+            stored_campaign_id = cid
+
+            openai_data = rs.get("openai", {})
+            assistant_id = openai_data.get("assistant_id")
+            thread_id = openai_data.get("thread_id")
+
+            if not assistant_id or not thread_id:
+                raise ValueError("Missing assistant_id or thread_id in saved state.")
+
+            runtime = {
+                "character_sheet": _complete_char_sheet(rs.get("character_sheet")),
+                "inventory": _safe_list(rs.get("inventory")),
+                "abilities": _safe_list(rs.get("abilities")),
+                "locations": _safe_list(rs.get("locations")),
+                "key_people": _safe_list(rs.get("key_people")),
+                "world_events": _safe_list(rs.get("world_events")),
+                "last_msg_id": openai_data.get("last_message_id")
+            }
+
+            print("🔄 Campaign loaded. Resuming...\n")
+            add_user_message(thread_id, "Recap my current situation briefly, then wait.")
+            run_id = run_assistant(thread_id, assistant_id)
+            poll_until_done(thread_id, run_id)
+            interactive_loop(thread_id, assistant_id, cid)
+            return
+        except Exception as e:
+            print(f"❌ Failed to resume campaign: {e}")
+            return
+
+    # Default to new campaign flow
+    assistant_id = create_tnl_assistant()
+    thread_id = create_thread()
+
     intro_trigger = "Start a new campaign."
     add_user_message(thread_id, intro_trigger)
 
-    # 2️⃣ Run and handle assistant's initial intro message
     run_id = run_assistant(thread_id, assistant_id)
     run = poll_run_status(thread_id, run_id)
 
@@ -553,19 +608,15 @@ def run_campaign_interactively():
         latest = sorted(assistant_messages, key=lambda m: m.created_at)[-1]
         print(f"\n🤖 Assistant:\n{latest.content[0].text.value}\n")
         runtime["last_msg_id"] = latest.id
-        recap = latest.content[0].text.value  # full, not sliced
+        recap = latest.content[0].text.value
         snap = build_snapshot(recap, assistant_id, thread_id)
 
         openai_meta = snap.get("openai", {})
         if stored_campaign_id and openai_meta.get("thread_id") and openai_meta.get("assistant_id"):
             print("💾 Saving initial runtime state...")
             save_runtime_state(stored_campaign_id, assistant_id, thread_id, snap)
-            embed_and_store(stored_campaign_id, latest.content[0].text.value)
-        else:
-            print("⚠️ Skipped saving — missing OpenAI metadata.")
-            print(json.dumps(openai_meta, indent=2))
+            embed_and_store(stored_campaign_id, recap)
 
-    # 3️⃣ Begin interactive loop
     while True:
         user_input = input("🎮 You: ")
         if user_input.strip().lower() in ["stop", "exit", "quit"]:
@@ -591,17 +642,18 @@ def run_campaign_interactively():
             latest = sorted(assistant_messages, key=lambda m: m.created_at)[-1]
             print(f"\n🤖 Assistant:\n{latest.content[0].text.value}\n")
             runtime["last_msg_id"] = latest.id
-            recap = latest.content[0].text.value  # full, not sliced
+            recap = latest.content[0].text.value
             snap = build_snapshot(recap, assistant_id, thread_id)
 
             openai_meta = snap.get("openai", {})
             if stored_campaign_id and openai_meta.get("thread_id") and openai_meta.get("assistant_id"):
                 print("💾 Saving runtime state...")
                 save_runtime_state(stored_campaign_id, assistant_id, thread_id, snap)
-                embed_and_store(stored_campaign_id, latest.content[0].text.value)
-            else:
-                print("⚠️ Skipped saving — missing OpenAI metadata.")
-                print(json.dumps(openai_meta, indent=2))
+                embed_and_store(stored_campaign_id, recap)
+
+            #else:
+                #print("⚠️ Skipped saving — missing OpenAI metadata.")
+                #print(json.dumps(openai_meta, indent=2))
 
 
         # ⬇️ Now show campaign ID if it was just created
