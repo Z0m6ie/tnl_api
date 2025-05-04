@@ -4,12 +4,18 @@ import json
 import requests
 import time
 import tiktoken
+import os
+from dotenv import load_dotenv
 
 # === CONFIGURATION ===
-OPENAI_API_KEY = "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"
 SUPABASE_BASE_URL = "https://tnl-api-blue-snow-1079.fly.dev"
 
-openai.api_key = OPENAI_API_KEY
+load_dotenv()  # Load environment variables from .env
+
+openai.api_key = os.getenv("OPENAI_API_KEY")
+
+if not openai.api_key:
+    raise ValueError("❌ Missing OPENAI_API_KEY environment variable.")
 
 stored_campaign_id = None
 runtime = {}
