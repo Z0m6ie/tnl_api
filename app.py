@@ -56,14 +56,16 @@ with st.sidebar:
 # ---------------------------------------------------------------------------
 # First‑time initialization
 # ---------------------------------------------------------------------------
-if "assistant_id" not in st.session_state and not st.session_state.get("campaign_loaded"):
+if (
+    "assistant_id" not in st.session_state
+    and "runtime" not in st.session_state
+    and not st.session_state.get("stored_campaign_id")
+):
     tnl.runtime = tnl.fresh_runtime()
     st.session_state["runtime"] = tnl.runtime
-    tnl.stored_campaign_id = None
-
-    st.session_state.assistant_id = tnl.create_tnl_assistant()
-    st.session_state.thread_id    = tnl.create_thread()
-    st.session_state.chat_history = []
+    st.session_state["assistant_id"] = tnl.create_tnl_assistant()
+    st.session_state["thread_id"] = tnl.create_thread()
+    st.session_state["chat_history"] = []
     st.session_state["stored_campaign_id"] = None
 
 # ---------------------------------------------------------------------------
