@@ -518,13 +518,9 @@ def handle_tool_calls(thread_id, run):
                 })
 
             elif name == "update_character_sheet":
-                raw = args.get("character_sheet") or args   # tolerate old payloads
-                # 🚨 replace entirely, do NOT merge with previous sheet
+                raw = args.get("character_sheet") or args  # tolerate old payloads
+                # 🚨 Replace entirely, do NOT merge with previous sheet
                 runtime["character_sheet"] = _complete_char_sheet(raw)
-                outputs.append(
-                    {"tool_call_id": tool_call.id, "output": "Character sheet updated"}
-                )
-
                 outputs.append({
                     "tool_call_id": tool_call.id,
                     "output": "Character sheet updated"
