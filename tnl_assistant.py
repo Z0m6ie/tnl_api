@@ -394,7 +394,11 @@ def run_assistant(thread_id, assistant_id, campaign_id=None):
                 tnl.last_embedding_matches = matches  # <-- temp remove for logging
             except Exception as e:
                 print(f"⚠️ Embedding context fetch failed: {e}")
-
+            tnl.last_embedding_matches = [
+                {"chunk": "Fake test chunk 1..."},
+                {"chunk": "Fake test chunk 2..."},
+                {"chunk": "Fake test chunk 3..."},
+            ]
     #print(f"\n📎 Injected Context:\n{context[:1000]}...\n")
     run = openai.beta.threads.runs.create(
         thread_id=thread_id,
