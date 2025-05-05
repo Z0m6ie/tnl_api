@@ -4,7 +4,7 @@ import tnl_assistant as tnl
 
 st.set_page_config(page_title="The Narrative Loom", layout="centered")
 st.title("🧵 The Narrative Loom")
-st.caption("Simulation‑first Dungeon Master — Play or resume persistent, consequence-driven stories.")
+st.caption("Simulation‑first Dungeon Master — Play or resume persistent, consequence-driven stories. To start a new game type 'New' or load a campaigne id to your left and type 'Resume'")
 
 # === SIDEBAR ===
 with st.sidebar:
@@ -17,7 +17,7 @@ with st.sidebar:
             state = tnl.load_runtime_state(cid)
             st.session_state["assistant_id"] = state["openai"]["assistant_id"]
             st.session_state["thread_id"] = state["openai"]["thread_id"]
-            tnl.stored_campaign_id = cid
+            st.session_state["stored_campaign_id"] = cid  # ✅ store only in session
             tnl.runtime = {
                 "character_sheet": tnl._complete_char_sheet(state.get("character_sheet")),
                 "inventory": tnl._safe_list(state.get("inventory")),
@@ -36,6 +36,8 @@ if "assistant_id" not in st.session_state:
     st.session_state.assistant_id = tnl.create_tnl_assistant()
     st.session_state.thread_id = tnl.create_thread()
     st.session_state.chat_history = []
+    # New campaign — capture ID once seed phase completes
+    st.session_state["stored_campaign_id"] = None
 
 # === CHAT HANDLING ===
 user_msg = st.chat_input("Type here to play…")
@@ -61,18 +63,24 @@ if user_msg:
         st.session_state.chat_history.append(("TNL", reply))
         tnl.runtime["last_msg_id"] = last.id
 
-        # 4. Save full state and embed entire message
-        snap = tnl.build_snapshot(reply, st.session_state.assistant_id, st.session_state.thread_id)
-        if tnl.stored_campaign_id:
-            tnl.save_runtime_state(tnl.stored_campaign_id, st.session_state.assistant_id, st.session_state.thread_id, snap)
-            tnl.embed_and_store(tnl.stored_campaign_id, reply)
+        # 4. Store campaign ID if it was just created
+        if not st.session_state.get("stored_campaign_id") and tnl.stored_campaign_id:
+            st.session_state["stored_campaign_id"] = tnl.stored_campaign_id  # only once after seeding
+
+        # 5. Save full state and embed entire message
+        cid = st.session_state.get("stored_campaign_id")
+        if cid:
+            snap = tnl.build_snapshot(reply, st.session_state.assistant_id, st.session_state.thread_id)
+            tnl.save_runtime_state(cid, st.session_state.assistant_id, st.session_state.thread_id, snap)
+            tnl.embed_and_store(cid, reply)
 
     elif run.status == "failed":
         st.session_state.chat_history.append(("TNL", "❌ Assistant run failed."))
 
-# === CAMPAIGN ID ===
-if tnl.stored_campaign_id:
-    st.sidebar.success(f"📌 Campaign ID:\n{tnl.stored_campaign_id}")
+# === DISPLAY CAMPAIGN ID TO USER ONLY ===
+cid = st.session_state.get("stored_campaign_id")
+if cid:
+    st.sidebar.success(f"📌 Your Campaign ID:\n{cid}")
 
 # === DISPLAY CHAT ===
 for speaker, msg in st.session_state.get("chat_history", []):
