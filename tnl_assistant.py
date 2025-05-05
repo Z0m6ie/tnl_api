@@ -361,13 +361,13 @@ def add_user_message(thread_id, message):
         content=message
     )
 
-def run_assistant(thread_id, assistant_id):
+def run_assistant(thread_id, assistant_id, campaign_id=None):
     context = ""
-    if stored_campaign_id:
+    if campaign_id:
         last_user_msg = runtime.get("last_user_msg", "")
-        if last_user_msg and last_user_msg.strip():  # ✅ ensure valid text
+        if last_user_msg and last_user_msg.strip():
             try:
-                matches = query_similar_chunks(stored_campaign_id, last_user_msg)
+                matches = query_similar_chunks(campaign_id, last_user_msg)
                 context = "\n".join(m["chunk"] for m in matches)
             except Exception as e:
                 print(f"⚠️ Embedding context fetch failed: {e}")

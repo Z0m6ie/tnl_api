@@ -55,8 +55,12 @@ if user_msg:
     st.session_state.chat_history.append(("You", user_msg))
     tnl.add_user_message(st.session_state.thread_id, user_msg)
 
-    # 2. Run the assistant
-    run_id = tnl.run_assistant(st.session_state.thread_id, st.session_state.assistant_id)
+    # 2. Run the assistant (passing in campaign ID)
+    run_id = tnl.run_assistant(
+        st.session_state.thread_id,
+        st.session_state.assistant_id,
+        st.session_state.get("stored_campaign_id")
+    )
     run = tnl.poll_run_status(st.session_state.thread_id, run_id)
 
     while run.status == "requires_action":
@@ -70,7 +74,7 @@ if user_msg:
         reply = last.content[0].text.value
         st.session_state.chat_history.append(("TNL", reply))
         tnl.runtime["last_msg_id"] = last.id
-        st.session_state["runtime"] = tnl.runtime  # ✅ save updated state
+        st.session_state["runtime"] = tnl.runtime  # ✅ save updated runtime
 
         # 4. Store campaign ID if it was just created
         if not st.session_state.get("stored_campaign_id") and tnl.stored_campaign_id:
