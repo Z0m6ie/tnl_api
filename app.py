@@ -95,7 +95,7 @@ if user_msg:
         )[-1].content[0].text.value
 
         # TEMP: Show matched embedding chunks
-        if tnl.last_embedding_matches:
+        if hasattr(tnl, "last_embedding_matches") and tnl.last_embedding_matches:
             reply += "\n\n🔍 Matched Context:\n" + "\n".join(
                 f"{i+1}. {m['chunk'][:120]}{'...' if len(m['chunk']) > 120 else ''}"
                 for i, m in enumerate(tnl.last_embedding_matches[:3])
