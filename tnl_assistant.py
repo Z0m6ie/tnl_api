@@ -7,6 +7,7 @@ import tiktoken
 import os
 from dotenv import load_dotenv
 import logging
+import streamlit as st #remove
 
 logger = logging.getLogger("streamlit")
 
@@ -391,10 +392,10 @@ def run_assistant(thread_id, assistant_id, campaign_id=None):
                         for i, m in enumerate(matches[:3])
                     )
                     context += summary
-                globals()["last_embedding_matches"] = matches = matches  # <-- temp remove for logging
+                st.session_state["last_embedding_matches"] = matches  # <-- temp remove for logging
             except Exception as e:
                 print(f"⚠️ Embedding context fetch failed: {e}")
-            globals()["last_embedding_matches"] = matches = [
+            st.session_state["last_embedding_matches"] = matches = [
                 {"chunk": "Fake test chunk 1..."},
                 {"chunk": "Fake test chunk 2..."},
                 {"chunk": "Fake test chunk 3..."},
