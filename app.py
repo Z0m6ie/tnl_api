@@ -16,7 +16,7 @@ if "runtime" in st.session_state:
     tnl.runtime = st.session_state["runtime"]
 
 if "stored_campaign_id" in st.session_state:
-    tnl.stored_campaign_id = st.session_state["stored_campaign_id"]  # <- needed by run_assistant
+    tnl.stored_campaign_id = st.session_state["stored_campaign_id"]  # Needed by run_assistant
 
 # ---------------------------------------------------------------------------
 # Sidebar ‑‑ resume existing campaign
@@ -28,17 +28,13 @@ with st.sidebar:
     if st.button("Load") and campaign_id_input.strip():
         cid = campaign_id_input.strip()
         try:
-            state = tnl.load_runtime_state(cid)          # returns previously‑saved JSON
-            # ---- OpenAI thread / assistant IDs ----
+            state = tnl.load_runtime_state(cid)
             st.session_state["assistant_id"] = state["openai"]["assistant_id"]
-            st.session_state["thread_id"]    = state["openai"]["thread_id"]
-
-            # ---- Campaign ID ----
+            st.session_state["thread_id"] = state["openai"]["thread_id"]
             st.session_state["stored_campaign_id"] = cid
-            tnl.stored_campaign_id = cid            # 🟢 critical for embed recall
+            tnl.stored_campaign_id = cid
             st.session_state["campaign_loaded"] = True
 
-            # ---- Rehydrate runtime ----
             session_runtime = {
                 "character_sheet": tnl._complete_char_sheet(state.get("character_sheet")),
                 "inventory"     : tnl._safe_list(state.get("inventory")),
@@ -51,7 +47,6 @@ with st.sidebar:
             st.session_state["runtime"] = session_runtime
             tnl.runtime = session_runtime
 
-            # ---- Chat history ----
             st.session_state.chat_history = [
                 ("TNL", "🔄 Campaign loaded. You may now continue.")
             ]
@@ -60,11 +55,10 @@ with st.sidebar:
             st.session_state["campaign_loaded"] = False
 
 # ---------------------------------------------------------------------------
-# First‑time initialisation (new session / new campaign)
+# First‑time initialization
 # ---------------------------------------------------------------------------
 if "assistant_id" not in st.session_state and not st.session_state.get("campaign_loaded"):
-    # brand‑new campaign
-    tnl.runtime = tnl.fresh_runtime()          # 🔑 start clean
+    tnl.runtime = tnl.fresh_runtime()
     st.session_state["runtime"] = tnl.runtime
     tnl.stored_campaign_id = None
 
@@ -74,16 +68,15 @@ if "assistant_id" not in st.session_state and not st.session_state.get("campaign
     st.session_state["stored_campaign_id"] = None
 
 # ---------------------------------------------------------------------------
-# Chat input / main loop
+# Chat input loop
 # ---------------------------------------------------------------------------
 user_msg = st.chat_input("Type here to play…")
 if user_msg:
-    # Save user message + context for embedding search
     tnl.runtime["last_user_msg"] = user_msg
     st.session_state.chat_history.append(("You", user_msg))
     tnl.add_user_message(st.session_state.thread_id, user_msg)
 
-    # Run assistant (embedding recall inside run_assistant now works)
+    # Run assistant and handle tool calls
     run_id = tnl.run_assistant(
         st.session_state.thread_id,
         st.session_state.assistant_id
@@ -94,9 +87,8 @@ if user_msg:
         tnl.handle_tool_calls(st.session_state.thread_id, run)
         run = tnl.poll_run_status(st.session_state.thread_id, run.id)
 
-    # Collect assistant reply
     if run.status == "completed":
-        msgs  = openai.beta.threads.messages.list(thread_id=st.session_state.thread_id)
+        msgs = openai.beta.threads.messages.list(thread_id=st.session_state.thread_id)
         reply = sorted(
             [m for m in msgs.data if m.role == "assistant"],
             key=lambda m: m.created_at
@@ -104,13 +96,13 @@ if user_msg:
 
         st.session_state.chat_history.append(("TNL", reply))
         tnl.runtime["last_msg_id"] = msgs.data[-1].id
-        st.session_state["runtime"] = tnl.runtime  # keep session in‑sync
+        st.session_state["runtime"] = tnl.runtime
 
-        # If this was a brand‑new campaign, capture its ID
+        # Capture campaign ID if it was just created
         if not st.session_state.get("stored_campaign_id") and tnl.stored_campaign_id:
             st.session_state["stored_campaign_id"] = tnl.stored_campaign_id
 
-        # Persist runtime & embed message
+        # Save runtime and embed
         cid = st.session_state.get("stored_campaign_id")
         if cid:
             snap = tnl.build_snapshot(reply,
