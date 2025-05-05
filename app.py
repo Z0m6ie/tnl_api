@@ -73,11 +73,12 @@ if (
 # ---------------------------------------------------------------------------
 user_msg = st.chat_input("Type here to play…")
 if user_msg:
+    # Update runtime and chat
     tnl.runtime["last_user_msg"] = user_msg
     st.session_state.chat_history.append(("You", user_msg))
     tnl.add_user_message(st.session_state.thread_id, user_msg)
 
-    # Run assistant and handle tool calls
+    # Run assistant and poll
     run_id = tnl.run_assistant(
         st.session_state.thread_id,
         st.session_state.assistant_id,
@@ -96,24 +97,27 @@ if user_msg:
             key=lambda m: m.created_at
         )[-1].content[0].text.value
 
-        # TEMP: Enable if you want to see the context chunks.
+        # TEMP: Show matched embedding chunks
         #if "last_embedding_matches" in st.session_state and st.session_state["last_embedding_matches"]:
-            #reply += "\n\n🔍 Matched Context:\n" + "\n".join(
-                #f"{i+1}. {m['chunk'][:120]}{'...' if len(m['chunk']) > 120 else ''}"
-                #for i, m in enumerate(st.session_state["last_embedding_matches"][:3])
-    #)
+        #    reply += "\n\n🔍 Matched Context:\n" + "\n".join(
+        #        f"{i+1}. {m['chunk'][:120]}{'...' if len(m['chunk']) > 120 else ''}"
+        #        for i, m in enumerate(st.session_state["last_embedding_matches"][:3])
+        #    )
 
+        # Update chat + runtime
         st.session_state.chat_history.append(("TNL", reply))
         tnl.runtime["last_msg_id"] = msgs.data[-1].id
         st.session_state["runtime"] = tnl.runtime
 
-        # Capture campaign ID if it was just created
+        # Capture campaign ID on first run
         if not st.session_state.get("stored_campaign_id") and tnl.stored_campaign_id:
             st.session_state["stored_campaign_id"] = tnl.stored_campaign_id
 
-        # Save runtime and embed
+        # ✅ Save runtime and embed — only if valid
         cid = st.session_state.get("stored_campaign_id")
-        if cid:
+        has_character = tnl.runtime.get("character_sheet", {}).get("name", "").strip()
+
+        if cid and has_character:
             snap = tnl.build_snapshot(reply,
                                       st.session_state.assistant_id,
                                       st.session_state.thread_id)
@@ -122,9 +126,12 @@ if user_msg:
                                    st.session_state.thread_id,
                                    snap)
             tnl.embed_and_store(cid, reply)
+        else:
+            st.session_state.chat_history.append(("TNL", "⚠️ Runtime looked incomplete — skipping save to prevent accidental overwrite."))
 
     else:
         st.session_state.chat_history.append(("TNL", "❌ Assistant run failed."))
+
 
 # ---------------------------------------------------------------------------
 # Sidebar ‑‑ show user’s campaign ID
