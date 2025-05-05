@@ -384,10 +384,13 @@ def run_assistant(thread_id, assistant_id, campaign_id=None):
             try:
                 matches = query_similar_chunks(campaign_id, last_user_msg)
                 print(f"🔍 [Embedding Recall] Matched {len(matches)} chunks for campaign {campaign_id}")
-                logger.info(f"🔍 [Embedding Recall] Matched {len(matches)} chunks for campaign {campaign_id}")
-                for i, m in enumerate(matches[:3]):
-                    logger.info(f"  {i+1}. {m['chunk'][:200]}{'...' if len(m['chunk']) > 200 else ''}")
                 context = "\n".join(m["chunk"] for m in matches)
+                if matches:
+                    summary = "\n\n🔍 Retrieved context chunks:\n" + "\n".join(
+                        f"{i+1}. {m['chunk'][:120]}{'...' if len(m['chunk']) > 120 else ''}"
+                        for i, m in enumerate(matches[:3])
+                    )
+                    context += summary
             except Exception as e:
                 print(f"⚠️ Embedding context fetch failed: {e}")
 
