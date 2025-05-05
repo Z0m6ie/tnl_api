@@ -17,7 +17,8 @@ with st.sidebar:
             state = tnl.load_runtime_state(cid)
             st.session_state["assistant_id"] = state["openai"]["assistant_id"]
             st.session_state["thread_id"] = state["openai"]["thread_id"]
-            st.session_state["stored_campaign_id"] = cid  # ✅ store only in session
+            st.session_state["stored_campaign_id"] = cid
+            st.session_state["campaign_loaded"] = True  # ✅ set flag to prevent overwriting
             tnl.runtime = {
                 "character_sheet": tnl._complete_char_sheet(state.get("character_sheet")),
                 "inventory": tnl._safe_list(state.get("inventory")),
@@ -30,13 +31,13 @@ with st.sidebar:
             st.session_state.chat_history = [("TNL", "🔄 Campaign loaded. You may now continue.")]
         except Exception as e:
             st.session_state.chat_history = [("TNL", f"❌ Failed to load: {e}")]
+            st.session_state["campaign_loaded"] = False
 
-# === INITIALISATION ===
-if "assistant_id" not in st.session_state:
+# === INITIALIZATION ===
+if "assistant_id" not in st.session_state and not st.session_state.get("campaign_loaded"):
     st.session_state.assistant_id = tnl.create_tnl_assistant()
     st.session_state.thread_id = tnl.create_thread()
     st.session_state.chat_history = []
-    # New campaign — capture ID once seed phase completes
     st.session_state["stored_campaign_id"] = None
 
 # === CHAT HANDLING ===
@@ -65,7 +66,7 @@ if user_msg:
 
         # 4. Store campaign ID if it was just created
         if not st.session_state.get("stored_campaign_id") and tnl.stored_campaign_id:
-            st.session_state["stored_campaign_id"] = tnl.stored_campaign_id  # only once after seeding
+            st.session_state["stored_campaign_id"] = tnl.stored_campaign_id
 
         # 5. Save full state and embed entire message
         cid = st.session_state.get("stored_campaign_id")
