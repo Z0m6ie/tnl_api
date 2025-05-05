@@ -5,8 +5,7 @@ import tnl_assistant as tnl
 st.set_page_config(page_title="The Narrative Loom", layout="centered")
 st.title("🧵 The Narrative Loom")
 st.caption(
-    "Simulation‑first Dungeon Master — start a new game or paste a Campaign‑ID "
-    "in the sidebar and press **Load** to resume."
+    "Simulation‑first Dungeon Master — Play or resume persistent, consequence-driven stories. To start a new game type 'New' or load a campaigne id to your left and type 'Resume'"
 )
 
 # ---------------------------------------------------------------------------
@@ -79,7 +78,8 @@ if user_msg:
     # Run assistant and handle tool calls
     run_id = tnl.run_assistant(
         st.session_state.thread_id,
-        st.session_state.assistant_id
+        st.session_state.assistant_id,
+        st.session_state.get("stored_campaign_id")
     )
     run = tnl.poll_run_status(st.session_state.thread_id, run_id)
 
