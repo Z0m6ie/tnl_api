@@ -6,6 +6,9 @@ import time
 import tiktoken
 import os
 from dotenv import load_dotenv
+import logging
+
+logger = logging.getLogger("streamlit")
 
 # === CONFIGURATION ===
 SUPABASE_BASE_URL = "https://tnl-api-blue-snow-1079.fly.dev"
@@ -381,8 +384,9 @@ def run_assistant(thread_id, assistant_id, campaign_id=None):
             try:
                 matches = query_similar_chunks(campaign_id, last_user_msg)
                 print(f"🔍 [Embedding Recall] Matched {len(matches)} chunks for campaign {campaign_id}")
+                logger.info(f"🔍 [Embedding Recall] Matched {len(matches)} chunks for campaign {campaign_id}")
                 for i, m in enumerate(matches[:3]):
-                    print(f"  {i+1}. {m['chunk'][:200]}{'...' if len(m['chunk']) > 200 else ''}")
+                    logger.info(f"  {i+1}. {m['chunk'][:200]}{'...' if len(m['chunk']) > 200 else ''}")
                 context = "\n".join(m["chunk"] for m in matches)
             except Exception as e:
                 print(f"⚠️ Embedding context fetch failed: {e}")
