@@ -98,7 +98,7 @@ if user_msg:
         if "last_embedding_matches" in globals() and last_embedding_matches:
             reply += "\n\n🔍 Matched Context:\n" + "\n".join(
                 f"{i+1}. {m['chunk'][:120]}{'...' if len(m['chunk']) > 120 else ''}"
-                for i, m in enumerate(tnl.last_embedding_matches[:3])
+                for i, m in enumerate(last_embedding_matches[:3])
             )
 
         st.session_state.chat_history.append(("TNL", reply))
