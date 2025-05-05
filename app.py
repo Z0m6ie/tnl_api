@@ -1,57 +1,79 @@
 import streamlit as st
 import openai
-import tnl_assistant as tnl   # import the module, not just the functions
+import tnl_assistant as tnl
 
-# ---- Streamlit page config ----
 st.set_page_config(page_title="The Narrative Loom", layout="centered")
 st.title("🧵 The Narrative Loom")
-st.caption("Simulation‑first Dungeon Master • Start a new campaign or paste a Campaign ID in the sidebar to resume.")
+st.caption("Simulation‑first Dungeon Master — Play or resume persistent, consequence-driven stories.")
 
-# ---- Sidebar (optional resume) ----
+# === SIDEBAR ===
 with st.sidebar:
     st.header("Resume a Campaign")
-    existing_id = st.text_input("Campaign ID")
-    if st.button("Load") and existing_id.strip():
-        st.session_state.campaign_id = existing_id.strip()
-        st.session_state.assistant_id = None  # force re‑initialise
+    campaign_id_input = st.text_input("Campaign ID")
 
-# ---- One‑time initialisation ----
-if "assistant_id" not in st.session_state or st.session_state.get("campaign_id_loaded") != st.session_state.get("campaign_id"):
-    # Fresh assistant & thread every app reload *unless* we loaded a campaign.
+    if st.button("Load") and campaign_id_input.strip():
+        cid = campaign_id_input.strip()
+        try:
+            state = tnl.load_runtime_state(cid)
+            st.session_state["assistant_id"] = state["openai"]["assistant_id"]
+            st.session_state["thread_id"] = state["openai"]["thread_id"]
+            tnl.stored_campaign_id = cid
+            tnl.runtime = {
+                "character_sheet": tnl._complete_char_sheet(state.get("character_sheet")),
+                "inventory": tnl._safe_list(state.get("inventory")),
+                "abilities": tnl._safe_list(state.get("abilities")),
+                "locations": tnl._safe_list(state.get("locations")),
+                "key_people": tnl._safe_list(state.get("key_people")),
+                "world_events": tnl._safe_list(state.get("world_events")),
+                "last_msg_id": state["openai"].get("last_message_id"),
+            }
+            st.session_state.chat_history = [("TNL", "🔄 Campaign loaded. You may now continue.")]
+        except Exception as e:
+            st.session_state.chat_history = [("TNL", f"❌ Failed to load: {e}")]
+
+# === INITIALISATION ===
+if "assistant_id" not in st.session_state:
     st.session_state.assistant_id = tnl.create_tnl_assistant()
-    st.session_state.thread_id   = tnl.create_thread()
+    st.session_state.thread_id = tnl.create_thread()
     st.session_state.chat_history = []
-    st.session_state.campaign_id_loaded = st.session_state.get("campaign_id")  # marker
 
-# ---- Chat input ----
+# === CHAT HANDLING ===
 user_msg = st.chat_input("Type here to play…")
 if user_msg:
-    # 1 Store user msg
-    tnl.add_user_message(st.session_state.thread_id, user_msg)
-    tnl.runtime["last_user_msg"] = user_msg            # <- gives embedding recall a chance
+    # 1. Save user message and prepare context
+    tnl.runtime["last_user_msg"] = user_msg
     st.session_state.chat_history.append(("You", user_msg))
+    tnl.add_user_message(st.session_state.thread_id, user_msg)
 
-    # 2 Run assistant
+    # 2. Run the assistant
     run_id = tnl.run_assistant(st.session_state.thread_id, st.session_state.assistant_id)
-    run    = tnl.poll_run_status(st.session_state.thread_id, run_id)
+    run = tnl.poll_run_status(st.session_state.thread_id, run_id)
 
     while run.status == "requires_action":
         tnl.handle_tool_calls(st.session_state.thread_id, run)
         run = tnl.poll_run_status(st.session_state.thread_id, run.id)
 
-    # 3 Collect assistant reply
+    # 3. Get response
     if run.status == "completed":
         msgs = openai.beta.threads.messages.list(thread_id=st.session_state.thread_id)
         last = sorted([m for m in msgs.data if m.role == "assistant"], key=lambda m: m.created_at)[-1]
         reply = last.content[0].text.value
         st.session_state.chat_history.append(("TNL", reply))
-    else:
+        tnl.runtime["last_msg_id"] = last.id
+
+        # 4. Save full state and embed entire message
+        snap = tnl.build_snapshot(reply, st.session_state.assistant_id, st.session_state.thread_id)
+        if tnl.stored_campaign_id:
+            tnl.save_runtime_state(tnl.stored_campaign_id, st.session_state.assistant_id, st.session_state.thread_id, snap)
+            tnl.embed_and_store(tnl.stored_campaign_id, reply)
+
+    elif run.status == "failed":
         st.session_state.chat_history.append(("TNL", "❌ Assistant run failed."))
 
-    # 4 Show newly created Campaign‑ID, if any
-    if tnl.stored_campaign_id:
-        st.sidebar.success(f"📌 Campaign ID:\n{tnl.stored_campaign_id}")
+# === CAMPAIGN ID ===
+if tnl.stored_campaign_id:
+    st.sidebar.success(f"📌 Campaign ID:\n{tnl.stored_campaign_id}")
 
-# ---- Conversation transcript ----
+# === DISPLAY CHAT ===
 for speaker, msg in st.session_state.get("chat_history", []):
     st.markdown(f"**{speaker}:** {msg}")
