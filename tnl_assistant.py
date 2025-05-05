@@ -391,6 +391,7 @@ def run_assistant(thread_id, assistant_id, campaign_id=None):
                         for i, m in enumerate(matches[:3])
                     )
                     context += summary
+                tnl.last_embedding_matches = matches  # <-- temp remove for logging
             except Exception as e:
                 print(f"⚠️ Embedding context fetch failed: {e}")
 
