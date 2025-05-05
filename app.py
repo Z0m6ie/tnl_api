@@ -4,7 +4,11 @@ import tnl_assistant as tnl
 
 st.set_page_config(page_title="The Narrative Loom", layout="centered")
 st.title("🧵 The Narrative Loom")
-st.caption("Simulation‑first Dungeon Master — Play or resume persistent, consequence-driven stories. To start a new game type 'New' or load a campaigne id to your left and type 'Resume'")
+st.caption("Simulation‑first Dungeon Master — Play or resume persistent, consequence-driven stories. To start a new game type 'New' or load a campaign ID to your left and type 'Resume'.")
+
+# === Restore runtime if present ===
+if "runtime" in st.session_state:
+    tnl.runtime = st.session_state["runtime"]
 
 # === SIDEBAR ===
 with st.sidebar:
@@ -18,8 +22,8 @@ with st.sidebar:
             st.session_state["assistant_id"] = state["openai"]["assistant_id"]
             st.session_state["thread_id"] = state["openai"]["thread_id"]
             st.session_state["stored_campaign_id"] = cid
-            st.session_state["campaign_loaded"] = True  # ✅ set flag to prevent overwriting
-            tnl.runtime = {
+            st.session_state["campaign_loaded"] = True  # ✅ set flag
+            session_runtime = {
                 "character_sheet": tnl._complete_char_sheet(state.get("character_sheet")),
                 "inventory": tnl._safe_list(state.get("inventory")),
                 "abilities": tnl._safe_list(state.get("abilities")),
@@ -28,6 +32,8 @@ with st.sidebar:
                 "world_events": tnl._safe_list(state.get("world_events")),
                 "last_msg_id": state["openai"].get("last_message_id"),
             }
+            st.session_state["runtime"] = session_runtime
+            tnl.runtime = session_runtime
             st.session_state.chat_history = [("TNL", "🔄 Campaign loaded. You may now continue.")]
         except Exception as e:
             st.session_state.chat_history = [("TNL", f"❌ Failed to load: {e}")]
@@ -39,6 +45,7 @@ if "assistant_id" not in st.session_state and not st.session_state.get("campaign
     st.session_state.thread_id = tnl.create_thread()
     st.session_state.chat_history = []
     st.session_state["stored_campaign_id"] = None
+    st.session_state["runtime"] = tnl.runtime.copy()
 
 # === CHAT HANDLING ===
 user_msg = st.chat_input("Type here to play…")
@@ -63,6 +70,7 @@ if user_msg:
         reply = last.content[0].text.value
         st.session_state.chat_history.append(("TNL", reply))
         tnl.runtime["last_msg_id"] = last.id
+        st.session_state["runtime"] = tnl.runtime  # ✅ save updated state
 
         # 4. Store campaign ID if it was just created
         if not st.session_state.get("stored_campaign_id") and tnl.stored_campaign_id:
