@@ -24,6 +24,18 @@ SB_BASE = f"{SUPABASE_BASE_URL}/v1"
 
 # helpers that guarantee a schema‑complete payload
 # --------------------------------------------------------------------
+def fresh_runtime() -> dict:
+    """Return a brand‑new, empty runtime object."""
+    return {
+        "character_sheet": _complete_char_sheet(None),
+        "inventory": [],
+        "abilities": [],
+        "locations": [],
+        "key_people": [],
+        "world_events": [],
+        "last_msg_id": None,
+    }
+
 def _complete_char_sheet(cs: dict | None) -> dict:
     """Return a character_sheet that satisfies all required keys."""
     base = {
@@ -506,16 +518,12 @@ def handle_tool_calls(thread_id, run):
                 })
 
             elif name == "update_character_sheet":
-                raw = args.get("character_sheet", None)
-
-                # Defensive fallback if assistant sends unwrapped fields
-                if raw is None:
-                    raw = args  # assume assistant sent the character sheet directly
-
-                runtime["character_sheet"] = _complete_char_sheet({
-                    **runtime.get("character_sheet", {}),
-                    **raw
-                })
+                raw = args.get("character_sheet") or args   # tolerate old payloads
+                # 🚨 replace entirely, do NOT merge with previous sheet
+                runtime["character_sheet"] = _complete_char_sheet(raw)
+                outputs.append(
+                    {"tool_call_id": tool_call.id, "output": "Character sheet updated"}
+                )
 
                 outputs.append({
                     "tool_call_id": tool_call.id,
