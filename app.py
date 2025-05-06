@@ -43,12 +43,20 @@ with st.sidebar:
                 "world_events"  : tnl._safe_list(state.get("world_events")),
                 "last_msg_id"   : state["openai"].get("last_message_id"),
             }
+
+            # Save repaired runtime to database if it now contains a valid character
+            if session_runtime["character_sheet"].get("name", "").strip():
+                snap = tnl.build_snapshot("🔄 Campaign loaded and repaired.",
+                                        state["openai"]["assistant_id"],
+                                        state["openai"]["thread_id"])
+                tnl.save_runtime_state(cid,
+                                    state["openai"]["assistant_id"],
+                                    state["openai"]["thread_id"],
+                                    snap)
+
             st.session_state["runtime"] = session_runtime
             tnl.runtime = session_runtime
-
-            st.session_state.chat_history = [
-                ("TNL", "🔄 Campaign loaded. You may now continue.")
-            ]
+            st.session_state.chat_history = [("TNL", "🔄 Campaign loaded. You may now continue.")]
         except Exception as e:
             st.session_state.chat_history = [("TNL", f"❌ Failed to load: {e}")]
             st.session_state["campaign_loaded"] = False
