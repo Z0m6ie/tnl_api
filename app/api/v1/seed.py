@@ -96,20 +96,23 @@ async def save_runtime_state(payload: RuntimeStateIn, request: Request):
         thread_id    = EXCLUDED.thread_id,
         state_json   = jsonb_strip_nulls(
                         jsonb_concat(
-                        runtime_states.state_json,
-                        (
-                            SELECT jsonb_object_agg(key, value)
-                            FROM jsonb_each(EXCLUDED.state_json)
-                            WHERE value IS NOT NULL
-                            AND value::text NOT IN ('""', '[]', '{}')
-                        )
+                          runtime_states.state_json,
+                          (
+                              SELECT jsonb_object_agg(key, value)
+                              FROM jsonb_each(EXCLUDED.state_json)
+                              WHERE value IS NOT NULL
+                                AND value::text NOT IN ('""', '[]', '{}')
+                          )
                         )
                     ),
         updated_at   = now();
     """
-    async with pool.acquire() as conn:           # ← safer pool usage
-        await conn.execute(q, payload.campaign_id, payload.assistant_id,
-                           payload.thread_id, json.dumps(payload.state_json or {}))
+    async with pool.acquire() as conn:
+        await conn.execute(q, 
+                           payload.campaign_id, 
+                           payload.assistant_id,
+                           payload.thread_id, 
+                           json.dumps(payload.state_json or {}))
     return {"status": "OK"}
 
 @router.get("/load_runtime_state/{campaign_id}")
