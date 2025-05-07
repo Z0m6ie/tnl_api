@@ -721,6 +721,7 @@ def resume_campaign(cid):
     poll_until_done(thread_id, run.id)
     interactive_loop(thread_id, assistant_id, cid)
 
+
 # === USAGE EXAMPLES ===
 
 if __name__ == "__main__":
