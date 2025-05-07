@@ -88,20 +88,23 @@ async def save_runtime_state(payload: RuntimeStateIn, request: Request):
     pool = request.app.state.pool
     q = """
     INSERT INTO runtime_states (campaign_id, assistant_id, thread_id, state_json)
-    VALUES (
-        $1,
-        $2,
-        $3,
-        coalesce(
-            nullif($4, '{}'::jsonb),
-            '{"story_so_far": "", "character_sheet":{"name":"","class":"","stats":{},"traits":[]}, "inventory": [], "abilities": [], "locations": [], "key_people": [], "world_events": [], "openai":{"assistant_id":"","thread_id":"","last_message_id":""}}'::jsonb
-        )
-    )
-    ON CONFLICT (campaign_id)
-    DO UPDATE SET
-        assistant_id = excluded.assistant_id,
-        thread_id    = excluded.thread_id,
-        state_json   = excluded.state_json,
+    VALUES ($1, $2, $3,
+            coalesce(nullif($4, '{}'::jsonb),
+                    '{"story_so_far":"","character_sheet":{"name":""}}'::jsonb))
+    ON CONFLICT (campaign_id) DO UPDATE
+    SET assistant_id = EXCLUDED.assistant_id,
+        thread_id    = EXCLUDED.thread_id,
+        state_json   = jsonb_strip_nulls(
+                        jsonb_concat(
+                        runtime_states.state_json,
+                        (
+                            SELECT jsonb_object_agg(key, value)
+                            FROM jsonb_each(EXCLUDED.state_json)
+                            WHERE value IS NOT NULL
+                            AND value::text NOT IN ('""', '[]', '{}')
+                        )
+                        )
+                    ),
         updated_at   = now();
     """
     async with pool.acquire() as conn:           # ← safer pool usage
