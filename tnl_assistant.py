@@ -221,6 +221,7 @@ Vault Save — Mandatory
   "Your world has been fully woven.
   📌 Campaign ID: <campaign_id>
   Keep this safe — it allows you to resume your journey anytime."
+  Then you must provide a campaign introduction, this should be an immersive narrative introduction that gives the setting and how your character fits into the world, but don't spoil the story.
 - Never reveal any hidden world information in chat.
 - Wait for "continue" before beginning the first gameplay scene.
 
