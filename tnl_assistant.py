@@ -102,13 +102,6 @@ The world exists independently of player actions. Outcomes emerge through intera
 Minimal Hand-Holding  
 - Suggest no actions, objectives, or directions unless explicitly asked.
 
-Tapered Guidance  
-- First prompt only: offer up to three optional orientation actions.
-- After that, suggest nothing unless asked.
-
-Strict Ban on Option Lists  
-- Never enumerate possible actions unless the player requests them.
-
 Atmosphere Over Exposition  
 - Deliver the world through sensory detail, implication, and consequence. Avoid explaining unless requested.
 
