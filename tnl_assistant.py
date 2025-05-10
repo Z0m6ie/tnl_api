@@ -26,8 +26,140 @@ runtime = {}
 
 SB_BASE = f"{SUPABASE_BASE_URL}/v1"
 
-# helpers that guarantee a schema‑complete payload
-# --------------------------------------------------------------------
+########################################################################
+# >>>  PASTE THIS SECTION ONCE  (ideally just below the other imports) #
+########################################################################
+
+RUN_TIMEOUT   = 180          # seconds (3 min) – auto‑cancel if a run stalls
+POLL_INTERVAL = 1            # seconds between status checks
+FINAL_STATES  = {"completed", "failed", "cancelled", "expired"}
+
+logger = logging.getLogger(__name__)
+
+# ---------------------------------------------------------------------
+def _current_run_id(thread_id: str) -> str | None:
+    """
+    Return the ID of the most‑recent run on `thread_id`
+    *if* that run is still active, else None.
+    """
+    try:
+        runs = openai.beta.threads.runs.list(thread_id=thread_id, limit=1).data
+        if runs and runs[0].status not in FINAL_STATES:
+            return runs[0].id
+        return None
+    except Exception as e:
+        logger.error(f"[run‑state] Could not fetch run list: {e}")
+        return None
+
+# ---------------------------------------------------------------------
+def _wait_until_clear(thread_id: str, timeout: int = RUN_TIMEOUT) -> None:
+    """
+    Block until the thread has no active run OR cancel the run
+    if it stays busy longer than `timeout`.
+    """
+    start = time.time()
+    while True:
+        rid = _current_run_id(thread_id)
+        if not rid:                     # thread is free
+            return
+        if time.time() - start > timeout:
+            # Cancel the stuck run and abort
+            try:
+                openai.beta.threads.runs.cancel(thread_id=thread_id, run_id=rid)
+                logger.warning(f"⏱️  Cancelled run {rid} after {timeout}s")
+            finally:
+                raise TimeoutError(
+                    f"Run {rid} on thread {thread_id} exceeded {timeout}s "
+                    "and was cancelled."
+                )
+        time.sleep(POLL_INTERVAL)
+
+# ---------------------------------------------------------------------
+def add_user_message(thread_id: str, message: str) -> None:
+    """Post a user message only when the thread is clear."""
+    _wait_until_clear(thread_id)
+    openai.beta.threads.messages.create(
+        thread_id=thread_id,
+        role="user",
+        content=message
+    )
+
+# ---------------------------------------------------------------------
+def run_assistant(
+        thread_id: str,
+        assistant_id: str,
+        campaign_id: str | None = None
+    ) -> str:
+    """
+    Launch a new assistant run after verifying the thread is idle.
+    Returns the run_id.
+    """
+    _wait_until_clear(thread_id)
+
+    # ---------- (context recall ‑ unchanged) ----------
+    context = ""
+    if campaign_id:
+        last_user_msg = runtime.get("last_user_msg", "")
+        if last_user_msg.strip():
+            try:
+                matches = query_similar_chunks(campaign_id, last_user_msg)
+                print(f"🔍 [Embedding Recall] Matched {len(matches)} chunks")
+                context = "\n".join(m["chunk"] for m in matches)
+                if matches:
+                    summary = (
+                        "\n\n🔍 Retrieved context chunks:\n" +
+                        "\n".join(
+                            f"{i+1}. {m['chunk'][:120]}"
+                            f"{'...' if len(m['chunk']) > 120 else ''}"
+                            for i, m in enumerate(matches[:3])
+                        )
+                    )
+                    context += summary
+                # Optional — keep for debugging UX in Streamlit
+                if "session_state" in globals():
+                    st.session_state["last_embedding_matches"] = matches
+            except Exception as e:
+                print(f"⚠️ Embedding context fetch failed: {e}")
+    # ---------------------------------------------------
+
+    run = openai.beta.threads.runs.create(
+        thread_id=thread_id,
+        assistant_id=assistant_id,
+        additional_instructions=(
+            f"Use the following prior context as background knowledge:\n\n{context}"
+            if context else None
+        )
+    )
+    return run.id
+
+# ---------------------------------------------------------------------
+def poll_run_status(
+        thread_id: str,
+        run_id: str,
+        timeout: int = RUN_TIMEOUT
+    ):
+    """
+    Poll the run until it reaches a final state OR times out.
+    Returns the final run object.
+    """
+    start = time.time()
+    while True:
+        run = openai.beta.threads.runs.retrieve(thread_id=thread_id,
+                                                run_id=run_id)
+        if run.status in FINAL_STATES or run.status == "requires_action":
+            return run
+        if time.time() - start > timeout:
+            openai.beta.threads.runs.cancel(thread_id=thread_id, run_id=run_id)
+            raise TimeoutError(
+                f"Run {run_id} on {thread_id} cancelled after {timeout}s "
+                f"(last status: {run.status})."
+            )
+        time.sleep(POLL_INTERVAL)
+########################################################################
+# >>> END OF PATCH  <<<                                                #
+########################################################################
+
+
 def fresh_runtime() -> dict:
     """Return a brand‑new, empty runtime object."""
     return {
@@ -364,54 +496,6 @@ END OF INSTRUCTIONS
 def create_thread():
     thread = openai.beta.threads.create()
     return thread.id
-
-def add_user_message(thread_id, message):
-    openai.beta.threads.messages.create(
-        thread_id=thread_id,
-        role="user",
-        content=message
-    )
-
-def run_assistant(thread_id, assistant_id, campaign_id=None):
-    context = ""
-    if campaign_id:
-        last_user_msg = runtime.get("last_user_msg", "")
-        if last_user_msg and last_user_msg.strip():
-            try:
-                matches = query_similar_chunks(campaign_id, last_user_msg)
-                print(f"🔍 [Embedding Recall] Matched {len(matches)} chunks for campaign {campaign_id}")
-                context = "\n".join(m["chunk"] for m in matches)
-                if matches:
-                    summary = "\n\n🔍 Retrieved context chunks:\n" + "\n".join(
-                        f"{i+1}. {m['chunk'][:120]}{'...' if len(m['chunk']) > 120 else ''}"
-                        for i, m in enumerate(matches[:3])
-                    )
-                    context += summary
-                st.session_state["last_embedding_matches"] = matches  # <-- temp remove for logging
-            except Exception as e:
-                print(f"⚠️ Embedding context fetch failed: {e}")
-            #st.session_state["last_embedding_matches"] = matches = [
-                #{"chunk": "Fake test chunk 1..."},
-                #{"chunk": "Fake test chunk 2..."},
-                #{"chunk": "Fake test chunk 3..."},
-            #]
-    #print(f"\n📎 Injected Context:\n{context[:1000]}...\n")
-    run = openai.beta.threads.runs.create(
-        thread_id=thread_id,
-        assistant_id=assistant_id,
-        additional_instructions=(
-            f"Use the following prior context as background knowledge:\n\n{context}"
-            if context else None
-        )
-    )
-    return run.id
-
-def poll_run_status(thread_id, run_id):
-    while True:
-        run = openai.beta.threads.runs.retrieve(thread_id=thread_id, run_id=run_id)
-        if run.status in ["completed", "requires_action", "failed"]:
-            return run
-        time.sleep(1)
 
 # ---------- Supabase runtime helpers ----------
 def save_runtime_state(campaign_id, assistant_id, thread_id, state_json=None):
