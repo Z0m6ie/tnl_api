@@ -1,0 +1,277 @@
+{
+  "metadata": {
+    "playthrough_id": "031b05cfe1404c83b866bf53bbed1c0c",
+    "started_at": "2026-02-16T05:34:18.379390",
+    "completed_at": "2026-02-16T05:36:35.091026",
+    "genre": "Noir",
+    "tone": "Gritty",
+    "story_type": "Mystery",
+    "character_name": "Silas Crowe",
+    "character_profession": "Private Investigator specializing in missing persons",
+    "character_background": "Silas Crowe was raised in the back rooms of the Crowe Street Boxing Gym, where unpaid fighters and broken men taught him to read tells, lies, and desperation faster than any newspaper. After the gym folded under debt and pressure from local rackets, he drifted into investigative work, trading gloves for a notebook and a cheap camera. He now haunts the city’s rain-slick alleys and smoke-choked bars, quietly collecting truths that powerful people pay to keep buried.",
+    "player_personality": "cautious",
+    "agent_model": "gpt-5.2",
+    "total_turns": 13,
+    "locations_visited": [
+      "St. Brigid Mercy Mission (vestibule)"
+    ],
+    "npcs_encountered": [
+      "Sister Lenora",
+      "Elias Harker (Civic Renewal)",
+      "Unknown Renewal woman",
+      "Mission doorman (unidentified)",
+      "Dockside Brotherhood runner (unidentified)"
+    ],
+    "simulation_triggers_fired": 0,
+    "completed_normally": true,
+    "error_message": null
+  },
+  "messages": [
+    {
+      "turn": 1,
+      "source": "game",
+      "content": "Welcome to The Narrative Loom (TNL) - your simulation-first Dungeon Master.\n\nPlay anything from a cyberpunk heist-thriller to a dark fairytale revenge story.\n\nSelect a **Genre**, **Tone**, and **Story Type**, or say \"surprise me\" for a random selection.\n\nExamples:\n- \"Noir detective story, gritty tone, mystery thriller\"\n- \"Fantasy, whimsical, coming-of-age adventure\"\n- \"Sci-fi horror, bleak, survival story\"\n- \"surprise me\"\n\nWhat world would you like to explore?",
+      "timestamp": "2026-02-16T05:34:18.379390",
+      "player_reasoning": null,
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 2,
+      "source": "player_agent",
+      "content": "noir, gritty, mystery",
+      "timestamp": "2026-02-16T05:34:18.379390",
+      "player_reasoning": "Selected: noir, gritty, mystery",
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 3,
+      "source": "game",
+      "content": "Your world is set:\n\n**Genre:** Noir\n**Tone:** Gritty\n**Story Type:** Mystery\n\nMoving to character creation...\n\nPerfect! Your world will be: **Noir** with a **Gritty** tone - a **Mystery**.\n\nNow let's shape your protagonist. Tell me about your character:\n\n- **Name** - What should we call you?\n- **Background** - Where are they from? What shaped them?\n- **Profession or Skillset** - What are they good at?\n- **Traits** - A few words capturing temperament, strengths, flaws\n- **Personal Goal** - What do they want (not what fate demands)\n\nYou can describe freely or say \"surprise me\" for a generated character.",
+      "timestamp": "2026-02-16T05:34:18.379390",
+      "player_reasoning": null,
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 4,
+      "source": "player_agent",
+      "content": "Silas Crowe grew up in the back rooms of a failing boxing gym, learning early to read people the way others read headlines. A private investigator who specializes in missing persons, he moves through rain-slick alleys and smoke-choked bars with quiet patience. Careful, observant, and methodical, Silas weighs every word before he spends it. He’s driven to find his younger sister, who vanished years ago, and he suspects the city’s dirtiest names still know exactly why.",
+      "timestamp": "2026-02-16T05:34:23.386599",
+      "player_reasoning": "Generated cautious-style character for Noir Mystery",
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 5,
+      "source": "game",
+      "content": "Here's your character:\n\n**Silas Crowe**\n*Private Investigator specializing in missing persons*\n\nSilas Crowe was raised in the back rooms of the Crowe Street Boxing Gym, where unpaid fighters and broken men taught him to read tells, lies, and desperation faster than any newspaper. After the gym folded under debt and pressure from local rackets, he drifted into investigative work, trading gloves for a notebook and a cheap camera. He now haunts the city’s rain-slick alleys and smoke-choked bars, quietly collecting truths that powerful people pay to keep buried.\n\n**Traits:** Observant, Methodical, Patient, Tight-lipped, Stubbornly principled\n**Goal:** Find his younger sister, Mara Crowe, who vanished years ago—by tracing the case back through the city’s most corrupt names and forcing the truth out of whoever still knows what happened.\n\nReady to lock it in? Say \"yes\" to continue, or tell me what to adjust.",
+      "timestamp": "2026-02-16T05:34:28.418879",
+      "player_reasoning": null,
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 6,
+      "source": "player_agent",
+      "content": "yes",
+      "timestamp": "2026-02-16T05:34:28.521152",
+      "player_reasoning": "Simple confirmation",
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 7,
+      "source": "game",
+      "content": "Character locked in. Weaving your world...\n\nYour world has been fully woven.\n\n**Campaign ID:** `64533ff9-55d3-4bb0-be3c-44009db778e3`\n\nKeep this safe - it allows you to resume your journey anytime.\n\nType **continue** when you're ready to begin.",
+      "timestamp": "2026-02-16T05:35:37.917620",
+      "player_reasoning": null,
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 8,
+      "source": "player_agent",
+      "content": "continue",
+      "timestamp": "2026-02-16T05:35:38.017720",
+      "player_reasoning": "Ready to begin the adventure",
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 9,
+      "source": "game",
+      "content": "Rain cuts across Dockside at 1:17 a.m., hard enough to rattle the tin awnings. A freight horn groans out on the river, then fades behind brick and steam. Neon from a closed bar runs down the sidewalk in pink streaks. The air smells like wet rope, diesel, and old beer. Water hisses on a vent grate and breathes out radiator heat.\n\nSilas Crowe stands under a gutter that spits rust and rain onto his hat brim. He watches the Mission door across the street and counts the shadows that move wrong.\n\nA nun steps from the alley beside him. She keeps her hands in her sleeves until she reaches him, then slides a damp envelope into his coat. “Sister Lenora,” she says. “St. Brigid Mercy Mission. Shelter. Soup. Records.” Her eyes flick to the street. “Someone stole pages from our black ledger.”\n\nSilas opens the envelope with his thumbnail. Paper sticks to paper. A torn ledger stub shows intake codes. A Polaroid shows a girl with swollen knuckles outside the Mission. A copied line sits under it in careful pen. “Mara C. — transfer authorized / Pier 9 charity freight.” The date sits three days before Mara vanished.\n\nA car idles across the street with its lights off. Two men sit inside. Their shoes look too clean when one steps out onto the wet curb. He watches the Mission door like he owns it. Civic Renewal Office type. City “watchdog” unit.\n\nDown the block, a dockworker in a union jacket leans on a lamppost and smokes without drawing. He watches Silas’s pocket. Dockside Brotherhood. Waterfront union on paper.\n\nLenora lowers her voice. “They already asked questions. They will come back.” The man by the car starts walking. The dockworker flicks his cigarette and pushes off the post. Silas feels the envelope pull heavy against his ribs.",
+      "timestamp": "2026-02-16T05:35:50.671740",
+      "player_reasoning": null,
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 10,
+      "source": "player_agent",
+      "content": "I slide the envelope deeper into my inner pocket and turn slightly to block Lenora from the street. “Walk with me—don’t look at them,” I murmur, steering her toward the Mission door. “Quick: who from Civic Renewal asked questions, and did anyone at St. Brigid sign off on ‘Pier 9 charity freight’?”",
+      "timestamp": "2026-02-16T05:35:54.618428",
+      "player_reasoning": "Two interested parties are closing in; I need to get Lenora out of the open and learn what she knows without handing them a scene. Keep the envelope concealed and gather identifiers before moving.",
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 11,
+      "source": "game",
+      "content": "You tuck the envelope deeper and angle your shoulder; from the street, Lenora becomes just another dark shape at your side. The two clean-shoed men hesitate a beat—eyes tracking you—then keep moving like they meant to pass all along.\n\nYou and Lenora start toward the Mission door, boots splashing through a shallow gutter-stream. The brass handle is cold-wet under the awning, and the stone steps sweat rainwater that smells faintly of bleach and boiled cabbage seeping from inside.\n\nLenora keeps her chin down, walking at your pace. “Renewal didn’t send uniforms. A man named Harker—Elias Harker—came with a woman who never gave hers. Clipboard, municipal seal, polite voice. Asked for ‘intake discrepancies’ and ‘charity freight documentation.’ Father Kellan spoke to them at the threshold. Wouldn’t let them past the vestibule.”\n\nYou press: Pier 9.\n\nLenora’s mouth tightens. “No one here signs off on Pier 9. Not officially.” She glances once—quick, controlled—toward the street reflection in the Mission window. “The phrase ‘charity freight’ is what donors call it when they don’t want it itemized. The only person who would authorize a transfer like that… is Father Kellan. Or whoever had his key and his stamp.”\n\nBehind you, the Dockside man in the union jacket drifts closer, not rushing—just closing distance with the patience of someone who’s done collections in the rain. Across the street, one of the Renewal men stops at a newspaper box and pretends to fuss with it while watching your backs in the glass of a parked sedan.\n\nLenora reaches the door first and taps a pattern—two quick, one slow. A peephole slides. An eye. A chain rattles. “Silas,” she whispers, “if they subpoena us, the ledger becomes evidence. And evidence gets… corrected.”\n\nThe door cracks open just enough to slip through, warm air spilling out—soup, disinfectant, damp wool. The chain stays on, the eye still measuring you both as the street noise dulls behind the wood.\n\n**Status updates:** Renewal tailing from across street. Dockside shadow closing in. Mission door partially opened.  \n\n```json\n{\"inventory_add\":[],\"inventory_remove\":[],\"abilities_add\":[],\"locations_add\":[\"St. Brigid Mercy Mission (vestibule)\"],\"npcs_add\":[\"Sister Lenora\",\"Elias Harker (Civic Renewal)\",\"Unknown Renewal woman\",\"Mission doorman (unidentified)\",\"Dockside Brotherhood runner (unidentified)\"]}\n```",
+      "timestamp": "2026-02-16T05:36:11.878309",
+      "player_reasoning": null,
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 12,
+      "source": "player_agent",
+      "content": "I slip through the crack with Lenora, keeping my body between the doorway and the street. To the doorman, low and firm: “Chain stays. No one comes in after us—Civic Renewal or union boys—until Father Kellan says so. Take a good look at their faces.” Then to Lenora: “Get me to Kellan, and quietly—before ‘evidence’ gets corrected.”",
+      "timestamp": "2026-02-16T05:36:16.009117",
+      "player_reasoning": "Getting inside buys cover and cuts sightlines; I need Father Kellan and anything tied to Pier 9 before Renewal or Dockside can interfere. I’ll avoid a confrontation at the door and use the doorman as a buffer.",
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 13,
+      "source": "game",
+      "content": "You slip through first, shoulder and back filling the gap, and Lenora slides in after you. The doorman—broad-shouldered, gray at the temples—keeps the chain taut while rainwater beads on the wood like sweat.\n\nYour low order lands. He studies you a half-second, then nods once, jaw working. “Chain stays,” he murmurs, and pulls the door nearly shut so the street becomes a thin, bright knife of neon and rain. Through it, you catch the union runner angling closer to the steps; across the street, the Renewal man’s face turns toward the Mission like he’s memorizing the place.\n\nThe doorman leans in to look past your shoulder, taking in details the way working men do—gait, coat cut, the too-clean shoes. “Renewal’s been sniffing all week,” he says, voice like gravel. “Union boys too. They don’t come for soup.” His eyes flick to Lenora. “Father’s in the back office. But he’s… occupied.”\n\nInside the vestibule, warmth hits like a heavy coat: soup steam, bleach, wet wool drying on radiators. To your west, a narrow hall leads deeper—muted voices, a clink of ladles, someone coughing. A donation bin sits by the wall with a few umbrellas and a pile of damp coats—useful cover, also a place someone could hide something small.\n\nLenora doesn’t waste time. She takes your sleeve and guides you down the hall, not running—just moving with purpose that doesn’t draw attention. “Kellan’s been meeting with a ‘benefactor’,” she whispers. “In his office behind the chapel. If that benefactor is Renewal, he’ll try to keep you out. If it’s Dockside… he’ll try to keep you quiet.”\n\nAs you pass the inner door, the doorman’s voice follows, pitched so only you catch it: “If they push in, I can stall. I can’t stop a warrant.”\n\nFrom deeper inside, a sharp male voice snaps, then drops—argument behind a closed door. Lenora’s grip tightens. “That’s him.”\n\n**Status updates:**  \n- Mission entry: chained, controlled  \n- Dockside runner: closing outside  \n- Renewal tail: watching, waiting",
+      "timestamp": "2026-02-16T05:36:34.984056",
+      "player_reasoning": null,
+      "triggered_elements": [],
+      "state_changes": {}
+    }
+  ],
+  "initial_state": {
+    "campaign_id": "64533ff9-55d3-4bb0-be3c-44009db778e3",
+    "phase": "gameplay",
+    "genre": "Noir",
+    "tone": "Gritty",
+    "story_type": "Mystery",
+    "character_sheet": {
+      "name": "Silas Crowe",
+      "background": "Silas Crowe was raised in the back rooms of the Crowe Street Boxing Gym, where unpaid fighters and broken men taught him to read tells, lies, and desperation faster than any newspaper. After the gym folded under debt and pressure from local rackets, he drifted into investigative work, trading gloves for a notebook and a cheap camera. He now haunts the city’s rain-slick alleys and smoke-choked bars, quietly collecting truths that powerful people pay to keep buried.",
+      "profession": "Private Investigator specializing in missing persons",
+      "traits": [
+        "Observant",
+        "Methodical",
+        "Patient",
+        "Tight-lipped",
+        "Stubbornly principled"
+      ],
+      "personal_goal": "Find his younger sister, Mara Crowe, who vanished years ago—by tracing the case back through the city’s most corrupt names and forcing the truth out of whoever still knows what happened.",
+      "stats": {}
+    },
+    "seed_chunks": [
+      "Rain needles the city in cold, diagonal sheets, turning neon into bruised watercolor on cracked pavement. Streetlights buzz like tired insects; somewhere, a freight horn moans low and long, swallowed by brick canyons and steam. The air tastes of wet ash, cheap whiskey, and radiator heat leaking from alley grates. Cigarette smoke clings to wool coats and the backs of throats, sweetened by gutter rot and spilled perfume. Doors shut too softly; footsteps hesitate, then hurry. In every window, faces hover behind blinds like secrets. The whole town feels held together by damp paper and old guilt—quiet, watchful, and ready to turn on you.",
+      "Rain makes the city honest in the way bruises are honest: it shows what’s underneath. The **Civic Renewal Office** promises safer streets and “anti-corruption” audits, but quietly launders favors for the mayor’s donors and buries old cases. The **Dockside Brotherhood** calls itself a longshoremen’s union protecting jobs; behind the picket lines it runs smuggling, debt collections, and disappearances. The **St. Brigid Mercy Mission** feeds the cold and shelters runaways, yet its ledgers are a confessional—names traded to buy protection and silence. Renewal squeezes the Brotherhood with selective raids; the Brotherhood funds Renewal’s elections; the Mission plays both sides, keeping the city’s secrets alive and selling them one prayer at a time.\n\n```json\n{\n  \"factions\": [\n    {\n      \"name\": \"Civic Renewal Office\",\n      \"public_front\": \"Municipal watchdog unit conducting anti-corruption audits, public safety initiatives, and budget oversight.\",\n      \"hidden_agenda\": \"Weaponizes investigations to protect the mayor’s donors, launder influence through “reform” grants, and bury inconvenient missing-person files.\"\n    },\n    {\n      \"name\": \"Dockside Brotherhood\",\n      \"public_front\": \"Longshoremen’s union defending wages, safety, and local jobs on the waterfront.\",\n      \"hidden_agenda\": \"Controls smuggling routes, runs loan-sharking and enforcement, and makes problems—including witnesses—vanish into the harbor.\"\n    },\n    {\n      \"name\": \"St. Brigid Mercy Mission\",\n      \"public_front\": \"Church-run soup kitchen and shelter offering aid to the unhoused, runaways, and battered families.\",\n      \"hidden_agenda\": \"Maintains a black ledger of confessions and intake records, trading names and intel for protection, funding, and leverage over both criminals and officials.\"\n    }\n  ]\n}\n```",
+      "",
+      "Rain hammers the waterfront as Civic Renewal launches “Operation Clean Pier,” flooding Dockside with auditors and plainclothes cops; the Brotherhood answers with a sudden wildcat strike and whispers of a witness who won’t see sunrise. Across town, St. Brigid’s Mercy Mission locks its records room after a break-in—someone tore out pages from the black ledger, including the intake line for “Mara C.” Father Kellan pleads ignorance, while Sister Lenora quietly hires Silas to find the missing pages before Renewal subpoenas the Mission and the Brotherhood decides the easiest fix is another disappearance.\n\n```json\n{\n  \"events\": [\n    {\n      \"name\": \"Operation Clean Pier\",\n      \"description\": \"The Civic Renewal Office begins an aggressive audit-and-raid campaign on Dockside warehouses, using selective enforcement to squeeze the Dockside Brotherhood while shielding donor-owned shipping firms.\",\n      \"tensions\": [\n        \"Brotherhood enforcers are hunting a dock clerk rumored to be cooperating with Renewal\",\n        \"A wildcat strike is turning the waterfront volatile, with violence one bad shove away\",\n        \"Renewal’s plainclothes teams are grabbing anyone who looks like they know too much\"\n      ]\n    },\n    {\n      \"name\": \"The Mercy Ledger Breach\",\n      \"description\": \"St. Brigid Mercy Mission discovers its black ledger has been partially stolen; pages tied to runaway intakes—including an entry marked 'Mara C.'—are missing, and both Renewal and the Brotherhood want to control what’s left.\",\n      \"tensions\": [\n        \"Renewal is preparing subpoenas that could expose the Mission’s secret dealings\",\n        \"The Brotherhood suspects the Mission sold names again and is pressuring Father Kellan for answers\",\n        \"Sister Lenora is quietly recruiting outside help, risking retaliation if the theft points to either faction\"\n      ]\n    }\n  ]\n}\n```",
+      "Sister Lenora finds Silas Crowe the way the desperate always do—after midnight, under a gutter that can’t decide if it’s rain or rust. She doesn’t offer confession, just a job: **recover the missing pages from St. Brigid’s black ledger** before Civic Renewal subpoenas the Mission and the Dockside Brotherhood decides to “clean up” loose ends.\n\nLenora slides him a damp envelope. Inside: a torn ledger stub stamped with intake codes, a blurred Polaroid of a girl with boxing-swollen knuckles standing outside the Mission, and a single line copied in careful hand: **“Mara C. — transfer authorized / Pier 9 charity freight.”** The date is three days before Mara vanished. The ink is old; the handwriting isn’t Lenora’s.\n\nOn his way out, Silas clocks two plainclothes men across the street—Renewal’s kind, shoes too clean for this weather—watching the Mission doors like they own the sidewalk. Down the block, a Dockside Brotherhood runner leans on a lamppost, pretending to smoke, eyes flicking to Silas’s coat pocket like he can smell paper.\n\nBy dawn, someone has put Silas’s name into circulation: Renewal wants him “for questioning,” Dockside wants him “for a talk,” and the Mission wants him **quiet**. The ledger pages are worth protection money, leverage, or a body in the river. And somewhere between Pier 9’s manifests, the Mission’s sealed records room, and a gym that died under debt, Mara’s trail has started bleeding through again."
+    ],
+    "world_seed": null,
+    "simulation": {
+      "scenes": {},
+      "global_watchers": [],
+      "global_fail_conditions": [],
+      "global_timed_events": [],
+      "triggered_elements": [],
+      "current_turn": 0,
+      "current_location": null
+    },
+    "current_location": null,
+    "current_turn": 0,
+    "inventory": [],
+    "abilities": [],
+    "discovered_locations": [],
+    "known_npcs": [],
+    "active_events": [],
+    "message_history": [
+      {
+        "role": "assistant",
+        "content": "Rain cuts across Dockside at 1:17 a.m., hard enough to rattle the tin awnings. A freight horn groans out on the river, then fades behind brick and steam. Neon from a closed bar runs down the sidewalk in pink streaks. The air smells like wet rope, diesel, and old beer. Water hisses on a vent grate and breathes out radiator heat.\n\nSilas Crowe stands under a gutter that spits rust and rain onto his hat brim. He watches the Mission door across the street and counts the shadows that move wrong.\n\nA nun steps from the alley beside him. She keeps her hands in her sleeves until she reaches him, then slides a damp envelope into his coat. “Sister Lenora,” she says. “St. Brigid Mercy Mission. Shelter. Soup. Records.” Her eyes flick to the street. “Someone stole pages from our black ledger.”\n\nSilas opens the envelope with his thumbnail. Paper sticks to paper. A torn ledger stub shows intake codes. A Polaroid shows a girl with swollen knuckles outside the Mission. A copied line sits under it in careful pen. “Mara C. — transfer authorized / Pier 9 charity freight.” The date sits three days before Mara vanished.\n\nA car idles across the street with its lights off. Two men sit inside. Their shoes look too clean when one steps out onto the wet curb. He watches the Mission door like he owns it. Civic Renewal Office type. City “watchdog” unit.\n\nDown the block, a dockworker in a union jacket leans on a lamppost and smokes without drawing. He watches Silas’s pocket. Dockside Brotherhood. Waterfront union on paper.\n\nLenora lowers her voice. “They already asked questions. They will come back.” The man by the car starts walking. The dockworker flicks his cigarette and pushes off the post. Silas feels the envelope pull heavy against his ribs."
+      }
+    ],
+    "pending_display": null
+  },
+  "final_state": {
+    "campaign_id": "64533ff9-55d3-4bb0-be3c-44009db778e3",
+    "phase": "gameplay",
+    "genre": "Noir",
+    "tone": "Gritty",
+    "story_type": "Mystery",
+    "character_sheet": {
+      "name": "Silas Crowe",
+      "background": "Silas Crowe was raised in the back rooms of the Crowe Street Boxing Gym, where unpaid fighters and broken men taught him to read tells, lies, and desperation faster than any newspaper. After the gym folded under debt and pressure from local rackets, he drifted into investigative work, trading gloves for a notebook and a cheap camera. He now haunts the city’s rain-slick alleys and smoke-choked bars, quietly collecting truths that powerful people pay to keep buried.",
+      "profession": "Private Investigator specializing in missing persons",
+      "traits": [
+        "Observant",
+        "Methodical",
+        "Patient",
+        "Tight-lipped",
+        "Stubbornly principled"
+      ],
+      "personal_goal": "Find his younger sister, Mara Crowe, who vanished years ago—by tracing the case back through the city’s most corrupt names and forcing the truth out of whoever still knows what happened.",
+      "stats": {}
+    },
+    "seed_chunks": [
+      "Rain needles the city in cold, diagonal sheets, turning neon into bruised watercolor on cracked pavement. Streetlights buzz like tired insects; somewhere, a freight horn moans low and long, swallowed by brick canyons and steam. The air tastes of wet ash, cheap whiskey, and radiator heat leaking from alley grates. Cigarette smoke clings to wool coats and the backs of throats, sweetened by gutter rot and spilled perfume. Doors shut too softly; footsteps hesitate, then hurry. In every window, faces hover behind blinds like secrets. The whole town feels held together by damp paper and old guilt—quiet, watchful, and ready to turn on you.",
+      "Rain makes the city honest in the way bruises are honest: it shows what’s underneath. The **Civic Renewal Office** promises safer streets and “anti-corruption” audits, but quietly launders favors for the mayor’s donors and buries old cases. The **Dockside Brotherhood** calls itself a longshoremen’s union protecting jobs; behind the picket lines it runs smuggling, debt collections, and disappearances. The **St. Brigid Mercy Mission** feeds the cold and shelters runaways, yet its ledgers are a confessional—names traded to buy protection and silence. Renewal squeezes the Brotherhood with selective raids; the Brotherhood funds Renewal’s elections; the Mission plays both sides, keeping the city’s secrets alive and selling them one prayer at a time.\n\n```json\n{\n  \"factions\": [\n    {\n      \"name\": \"Civic Renewal Office\",\n      \"public_front\": \"Municipal watchdog unit conducting anti-corruption audits, public safety initiatives, and budget oversight.\",\n      \"hidden_agenda\": \"Weaponizes investigations to protect the mayor’s donors, launder influence through “reform” grants, and bury inconvenient missing-person files.\"\n    },\n    {\n      \"name\": \"Dockside Brotherhood\",\n      \"public_front\": \"Longshoremen’s union defending wages, safety, and local jobs on the waterfront.\",\n      \"hidden_agenda\": \"Controls smuggling routes, runs loan-sharking and enforcement, and makes problems—including witnesses—vanish into the harbor.\"\n    },\n    {\n      \"name\": \"St. Brigid Mercy Mission\",\n      \"public_front\": \"Church-run soup kitchen and shelter offering aid to the unhoused, runaways, and battered families.\",\n      \"hidden_agenda\": \"Maintains a black ledger of confessions and intake records, trading names and intel for protection, funding, and leverage over both criminals and officials.\"\n    }\n  ]\n}\n```",
+      "",
+      "Rain hammers the waterfront as Civic Renewal launches “Operation Clean Pier,” flooding Dockside with auditors and plainclothes cops; the Brotherhood answers with a sudden wildcat strike and whispers of a witness who won’t see sunrise. Across town, St. Brigid’s Mercy Mission locks its records room after a break-in—someone tore out pages from the black ledger, including the intake line for “Mara C.” Father Kellan pleads ignorance, while Sister Lenora quietly hires Silas to find the missing pages before Renewal subpoenas the Mission and the Brotherhood decides the easiest fix is another disappearance.\n\n```json\n{\n  \"events\": [\n    {\n      \"name\": \"Operation Clean Pier\",\n      \"description\": \"The Civic Renewal Office begins an aggressive audit-and-raid campaign on Dockside warehouses, using selective enforcement to squeeze the Dockside Brotherhood while shielding donor-owned shipping firms.\",\n      \"tensions\": [\n        \"Brotherhood enforcers are hunting a dock clerk rumored to be cooperating with Renewal\",\n        \"A wildcat strike is turning the waterfront volatile, with violence one bad shove away\",\n        \"Renewal’s plainclothes teams are grabbing anyone who looks like they know too much\"\n      ]\n    },\n    {\n      \"name\": \"The Mercy Ledger Breach\",\n      \"description\": \"St. Brigid Mercy Mission discovers its black ledger has been partially stolen; pages tied to runaway intakes—including an entry marked 'Mara C.'—are missing, and both Renewal and the Brotherhood want to control what’s left.\",\n      \"tensions\": [\n        \"Renewal is preparing subpoenas that could expose the Mission’s secret dealings\",\n        \"The Brotherhood suspects the Mission sold names again and is pressuring Father Kellan for answers\",\n        \"Sister Lenora is quietly recruiting outside help, risking retaliation if the theft points to either faction\"\n      ]\n    }\n  ]\n}\n```",
+      "Sister Lenora finds Silas Crowe the way the desperate always do—after midnight, under a gutter that can’t decide if it’s rain or rust. She doesn’t offer confession, just a job: **recover the missing pages from St. Brigid’s black ledger** before Civic Renewal subpoenas the Mission and the Dockside Brotherhood decides to “clean up” loose ends.\n\nLenora slides him a damp envelope. Inside: a torn ledger stub stamped with intake codes, a blurred Polaroid of a girl with boxing-swollen knuckles standing outside the Mission, and a single line copied in careful hand: **“Mara C. — transfer authorized / Pier 9 charity freight.”** The date is three days before Mara vanished. The ink is old; the handwriting isn’t Lenora’s.\n\nOn his way out, Silas clocks two plainclothes men across the street—Renewal’s kind, shoes too clean for this weather—watching the Mission doors like they own the sidewalk. Down the block, a Dockside Brotherhood runner leans on a lamppost, pretending to smoke, eyes flicking to Silas’s coat pocket like he can smell paper.\n\nBy dawn, someone has put Silas’s name into circulation: Renewal wants him “for questioning,” Dockside wants him “for a talk,” and the Mission wants him **quiet**. The ledger pages are worth protection money, leverage, or a body in the river. And somewhere between Pier 9’s manifests, the Mission’s sealed records room, and a gym that died under debt, Mara’s trail has started bleeding through again."
+    ],
+    "world_seed": null,
+    "simulation": {
+      "scenes": {},
+      "global_watchers": [],
+      "global_fail_conditions": [],
+      "global_timed_events": [],
+      "triggered_elements": [],
+      "current_turn": 0,
+      "current_location": null
+    },
+    "current_location": null,
+    "current_turn": 2,
+    "inventory": [],
+    "abilities": [],
+    "discovered_locations": [
+      "St. Brigid Mercy Mission (vestibule)"
+    ],
+    "known_npcs": [
+      "Sister Lenora",
+      "Elias Harker (Civic Renewal)",
+      "Unknown Renewal woman",
+      "Mission doorman (unidentified)",
+      "Dockside Brotherhood runner (unidentified)"
+    ],
+    "active_events": [],
+    "message_history": [
+      {
+        "role": "assistant",
+        "content": "Rain cuts across Dockside at 1:17 a.m., hard enough to rattle the tin awnings. A freight horn groans out on the river, then fades behind brick and steam. Neon from a closed bar runs down the sidewalk in pink streaks. The air smells like wet rope, diesel, and old beer. Water hisses on a vent grate and breathes out radiator heat.\n\nSilas Crowe stands under a gutter that spits rust and rain onto his hat brim. He watches the Mission door across the street and counts the shadows that move wrong.\n\nA nun steps from the alley beside him. She keeps her hands in her sleeves until she reaches him, then slides a damp envelope into his coat. “Sister Lenora,” she says. “St. Brigid Mercy Mission. Shelter. Soup. Records.” Her eyes flick to the street. “Someone stole pages from our black ledger.”\n\nSilas opens the envelope with his thumbnail. Paper sticks to paper. A torn ledger stub shows intake codes. A Polaroid shows a girl with swollen knuckles outside the Mission. A copied line sits under it in careful pen. “Mara C. — transfer authorized / Pier 9 charity freight.” The date sits three days before Mara vanished.\n\nA car idles across the street with its lights off. Two men sit inside. Their shoes look too clean when one steps out onto the wet curb. He watches the Mission door like he owns it. Civic Renewal Office type. City “watchdog” unit.\n\nDown the block, a dockworker in a union jacket leans on a lamppost and smokes without drawing. He watches Silas’s pocket. Dockside Brotherhood. Waterfront union on paper.\n\nLenora lowers her voice. “They already asked questions. They will come back.” The man by the car starts walking. The dockworker flicks his cigarette and pushes off the post. Silas feels the envelope pull heavy against his ribs."
+      },
+      {
+        "role": "user",
+        "content": "I slide the envelope deeper into my inner pocket and turn slightly to block Lenora from the street. “Walk with me—don’t look at them,” I murmur, steering her toward the Mission door. “Quick: who from Civic Renewal asked questions, and did anyone at St. Brigid sign off on ‘Pier 9 charity freight’?”"
+      },
+      {
+        "role": "assistant",
+        "content": "You tuck the envelope deeper and angle your shoulder; from the street, Lenora becomes just another dark shape at your side. The two clean-shoed men hesitate a beat—eyes tracking you—then keep moving like they meant to pass all along.\n\nYou and Lenora start toward the Mission door, boots splashing through a shallow gutter-stream. The brass handle is cold-wet under the awning, and the stone steps sweat rainwater that smells faintly of bleach and boiled cabbage seeping from inside.\n\nLenora keeps her chin down, walking at your pace. “Renewal didn’t send uniforms. A man named Harker—Elias Harker—came with a woman who never gave hers. Clipboard, municipal seal, polite voice. Asked for ‘intake discrepancies’ and ‘charity freight documentation.’ Father Kellan spoke to them at the threshold. Wouldn’t let them past the vestibule.”\n\nYou press: Pier 9.\n\nLenora’s mouth tightens. “No one here signs off on Pier 9. Not officially.” She glances once—quick, controlled—toward the street reflection in the Mission window. “The phrase ‘charity freight’ is what donors call it when they don’t want it itemized. The only person who would authorize a transfer like that… is Father Kellan. Or whoever had his key and his stamp.”\n\nBehind you, the Dockside man in the union jacket drifts closer, not rushing—just closing distance with the patience of someone who’s done collections in the rain. Across the street, one of the Renewal men stops at a newspaper box and pretends to fuss with it while watching your backs in the glass of a parked sedan.\n\nLenora reaches the door first and taps a pattern—two quick, one slow. A peephole slides. An eye. A chain rattles. “Silas,” she whispers, “if they subpoena us, the ledger becomes evidence. And evidence gets… corrected.”\n\nThe door cracks open just enough to slip through, warm air spilling out—soup, disinfectant, damp wool. The chain stays on, the eye still measuring you both as the street noise dulls behind the wood.\n\n**Status updates:** Renewal tailing from across street. Dockside shadow closing in. Mission door partially opened.  \n\n```json\n{\"inventory_add\":[],\"inventory_remove\":[],\"abilities_add\":[],\"locations_add\":[\"St. Brigid Mercy Mission (vestibule)\"],\"npcs_add\":[\"Sister Lenora\",\"Elias Harker (Civic Renewal)\",\"Unknown Renewal woman\",\"Mission doorman (unidentified)\",\"Dockside Brotherhood runner (unidentified)\"]}\n```"
+      },
+      {
+        "role": "user",
+        "content": "I slip through the crack with Lenora, keeping my body between the doorway and the street. To the doorman, low and firm: “Chain stays. No one comes in after us—Civic Renewal or union boys—until Father Kellan says so. Take a good look at their faces.” Then to Lenora: “Get me to Kellan, and quietly—before ‘evidence’ gets corrected.”"
+      },
+      {
+        "role": "assistant",
+        "content": "You slip through first, shoulder and back filling the gap, and Lenora slides in after you. The doorman—broad-shouldered, gray at the temples—keeps the chain taut while rainwater beads on the wood like sweat.\n\nYour low order lands. He studies you a half-second, then nods once, jaw working. “Chain stays,” he murmurs, and pulls the door nearly shut so the street becomes a thin, bright knife of neon and rain. Through it, you catch the union runner angling closer to the steps; across the street, the Renewal man’s face turns toward the Mission like he’s memorizing the place.\n\nThe doorman leans in to look past your shoulder, taking in details the way working men do—gait, coat cut, the too-clean shoes. “Renewal’s been sniffing all week,” he says, voice like gravel. “Union boys too. They don’t come for soup.” His eyes flick to Lenora. “Father’s in the back office. But he’s… occupied.”\n\nInside the vestibule, warmth hits like a heavy coat: soup steam, bleach, wet wool drying on radiators. To your west, a narrow hall leads deeper—muted voices, a clink of ladles, someone coughing. A donation bin sits by the wall with a few umbrellas and a pile of damp coats—useful cover, also a place someone could hide something small.\n\nLenora doesn’t waste time. She takes your sleeve and guides you down the hall, not running—just moving with purpose that doesn’t draw attention. “Kellan’s been meeting with a ‘benefactor’,” she whispers. “In his office behind the chapel. If that benefactor is Renewal, he’ll try to keep you out. If it’s Dockside… he’ll try to keep you quiet.”\n\nAs you pass the inner door, the doorman’s voice follows, pitched so only you catch it: “If they push in, I can stall. I can’t stop a warrant.”\n\nFrom deeper inside, a sharp male voice snaps, then drops—argument behind a closed door. Lenora’s grip tightens. “That’s him.”\n\n**Status updates:**  \n- Mission entry: chained, controlled  \n- Dockside runner: closing outside  \n- Renewal tail: watching, waiting"
+      }
+    ],
+    "pending_display": null
+  },
+  "simulation_snapshots": []
+}

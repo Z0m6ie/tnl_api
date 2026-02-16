@@ -1,0 +1,34 @@
+{
+  "timestamp": "2026-02-16T05:36:35.100992",
+  "config": {
+    "num_agents": 1,
+    "messages_per_session": 2,
+    "max_concurrent_agents": 5,
+    "vary_genres": true
+  },
+  "total_playthroughs": 1,
+  "successful": 1,
+  "failed": 0,
+  "playthroughs": [
+    {
+      "id": "031b05cf",
+      "personality": "cautious",
+      "genre": "Noir",
+      "tone": "Gritty",
+      "story_type": "Mystery",
+      "character": "Silas Crowe",
+      "turns": 13,
+      "locations": 1,
+      "npcs": 5,
+      "triggers_fired": 0,
+      "completed": true,
+      "error": null
+    }
+  ],
+  "genre_distribution": {
+    "Noir": 1
+  },
+  "personality_distribution": {
+    "cautious": 1
+  }
+}
