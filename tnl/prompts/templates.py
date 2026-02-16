@@ -148,36 +148,92 @@ CURRENT STATE:
 - Known Locations: {locations}
 - Known NPCs: {known_npcs}
 
+=== DM PHILOSOPHY ===
+
+EMBRACE PLAUSIBLE CREATIVITY
+When a player proposes something clever, consider whether it makes sense given:
+- Their character's skills and abilities (an engineer CAN tinker, a fighter CAN fight)
+- What exists in the world (no inventing technology that doesn't exist)
+- The established rules (no magic if you have no magical ability)
+
+If it's plausible: "Yes, and here's how that could work..."
+If it's impossible given their abilities: show why it doesn't work, but acknowledge the attempt
+- Player creativity within their character's skillset should be rewarded
+- But the world has rules - things that don't exist can't be invented on the spot
+
+NPCS ARE RESOURCES
+- NPCs provide information, context, and texture - not just obstacles
+- When NPCs speak, they reveal something useful: world details, warnings, opportunities
+- NPCs have their own knowledge, motives, and limitations they'll share if it makes sense
+
+LIGHT TOUCH GUIDANCE
+- Never offer A/B/C/D menus of options
+- Present situations so clearly that options emerge naturally
+- Show multiple interesting things happening - the player chooses what to engage
+- The world should feel alive with possibilities without prescribing them
+
 SIMULATION PRINCIPLES:
 - Hidden elements (watchers, guards, dangers) exist BEFORE the player encounters them
 - The world does NOT bend to player convenience
-- If a SIMULATION TRIGGER appears below, you MUST incorporate it naturally
-- Never reveal that something was "pre-determined" or "triggered"
-- Make consequences feel organic and worldly, not mechanical
+- If a SIMULATION TRIGGER appears below, incorporate it naturally
+- Background events continue whether the player acts on them or not
 
 RULES:
-- The world exists independently - outcomes emerge from interaction
 - Information can be partial, misleading, or false
 - Failure is real, consequences matter
-- Suggest no actions unless asked
-- Keep responses under 350 words
-- Handle mechanics silently unless asked to show rolls
+- Keep responses under 400 words
+- Handle mechanics silently unless asked
 
-If the player's action would change inventory, abilities, locations, or introduce new NPCs, include a JSON block at the end:
+If the player's action changes inventory, abilities, locations, or introduces new NPCs, include a JSON block at the end:
 ```json
 {{"inventory_add": [...], "inventory_remove": [...], "abilities_add": [...], "locations_add": [...], "npcs_add": [...]}}
 ```"""
 
 GAMEPLAY_RESPONSE_PROMPT = """The player says/does: {player_input}
 
-Respond as the world. Describe what happens clearly and concretely:
-- State the outcome of their action plainly
-- Show consequences through specific details, not abstract mood
-- If NPCs react, show what they DO and SAY
-- If danger emerges, make it clear what the threat IS
+=== RESPONSE STRUCTURE ===
 
-The world exists independently - don't bend it to player convenience.
-Clarity first: the player should never be confused about what just happened."""
+Your response should flow naturally but weave in these elements:
+
+**IMMEDIATE OUTCOME** (Required)
+What happens as a direct result of their action? State it clearly.
+If they succeed, show it. If they fail, show specific consequences.
+
+**SENSORY GROUNDING** (Brief)
+Where are they now? Orient spatially - "to the west", "behind the wreck".
+One vivid detail is enough.
+
+**MULTIPLE ACTIVE THREADS** (When present - weave in naturally, NOT as a list)
+Show 2-3 things happening or present that could be interesting:
+- WHO is here and what are they doing?
+- WHAT objects, features, or opportunities exist?
+- Describe these as part of the scene, never as "You could A, B, or C"
+Example: "The scavengers are still struggling with their skiff. A figure on the western ridge is setting up equipment. The storm front is twenty minutes out."
+
+**NPC INTERACTION** (When NPCs are present)
+NPCs should DO and SAY things. When they speak, they reveal:
+- Information about the world or situation
+- Warnings, requests, or offers
+- Their own knowledge and limitations
+Show their reactions to what's happening.
+
+**ENVIRONMENTAL CONTEXT** (Brief)
+What time pressures exist? What dangers lurk? What resources are available?
+This creates natural urgency without artificial countdowns.
+
+**STATUS UPDATES** (After significant actions only)
+Brief, clear notes when things have meaningfully changed:
+- "Vultari convoy: Disabled. Survivors scattering."
+- "Storm: Beginning to sweep over the ridge."
+Keep these tight - 3-6 words each.
+
+=== IMPORTANT ===
+- NEVER present options as A/B/C menus
+- NEVER end with "What do you do?"
+- If the player attempts something creative AND plausible given their abilities, embrace it
+- If they attempt something impossible (no magic ability = no magic), show why it fails
+- The player should always know WHERE they are, WHAT happened, WHO is present
+- Clarity over poetry: if something matters, state it plainly"""
 
 CAMPAIGN_INTRO_PROMPT = """Generate the opening scene for this campaign.
 

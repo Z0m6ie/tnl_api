@@ -1,0 +1,34 @@
+{
+  "timestamp": "2026-02-16T04:41:08.761823",
+  "config": {
+    "num_agents": 1,
+    "messages_per_session": 5,
+    "max_concurrent_agents": 5,
+    "vary_genres": true
+  },
+  "total_playthroughs": 1,
+  "successful": 1,
+  "failed": 0,
+  "playthroughs": [
+    {
+      "id": "5e2fad4b",
+      "personality": "cautious",
+      "genre": "Noir",
+      "tone": "Gritty",
+      "story_type": "Mystery",
+      "character": "Marlowe Crane",
+      "turns": 19,
+      "locations": 2,
+      "npcs": 6,
+      "triggers_fired": 3,
+      "completed": true,
+      "error": null
+    }
+  ],
+  "genre_distribution": {
+    "Noir": 1
+  },
+  "personality_distribution": {
+    "cautious": 1
+  }
+}

@@ -1,0 +1,556 @@
+{
+  "metadata": {
+    "playthrough_id": "5e2fad4b244c4148a72f8afd48f1e28b",
+    "started_at": "2026-02-16T04:37:30.198951",
+    "completed_at": "2026-02-16T04:41:08.745802",
+    "genre": "Noir",
+    "tone": "Gritty",
+    "story_type": "Mystery",
+    "character_name": "Marlowe Crane",
+    "character_profession": "Private Investigator (dockside fixer and missing-persons specialist)",
+    "character_background": "Marlowe Crane was raised in a soot-stained dockside tenement where bribes spoke louder than prayers and survival meant noticing what others ignored. He learned the city only tells the truth when it’s cornered, and he carries that lesson into every case with a cigarette-stained calm. Years ago his younger sister, Lillian, vanished after getting too close to the wrong people, and the unanswered questions have hollowed out any life he might have built beyond the work.",
+    "player_personality": "cautious",
+    "agent_model": "gpt-5.2",
+    "total_turns": 19,
+    "locations_visited": [
+      "Ing Gullknife Men",
+      "Harbormaster Annex (Ledger Room)"
+    ],
+    "npcs_encountered": [
+      "Harbormaster Patrolman (near)",
+      "Harbormaster Patrolman (partner)",
+      "Union Clipboard Man",
+      "Gullknife Bruiser (Chain-hand)",
+      "Gullknife Bruiser (seated)",
+      "Eamon Rusk (name only)"
+    ],
+    "simulation_triggers_fired": 3,
+    "completed_normally": true,
+    "error_message": null
+  },
+  "messages": [
+    {
+      "turn": 1,
+      "source": "game",
+      "content": "Welcome to The Narrative Loom (TNL) - your simulation-first Dungeon Master.\n\nPlay anything from a cyberpunk heist-thriller to a dark fairytale revenge story.\n\nSelect a **Genre**, **Tone**, and **Story Type**, or say \"surprise me\" for a random selection.\n\nExamples:\n- \"Noir detective story, gritty tone, mystery thriller\"\n- \"Fantasy, whimsical, coming-of-age adventure\"\n- \"Sci-fi horror, bleak, survival story\"\n- \"surprise me\"\n\nWhat world would you like to explore?",
+      "timestamp": "2026-02-16T04:37:30.199996",
+      "player_reasoning": null,
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 2,
+      "source": "player_agent",
+      "content": "noir, gritty, mystery",
+      "timestamp": "2026-02-16T04:37:30.199996",
+      "player_reasoning": "Selected: noir, gritty, mystery",
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 3,
+      "source": "game",
+      "content": "Your world is set:\n\n**Genre:** Noir\n**Tone:** Gritty\n**Story Type:** Mystery\n\nMoving to character creation...\n\nPerfect! Your world will be: **Noir** with a **Gritty** tone - a **Mystery**.\n\nNow let's shape your protagonist. Tell me about your character:\n\n- **Name** - What should we call you?\n- **Background** - Where are they from? What shaped them?\n- **Profession or Skillset** - What are they good at?\n- **Traits** - A few words capturing temperament, strengths, flaws\n- **Personal Goal** - What do they want (not what fate demands)\n\nYou can describe freely or say \"surprise me\" for a generated character.",
+      "timestamp": "2026-02-16T04:37:30.199996",
+      "player_reasoning": null,
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 4,
+      "source": "player_agent",
+      "content": "Marlowe Crane grew up in a soot-stained dockside tenement, learning early that the city only tells the truth when it’s cornered. A meticulous private investigator, he works slow cases for fast money, watching details others miss and speaking only after he’s weighed the cost. Careful, observant, and quietly stubborn, he keeps his emotions locked behind a cigarette-stained calm. He’s driven to find the missing sister he never stopped searching for, even if the trail leads straight through the people who taught him how to survive.",
+      "timestamp": "2026-02-16T04:37:35.189679",
+      "player_reasoning": "Generated cautious-style character for Noir Mystery",
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 5,
+      "source": "game",
+      "content": "Here's your character:\n\n**Marlowe Crane**\n*Private Investigator (dockside fixer and missing-persons specialist)*\n\nMarlowe Crane was raised in a soot-stained dockside tenement where bribes spoke louder than prayers and survival meant noticing what others ignored. He learned the city only tells the truth when it’s cornered, and he carries that lesson into every case with a cigarette-stained calm. Years ago his younger sister, Lillian, vanished after getting too close to the wrong people, and the unanswered questions have hollowed out any life he might have built beyond the work.\n\n**Traits:** Meticulous, Observant, Quietly stubborn, Cautious, Emotionally guarded\n**Goal:** Find his missing sister, Lillian Crane, and expose whoever took her—no matter how deep it forces him back into the dockside networks that once kept him alive.\n\nReady to lock it in? Say \"yes\" to continue, or tell me what to adjust.",
+      "timestamp": "2026-02-16T04:37:41.044440",
+      "player_reasoning": null,
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 6,
+      "source": "player_agent",
+      "content": "yes",
+      "timestamp": "2026-02-16T04:37:41.147597",
+      "player_reasoning": "Simple confirmation",
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 7,
+      "source": "game",
+      "content": "Character locked in. Weaving your world...\n\nYour world has been fully woven.\n\n**Campaign ID:** `9974244f-9f85-44c3-a6b5-b6dfa3f85ec9`\n\nKeep this safe - it allows you to resume your journey anytime.\n\nType **continue** when you're ready to begin.",
+      "timestamp": "2026-02-16T04:38:48.468473",
+      "player_reasoning": null,
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 8,
+      "source": "player_agent",
+      "content": "continue",
+      "timestamp": "2026-02-16T04:38:48.579710",
+      "player_reasoning": "Ready to begin the adventure",
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 9,
+      "source": "game",
+      "content": "**PLACE & TIME**  \nYou’re on Pier Nine behind **Kestrel Warehousing**, just past midnight, with fog thick enough to hide a man at ten paces. A rain that never commits taps the corrugated roofs. Sodium lamps turn the wet cobbles the color of old brass. Somewhere close, a winch groans and a radio leaks jazz through a cracked speaker.\n\n**CHARACTER IN SCENE**  \nYou keep to the shadow line between stacked pallets and a rusted bollard, cigarette unlit in your fingers. The half-burned manifest page sits in your coat pocket like a blade: berth number, seal code, “**BRIGID / FILE**.” You watch patterns—boots, pauses, who looks over their shoulder and who doesn’t—because missing people don’t vanish; they get moved.\n\n**THE HOOK**  \nA Harbormaster patrol pair comes down the pier like they own the night: oilskin coats, batons, caps pulled low. They stop at Container Row C without checking a single tag, which is how you know they’re not here to inspect. A third man waits by the stack—dockworker build, clean hands, Union ring on his thumb. He doesn’t talk much. He just holds a clipboard wrong, too high, like it’s for show.\n\nThe nearer patrolman says, “Seal **K-17-9** stays intact. No paperwork tonight. We’re correcting an error.” The Union man answers, “Mission wants it quiet. Harbormaster already got paid.”\n\nK-17-9 matches your scrap. The container squats on a chassis with fresh chalk marks and a new padlock, still bright at the edges. Then you catch the detail that doesn’t belong: a thin line of condensation pulsing at the door seam, in time with a muffled thud from inside—small, irregular, not cargo settling. People. Alive.\n\nAnd “Mission” in their mouths isn’t charity. It’s a route.\n\n**THE MOMENT**  \nThe patrolman turns his head, eyes sweeping the dark, and his gaze slows where you’re standing. Behind him, the Union man shifts his weight toward the container door. You have one breath before they either open it—or come looking for who’s listening.",
+      "timestamp": "2026-02-16T04:39:02.982317",
+      "player_reasoning": null,
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 10,
+      "source": "player_agent",
+      "content": "I step out of the shadow just enough for the lamp to catch my coat, hands visible, cigarette still unlit. “Evening, Harbor—thought I heard a problem with paperwork. Which one of you is signing for K-17-9?” I angle my body so I can see the container seam and keep the pallets at my back.",
+      "timestamp": "2026-02-16T04:39:07.590984",
+      "player_reasoning": "If I bolt, I confirm I’m here; if I rush the container, I’m outnumbered. Best move is to control the encounter—step into view like I belong, buy seconds, and listen for names while keeping an exit.",
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 11,
+      "source": "game",
+      "content": "The lamp catches your coat and the unlit cigarette, and for half a beat everyone freezes—like you just walked onto a stage that wasn’t meant to have an audience.\n\nImmediate outcome: the Harbormaster patrolman closest to you doesn’t draw his baton, but he *does* shift his stance to put his body between you and the container. His partner takes one step wide, angling to your right to cut off the open pier behind you. The Union man’s eyes flick to your hands, then to your face, and he stops pretending the clipboard matters.\n\n“Evening,” the nearer patrolman says, voice polite in the way a lid is polite on a coffin. “This row’s closed. Official correction. You lost?”\n\nYou’re ten feet from the container, pallets hard at your back, wet cobbles slick underfoot. The seam at the container door fogs again—thin breath of cold air—followed by a soft *thump* from inside. The Union man hears it too; his jaw tightens like he’s swallowing a complaint.\n\n“Who’s signing?” you press.\n\nThe patrolman’s smile doesn’t reach his eyes. “No one signs. That’s the point. Waiver’s verbal.”\n\nHis partner adds, quieter: “Name?”\n\nThe Union man finally speaks, voice low and resentful, like he hates that he has to: “This ain’t your business, Crane. Walk away. Harbormaster’s already smoothing it. Mission’s already prayed on it.”\n\nHe knows your name—either from the Harbormaster file or Union whisper networks. That means you’re not just interrupting a shipment; you’re stepping into a conversation that started before you arrived.\n\nBehind them, down the pier through the fog, a set of footsteps approaches—unhurried, more than one person, not patrol pace. The Harbormaster patrolman glances that way and then back at you, measuring whether you’ll make noise before backup arrives.\n\n**Status updates:**  \n- You’ve been identified: “Crane.”  \n- Container K-17-9: occupants alive.  \n- Additional figures approaching.",
+      "timestamp": "2026-02-16T04:39:21.069443",
+      "player_reasoning": null,
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 12,
+      "source": "player_agent",
+      "content": "I lift the cigarette like it’s a credential. “Marlowe Crane. I’m looking for a girl—Lillian. Word is your ‘correction’ is moving warm bodies.” I glance past them into the fog. “Those steps behind you—friends of yours, or should I be worried too?”",
+      "timestamp": "2026-02-16T04:39:24.788157",
+      "player_reasoning": "I’m outnumbered and getting boxed in; I need to buy time, learn who’s coming, and keep attention on me—not the container—without escalating to a fight I can’t win.",
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 13,
+      "source": "game",
+      "content": "The word **“Lillian”** lands like you threw a glass into a sink.\n\n**Immediate outcome:** the Union man’s composure slips—just a fraction. His eyes dart to the container seam, then back to you, and you catch it: recognition, or fear of being caught recognizing. The nearer Harbormaster patrolman stops smiling altogether.\n\nRain beads on your knuckles; the sodium lamp hisses above, making everyone’s faces look jaundiced. The container sits ten feet past the patrolman’s shoulder—door seam still sweating cold.\n\n“Don’t say names on the pier,” the patrolman says, voice suddenly flat. “That’s how people get misunderstandings.”\n\nYou tip your chin toward the fog. “Those steps behind you—friends?”\n\nThe second patrolman glances back and exhales, almost annoyed. “Not ours.”\n\nOut of the fog to the **east**, two silhouettes resolve into men in dock coats—no caps, no badges. They walk like they’re late to something important and don’t care who sees. One of them carries a short length of chain wrapped around his hand like a casual accessory. The Union man’s shoulders tighten; he wasn’t expecting them either.\n\nThe first patrolman raises his voice, pitching it toward the newcomers without turning fully. “Pier’s closed on official business.”\n\nA voice answers back, amused. “Official doesn’t own the night, Harbormaster. Union does.”\n\nGullknife. Different crew than the clean-handed clipboard man—these look like the kind that don’t bother with paperwork at all.\n\nInside **K-17-9**, another muffled thud—closer to the door this time—followed by a faint scrape, like fingernails on metal. The Union man murmurs, almost to himself: “They’re not supposed to be awake.”\n\nHe catches your stare and hardens. “Crane—if you’re smart, you forget that name you just said. Mission keeps files. Harbormaster keeps files. Union buries files.”\n\nThe Harbormaster patrolman shifts again, now trying to keep *both* you and the approaching Gullknife men out of arm’s reach of the container. His partner’s hand hovers near his whistle, undecided.\n\n**Status updates:**  \n- “Lillian” rattled the Union man  \n- Gullknife muscle approaching (2)  \n- Container occupants active/awake",
+      "timestamp": "2026-02-16T04:39:42.078824",
+      "player_reasoning": null,
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 14,
+      "source": "player_agent",
+      "content": "I take a slow step sideways to keep space and a clear line to the pier, palms still open. “Easy—no whistles, no heroics. I’m not here to fight the Union or the Harbor.” I nod toward the approaching Gullknife men. “But if they’re not yours, and they think they own the night, we’ve got a different problem—so who’s actually in K-17-9, and why aren’t they supposed to be awake?”",
+      "timestamp": "2026-02-16T04:39:45.490355",
+      "player_reasoning": "More muscle is coming and I’m outnumbered; I need to stall, learn what I can, and avoid getting boxed in while keeping eyes on the container and the Union man’s reaction to Lillian.",
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 15,
+      "source": "game",
+      "content": "**Immediate outcome:** Your sideways step buys you a sliver of space and, more importantly, signals you’re not rushing anyone. The Harbormaster partner’s hand eases off the whistle. The nearer patrolman keeps his body between you and the container, but his shoulders drop a fraction—less “about to swing,” more “about to bargain.”\n\nFog slicks the pier; to your left the open run of cobbles leads back toward the streetlamps, and behind you the pallets are stacked high enough to block anyone trying to circle.\n\nThe two **Gullknife bruisers** come into the lamp’s edge like they’ve been there all along. One leans a forearm on a crate stack by an oilcloth curtain stamped with a faded ship’s name; the other sits where he can see the hallway to the privy and the rear exit—positions that make the pier feel suddenly smaller. Chain-hand gives you a lazy look, then watches the Harbormaster men instead. They’re not here to arrest anyone. They’re here to make sure no one leaves with the wrong thoughts.\n\n“Who’s in K-17-9?” you ask. “Why aren’t they supposed to be awake?”\n\nThe Union clipboard man wets his lips. “They’re… *cargo.* People that don’t exist on paper.” He glances at the Harbormaster patrolman like he’s about to get hit for saying too much.\n\nThe nearer patrolman cuts in, voice clipped. “Stow it. You want answers, Crane? Ask the Mission why they keep ordering ‘machine parts’ with a priest’s handwriting.” His eyes flick to the container seam as another faint scrape comes from inside. “And they’re not supposed to be awake because awake ones **bang**. Awake ones **get heard**. And heard means inquiries.”\n\nChain-hand chuckles, low. “Heard means bodies in tidepools.”\n\nThe seated bruiser finally speaks, conversational: “So here’s the local weather, Crane. You keep it small and local. Wages, rain, sports. You start pulling at seals and we get ugly in a way nobody writes down.”\n\nThe Harbormaster partner looks past you toward the street, calculating whether he can walk away and pretend he never saw any of this.\n\n**Status updates:**  \n- Whistle threat eased  \n- Gullknife muscle has angles on exits  \n- Union admits “people cargo”",
+      "timestamp": "2026-02-16T04:40:27.656409",
+      "player_reasoning": null,
+      "triggered_elements": [
+        "guard_Ing Gullknife Men_0_1561f6"
+      ],
+      "state_changes": {}
+    },
+    {
+      "turn": 16,
+      "source": "player_agent",
+      "content": "I exhale slow and raise my hands a little higher. “Alright. Local weather.” I look to the Harbormaster patrolman. “Give me one thing I can verify—where ‘machine parts’ get filed, or which priest’s handwriting—and I walk off this pier without making it a scene.” Then I glance at Chain-hand and the seated bruiser. “And I’m leaving now; nobody needs to prove anything tonight.”",
+      "timestamp": "2026-02-16T04:40:32.941051",
+      "player_reasoning": "I’m outnumbered and boxed in; pushing for the container now gets me dumped in the water. I need a name, a route, or a time—something actionable—while signaling I’m backing off so I can leave intact and follow the trail.",
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 17,
+      "source": "game",
+      "content": "",
+      "timestamp": "2026-02-16T04:40:48.995819",
+      "player_reasoning": null,
+      "triggered_elements": [
+        "guard_Ing Gullknife Men_0_1561f6",
+        "secret_Ing Gullknife Men_0_751921",
+        "secret_Ing Gullknife Men_1_4b1359"
+      ],
+      "state_changes": {}
+    },
+    {
+      "turn": 18,
+      "source": "player_agent",
+      "content": "I freeze in place, eyes flicking between the Harbormaster and the Gullknife men. “Something just changed—who moved, and why?” I keep my hands up and angle my body toward the open pier. “I’m walking away, but I want one verifiable breadcrumb: a name, a parish, or a filing desk—then I’m gone.”",
+      "timestamp": "2026-02-16T04:40:52.688707",
+      "player_reasoning": "I don’t know what just happened on-screen—could be a glitch or a sudden escalation. I’ll keep things cautious: ask what changed, keep my exit plan, and try to extract one verifiable detail without provoking anyone.",
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 19,
+      "source": "game",
+      "content": "**Immediate outcome:** Freezing buys you half a second of truth. The thing that changed wasn’t you—it was the **Harbormaster partner**. He shifted his stance to look past the patrolman’s shoulder, and in doing it he exposed the **tiny brass whistle** at his collar… and the way his fingers had already closed around it. He wasn’t about to call *more Harbormaster*. He was about to call **someone else**.\n\nThe fog presses in from the waterline, dampening every sound except the soft **scrape** from inside K-17-9—right at the door seam now, like whoever’s in there has figured out where the air leaks.\n\nThe nearer patrolman sees you clock the whistle and snaps, low: “Don’t.”\n\nChain-hand’s chain tightens around his knuckles. The seated bruiser doesn’t rise—he just tilts his head toward the street like he’s listening for footsteps that aren’t there yet.\n\nYou keep your hands up, angle toward the open pier, and ask for a verifiable breadcrumb.\n\nThe nearer patrolman hesitates—jaw working—then makes a decision that looks like self-preservation more than kindness. He speaks without turning his head, like he doesn’t want anyone reading his lips.\n\n“**Ledger room, Harbormaster Annex.** Filing desk marked **‘SALVAGE / CHARITY’**—third drawer sticks. The clerk who used to work it was **Eamon Rusk**.” He flicks his eyes to you. “That’s your breadcrumb. You didn’t hear it from me.”\n\nThe Union clipboard man flinches hard at the name *Rusk*—like it’s a live wire—then forces his face blank again.\n\nChain-hand laughs once, quiet. “Annex, huh. That’s a brave little errand.”\n\nThe Harbormaster partner’s fingers loosen on the whistle, not because he’s calmer—because he’s been warned off. His gaze stays on the fog like he’s afraid the sound already went out.\n\nInside the container: one dull **thump**—then stillness, like whoever’s there learned to hold their breath.\n\n**Status updates:**  \n- Breadcrumb gained: “Annex / SALVAGE-CHARITY”  \n- Name surfaced: Eamon Rusk  \n- Whistle call: aborted (for now)  \n\n```json\n{\"inventory_add\":[],\"inventory_remove\":[],\"abilities_add\":[],\"locations_add\":[\"Harbormaster Annex (Ledger Room)\"],\"npcs_add\":[\"Harbormaster Patrolman (near)\",\"Harbormaster Patrolman (partner)\",\"Union Clipboard Man\",\"Gullknife Bruiser (Chain-hand)\",\"Gullknife Bruiser (seated)\",\"Eamon Rusk (name only)\"]}\n```",
+      "timestamp": "2026-02-16T04:41:08.645267",
+      "player_reasoning": null,
+      "triggered_elements": [
+        "guard_Ing Gullknife Men_0_1561f6",
+        "secret_Ing Gullknife Men_0_751921",
+        "secret_Ing Gullknife Men_1_4b1359"
+      ],
+      "state_changes": {}
+    }
+  ],
+  "initial_state": {
+    "campaign_id": "9974244f-9f85-44c3-a6b5-b6dfa3f85ec9",
+    "phase": "gameplay",
+    "genre": "Noir",
+    "tone": "Gritty",
+    "story_type": "Mystery",
+    "character_sheet": {
+      "name": "Marlowe Crane",
+      "background": "Marlowe Crane was raised in a soot-stained dockside tenement where bribes spoke louder than prayers and survival meant noticing what others ignored. He learned the city only tells the truth when it’s cornered, and he carries that lesson into every case with a cigarette-stained calm. Years ago his younger sister, Lillian, vanished after getting too close to the wrong people, and the unanswered questions have hollowed out any life he might have built beyond the work.",
+      "profession": "Private Investigator (dockside fixer and missing-persons specialist)",
+      "traits": [
+        "Meticulous",
+        "Observant",
+        "Quietly stubborn",
+        "Cautious",
+        "Emotionally guarded"
+      ],
+      "personal_goal": "Find his missing sister, Lillian Crane, and expose whoever took her—no matter how deep it forces him back into the dockside networks that once kept him alive.",
+      "stats": {}
+    },
+    "seed_chunks": [
+      "Fog crawls in off the harbor like a living thing, beading on rusted railings and turning every streetlamp into a jaundiced halo. The docks never sleep—chain clinks, gulls shriek, winches groan, and somewhere a radio coughs out jazz through cheap tin speakers. Salt and diesel hang in the air, cut with fish rot, wet rope, and the bitter sting of coal smoke that settles in your throat. Cobblestones sweat underfoot; alley puddles mirror neon in broken colors. Voices stay low behind warehouse doors, laughter edged like a knife. Even the rain feels bribed—soft, persistent, and hard to wash off.",
+      "Fog-side politics runs on paperwork and blood. The **Harbormaster’s Office** keeps manifests clean and patrols honest—on paper—while quietly auctioning dock access and “lost” cargo to fund a private intelligence file on everyone who moves through the piers. The **Gullknife Union** claims it protects stevedores from starvation wages, yet skims shipments and runs a disappearance-for-hire pipeline through sealed containers. Across the waterline, the **Saint Brigid Mission** feeds the hungry and shelters runaways, but launders secrets via confession, trading names to buy influence and “save” chosen souls. The Harbormaster leans on the Mission for leads; the Union bleeds both, and all three circle the same missing persons.\n\n```json\n{\n  \"factions\": [\n    {\n      \"name\": \"Harbormaster’s Office\",\n      \"public_front\": \"Regulates the docks, inspects cargo, assigns berths, and keeps order with official patrols.\",\n      \"hidden_agenda\": \"Sells access, reroutes ‘lost’ freight, and builds a blackmail-heavy intelligence archive to control the waterfront.\"\n    },\n    {\n      \"name\": \"Gullknife Union\",\n      \"public_front\": \"A dockworkers’ union promising protection, fair pay, and safety against exploitative bosses.\",\n      \"hidden_agenda\": \"Runs smuggling and a disappearance-for-hire operation using sealed containers, forged manifests, and paid muscle.\"\n    },\n    {\n      \"name\": \"Saint Brigid Mission\",\n      \"public_front\": \"A charitable mission offering soup, beds, and sanctuary for the desperate and displaced.\",\n      \"hidden_agenda\": \"Turns confessions into currency, trading names and secrets for leverage while quietly selecting who gets ‘saved’ and who gets sold out.\"\n    }\n  ]\n}\n```",
+      "",
+      "",
+      "Three nights ago, a container came in off the **Morrow Tide**—manifest says “machine parts,” weight says “people.” It should’ve gone straight through on a Harbormaster waiver, but it snagged on a paperwork error: the clerk who caught it ended up face-down in a tidepool before dawn, pockets turned out, eyes still open.\n\nYour name hit the waterfront the next afternoon when a runner from **Saint Brigid Mission** slipped you a confession token—cheap brass stamped with a broken anchor—and a message: *Lillian Crane is alive. Don’t go to the Mission. Don’t go alone.* The runner didn’t wait for an answer. He just kept walking into the fog like he’d already been forgiven.\n\nNow the **Harbormaster’s Office** is quietly asking after you, not with warrants—yet—but with “friendly” dock patrols who linger too long near your office door. The **Gullknife Union** is doing the opposite: acting like you don’t exist, which is worse. A few of their men have started showing up wherever you look twice—loading bays, taverns, dead-end alleys—hands clean, eyes dirty.\n\nYou have two things people want: a name and a slip of paper. The name is the dead clerk’s—he used to pass you tips for cash. The paper is a half-burned manifest page you pulled from his coat lining: berth number, container seal code, and a consignee marked only **“BRIGID / FILE”** in tight, priestly handwriting.\n\nSomeone is moving bodies through the docks under the cover of charity and law. And someone thinks you’re about to remember exactly how your sister disappeared."
+    ],
+    "world_seed": null,
+    "simulation": {
+      "scenes": {},
+      "global_watchers": [],
+      "global_fail_conditions": [],
+      "global_timed_events": [],
+      "triggered_elements": [],
+      "current_turn": 0,
+      "current_location": null
+    },
+    "current_location": null,
+    "current_turn": 0,
+    "inventory": [],
+    "abilities": [],
+    "discovered_locations": [],
+    "known_npcs": [],
+    "active_events": [],
+    "message_history": [
+      {
+        "role": "assistant",
+        "content": "**PLACE & TIME**  \nYou’re on Pier Nine behind **Kestrel Warehousing**, just past midnight, with fog thick enough to hide a man at ten paces. A rain that never commits taps the corrugated roofs. Sodium lamps turn the wet cobbles the color of old brass. Somewhere close, a winch groans and a radio leaks jazz through a cracked speaker.\n\n**CHARACTER IN SCENE**  \nYou keep to the shadow line between stacked pallets and a rusted bollard, cigarette unlit in your fingers. The half-burned manifest page sits in your coat pocket like a blade: berth number, seal code, “**BRIGID / FILE**.” You watch patterns—boots, pauses, who looks over their shoulder and who doesn’t—because missing people don’t vanish; they get moved.\n\n**THE HOOK**  \nA Harbormaster patrol pair comes down the pier like they own the night: oilskin coats, batons, caps pulled low. They stop at Container Row C without checking a single tag, which is how you know they’re not here to inspect. A third man waits by the stack—dockworker build, clean hands, Union ring on his thumb. He doesn’t talk much. He just holds a clipboard wrong, too high, like it’s for show.\n\nThe nearer patrolman says, “Seal **K-17-9** stays intact. No paperwork tonight. We’re correcting an error.” The Union man answers, “Mission wants it quiet. Harbormaster already got paid.”\n\nK-17-9 matches your scrap. The container squats on a chassis with fresh chalk marks and a new padlock, still bright at the edges. Then you catch the detail that doesn’t belong: a thin line of condensation pulsing at the door seam, in time with a muffled thud from inside—small, irregular, not cargo settling. People. Alive.\n\nAnd “Mission” in their mouths isn’t charity. It’s a route.\n\n**THE MOMENT**  \nThe patrolman turns his head, eyes sweeping the dark, and his gaze slows where you’re standing. Behind him, the Union man shifts his weight toward the container door. You have one breath before they either open it—or come looking for who’s listening."
+      }
+    ],
+    "pending_display": null
+  },
+  "final_state": {
+    "campaign_id": "9974244f-9f85-44c3-a6b5-b6dfa3f85ec9",
+    "phase": "gameplay",
+    "genre": "Noir",
+    "tone": "Gritty",
+    "story_type": "Mystery",
+    "character_sheet": {
+      "name": "Marlowe Crane",
+      "background": "Marlowe Crane was raised in a soot-stained dockside tenement where bribes spoke louder than prayers and survival meant noticing what others ignored. He learned the city only tells the truth when it’s cornered, and he carries that lesson into every case with a cigarette-stained calm. Years ago his younger sister, Lillian, vanished after getting too close to the wrong people, and the unanswered questions have hollowed out any life he might have built beyond the work.",
+      "profession": "Private Investigator (dockside fixer and missing-persons specialist)",
+      "traits": [
+        "Meticulous",
+        "Observant",
+        "Quietly stubborn",
+        "Cautious",
+        "Emotionally guarded"
+      ],
+      "personal_goal": "Find his missing sister, Lillian Crane, and expose whoever took her—no matter how deep it forces him back into the dockside networks that once kept him alive.",
+      "stats": {}
+    },
+    "seed_chunks": [
+      "Fog crawls in off the harbor like a living thing, beading on rusted railings and turning every streetlamp into a jaundiced halo. The docks never sleep—chain clinks, gulls shriek, winches groan, and somewhere a radio coughs out jazz through cheap tin speakers. Salt and diesel hang in the air, cut with fish rot, wet rope, and the bitter sting of coal smoke that settles in your throat. Cobblestones sweat underfoot; alley puddles mirror neon in broken colors. Voices stay low behind warehouse doors, laughter edged like a knife. Even the rain feels bribed—soft, persistent, and hard to wash off.",
+      "Fog-side politics runs on paperwork and blood. The **Harbormaster’s Office** keeps manifests clean and patrols honest—on paper—while quietly auctioning dock access and “lost” cargo to fund a private intelligence file on everyone who moves through the piers. The **Gullknife Union** claims it protects stevedores from starvation wages, yet skims shipments and runs a disappearance-for-hire pipeline through sealed containers. Across the waterline, the **Saint Brigid Mission** feeds the hungry and shelters runaways, but launders secrets via confession, trading names to buy influence and “save” chosen souls. The Harbormaster leans on the Mission for leads; the Union bleeds both, and all three circle the same missing persons.\n\n```json\n{\n  \"factions\": [\n    {\n      \"name\": \"Harbormaster’s Office\",\n      \"public_front\": \"Regulates the docks, inspects cargo, assigns berths, and keeps order with official patrols.\",\n      \"hidden_agenda\": \"Sells access, reroutes ‘lost’ freight, and builds a blackmail-heavy intelligence archive to control the waterfront.\"\n    },\n    {\n      \"name\": \"Gullknife Union\",\n      \"public_front\": \"A dockworkers’ union promising protection, fair pay, and safety against exploitative bosses.\",\n      \"hidden_agenda\": \"Runs smuggling and a disappearance-for-hire operation using sealed containers, forged manifests, and paid muscle.\"\n    },\n    {\n      \"name\": \"Saint Brigid Mission\",\n      \"public_front\": \"A charitable mission offering soup, beds, and sanctuary for the desperate and displaced.\",\n      \"hidden_agenda\": \"Turns confessions into currency, trading names and secrets for leverage while quietly selecting who gets ‘saved’ and who gets sold out.\"\n    }\n  ]\n}\n```",
+      "",
+      "",
+      "Three nights ago, a container came in off the **Morrow Tide**—manifest says “machine parts,” weight says “people.” It should’ve gone straight through on a Harbormaster waiver, but it snagged on a paperwork error: the clerk who caught it ended up face-down in a tidepool before dawn, pockets turned out, eyes still open.\n\nYour name hit the waterfront the next afternoon when a runner from **Saint Brigid Mission** slipped you a confession token—cheap brass stamped with a broken anchor—and a message: *Lillian Crane is alive. Don’t go to the Mission. Don’t go alone.* The runner didn’t wait for an answer. He just kept walking into the fog like he’d already been forgiven.\n\nNow the **Harbormaster’s Office** is quietly asking after you, not with warrants—yet—but with “friendly” dock patrols who linger too long near your office door. The **Gullknife Union** is doing the opposite: acting like you don’t exist, which is worse. A few of their men have started showing up wherever you look twice—loading bays, taverns, dead-end alleys—hands clean, eyes dirty.\n\nYou have two things people want: a name and a slip of paper. The name is the dead clerk’s—he used to pass you tips for cash. The paper is a half-burned manifest page you pulled from his coat lining: berth number, container seal code, and a consignee marked only **“BRIGID / FILE”** in tight, priestly handwriting.\n\nSomeone is moving bodies through the docks under the cover of charity and law. And someone thinks you’re about to remember exactly how your sister disappeared."
+    ],
+    "world_seed": null,
+    "simulation": {
+      "scenes": {
+        "Ing Gullknife Men": {
+          "location": "Ing Gullknife Men",
+          "location_description": "Ing Gullknife Men is a narrow dockside taproom wedged between a rope loft and a shuttered bait shop, its sign painted to look like a joke and read like a warning. The back room is louder than it should be for this hour, and the floorboards near the bar are newer than the rest—fresh nails, fresh lies. A damp ledger smell lingers under the beer stink, like ink that never fully dried.",
+          "watchers": [
+            {
+              "id": "watcher_Ing Gullknife Men_0_c063d7",
+              "name": "Ledgerboy Vance",
+              "description": "A thin man with ink-stained cuffs who never drinks from his own glass. He watches reflections in the mirror behind the bar and listens for names that match his manifest notes, especially anyone asking about missing dockhands or sealed containers.",
+              "faction": "Harbormaster’s Office",
+              "reports_to": "Deputy Harbormaster Orin Skell",
+              "triggers": [
+                {
+                  "trigger_type": "keyword",
+                  "keywords": [
+                    "manifest",
+                    "berth",
+                    "Harbormaster",
+                    "sealed container",
+                    "missing",
+                    "Lillian Crane"
+                  ],
+                  "probability": 0.65
+                }
+              ],
+              "active": true,
+              "triggered": false
+            },
+            {
+              "id": "watcher_Ing Gullknife Men_1_e76e32",
+              "name": "Sister Mave Olan",
+              "description": "A Mission lay-sister in plain clothes with a rosary wound tight around her wrist like a garrote. She sits near the door to count who comes in and who leaves alone, fishing for confessions and leverage—especially anyone desperate enough to say a name out loud.",
+              "faction": "Saint Brigid Mission",
+              "reports_to": "Brother-Curator Halden Rook",
+              "triggers": [
+                {
+                  "trigger_type": "keyword",
+                  "keywords": [
+                    "confession",
+                    "sanctuary",
+                    "Saint Brigid",
+                    "runaway",
+                    "sister",
+                    "Lillian"
+                  ],
+                  "probability": 0.55
+                }
+              ],
+              "active": true,
+              "triggered": false
+            }
+          ],
+          "hidden_guards": [
+            {
+              "id": "guard_Ing Gullknife Men_0_1561f6",
+              "name": "Two Gullknife bruisers posing as stevedores",
+              "guard_type": "armed",
+              "strength": "moderate",
+              "location_within_scene": "Back room, behind the curtain of oilcloth printed with a faded ship’s name; one leans on a crate stack, the other sits where he can see the hallway to the privy and the rear exit.",
+              "triggers": [
+                {
+                  "trigger_type": "keyword",
+                  "keywords": [
+                    "Union",
+                    "Gullknife",
+                    "disappearance",
+                    "container",
+                    "who runs this",
+                    "Lillian Crane"
+                  ],
+                  "probability": 0.9
+                }
+              ],
+              "weaknesses": [
+                "Keep talk small and local; ask about wages or weather, not shipments",
+                "Separate them with a staged argument at the bar or a request that forces one to move (phone, delivery, spilled drink)",
+                "Use the crowded front room as cover; they avoid drawing weapons where witnesses can describe faces"
+              ],
+              "active": true,
+              "triggered": true
+            }
+          ],
+          "fail_conditions": [
+            {
+              "id": "fail_Ing Gullknife Men_0_b22adb",
+              "name": "Pressing the bartender for names in public",
+              "description": "The bar’s front room is a listening post for three factions at once, and the bartender survives by selling silence in measured doses. Pushing him hard makes him choose the safest buyer, and that buyer is never the person asking.",
+              "severity": "moderate",
+              "consequence_narrative": "The bartender goes cold and reaches under the counter—not for a gun, for a bell. Within minutes, the back-room curtain shifts and the wrong kind of attention drifts forward, casual as smoke. Marlowe’s face gets memorized, then circulated with a note: \"asking about the Crane girl.\"",
+              "triggers": [
+                {
+                  "trigger_type": "keyword",
+                  "keywords": [
+                    "tell me who",
+                    "give me names",
+                    "who took her",
+                    "Lillian Crane",
+                    "Union job",
+                    "Harbormaster file"
+                  ],
+                  "probability": 0.75
+                }
+              ],
+              "can_escape": true,
+              "escape_conditions": [
+                "Back off and buy a round to reset the room’s mood",
+                "Switch to a harmless pretext (looking for a dockhand, a debt, a lost crate) and let the bartender offer a safer lead",
+                "Leave immediately into the fog and change route twice before heading anywhere important"
+              ],
+              "active": true,
+              "triggered": false
+            },
+            {
+              "id": "fail_Ing Gullknife Men_1_131f49",
+              "name": "Trying the rear exit without checking it first",
+              "description": "The rear door is a controlled choke point used for quiet meetings and quiet removals. It looks like a way out, but it’s where people vanish when they think they’re slipping away unseen.",
+              "severity": "severe",
+              "consequence_narrative": "The moment the latch clicks, a shadow steps in behind Marlowe and the alley’s fog turns into a wall. A hand finds his collar and a voice tells him he’s walking into the wrong kind of quiet. If he resists, it becomes a beating; if he complies, it becomes a ride.",
+              "triggers": [
+                {
+                  "trigger_type": "keyword",
+                  "keywords": [
+                    "back door",
+                    "rear exit",
+                    "slip out",
+                    "alley",
+                    "private room"
+                  ],
+                  "probability": 0.6
+                }
+              ],
+              "can_escape": true,
+              "escape_conditions": [
+                "Check the alley through a crack or window reflection before committing",
+                "Create a diversion in the front room to pull eyes away from the back",
+                "Offer a believable bribe or a name that makes them hesitate long enough to move back inside"
+              ],
+              "active": true,
+              "triggered": false
+            }
+          ],
+          "secrets": [
+            {
+              "id": "secret_Ing Gullknife Men_0_751921",
+              "description": "Under the newer floorboards by the bar is a damp packet wrapped in oilcloth: a partial manifest page with Harbormaster stamp impressions and a list of container numbers marked with a gull-knife sigil. One number has \"LC\" penciled beside it in a hurried hand, then half-erased.",
+              "discovery_triggers": [
+                {
+                  "trigger_type": "keyword",
+                  "keywords": [
+                    "search",
+                    "examine",
+                    "look",
+                    "floorboards",
+                    "under the bar",
+                    "listen for hollow"
+                  ],
+                  "probability": 1.0
+                }
+              ],
+              "discovered": true
+            },
+            {
+              "id": "secret_Ing Gullknife Men_1_4b1359",
+              "description": "Behind the mirror, a narrow cavity holds a cheap tin radio modified with a second coil—an eavesdropping relay tuned to a private dock frequency. The last logged transmission is a clipped voice arranging \"confession names\" to be traded for \"clean berth access\" tonight.",
+              "discovery_triggers": [
+                {
+                  "trigger_type": "keyword",
+                  "keywords": [
+                    "examine",
+                    "look",
+                    "mirror",
+                    "radio",
+                    "wires",
+                    "behind the wall"
+                  ],
+                  "probability": 1.0
+                }
+              ],
+              "discovered": true
+            }
+          ],
+          "generated_at_turn": 2
+        }
+      },
+      "global_watchers": [],
+      "global_fail_conditions": [],
+      "global_timed_events": [],
+      "triggered_elements": [
+        "guard_Ing Gullknife Men_0_1561f6",
+        "secret_Ing Gullknife Men_0_751921",
+        "secret_Ing Gullknife Men_1_4b1359"
+      ],
+      "current_turn": 0,
+      "current_location": "Ing Gullknife Men"
+    },
+    "current_location": "Ing Gullknife Men",
+    "current_turn": 5,
+    "inventory": [],
+    "abilities": [],
+    "discovered_locations": [
+      "Ing Gullknife Men",
+      "Harbormaster Annex (Ledger Room)"
+    ],
+    "known_npcs": [
+      "Harbormaster Patrolman (near)",
+      "Harbormaster Patrolman (partner)",
+      "Union Clipboard Man",
+      "Gullknife Bruiser (Chain-hand)",
+      "Gullknife Bruiser (seated)",
+      "Eamon Rusk (name only)"
+    ],
+    "active_events": [],
+    "message_history": [
+      {
+        "role": "assistant",
+        "content": "**PLACE & TIME**  \nYou’re on Pier Nine behind **Kestrel Warehousing**, just past midnight, with fog thick enough to hide a man at ten paces. A rain that never commits taps the corrugated roofs. Sodium lamps turn the wet cobbles the color of old brass. Somewhere close, a winch groans and a radio leaks jazz through a cracked speaker.\n\n**CHARACTER IN SCENE**  \nYou keep to the shadow line between stacked pallets and a rusted bollard, cigarette unlit in your fingers. The half-burned manifest page sits in your coat pocket like a blade: berth number, seal code, “**BRIGID / FILE**.” You watch patterns—boots, pauses, who looks over their shoulder and who doesn’t—because missing people don’t vanish; they get moved.\n\n**THE HOOK**  \nA Harbormaster patrol pair comes down the pier like they own the night: oilskin coats, batons, caps pulled low. They stop at Container Row C without checking a single tag, which is how you know they’re not here to inspect. A third man waits by the stack—dockworker build, clean hands, Union ring on his thumb. He doesn’t talk much. He just holds a clipboard wrong, too high, like it’s for show.\n\nThe nearer patrolman says, “Seal **K-17-9** stays intact. No paperwork tonight. We’re correcting an error.” The Union man answers, “Mission wants it quiet. Harbormaster already got paid.”\n\nK-17-9 matches your scrap. The container squats on a chassis with fresh chalk marks and a new padlock, still bright at the edges. Then you catch the detail that doesn’t belong: a thin line of condensation pulsing at the door seam, in time with a muffled thud from inside—small, irregular, not cargo settling. People. Alive.\n\nAnd “Mission” in their mouths isn’t charity. It’s a route.\n\n**THE MOMENT**  \nThe patrolman turns his head, eyes sweeping the dark, and his gaze slows where you’re standing. Behind him, the Union man shifts his weight toward the container door. You have one breath before they either open it—or come looking for who’s listening."
+      },
+      {
+        "role": "user",
+        "content": "I step out of the shadow just enough for the lamp to catch my coat, hands visible, cigarette still unlit. “Evening, Harbor—thought I heard a problem with paperwork. Which one of you is signing for K-17-9?” I angle my body so I can see the container seam and keep the pallets at my back."
+      },
+      {
+        "role": "assistant",
+        "content": "The lamp catches your coat and the unlit cigarette, and for half a beat everyone freezes—like you just walked onto a stage that wasn’t meant to have an audience.\n\nImmediate outcome: the Harbormaster patrolman closest to you doesn’t draw his baton, but he *does* shift his stance to put his body between you and the container. His partner takes one step wide, angling to your right to cut off the open pier behind you. The Union man’s eyes flick to your hands, then to your face, and he stops pretending the clipboard matters.\n\n“Evening,” the nearer patrolman says, voice polite in the way a lid is polite on a coffin. “This row’s closed. Official correction. You lost?”\n\nYou’re ten feet from the container, pallets hard at your back, wet cobbles slick underfoot. The seam at the container door fogs again—thin breath of cold air—followed by a soft *thump* from inside. The Union man hears it too; his jaw tightens like he’s swallowing a complaint.\n\n“Who’s signing?” you press.\n\nThe patrolman’s smile doesn’t reach his eyes. “No one signs. That’s the point. Waiver’s verbal.”\n\nHis partner adds, quieter: “Name?”\n\nThe Union man finally speaks, voice low and resentful, like he hates that he has to: “This ain’t your business, Crane. Walk away. Harbormaster’s already smoothing it. Mission’s already prayed on it.”\n\nHe knows your name—either from the Harbormaster file or Union whisper networks. That means you’re not just interrupting a shipment; you’re stepping into a conversation that started before you arrived.\n\nBehind them, down the pier through the fog, a set of footsteps approaches—unhurried, more than one person, not patrol pace. The Harbormaster patrolman glances that way and then back at you, measuring whether you’ll make noise before backup arrives.\n\n**Status updates:**  \n- You’ve been identified: “Crane.”  \n- Container K-17-9: occupants alive.  \n- Additional figures approaching."
+      },
+      {
+        "role": "user",
+        "content": "I lift the cigarette like it’s a credential. “Marlowe Crane. I’m looking for a girl—Lillian. Word is your ‘correction’ is moving warm bodies.” I glance past them into the fog. “Those steps behind you—friends of yours, or should I be worried too?”"
+      },
+      {
+        "role": "assistant",
+        "content": "The word **“Lillian”** lands like you threw a glass into a sink.\n\n**Immediate outcome:** the Union man’s composure slips—just a fraction. His eyes dart to the container seam, then back to you, and you catch it: recognition, or fear of being caught recognizing. The nearer Harbormaster patrolman stops smiling altogether.\n\nRain beads on your knuckles; the sodium lamp hisses above, making everyone’s faces look jaundiced. The container sits ten feet past the patrolman’s shoulder—door seam still sweating cold.\n\n“Don’t say names on the pier,” the patrolman says, voice suddenly flat. “That’s how people get misunderstandings.”\n\nYou tip your chin toward the fog. “Those steps behind you—friends?”\n\nThe second patrolman glances back and exhales, almost annoyed. “Not ours.”\n\nOut of the fog to the **east**, two silhouettes resolve into men in dock coats—no caps, no badges. They walk like they’re late to something important and don’t care who sees. One of them carries a short length of chain wrapped around his hand like a casual accessory. The Union man’s shoulders tighten; he wasn’t expecting them either.\n\nThe first patrolman raises his voice, pitching it toward the newcomers without turning fully. “Pier’s closed on official business.”\n\nA voice answers back, amused. “Official doesn’t own the night, Harbormaster. Union does.”\n\nGullknife. Different crew than the clean-handed clipboard man—these look like the kind that don’t bother with paperwork at all.\n\nInside **K-17-9**, another muffled thud—closer to the door this time—followed by a faint scrape, like fingernails on metal. The Union man murmurs, almost to himself: “They’re not supposed to be awake.”\n\nHe catches your stare and hardens. “Crane—if you’re smart, you forget that name you just said. Mission keeps files. Harbormaster keeps files. Union buries files.”\n\nThe Harbormaster patrolman shifts again, now trying to keep *both* you and the approaching Gullknife men out of arm’s reach of the container. His partner’s hand hovers near his whistle, undecided.\n\n**Status updates:**  \n- “Lillian” rattled the Union man  \n- Gullknife muscle approaching (2)  \n- Container occupants active/awake"
+      },
+      {
+        "role": "user",
+        "content": "I take a slow step sideways to keep space and a clear line to the pier, palms still open. “Easy—no whistles, no heroics. I’m not here to fight the Union or the Harbor.” I nod toward the approaching Gullknife men. “But if they’re not yours, and they think they own the night, we’ve got a different problem—so who’s actually in K-17-9, and why aren’t they supposed to be awake?”"
+      },
+      {
+        "role": "assistant",
+        "content": "**Immediate outcome:** Your sideways step buys you a sliver of space and, more importantly, signals you’re not rushing anyone. The Harbormaster partner’s hand eases off the whistle. The nearer patrolman keeps his body between you and the container, but his shoulders drop a fraction—less “about to swing,” more “about to bargain.”\n\nFog slicks the pier; to your left the open run of cobbles leads back toward the streetlamps, and behind you the pallets are stacked high enough to block anyone trying to circle.\n\nThe two **Gullknife bruisers** come into the lamp’s edge like they’ve been there all along. One leans a forearm on a crate stack by an oilcloth curtain stamped with a faded ship’s name; the other sits where he can see the hallway to the privy and the rear exit—positions that make the pier feel suddenly smaller. Chain-hand gives you a lazy look, then watches the Harbormaster men instead. They’re not here to arrest anyone. They’re here to make sure no one leaves with the wrong thoughts.\n\n“Who’s in K-17-9?” you ask. “Why aren’t they supposed to be awake?”\n\nThe Union clipboard man wets his lips. “They’re… *cargo.* People that don’t exist on paper.” He glances at the Harbormaster patrolman like he’s about to get hit for saying too much.\n\nThe nearer patrolman cuts in, voice clipped. “Stow it. You want answers, Crane? Ask the Mission why they keep ordering ‘machine parts’ with a priest’s handwriting.” His eyes flick to the container seam as another faint scrape comes from inside. “And they’re not supposed to be awake because awake ones **bang**. Awake ones **get heard**. And heard means inquiries.”\n\nChain-hand chuckles, low. “Heard means bodies in tidepools.”\n\nThe seated bruiser finally speaks, conversational: “So here’s the local weather, Crane. You keep it small and local. Wages, rain, sports. You start pulling at seals and we get ugly in a way nobody writes down.”\n\nThe Harbormaster partner looks past you toward the street, calculating whether he can walk away and pretend he never saw any of this.\n\n**Status updates:**  \n- Whistle threat eased  \n- Gullknife muscle has angles on exits  \n- Union admits “people cargo”"
+      },
+      {
+        "role": "user",
+        "content": "I exhale slow and raise my hands a little higher. “Alright. Local weather.” I look to the Harbormaster patrolman. “Give me one thing I can verify—where ‘machine parts’ get filed, or which priest’s handwriting—and I walk off this pier without making it a scene.” Then I glance at Chain-hand and the seated bruiser. “And I’m leaving now; nobody needs to prove anything tonight.”"
+      },
+      {
+        "role": "assistant",
+        "content": ""
+      },
+      {
+        "role": "user",
+        "content": "I freeze in place, eyes flicking between the Harbormaster and the Gullknife men. “Something just changed—who moved, and why?” I keep my hands up and angle my body toward the open pier. “I’m walking away, but I want one verifiable breadcrumb: a name, a parish, or a filing desk—then I’m gone.”"
+      },
+      {
+        "role": "assistant",
+        "content": "**Immediate outcome:** Freezing buys you half a second of truth. The thing that changed wasn’t you—it was the **Harbormaster partner**. He shifted his stance to look past the patrolman’s shoulder, and in doing it he exposed the **tiny brass whistle** at his collar… and the way his fingers had already closed around it. He wasn’t about to call *more Harbormaster*. He was about to call **someone else**.\n\nThe fog presses in from the waterline, dampening every sound except the soft **scrape** from inside K-17-9—right at the door seam now, like whoever’s in there has figured out where the air leaks.\n\nThe nearer patrolman sees you clock the whistle and snaps, low: “Don’t.”\n\nChain-hand’s chain tightens around his knuckles. The seated bruiser doesn’t rise—he just tilts his head toward the street like he’s listening for footsteps that aren’t there yet.\n\nYou keep your hands up, angle toward the open pier, and ask for a verifiable breadcrumb.\n\nThe nearer patrolman hesitates—jaw working—then makes a decision that looks like self-preservation more than kindness. He speaks without turning his head, like he doesn’t want anyone reading his lips.\n\n“**Ledger room, Harbormaster Annex.** Filing desk marked **‘SALVAGE / CHARITY’**—third drawer sticks. The clerk who used to work it was **Eamon Rusk**.” He flicks his eyes to you. “That’s your breadcrumb. You didn’t hear it from me.”\n\nThe Union clipboard man flinches hard at the name *Rusk*—like it’s a live wire—then forces his face blank again.\n\nChain-hand laughs once, quiet. “Annex, huh. That’s a brave little errand.”\n\nThe Harbormaster partner’s fingers loosen on the whistle, not because he’s calmer—because he’s been warned off. His gaze stays on the fog like he’s afraid the sound already went out.\n\nInside the container: one dull **thump**—then stillness, like whoever’s there learned to hold their breath.\n\n**Status updates:**  \n- Breadcrumb gained: “Annex / SALVAGE-CHARITY”  \n- Name surfaced: Eamon Rusk  \n- Whistle call: aborted (for now)  \n\n```json\n{\"inventory_add\":[],\"inventory_remove\":[],\"abilities_add\":[],\"locations_add\":[\"Harbormaster Annex (Ledger Room)\"],\"npcs_add\":[\"Harbormaster Patrolman (near)\",\"Harbormaster Patrolman (partner)\",\"Union Clipboard Man\",\"Gullknife Bruiser (Chain-hand)\",\"Gullknife Bruiser (seated)\",\"Eamon Rusk (name only)\"]}\n```"
+      }
+    ],
+    "pending_display": null
+  },
+  "simulation_snapshots": []
+}
