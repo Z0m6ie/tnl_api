@@ -1,66 +1,34 @@
 {
-  "timestamp": "2026-02-16T02:18:12.585346",
+  "timestamp": "2026-02-16T05:04:42.106339",
   "config": {
-    "num_agents": 3,
-    "messages_per_session": 3,
+    "num_agents": 1,
+    "messages_per_session": 2,
     "max_concurrent_agents": 5,
     "vary_genres": true
   },
-  "total_playthroughs": 3,
-  "successful": 3,
+  "total_playthroughs": 1,
+  "successful": 1,
   "failed": 0,
   "playthroughs": [
     {
-      "id": "ce89edad",
+      "id": "99bdd69b",
       "personality": "cautious",
       "genre": "Noir",
       "tone": "Gritty",
       "story_type": "Mystery",
-      "character": "Elias Crowe",
-      "turns": 15,
-      "locations": 0,
-      "npcs": 0,
-      "triggers_fired": 0,
-      "completed": true,
-      "error": null
-    },
-    {
-      "id": "b1bc2495",
-      "personality": "aggressive",
-      "genre": "Sci-Fi Horror",
-      "tone": "Tense",
-      "story_type": "Survival",
-      "character": "Mara Vance",
-      "turns": 15,
+      "character": "Elias \"Eli\" Marrow",
+      "turns": 13,
       "locations": 3,
-      "npcs": 1,
-      "triggers_fired": 1,
-      "completed": true,
-      "error": null
-    },
-    {
-      "id": "4f2d7af6",
-      "personality": "curious",
-      "genre": "Dark Fantasy",
-      "tone": "Whimsical",
-      "story_type": "fantasy, whimsical, adventure",
-      "character": "Liora Thimblewick",
-      "turns": 15,
-      "locations": 1,
-      "npcs": 0,
-      "triggers_fired": 2,
+      "npcs": 2,
+      "triggers_fired": 0,
       "completed": true,
       "error": null
     }
   ],
   "genre_distribution": {
-    "Noir": 1,
-    "Sci-Fi Horror": 1,
-    "Dark Fantasy": 1
+    "Noir": 1
   },
   "personality_distribution": {
-    "cautious": 1,
-    "aggressive": 1,
-    "curious": 1
+    "cautious": 1
   }
 }

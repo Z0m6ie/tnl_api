@@ -1,0 +1,458 @@
+{
+  "metadata": {
+    "playthrough_id": "99bdd69be799492da03f692149425363",
+    "started_at": "2026-02-16T05:01:51.300758",
+    "completed_at": "2026-02-16T05:04:42.096291",
+    "genre": "Noir",
+    "tone": "Gritty",
+    "story_type": "Mystery",
+    "character_name": "Elias \"Eli\" Marrow",
+    "character_profession": "Methodical private investigator",
+    "character_background": "Eli grew up in the cramped back rooms of his family’s failing pawnshop, where he learned to read desperation, lies, and leverage from the objects people were willing to part with. After a well-dressed patron engineered the shop’s collapse through quiet debt and dirty favors, Eli took to the streets with a notebook and a cheap camera, training himself to notice what others overlook. Now he works cases in the city’s dim margins, following paper trails and people with the same steady patience he once used to appraise tarnished goods.",
+    "player_personality": "cautious",
+    "agent_model": "gpt-5.2",
+    "total_turns": 13,
+    "locations_visited": [
+      "Ing Footsteps",
+      "City Hall, 3rd Floor (3B corridor)",
+      "Room 3B-12 (door located)"
+    ],
+    "npcs_encountered": [
+      "Lorna Vess (nurse, Saint Brigid ward)",
+      "Unknown tail (dark coat, gloves)"
+    ],
+    "simulation_triggers_fired": 0,
+    "completed_normally": true,
+    "error_message": null
+  },
+  "messages": [
+    {
+      "turn": 1,
+      "source": "game",
+      "content": "Welcome to The Narrative Loom (TNL) - your simulation-first Dungeon Master.\n\nPlay anything from a cyberpunk heist-thriller to a dark fairytale revenge story.\n\nSelect a **Genre**, **Tone**, and **Story Type**, or say \"surprise me\" for a random selection.\n\nExamples:\n- \"Noir detective story, gritty tone, mystery thriller\"\n- \"Fantasy, whimsical, coming-of-age adventure\"\n- \"Sci-fi horror, bleak, survival story\"\n- \"surprise me\"\n\nWhat world would you like to explore?",
+      "timestamp": "2026-02-16T05:01:51.300758",
+      "player_reasoning": null,
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 2,
+      "source": "player_agent",
+      "content": "noir, gritty, mystery",
+      "timestamp": "2026-02-16T05:01:51.300758",
+      "player_reasoning": "Selected: noir, gritty, mystery",
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 3,
+      "source": "game",
+      "content": "Your world is set:\n\n**Genre:** Noir\n**Tone:** Gritty\n**Story Type:** Mystery\n\nMoving to character creation...\n\nPerfect! Your world will be: **Noir** with a **Gritty** tone - a **Mystery**.\n\nNow let's shape your protagonist. Tell me about your character:\n\n- **Name** - What should we call you?\n- **Background** - Where are they from? What shaped them?\n- **Profession or Skillset** - What are they good at?\n- **Traits** - A few words capturing temperament, strengths, flaws\n- **Personal Goal** - What do they want (not what fate demands)\n\nYou can describe freely or say \"surprise me\" for a generated character.",
+      "timestamp": "2026-02-16T05:01:51.300758",
+      "player_reasoning": null,
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 4,
+      "source": "player_agent",
+      "content": "Elias “Eli” Marrow grew up in the back rooms of a failing pawnshop, learning early how to read people by what they’re willing to sell. A methodical private investigator, he tails suspects with patience instead of bravado, noting the small tells others miss. Careful, observant, and quietly stubborn, he thinks three moves ahead and speaks only when it counts. He’s driven to expose the crooked patron who ruined his family, even if it means digging up dirt that the city would rather keep buried.",
+      "timestamp": "2026-02-16T05:01:56.350544",
+      "player_reasoning": "Generated cautious-style character for Noir Mystery",
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 5,
+      "source": "game",
+      "content": "Here's your character:\n\n**Elias \"Eli\" Marrow**\n*Methodical private investigator*\n\nEli grew up in the cramped back rooms of his family’s failing pawnshop, where he learned to read desperation, lies, and leverage from the objects people were willing to part with. After a well-dressed patron engineered the shop’s collapse through quiet debt and dirty favors, Eli took to the streets with a notebook and a cheap camera, training himself to notice what others overlook. Now he works cases in the city’s dim margins, following paper trails and people with the same steady patience he once used to appraise tarnished goods.\n\n**Traits:** Observant, Patient, Quietly stubborn, Strategic, Cautious\n**Goal:** Unmask and bring down the crooked patron who ruined his family by uncovering the buried corruption tying them to the city’s power structure, even if it puts Eli in the crosshairs of people who prefer secrets to stay lost.\n\nReady to lock it in? Say \"yes\" to continue, or tell me what to adjust.",
+      "timestamp": "2026-02-16T05:02:02.194583",
+      "player_reasoning": null,
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 6,
+      "source": "player_agent",
+      "content": "yes",
+      "timestamp": "2026-02-16T05:02:02.294703",
+      "player_reasoning": "Simple confirmation",
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 7,
+      "source": "game",
+      "content": "Character locked in. Weaving your world...\n\nYour world has been fully woven.\n\n**Campaign ID:** `3fec8d0a-6387-4702-baac-c0ed01ea852a`\n\nKeep this safe - it allows you to resume your journey anytime.\n\nType **continue** when you're ready to begin.",
+      "timestamp": "2026-02-16T05:03:09.501903",
+      "player_reasoning": null,
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 8,
+      "source": "player_agent",
+      "content": "continue",
+      "timestamp": "2026-02-16T05:03:09.606604",
+      "player_reasoning": "Ready to begin the adventure",
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 9,
+      "source": "game",
+      "content": "You shoulder through the City Hall side entrance as a janitor’s cart rolls toward you, wheels squealing on wet tile. A uniformed guard barks at someone behind you, and you don’t look back. Your cheap camera bumps your ribs with each step. Ahead, a door swings shut—Records—and you catch the last slice of light before the latch clicks. You slide a hand under your coat and feel paper edges: the torn appointment card, damp with sweat.\n\nThis is City Hall, third floor, where clerks and judges turn neighborhoods into numbers. You’re Elias Marrow—Eli to the few who still bother—private investigator with a notebook full of dates and a habit of watching hands instead of faces. The pawnshop stamp on that old ticket still shows in your mind like an ink bruise. You’re here because your name is on a Saint Brigid Trust report you never touched, and because paper is the only thing in this city that doesn’t forget.\n\nA woman steps out of a stairwell and cuts you off hard enough that you nearly collide. She’s in a nurse’s coat under a soaked overcoat, hair pinned up like she did it in the dark. She grabs your sleeve, nails digging through wool. “They’re moving the ledger,” she says, breathless. “Saint Brigid Trust—the charity that runs the clinics—sent men to ‘secure’ Records. Halcyon Civic League—the civic group with the soup lines and the judges—has their security detail on this floor.” She forces something into your palm: a brass key tagged ROOM 3B-12, and a donor code scribbled on the back of a ward receipt. “The clerk who took it? They found his satchel. Empty. Dockside Brotherhood—the dock union that sells muscle—has spotters downstairs. They’re telling people you stole it. If you don’t get to 3B-12 before the hearing clerks do, they’ll bury the names and hang you with the theft.”\n\nHer grip loosens. Behind you, footsteps settle into a steady pace, not rushing—closing. The Records door down the hall opens a fraction, and you see a man’s hand, clean and gloved, testing the latch like he owns it.\n\nYou’re in the corridor between the hearing offices and Records, key in hand, with three factions converging on the same paper trail and your name already written on the blame. The next door that opens decides whether you walk out of City Hall or disappear inside it.",
+      "timestamp": "2026-02-16T05:03:24.977118",
+      "player_reasoning": null,
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 10,
+      "source": "player_agent",
+      "content": "I keep the key palmed and step in close to the nurse like we’re arguing quietly. “Room 3B-12—what is it, and what’s your name?” Without turning around, I angle my camera at waist level and snap a blind shot down the corridor toward the approaching footsteps, then start moving—steady, not running—toward 3B-12 while watching reflections in door glass for whoever’s behind me.",
+      "timestamp": "2026-02-16T05:03:28.956888",
+      "player_reasoning": "I’m getting boxed in—need to buy seconds, confirm the nurse’s credibility, and avoid walking straight into whoever’s on Records. 3B-12 sounds like the objective, but I want eyes on my tail and an exit plan.",
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 11,
+      "source": "game",
+      "content": "",
+      "timestamp": "2026-02-16T05:04:18.893775",
+      "player_reasoning": null,
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 12,
+      "source": "player_agent",
+      "content": "I stay close to the nurse like we’re mid-argument. “Room 3B-12—what is it, and what’s your name?” I keep the key palmed, snap a low blind photo down the hall, then walk—no rush—toward 3B-12, checking the door-glass reflections for whoever’s closing in.",
+      "timestamp": "2026-02-16T05:04:21.450786",
+      "player_reasoning": "I need the nurse’s credibility and the room’s purpose fast, and I need a record of who’s tailing me without escalating by running.",
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 13,
+      "source": "game",
+      "content": "The nurse plays along the instant you lean in—chin up, eyes hard, like you’ve just said something unforgivable. “Room 3B-12 is a clerk’s interview room,” she murmurs through clenched teeth, loud enough to sell the argument to anyone listening. “Used for ‘renewal’ tenants. Used for… adjustments.” Her gaze flicks to your palmed key. “Name’s Lorna. Lorna Vess. I’m not supposed to be here.”\n\nYou keep your body between her and the corridor and snap the blind shot at waist level.\n\nThe camera’s shutter gives a soft, traitorous click in the hush. In the door-glass reflection to your right—warped by old wavy panes—you catch the shape behind you: a man in a neat dark coat, hat brim low, gloved hands. He isn’t hurrying. He’s matching your pace like he’s got all night and paperwork on his side.\n\nAs you start your steady walk toward 3B-12, Lorna drifts with you for three steps, still “arguing.” “Halcyon’s security are on this floor,” she says, lips barely moving. “If they stop you, don’t show the key. Say you’re here for a hearing file pull—Clerk Durn’s desk. And—Eli—” she swallows when she says your name, like it tastes dangerous, “Saint Brigid’s men are looking for someone to pin this on. They already picked you.”\n\nDown the hall, a pair of City Hall clerks emerge from an office with a tied bundle of folders and a red wax seal; they pause, noticing the nurse and you, then keep going faster than they mean to. Near Records, the door that was cracked earlier eases shut again—careful, controlled—like someone inside just decided to wait.\n\nYou reach the section marker: **3B** stenciled on the wall. The corridor narrows here; the air smells of wet wool and old carbon paper. Ahead, **3B-12** sits with a frosted-glass panel and a brass lock that matches the key tag in your palm.\n\nBehind you, the gloved man’s reflection grows larger in the glass as he closes the distance—still not running.\n\n**Status updates:**  \n- Tail confirmed: dark coat, gloves  \n- Lorna Vess identified  \n- 3B-12 located, locked  \n\n```json\n{\"inventory_add\":[\"Brass key tagged ROOM 3B-12\"],\"inventory_remove\":[],\"abilities_add\":[],\"locations_add\":[\"City Hall, 3rd Floor (3B corridor)\",\"Room 3B-12 (door located)\"],\"npcs_add\":[\"Lorna Vess (nurse, Saint Brigid ward)\",\"Unknown tail (dark coat, gloves)\"]}\n```",
+      "timestamp": "2026-02-16T05:04:41.995408",
+      "player_reasoning": null,
+      "triggered_elements": [],
+      "state_changes": {}
+    }
+  ],
+  "initial_state": {
+    "campaign_id": "3fec8d0a-6387-4702-baac-c0ed01ea852a",
+    "phase": "gameplay",
+    "genre": "Noir",
+    "tone": "Gritty",
+    "story_type": "Mystery",
+    "character_sheet": {
+      "name": "Elias \"Eli\" Marrow",
+      "background": "Eli grew up in the cramped back rooms of his family’s failing pawnshop, where he learned to read desperation, lies, and leverage from the objects people were willing to part with. After a well-dressed patron engineered the shop’s collapse through quiet debt and dirty favors, Eli took to the streets with a notebook and a cheap camera, training himself to notice what others overlook. Now he works cases in the city’s dim margins, following paper trails and people with the same steady patience he once used to appraise tarnished goods.",
+      "profession": "Methodical private investigator",
+      "traits": [
+        "Observant",
+        "Patient",
+        "Quietly stubborn",
+        "Strategic",
+        "Cautious"
+      ],
+      "personal_goal": "Unmask and bring down the crooked patron who ruined his family by uncovering the buried corruption tying them to the city’s power structure, even if it puts Eli in the crosshairs of people who prefer secrets to stay lost.",
+      "stats": {}
+    },
+    "seed_chunks": [
+      "Rain slicks the brickwork until the alleys shine like fresh bruises. Neon bleeds through fog and cigarette haze, pooling in puddles that tremble with every passing bus. The air tastes of damp paper, hot oil from midnight diners, and the sour bite of cheap gin seeping from coat pockets. Somewhere, a radio hisses jazz through a cracked window; somewhere else, a siren starts and dies like it’s been paid to forget. Streetlamps stutter, throwing fences and fire escapes into chopped shadows. In doorways, men speak in low, careful voices. The city listens back—patient, watchful, and never clean.",
+      "Rain makes the city’s alliances look clean until you lean in close. The Halcyon Civic League bankrolls soup lines and “urban renewal,” while quietly buying judges and foreclosing blocks for a private redevelopment map. The Dockside Brotherhood poses as a longshoremen’s union keeping men fed; beneath the ledgers, they run contraband through storm drains and sell muscle to the highest bidder. The Saint Brigid Trust funds hospitals and charity wards, but launders political bribes through endowments and blackmails donors with clinic records. Halcyon hires Brotherhood intimidation to clear tenants; the Trust brokers introductions and cleans the money. Lately the Brotherhood is skimming, and Halcyon wants them buried—preferably with Eli’s name on the shovel.\n\n```json\n{\n  \"factions\": [\n    {\n      \"name\": \"Halcyon Civic League\",\n      \"public_front\": \"Philanthropic civic group funding soup lines, scholarships, and urban renewal projects.\",\n      \"hidden_agenda\": \"Controls courts and city hall via bought judges and quiet debt; engineers foreclosures to assemble entire districts for a private redevelopment scheme.\"\n    },\n    {\n      \"name\": \"Dockside Brotherhood\",\n      \"public_front\": \"Longshoremen’s union and mutual-aid society protecting dockworkers’ jobs and pay.\",\n      \"hidden_agenda\": \"Moves contraband through docks and storm drains; rents out intimidation and enforcement to politicians and developers.\"\n    },\n    {\n      \"name\": \"Saint Brigid Trust\",\n      \"public_front\": \"Religious charity trust funding hospitals, clinics, and ward programs for the poor.\",\n      \"hidden_agenda\": \"Launders bribes through endowments; blackmails donors and officials using clinic records and “confidential” intake files.\"\n    }\n  ]\n}\n```",
+      "",
+      "Rain can’t wash the soot off this week. Halcyon Civic League’s “Renewal Hearing” opens at City Hall, but the judge is already bought and the tenant roll is already forged; Dockside Brotherhood crews are clearing buildings the night before with quiet batons and louder fires. Down in Saint Brigid’s charity ward, a records clerk has gone missing with intake ledgers naming donors, judges, and a certain well-dressed patron—now the Trust is locking down clinics while Halcyon offers “protection.” Eli’s name is circulating as a convenient thief, and Brotherhood spotters are tailing him.\n\n```json\n{\n  \"events\": [\n    {\n      \"name\": \"The Renewal Hearing\",\n      \"description\": \"Halcyon Civic League pushes a fast-tracked urban renewal case through City Hall using a bought judge and forged tenant records, while Dockside Brotherhood muscle clears targeted buildings ahead of inspectors via intimidation and staged “accidents.”\",\n      \"tensions\": [\n        \"Tenants disappear or recant under pressure\",\n        \"Arson and beatings spike in the redevelopment blocks\",\n        \"Any investigator near the paper trail becomes a scapegoat\"\n      ]\n    },\n    {\n      \"name\": \"Saint Brigid Ledger Lockdown\",\n      \"description\": \"A Saint Brigid Trust clerk vanishes with clinic intake ledgers that can tie donors and officials—including a well-dressed patron—to blackmail and bribes; the Trust seals wards, Halcyon offers security, and the Brotherhood hunts the missing files for leverage.\",\n      \"tensions\": [\n        \"Patients are turned away, sparking unrest and riots\",\n        \"Witnesses are silenced before they can talk\",\n        \"Eli is framed as the thief to draw heat off the real players\"\n      ]\n    }\n  ]\n}\n```",
+      "Eli Marrow hasn’t slept since his name showed up on a Saint Brigid “incident report” stamped **THEFT—INTAKE LEDGERS** in neat, church-bureaucrat ink. He didn’t steal anything—he didn’t even know the ledgers existed until a jittery nurse pressed a torn appointment card into his palm outside the charity ward and whispered, “If they ask, you never saw me.” The card lists a date, a donor code, and a room number at City Hall—same floor as the Renewal Hearing clerks.\n\nNow the city is leaning in. Dockside Brotherhood spotters keep appearing in reflections: diner windows, rain puddles, the chrome of his cheap camera. Halcyon’s “security detail” has started asking polite questions of anyone who ever pawned a camera, a notebook, or a wedding ring at Marrow’s family shop. Someone’s building a timeline with Eli at the center.\n\nThe missing clerk—last seen hauling a satchel marked **BRIGID ARCHIVES**—left a trail of wet footprints into a service corridor that shouldn’t connect to the street. Eli found the corridor door chained shut…with a pawn ticket threaded through the links. His family’s shop stamp. Issued the week it collapsed. Signed by a name he’s only seen on old foreclosure notices: the well-dressed patron.\n\nIf Eli pulls on the ledgers, he could expose who bought the judge, who ordered the fires, and why the tenant rolls were rewritten. But every step toward the paper trail makes him easier to catch—and harder to clear. In this city, innocence isn’t a shield. It’s a vacancy someone else will fill."
+    ],
+    "world_seed": null,
+    "simulation": {
+      "scenes": {},
+      "global_watchers": [],
+      "global_fail_conditions": [],
+      "global_timed_events": [],
+      "triggered_elements": [],
+      "current_turn": 0,
+      "current_location": null
+    },
+    "current_location": null,
+    "current_turn": 0,
+    "inventory": [],
+    "abilities": [],
+    "discovered_locations": [],
+    "known_npcs": [],
+    "active_events": [],
+    "message_history": [
+      {
+        "role": "assistant",
+        "content": "You shoulder through the City Hall side entrance as a janitor’s cart rolls toward you, wheels squealing on wet tile. A uniformed guard barks at someone behind you, and you don’t look back. Your cheap camera bumps your ribs with each step. Ahead, a door swings shut—Records—and you catch the last slice of light before the latch clicks. You slide a hand under your coat and feel paper edges: the torn appointment card, damp with sweat.\n\nThis is City Hall, third floor, where clerks and judges turn neighborhoods into numbers. You’re Elias Marrow—Eli to the few who still bother—private investigator with a notebook full of dates and a habit of watching hands instead of faces. The pawnshop stamp on that old ticket still shows in your mind like an ink bruise. You’re here because your name is on a Saint Brigid Trust report you never touched, and because paper is the only thing in this city that doesn’t forget.\n\nA woman steps out of a stairwell and cuts you off hard enough that you nearly collide. She’s in a nurse’s coat under a soaked overcoat, hair pinned up like she did it in the dark. She grabs your sleeve, nails digging through wool. “They’re moving the ledger,” she says, breathless. “Saint Brigid Trust—the charity that runs the clinics—sent men to ‘secure’ Records. Halcyon Civic League—the civic group with the soup lines and the judges—has their security detail on this floor.” She forces something into your palm: a brass key tagged ROOM 3B-12, and a donor code scribbled on the back of a ward receipt. “The clerk who took it? They found his satchel. Empty. Dockside Brotherhood—the dock union that sells muscle—has spotters downstairs. They’re telling people you stole it. If you don’t get to 3B-12 before the hearing clerks do, they’ll bury the names and hang you with the theft.”\n\nHer grip loosens. Behind you, footsteps settle into a steady pace, not rushing—closing. The Records door down the hall opens a fraction, and you see a man’s hand, clean and gloved, testing the latch like he owns it.\n\nYou’re in the corridor between the hearing offices and Records, key in hand, with three factions converging on the same paper trail and your name already written on the blame. The next door that opens decides whether you walk out of City Hall or disappear inside it."
+      }
+    ],
+    "pending_display": null
+  },
+  "final_state": {
+    "campaign_id": "3fec8d0a-6387-4702-baac-c0ed01ea852a",
+    "phase": "gameplay",
+    "genre": "Noir",
+    "tone": "Gritty",
+    "story_type": "Mystery",
+    "character_sheet": {
+      "name": "Elias \"Eli\" Marrow",
+      "background": "Eli grew up in the cramped back rooms of his family’s failing pawnshop, where he learned to read desperation, lies, and leverage from the objects people were willing to part with. After a well-dressed patron engineered the shop’s collapse through quiet debt and dirty favors, Eli took to the streets with a notebook and a cheap camera, training himself to notice what others overlook. Now he works cases in the city’s dim margins, following paper trails and people with the same steady patience he once used to appraise tarnished goods.",
+      "profession": "Methodical private investigator",
+      "traits": [
+        "Observant",
+        "Patient",
+        "Quietly stubborn",
+        "Strategic",
+        "Cautious"
+      ],
+      "personal_goal": "Unmask and bring down the crooked patron who ruined his family by uncovering the buried corruption tying them to the city’s power structure, even if it puts Eli in the crosshairs of people who prefer secrets to stay lost.",
+      "stats": {}
+    },
+    "seed_chunks": [
+      "Rain slicks the brickwork until the alleys shine like fresh bruises. Neon bleeds through fog and cigarette haze, pooling in puddles that tremble with every passing bus. The air tastes of damp paper, hot oil from midnight diners, and the sour bite of cheap gin seeping from coat pockets. Somewhere, a radio hisses jazz through a cracked window; somewhere else, a siren starts and dies like it’s been paid to forget. Streetlamps stutter, throwing fences and fire escapes into chopped shadows. In doorways, men speak in low, careful voices. The city listens back—patient, watchful, and never clean.",
+      "Rain makes the city’s alliances look clean until you lean in close. The Halcyon Civic League bankrolls soup lines and “urban renewal,” while quietly buying judges and foreclosing blocks for a private redevelopment map. The Dockside Brotherhood poses as a longshoremen’s union keeping men fed; beneath the ledgers, they run contraband through storm drains and sell muscle to the highest bidder. The Saint Brigid Trust funds hospitals and charity wards, but launders political bribes through endowments and blackmails donors with clinic records. Halcyon hires Brotherhood intimidation to clear tenants; the Trust brokers introductions and cleans the money. Lately the Brotherhood is skimming, and Halcyon wants them buried—preferably with Eli’s name on the shovel.\n\n```json\n{\n  \"factions\": [\n    {\n      \"name\": \"Halcyon Civic League\",\n      \"public_front\": \"Philanthropic civic group funding soup lines, scholarships, and urban renewal projects.\",\n      \"hidden_agenda\": \"Controls courts and city hall via bought judges and quiet debt; engineers foreclosures to assemble entire districts for a private redevelopment scheme.\"\n    },\n    {\n      \"name\": \"Dockside Brotherhood\",\n      \"public_front\": \"Longshoremen’s union and mutual-aid society protecting dockworkers’ jobs and pay.\",\n      \"hidden_agenda\": \"Moves contraband through docks and storm drains; rents out intimidation and enforcement to politicians and developers.\"\n    },\n    {\n      \"name\": \"Saint Brigid Trust\",\n      \"public_front\": \"Religious charity trust funding hospitals, clinics, and ward programs for the poor.\",\n      \"hidden_agenda\": \"Launders bribes through endowments; blackmails donors and officials using clinic records and “confidential” intake files.\"\n    }\n  ]\n}\n```",
+      "",
+      "Rain can’t wash the soot off this week. Halcyon Civic League’s “Renewal Hearing” opens at City Hall, but the judge is already bought and the tenant roll is already forged; Dockside Brotherhood crews are clearing buildings the night before with quiet batons and louder fires. Down in Saint Brigid’s charity ward, a records clerk has gone missing with intake ledgers naming donors, judges, and a certain well-dressed patron—now the Trust is locking down clinics while Halcyon offers “protection.” Eli’s name is circulating as a convenient thief, and Brotherhood spotters are tailing him.\n\n```json\n{\n  \"events\": [\n    {\n      \"name\": \"The Renewal Hearing\",\n      \"description\": \"Halcyon Civic League pushes a fast-tracked urban renewal case through City Hall using a bought judge and forged tenant records, while Dockside Brotherhood muscle clears targeted buildings ahead of inspectors via intimidation and staged “accidents.”\",\n      \"tensions\": [\n        \"Tenants disappear or recant under pressure\",\n        \"Arson and beatings spike in the redevelopment blocks\",\n        \"Any investigator near the paper trail becomes a scapegoat\"\n      ]\n    },\n    {\n      \"name\": \"Saint Brigid Ledger Lockdown\",\n      \"description\": \"A Saint Brigid Trust clerk vanishes with clinic intake ledgers that can tie donors and officials—including a well-dressed patron—to blackmail and bribes; the Trust seals wards, Halcyon offers security, and the Brotherhood hunts the missing files for leverage.\",\n      \"tensions\": [\n        \"Patients are turned away, sparking unrest and riots\",\n        \"Witnesses are silenced before they can talk\",\n        \"Eli is framed as the thief to draw heat off the real players\"\n      ]\n    }\n  ]\n}\n```",
+      "Eli Marrow hasn’t slept since his name showed up on a Saint Brigid “incident report” stamped **THEFT—INTAKE LEDGERS** in neat, church-bureaucrat ink. He didn’t steal anything—he didn’t even know the ledgers existed until a jittery nurse pressed a torn appointment card into his palm outside the charity ward and whispered, “If they ask, you never saw me.” The card lists a date, a donor code, and a room number at City Hall—same floor as the Renewal Hearing clerks.\n\nNow the city is leaning in. Dockside Brotherhood spotters keep appearing in reflections: diner windows, rain puddles, the chrome of his cheap camera. Halcyon’s “security detail” has started asking polite questions of anyone who ever pawned a camera, a notebook, or a wedding ring at Marrow’s family shop. Someone’s building a timeline with Eli at the center.\n\nThe missing clerk—last seen hauling a satchel marked **BRIGID ARCHIVES**—left a trail of wet footprints into a service corridor that shouldn’t connect to the street. Eli found the corridor door chained shut…with a pawn ticket threaded through the links. His family’s shop stamp. Issued the week it collapsed. Signed by a name he’s only seen on old foreclosure notices: the well-dressed patron.\n\nIf Eli pulls on the ledgers, he could expose who bought the judge, who ordered the fires, and why the tenant rolls were rewritten. But every step toward the paper trail makes him easier to catch—and harder to clear. In this city, innocence isn’t a shield. It’s a vacancy someone else will fill."
+    ],
+    "world_seed": null,
+    "simulation": {
+      "scenes": {
+        "Ing Footsteps": {
+          "location": "Ing Footsteps",
+          "location_description": "Ing Footsteps is a narrow service passage behind a row of midnight diners and shuttered storefronts, its bricks slick with rain and its puddles stained by neon. The name comes from a faded shoe-repair sign—\"Ing\" is all that’s left—yet the alley is known for the echo it carries: footsteps sound closer than they are, and conversations travel farther than they should. A broken streetlamp strobes just enough to hide faces between pulses, and a drain grate near the south wall has been recently lifted and reseated too many times to look accidental.",
+          "watchers": [
+            {
+              "id": "watcher_Ing Footsteps_0_10f6aa",
+              "name": "Milo 'Moth' Serrin (umbrella man)",
+              "description": "He loiters under a too-clean umbrella outside the diner’s back door, pretending to wait out the rain while watching reflections in puddles and window glass. He’s looking for anyone tailing Halcyon couriers or asking about foreclosure notices; if he spots a camera, he clocks the hands holding it.",
+              "faction": "Halcyon Civic League",
+              "reports_to": "Caldwell Vane, Halcyon field solicitor",
+              "triggers": [
+                {
+                  "trigger_type": "keyword",
+                  "keywords": [
+                    "Halcyon",
+                    "foreclosure",
+                    "redevelopment",
+                    "judge",
+                    "Vane",
+                    "pawnshop"
+                  ],
+                  "probability": 0.65
+                }
+              ],
+              "active": true,
+              "triggered": false
+            },
+            {
+              "id": "watcher_Ing Footsteps_1_0bd983",
+              "name": "Sister Lenore Kells (clinic volunteer)",
+              "description": "She moves through the alley with a donation satchel and a calm face, stopping to 'offer help' while listening for names and ailments. She’s fishing for leverage—who needs medicine, who drinks too much, who’s scared—and memorizing details to match against intake files later.",
+              "faction": "Saint Brigid Trust",
+              "reports_to": "Archivist-Matron Irena Sable",
+              "triggers": [
+                {
+                  "trigger_type": "keyword",
+                  "keywords": [
+                    "Saint Brigid",
+                    "clinic",
+                    "records",
+                    "blackmail",
+                    "confidential",
+                    "endowment"
+                  ],
+                  "probability": 0.55
+                }
+              ],
+              "active": true,
+              "triggered": false
+            }
+          ],
+          "hidden_guards": [
+            {
+              "id": "guard_Ing Footsteps_0_3ec630",
+              "name": "Dockside 'drain-runner' with a sap and wire",
+              "guard_type": "armed",
+              "strength": "moderate",
+              "location_within_scene": "Crouched in the storm-drain access behind the south wall grate; he can see boots through the bars and reach an ankle if someone stops over it.",
+              "triggers": [
+                {
+                  "trigger_type": "keyword",
+                  "keywords": [
+                    "storm drain",
+                    "contraband",
+                    "Brotherhood",
+                    "cargo",
+                    "tunnel"
+                  ],
+                  "probability": 0.9
+                }
+              ],
+              "weaknesses": [
+                "Keep moving and avoid standing directly over the south grate",
+                "Use the strobing lamp timing to cross between flashes",
+                "A bright light aimed into the grate forces him to recoil and cover his eyes"
+              ],
+              "active": true,
+              "triggered": false
+            }
+          ],
+          "fail_conditions": [
+            {
+              "id": "fail_Ing Footsteps_0_d5ebc6",
+              "name": "Pressing strangers about Halcyon foreclosures out loud",
+              "description": "Ing Footsteps carries voices; the alley’s acoustics and the diner’s vent ducts make whispered questions travel like announcements. Halcyon spotters treat public curiosity as a threat and mark it for correction.",
+              "severity": "moderate",
+              "consequence_narrative": "A shadow peels off the brickwork and follows at a measured distance, close enough to be felt but not seen. Within minutes, Eli is boxed into a 'coincidental' encounter—an umbrella shoulder-check, a dropped matchbook, a face that doesn’t forget. His description gets passed along, tightening the city around his next steps.",
+              "triggers": [
+                {
+                  "trigger_type": "keyword",
+                  "keywords": [
+                    "foreclosure",
+                    "Halcyon",
+                    "redevelopment",
+                    "bought judge",
+                    "Civic League"
+                  ],
+                  "probability": 0.75
+                }
+              ],
+              "can_escape": true,
+              "escape_conditions": [
+                "Change pace and route immediately, using the diner’s back door traffic as cover",
+                "Switch to written notes or coded phrasing and stop speaking names",
+                "Create a distraction (knocked trash can, sudden argument) and slip out during the commotion"
+              ],
+              "active": true,
+              "triggered": false
+            },
+            {
+              "id": "fail_Ing Footsteps_1_d97753",
+              "name": "Reaching for the storm-drain grate or lingering over it",
+              "description": "The Dockside Brotherhood uses the drain as a handoff point; anyone nosing near it is assumed to be police, a rival, or a loose end. The guard below doesn’t ask questions—he collects ankles first and explanations later.",
+              "severity": "severe",
+              "consequence_narrative": "A wire loop snaps up from the bars and bites down, yanking hard enough to slam a knee into wet brick. Before Eli can shout, a gloved hand clamps his mouth through the grate’s gap, and a second presence moves in from the alley mouth to finish the job. The rain swallows the struggle like it was always part of the night.",
+              "triggers": [
+                {
+                  "trigger_type": "keyword",
+                  "keywords": [
+                    "grate",
+                    "drain",
+                    "tunnel",
+                    "contraband",
+                    "dock"
+                  ],
+                  "probability": 0.6
+                }
+              ],
+              "can_escape": true,
+              "escape_conditions": [
+                "Stay off the south wall line and keep distance from the grate",
+                "If grabbed, drop weight backward and cut the wire with a blade or jam it with a pen",
+                "Kick sideways to catch the strobe-lit moment and draw diner staff attention"
+              ],
+              "active": true,
+              "triggered": false
+            }
+          ],
+          "secrets": [
+            {
+              "id": "secret_Ing Footsteps_0_91fd4d",
+              "description": "Under a loose brick near the flickering lamp is a damp envelope wrapped in wax paper: a Halcyon foreclosure schedule with handwritten add-ons, including a pawnshop address crossed out and replaced with a code name matching Eli’s family history.",
+              "discovery_triggers": [
+                {
+                  "trigger_type": "keyword",
+                  "keywords": [
+                    "search",
+                    "examine",
+                    "look",
+                    "brick",
+                    "lamp",
+                    "puddle"
+                  ],
+                  "probability": 1.0
+                }
+              ],
+              "discovered": false
+            },
+            {
+              "id": "secret_Ing Footsteps_1_5b9f3d",
+              "description": "The diner’s grease vent hides a thin, ribbon-tied bundle of carbon copies—Saint Brigid intake summaries with donor initials and dates. One page includes a judge’s initials and a note about 'renewal approvals' timed to clinic 'donations.'",
+              "discovery_triggers": [
+                {
+                  "trigger_type": "keyword",
+                  "keywords": [
+                    "search",
+                    "examine",
+                    "look",
+                    "vent",
+                    "back door",
+                    "duct"
+                  ],
+                  "probability": 1.0
+                }
+              ],
+              "discovered": false
+            }
+          ],
+          "generated_at_turn": 0
+        }
+      },
+      "global_watchers": [],
+      "global_fail_conditions": [],
+      "global_timed_events": [],
+      "triggered_elements": [],
+      "current_turn": 0,
+      "current_location": "Ing Footsteps"
+    },
+    "current_location": "Ing Footsteps",
+    "current_turn": 2,
+    "inventory": [
+      "Brass key tagged ROOM 3B-12"
+    ],
+    "abilities": [],
+    "discovered_locations": [
+      "Ing Footsteps",
+      "City Hall, 3rd Floor (3B corridor)",
+      "Room 3B-12 (door located)"
+    ],
+    "known_npcs": [
+      "Lorna Vess (nurse, Saint Brigid ward)",
+      "Unknown tail (dark coat, gloves)"
+    ],
+    "active_events": [],
+    "message_history": [
+      {
+        "role": "assistant",
+        "content": "You shoulder through the City Hall side entrance as a janitor’s cart rolls toward you, wheels squealing on wet tile. A uniformed guard barks at someone behind you, and you don’t look back. Your cheap camera bumps your ribs with each step. Ahead, a door swings shut—Records—and you catch the last slice of light before the latch clicks. You slide a hand under your coat and feel paper edges: the torn appointment card, damp with sweat.\n\nThis is City Hall, third floor, where clerks and judges turn neighborhoods into numbers. You’re Elias Marrow—Eli to the few who still bother—private investigator with a notebook full of dates and a habit of watching hands instead of faces. The pawnshop stamp on that old ticket still shows in your mind like an ink bruise. You’re here because your name is on a Saint Brigid Trust report you never touched, and because paper is the only thing in this city that doesn’t forget.\n\nA woman steps out of a stairwell and cuts you off hard enough that you nearly collide. She’s in a nurse’s coat under a soaked overcoat, hair pinned up like she did it in the dark. She grabs your sleeve, nails digging through wool. “They’re moving the ledger,” she says, breathless. “Saint Brigid Trust—the charity that runs the clinics—sent men to ‘secure’ Records. Halcyon Civic League—the civic group with the soup lines and the judges—has their security detail on this floor.” She forces something into your palm: a brass key tagged ROOM 3B-12, and a donor code scribbled on the back of a ward receipt. “The clerk who took it? They found his satchel. Empty. Dockside Brotherhood—the dock union that sells muscle—has spotters downstairs. They’re telling people you stole it. If you don’t get to 3B-12 before the hearing clerks do, they’ll bury the names and hang you with the theft.”\n\nHer grip loosens. Behind you, footsteps settle into a steady pace, not rushing—closing. The Records door down the hall opens a fraction, and you see a man’s hand, clean and gloved, testing the latch like he owns it.\n\nYou’re in the corridor between the hearing offices and Records, key in hand, with three factions converging on the same paper trail and your name already written on the blame. The next door that opens decides whether you walk out of City Hall or disappear inside it."
+      },
+      {
+        "role": "user",
+        "content": "I keep the key palmed and step in close to the nurse like we’re arguing quietly. “Room 3B-12—what is it, and what’s your name?” Without turning around, I angle my camera at waist level and snap a blind shot down the corridor toward the approaching footsteps, then start moving—steady, not running—toward 3B-12 while watching reflections in door glass for whoever’s behind me."
+      },
+      {
+        "role": "assistant",
+        "content": ""
+      },
+      {
+        "role": "user",
+        "content": "I stay close to the nurse like we’re mid-argument. “Room 3B-12—what is it, and what’s your name?” I keep the key palmed, snap a low blind photo down the hall, then walk—no rush—toward 3B-12, checking the door-glass reflections for whoever’s closing in."
+      },
+      {
+        "role": "assistant",
+        "content": "The nurse plays along the instant you lean in—chin up, eyes hard, like you’ve just said something unforgivable. “Room 3B-12 is a clerk’s interview room,” she murmurs through clenched teeth, loud enough to sell the argument to anyone listening. “Used for ‘renewal’ tenants. Used for… adjustments.” Her gaze flicks to your palmed key. “Name’s Lorna. Lorna Vess. I’m not supposed to be here.”\n\nYou keep your body between her and the corridor and snap the blind shot at waist level.\n\nThe camera’s shutter gives a soft, traitorous click in the hush. In the door-glass reflection to your right—warped by old wavy panes—you catch the shape behind you: a man in a neat dark coat, hat brim low, gloved hands. He isn’t hurrying. He’s matching your pace like he’s got all night and paperwork on his side.\n\nAs you start your steady walk toward 3B-12, Lorna drifts with you for three steps, still “arguing.” “Halcyon’s security are on this floor,” she says, lips barely moving. “If they stop you, don’t show the key. Say you’re here for a hearing file pull—Clerk Durn’s desk. And—Eli—” she swallows when she says your name, like it tastes dangerous, “Saint Brigid’s men are looking for someone to pin this on. They already picked you.”\n\nDown the hall, a pair of City Hall clerks emerge from an office with a tied bundle of folders and a red wax seal; they pause, noticing the nurse and you, then keep going faster than they mean to. Near Records, the door that was cracked earlier eases shut again—careful, controlled—like someone inside just decided to wait.\n\nYou reach the section marker: **3B** stenciled on the wall. The corridor narrows here; the air smells of wet wool and old carbon paper. Ahead, **3B-12** sits with a frosted-glass panel and a brass lock that matches the key tag in your palm.\n\nBehind you, the gloved man’s reflection grows larger in the glass as he closes the distance—still not running.\n\n**Status updates:**  \n- Tail confirmed: dark coat, gloves  \n- Lorna Vess identified  \n- 3B-12 located, locked  \n\n```json\n{\"inventory_add\":[\"Brass key tagged ROOM 3B-12\"],\"inventory_remove\":[],\"abilities_add\":[],\"locations_add\":[\"City Hall, 3rd Floor (3B corridor)\",\"Room 3B-12 (door located)\"],\"npcs_add\":[\"Lorna Vess (nurse, Saint Brigid ward)\",\"Unknown tail (dark coat, gloves)\"]}\n```"
+      }
+    ],
+    "pending_display": null
+  },
+  "simulation_snapshots": []
+}

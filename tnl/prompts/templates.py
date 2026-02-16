@@ -394,14 +394,25 @@ INTRO_CONFIGURATIONS = {
 
 
 # Shared writing rules for all intro templates
-INTRO_WRITING_RULES = """WRITING RULES:
+INTRO_WRITING_RULES = """WRITING STYLE:
 - Write in second person ("You...")
 - Clarity over poetry: the reader should never have to re-read a sentence
 - One vivid image per paragraph maximum - don't stack metaphors
 - Concrete details over abstract mood
 - If something is important, state it plainly
-- Atmosphere emerges from clear details, not dense imagery
-- The reader should always know WHERE they are and WHAT is happening"""
+- The reader should always know WHERE they are and WHAT is happening
+
+INTRODUCING THE WORLD (Critical):
+- The player knows NOTHING about this world yet - this is their first moment
+- When mentioning factions, organizations, or groups: give a brief identifying phrase
+  BAD: "A Lantern Synod wagon stops ahead..."
+  GOOD: "A wagon bearing the seal of the Lantern Synod—the church that claims dominion over the dead—stops ahead..."
+- When mentioning character abilities or items: show what they do, not just that they exist
+  BAD: "The thorn-seed twitches in your pouch"
+  GOOD: "The thorn-seed—your last relic from the grove, sensitive to old magic—twitches against your palm"
+- Common world knowledge should be introduced naturally so the player understands
+- True mysteries (things even the character doesn't understand) can remain mysterious
+- Don't assume the reader has context from world generation - they haven't seen it"""
 
 
 # Structure-specific intro templates
@@ -412,34 +423,27 @@ CHARACTER: {character_summary}
 WORLD CONTEXT: {world_context}
 GENRE: {genre} | TONE: {tone} | STORY TYPE: {story_type}
 
-Write an immersive narrative introduction (250-350 words).
+Write an immersive narrative introduction (250-350 words) as FLOWING PROSE.
+IMPORTANT: Do NOT use section headers like "PLACE & TIME" or "THE HOOK" in your output. Write naturally.
 
 PACING GUIDANCE: {pacing_guidance}
 
-STRUCTURE:
-1. **PLACE & TIME** (40-60 words)
-   - State clearly WHERE the character is (a specific location with a name if possible)
-   - WHEN this is happening (morning, night, during a storm, etc.)
-   - One or two concrete sensory details that establish mood
-   - The reader should be able to picture the scene immediately
+WHAT TO INCLUDE (woven together naturally, not as labeled sections):
 
-2. **CHARACTER IN SCENE** (40-60 words)
-   - What is the character doing right now? Be specific.
-   - Reference something from their profession or background
-   - Show they belong here through action, not explanation
+OPENING (40-60 words): Establish WHERE and WHEN clearly. Name the location if possible.
+Give one or two concrete sensory details. The reader should picture it immediately.
 
-3. **THE HOOK** (120-160 words)
-   {hook_type}
+CHARACTER IN ACTION (40-60 words): What is the character doing right now?
+Show their profession or background through specific action, not explanation.
 
-   Write this clearly:
-   - WHO is involved (describe them briefly but concretely)
-   - WHAT is happening or being said
-   - WHY it matters to the character
+INCITING ELEMENT (120-160 words): {hook_type}
+Write this clearly:
+- WHO is involved (describe them concretely)
+- WHAT is happening or being said
+- WHY it might matter to the character
 
-4. **THE MOMENT** (30-50 words)
-   - End with a clear situation requiring response
-   - The character must decide or act
-   - Do NOT suggest what to do
+DECISION POINT (30-50 words): End with a clear situation requiring response.
+Do NOT suggest what to do.
 
 {writing_rules}""",
 
@@ -450,31 +454,28 @@ WORLD CONTEXT: {world_context}
 GENRE: {genre} | TONE: {tone} | STORY TYPE: {story_type}
 
 Write an immersive narrative introduction (250-350 words) that starts IN THE MIDDLE of something happening.
+IMPORTANT: Do NOT use section headers in your output. Write as flowing prose.
 
 PACING GUIDANCE: {pacing_guidance}
 
-STRUCTURE:
-1. **MID-ACTION** (60-80 words)
-   - Drop the reader into an ongoing moment. Something is already happening.
-   - The character is in motion - physically, emotionally, or both.
-   - Don't explain yet - let the reader catch up.
+WHAT TO INCLUDE (woven together naturally):
 
-2. **QUICK GROUNDING** (40-60 words)
-   - Orient the reader: where is this, who is this character
-   - Just enough to anchor - don't over-explain
-   - Show profession or background through what they're doing
+MID-ACTION OPENING (60-80 words): Drop the reader into an ongoing moment.
+The character is in motion - physically, emotionally, or both.
+Don't explain yet - let the reader catch up.
 
-3. **THE HOOK CRYSTALLIZES** (100-140 words)
-   {hook_type}
+QUICK GROUNDING (40-60 words): Orient the reader: where is this, who is this character.
+Just enough to anchor - don't over-explain.
+Show profession or background through what they're doing.
 
-   The significance of what's happening becomes clear:
-   - WHO is involved
-   - WHAT the stakes are
-   - WHY this moment matters
+CRYSTALLIZING MOMENT (100-140 words): {hook_type}
+The significance of what's happening becomes clear:
+- WHO is involved
+- WHAT the stakes are
+- WHY this moment matters
 
-4. **NOW WHAT** (30-50 words)
-   - The immediate situation demanding response
-   - No suggested actions - just the choice they face
+IMMEDIATE SITUATION (30-50 words): The situation now demanding response.
+No suggested actions - just what they face.
 
 {writing_rules}""",
 
@@ -484,33 +485,29 @@ CHARACTER: {character_summary}
 WORLD CONTEXT: {world_context}
 GENRE: {genre} | TONE: {tone} | STORY TYPE: {story_type}
 
-Write an immersive narrative introduction (250-350 words) that prioritizes atmosphere and sensory immersion before action.
+Write an immersive narrative introduction (250-350 words) that prioritizes atmosphere and sensory immersion.
+IMPORTANT: Do NOT use section headers in your output. Write as flowing prose.
 
 PACING GUIDANCE: {pacing_guidance}
 
-STRUCTURE:
-1. **THE WORLD BREATHES** (80-100 words)
-   - Immerse the reader in this place. Sights, sounds, textures, smells.
-   - Let them feel it before anything happens.
-   - Establish mood through concrete, specific details - not abstract descriptions.
+WHAT TO INCLUDE (woven together naturally):
 
-2. **THE CHARACTER WITHIN** (50-70 words)
-   - The character as part of this environment, not separate from it
-   - What they're doing, thinking, noticing
-   - Their relationship to this place (familiar? foreign? complicated?)
+WORLD IMMERSION (80-100 words): Immerse the reader in this place.
+Sights, sounds, textures, smells. Let them feel it before anything happens.
+Establish mood through concrete, specific details - not abstract descriptions.
 
-3. **SOMETHING SHIFTS** (80-120 words)
-   {hook_type}
+CHARACTER WITHIN (50-70 words): The character as part of this environment.
+What they're doing, thinking, noticing.
+Their relationship to this place (familiar? foreign? complicated?)
 
-   The atmosphere changes. Something enters or changes:
-   - WHAT has shifted
-   - WHO or what is involved
-   - The reader should feel the change
+SOMETHING SHIFTS (80-120 words): {hook_type}
+The atmosphere changes. Something enters or changes:
+- WHAT has shifted
+- WHO or what is involved
+- The reader should feel the change
 
-4. **ATTENTION REQUIRED** (30-50 words)
-   - The situation now demands response
-   - The mood has broken or intensified
-   - What does the character face?
+ATTENTION REQUIRED (30-50 words): The situation now demands response.
+What does the character face?
 
 {writing_rules}""",
 
@@ -520,33 +517,29 @@ CHARACTER: {character_summary}
 WORLD CONTEXT: {world_context}
 GENRE: {genre} | TONE: {tone} | STORY TYPE: {story_type}
 
-Write an immersive narrative introduction (250-350 words) that is deeply character-focused before external events intrude.
+Write an immersive narrative introduction (250-350 words) that is deeply character-focused.
+IMPORTANT: Do NOT use section headers in your output. Write as flowing prose.
 
 PACING GUIDANCE: {pacing_guidance}
 
-STRUCTURE:
-1. **INNER LIFE** (60-80 words)
-   - What is the character thinking, feeling, wanting right now?
-   - Ground this in their goal or background
-   - Let the reader into their head briefly
+WHAT TO INCLUDE (woven together naturally):
 
-2. **THE ROUTINE** (40-60 words)
-   - A moment from their ordinary life, rendered specifically
-   - Show their world through small, concrete details
-   - Their profession, habits, relationships visible in action
+INNER LIFE (60-80 words): What is the character thinking, feeling, wanting right now?
+Ground this in their goal or background.
+Let the reader into their head briefly.
 
-3. **THE INTERRUPTION** (100-140 words)
-   {hook_type}
+ROUTINE MOMENT (40-60 words): A moment from their ordinary life, rendered specifically.
+Show their world through small, concrete details.
+Their profession, habits, relationships visible in action.
 
-   Something disrupts the ordinary:
-   - WHAT happens to break the pattern
-   - Show both what happens AND how the character internally responds
-   - The outside world demanding attention
+INTERRUPTION (100-140 words): {hook_type}
+Something disrupts the ordinary:
+- WHAT happens to break the pattern
+- Show both what happens AND how the character responds internally
+- The outside world demanding attention
 
-4. **THE CHOICE FORMS** (30-50 words)
-   - A decision takes shape in their mind
-   - What they face, not what they should do
-   - The moment before action
+CHOICE FORMING (30-50 words): A decision takes shape.
+What they face, not what they should do.
 
 {writing_rules}""",
 }
