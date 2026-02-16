@@ -400,10 +400,12 @@ SENTENCES:
 - Short. One idea per sentence.
 - Active voice. Subject does action.
 - Cut unnecessary words.
+- NO SIMILES OR METAPHORS. Write "she was afraid" not "fear coiled in her chest like a snake."
 
 PARAGRAPHS:
 - First paragraph: WHERE and WHEN. Ground the reader before anything else.
 - One new element per paragraph. Don't stack.
+- Show actions and speech. Minimize internal thoughts and feelings.
 
 WORLD INTRODUCTION:
 - The player knows nothing about this world.
@@ -467,7 +469,7 @@ PACING: {pacing_guidance}
 
 {writing_rules}""",
 
-    "character": """Generate the opening scene. Focus on the character's inner life.
+    "character": """Generate the opening scene. Focus on revealing the character through action.
 
 CHARACTER: {character_summary}
 WORLD CONTEXT: {world_context}
@@ -476,8 +478,8 @@ GENRE: {genre} | TONE: {tone} | STORY TYPE: {story_type}
 Write 200-300 words. No section headers.
 
 STRUCTURE:
-1. INSIDE THEIR HEAD (2 sentences). What are they thinking or feeling?
-2. A ROUTINE MOMENT (2 sentences). An ordinary moment. Concrete details.
+1. THE CHARACTER AT WORK (3 sentences). Show them doing something that reveals who they are. Concrete actions, no internal monologue.
+2. A DETAIL THAT MATTERS (2 sentences). Something they notice, carry, or do habitually that hints at their past or goal.
 3. SOMETHING BREAKS THE PATTERN ({hook_type}). What interrupts? End with a situation needing response.
 
 PACING: {pacing_guidance}
