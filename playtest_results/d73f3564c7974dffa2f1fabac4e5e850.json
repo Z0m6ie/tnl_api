@@ -1,0 +1,401 @@
+{
+  "metadata": {
+    "playthrough_id": "d73f3564c7974dffa2f1fabac4e5e850",
+    "started_at": "2026-02-16T16:45:31.527987",
+    "completed_at": "2026-02-16T16:48:00.278367",
+    "genre": "Noir",
+    "tone": "Gritty",
+    "story_type": "Mystery",
+    "character_name": "Silas Mercer",
+    "character_profession": "Private Investigator specializing in surveillance and methodical casework",
+    "character_background": "Silas Mercer was raised in a dockside tenement where bribes, smuggling, and whispered favors were as common as fog off the harbor. He learned to watch first and speak last, taking odd jobs on the piers until a stint as a police clerk taught him how cases get buried and evidence gets \"misfiled.\" After his investigative partner was framed and died before clearing his name, Silas went independent, carrying a battered notebook and a grudge through the city’s rain-soaked back alleys.",
+    "player_personality": "cautious",
+    "agent_model": "gpt-5.2",
+    "total_turns": 13,
+    "locations_visited": [
+      "Ward The Kitchen Door"
+    ],
+    "npcs_encountered": [],
+    "simulation_triggers_fired": 1,
+    "completed_normally": true,
+    "error_message": null
+  },
+  "messages": [
+    {
+      "turn": 1,
+      "source": "game",
+      "content": "Welcome to The Narrative Loom (TNL) - your simulation-first Dungeon Master.\n\nPlay anything from a cyberpunk heist-thriller to a dark fairytale revenge story.\n\nSelect a **Genre**, **Tone**, and **Story Type**, or say \"surprise me\" for a random selection.\n\nExamples:\n- \"Noir detective story, gritty tone, mystery thriller\"\n- \"Fantasy, whimsical, coming-of-age adventure\"\n- \"Sci-fi horror, bleak, survival story\"\n- \"surprise me\"\n\nWhat world would you like to explore?",
+      "timestamp": "2026-02-16T16:45:31.527987",
+      "player_reasoning": null,
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 2,
+      "source": "player_agent",
+      "content": "noir, gritty, mystery",
+      "timestamp": "2026-02-16T16:45:31.527987",
+      "player_reasoning": "Selected: noir, gritty, mystery",
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 3,
+      "source": "game",
+      "content": "Your world is set:\n\n**Genre:** Noir\n**Tone:** Gritty\n**Story Type:** Mystery\n\nMoving to character creation...\n\nPerfect! Your world will be: **Noir** with a **Gritty** tone - a **Mystery**.\n\nNow let's shape your protagonist. Tell me about your character:\n\n- **Name** - What should we call you?\n- **Background** - Where are they from? What shaped them?\n- **Profession or Skillset** - What are they good at?\n- **Traits** - A few words capturing temperament, strengths, flaws\n- **Personal Goal** - What do they want (not what fate demands)\n\nYou can describe freely or say \"surprise me\" for a generated character.",
+      "timestamp": "2026-02-16T16:45:31.527987",
+      "player_reasoning": null,
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 4,
+      "source": "player_agent",
+      "content": "Silas Mercer grew up in a dockside tenement, learning early that secrets weigh more than cargo. Now he works as a private investigator who specializes in quiet surveillance and slow, methodical deductions. Careful, observant, and patient to a fault, he studies a room like a crime scene before he ever asks a question. He’s driven to find the person who framed his late partner, even if it means wading back into the city’s filth one clue at a time.",
+      "timestamp": "2026-02-16T16:45:36.770990",
+      "player_reasoning": "Generated cautious-style character for Noir Mystery",
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 5,
+      "source": "game",
+      "content": "Here's your character:\n\n**Silas Mercer**\n*Private Investigator specializing in surveillance and methodical casework*\n\nSilas Mercer was raised in a dockside tenement where bribes, smuggling, and whispered favors were as common as fog off the harbor. He learned to watch first and speak last, taking odd jobs on the piers until a stint as a police clerk taught him how cases get buried and evidence gets \"misfiled.\" After his investigative partner was framed and died before clearing his name, Silas went independent, carrying a battered notebook and a grudge through the city’s rain-soaked back alleys.\n\n**Traits:** Careful, Observant, Patient to a fault, Quietly relentless, Suspicious of authority\n**Goal:** Identify who framed his late partner and assemble proof strong enough to expose them, even if it means infiltrating the same corrupt networks that turned the city against them.\n\nReady to lock it in? Say \"yes\" to continue, or tell me what to adjust.",
+      "timestamp": "2026-02-16T16:45:41.382931",
+      "player_reasoning": null,
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 6,
+      "source": "player_agent",
+      "content": "yes",
+      "timestamp": "2026-02-16T16:45:41.483989",
+      "player_reasoning": "Simple confirmation",
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 7,
+      "source": "game",
+      "content": "Character locked in. Weaving your world...\n\nYour world has been fully woven.\n\n**Campaign ID:** `eae66f67-9cf5-46e7-91e3-de6918c600d6`\n\nKeep this safe - it allows you to resume your journey anytime.\n\nType **continue** when you're ready to begin.",
+      "timestamp": "2026-02-16T16:46:48.357523",
+      "player_reasoning": null,
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 8,
+      "source": "player_agent",
+      "content": "continue",
+      "timestamp": "2026-02-16T16:46:48.458689",
+      "player_reasoning": "Ready to begin the adventure",
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 9,
+      "source": "game",
+      "content": "Silas shoved the torn page into his coat and caught the boy’s wrist before he could bolt. A heavy boot hit the café door and the glass rattled in its frame.\n\nRain hammered the windowpanes and turned Dock Street into a black mirror. This was a back-booth joint off the harbor, all wet wool and burnt coffee, and Silas Mercer was a private investigator who made his living watching people until they slipped.\n\nThe boy wore Saint Brigid Mission gray, the kind they handed out with soup and sermons. Saint Brigid was a charity on paper, and a church that kept secrets for leverage in practice. The kid’s eyes kept flicking to the kitchen door like he expected hands to come through it.\n\nSilas didn’t read the whole page. He didn’t need to. His method was simple and it kept him alive. He clocked the ink bleed, the date line, the cramped numbers. He found the name he hadn’t seen in print since the funeral. His partner’s name sat above a dockside timestamp and a note like an order. Transfer to Pier Nine. File under Integrity.\n\nThe Civic Integrity Bureau called itself an anti-corruption office, and it buried cases for profit. Pier Nine sat under a midnight “safety stoppage” run by the Harbormaster’s Union, dock bosses who taxed every crate that moved. The page didn’t just point to the docks. It pointed to who had filed the knife.\n\nA familiar face stepped in from the rain. It was Lieutenant Harker from the Bureau, coat too clean for this street, badge tucked like a threat. He saw Silas’s hand at his pocket and smiled like he already owned the evidence.",
+      "timestamp": "2026-02-16T16:46:57.932739",
+      "player_reasoning": null,
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 10,
+      "source": "player_agent",
+      "content": "I loosen my grip on the boy’s wrist but keep him close, eyes flicking to the kitchen door and the café’s back exit. “Lieutenant Harker,” I say evenly. “Didn’t know the Bureau drank this far down the dock—what’s got you out in the rain?”",
+      "timestamp": "2026-02-16T16:47:01.419021",
+      "player_reasoning": "Harker’s here for the page; I need to buy time, keep the kid from panicking, and avoid a public tussle that gets me searched. I’ll play dumb, read the room, and look for exits/help.",
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 11,
+      "source": "game",
+      "content": "Harker lets the door swing shut behind him with his heel, shutting out the street-noise like a lid on a coffin. Your even tone lands; it buys you half a breath of normalcy.\n\nImmediate outcome: he doesn’t rush you. He also doesn’t answer the question straight. Instead he angles his body so he can see both your hands and the boy, and he lifts two fingers in a lazy, practiced “easy” at the waitress—code for *don’t call anyone, don’t interfere*. She freezes mid-pour, coffee trembling in the pot.\n\nThe café’s back exit sits past the counter to the east, a narrow corridor marked “STAFF,” its door swollen with damp. From the kitchen door—south of you—comes a metallic clatter and a low murmur that stops too cleanly, like someone just remembered to be quiet.\n\nHarker’s eyes flick to the boy’s Mission coat, then to your pocket where the ledger page sits like a hot coal. “Mercer,” he says, voice dry as paper. “I drink wherever the city leaks. Tonight it’s leaking off Dock Street.”\n\nHe steps closer, not enough to crowd you, just enough to make the booth feel smaller. “There was a… misunderstanding at Pier Nine. People got hurt. Rumors got loose. My office is tasked with keeping rumors from becoming riots.” His mouth twitches. “And keeping certain documents from being misread by amateurs.”\n\nThe boy flinches when Harker says “documents,” and you feel his shoulder tense under your loosened grip—ready to bolt, but not sure which door won’t get him killed.\n\nOutside the fogged front window, headlights sweep past slow—one car, then another, crawling the curb like they’re looking for a number on a door. Not patrol speed. Hunting speed.\n\nHarker lowers his voice, conversational, almost kind. “You look tired, Silas. I can put the kid somewhere safe. I can put *you* somewhere safe. All I need is to see what you’ve got—so I can log it properly.” He pauses on the word *properly*, like it’s a joke you’re supposed to share. “You don’t want the Union thinking you’re shopping their business. You don’t want Saint Brigid thinking you stole from their confessional.”\n\nBehind him, the kitchen door handle turns—slow—then stops, as if whoever’s on the other side is waiting for a cue.\n\n**Status updates:** Two cars slow outside; Kitchen presence listening.",
+      "timestamp": "2026-02-16T16:47:18.893715",
+      "player_reasoning": null,
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 12,
+      "source": "player_agent",
+      "content": "I smile without warmth and keep my hands visible on the table. “Log it properly? Funny—last time I trusted Bureau paperwork, it got a good man buried.”\n\nI tilt my head toward the kitchen door. “Before we play clerk, tell your friend back there to take his hand off the handle. I don’t like surprises.” Then, to the boy in a low murmur, “When I say ‘coffee,’ you slip for that STAFF door and don’t look back.”",
+      "timestamp": "2026-02-16T16:47:25.413622",
+      "player_reasoning": "Harker’s stalling while backup boxes us in; the kitchen’s a second threat vector. I need to keep him talking, confirm who’s in the kitchen, and create a clean exit path—preferably through staff—without showing I’m running.",
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 13,
+      "source": "game",
+      "content": "Harker’s smile thins. Your line about Bureau paperwork hits where it’s meant to—under the ribs—because his eyes flick for a heartbeat to the ledger-bulge in your coat and then away, like he doesn’t want to acknowledge it has weight.\n\n**Immediate outcome:** the kitchen door handle eases back to neutral. Not all the way—just enough that the message got through. Harker doesn’t look at the door when it happens, but the muscle in his jaw tightens like he’s pulling a leash.\n\nRain ticks the window beside your booth, the glass fogged to milk; to the east, the “STAFF” corridor sits dim and narrow past the counter, lit by a single buzzing bulb that makes everything look jaundiced.\n\nHarker keeps his hands visible too now, palms open on the booth-back like he’s mirroring you. “No friends,” he says softly. “Just a kitchen and a nervous cook who doesn’t want dock boys tearing up his place.” It’s a lie polished smooth—too smooth for a cook.\n\nHe leans in just enough that only you and the boy get it. “The man you’re talking about—your partner—his name’s been showing up in places it shouldn’t. Pier Nine. Integrity files. Donation routes.” He lets that hang, then adds, “You want to know who buried him? Don’t hand that page to the Union. Don’t hand it to the Mission. And don’t make me take it off you in front of witnesses.”\n\nOutside, one of the slow cars stops. Headlights pin the café front like an interrogation lamp. A door opens—no slam, careful—and you catch the silhouette of a man pausing under the awning, looking in through the fogged glass.\n\nThe waitress, still frozen, sets a cup down too hard at a nearby table. The clink is loud in the hush.\n\nHarker’s gaze shifts to the boy, and for the first time his voice loses some of its dryness. “Kid doesn’t walk out that staff door unless you want him found in the harbor by morning. The Union’s sweeping shelters tonight. Saint Brigid’s ‘counselors’ are cleaning their own mess. You keep him close, you’re painting a target on his back—and yours.”\n\nFrom the storm grate under the window by your booth, a thin ribbon of rainwater suddenly burps up, carrying a wad of damp wax paper that lodges against the curb. Something stiff inside it catches the light—paper, folded tight, edges striped with ink.\n\n**Status updates:** Kitchen handle released. Headlights fixed on café. Wax-paper parcel at curb.",
+      "timestamp": "2026-02-16T16:48:00.177497",
+      "player_reasoning": null,
+      "triggered_elements": [
+        "secret_Ward The Kitchen Door_0_0af0d0"
+      ],
+      "state_changes": {}
+    }
+  ],
+  "initial_state": {
+    "campaign_id": "eae66f67-9cf5-46e7-91e3-de6918c600d6",
+    "phase": "gameplay",
+    "genre": "Noir",
+    "tone": "Gritty",
+    "story_type": "Mystery",
+    "character_sheet": {
+      "name": "Silas Mercer",
+      "background": "Silas Mercer was raised in a dockside tenement where bribes, smuggling, and whispered favors were as common as fog off the harbor. He learned to watch first and speak last, taking odd jobs on the piers until a stint as a police clerk taught him how cases get buried and evidence gets \"misfiled.\" After his investigative partner was framed and died before clearing his name, Silas went independent, carrying a battered notebook and a grudge through the city’s rain-soaked back alleys.",
+      "profession": "Private Investigator specializing in surveillance and methodical casework",
+      "traits": [
+        "Careful",
+        "Observant",
+        "Patient to a fault",
+        "Quietly relentless",
+        "Suspicious of authority"
+      ],
+      "personal_goal": "Identify who framed his late partner and assemble proof strong enough to expose them, even if it means infiltrating the same corrupt networks that turned the city against them.",
+      "stats": {}
+    },
+    "seed_chunks": [
+      "Rain needles the city in slanted sheets, turning streetlamps into smeared halos on slick cobblestone. The harbor breathes rot and brine; diesel scum clings to the air and coats the tongue. Somewhere behind brick walls, a radio hisses jazz through bad wiring, its notes swallowed by foghorns and the clatter of late trams. Alleyways sweat: sour beer, wet ash, cheap perfume ground into grit. Neon signs buzz like insects above shuttered storefronts, throwing jaundiced light across puddles that tremble with each passing car. Every doorway feels watched. Paper sticks to gloved fingers. Even silence has weight here—pressed down by secrets and the steady drip of gutters.",
+      "Rain-polished power in this city wears three masks. The Harbormaster’s Union claims it keeps the docks orderly, but it runs smuggling lanes and “loses” manifests for the right names, squeezing every other crew for tribute. The Civic Integrity Bureau parades as an anti-corruption watchdog; behind closed files it brokers protection, burying cases to steer contracts and elections. The Saint Brigid Mission offers soup, beds, and clean bandages, yet its priests launder money through charities and keep confessional blackmail ledgers. The Union feeds the Mission’s coffers and uses its shelters as dead-drops; the Bureau raids union rivals on cue, then “investigates” itself. When the Mission’s ledger starts circulating, all three quietly hunt the same messenger.\n\n```json\n{\n  \"factions\": [\n    {\n      \"name\": \"Harbormaster’s Union\",\n      \"public_front\": \"Dockworkers’ union maintaining order, safety, and fair wages on the waterfront.\",\n      \"hidden_agenda\": \"Controls smuggling routes, fixes manifests, and extorts crews and merchants through tribute and sabotage.\"\n    },\n    {\n      \"name\": \"Civic Integrity Bureau\",\n      \"public_front\": \"Municipal anti-corruption office auditing police, courts, and public contracts.\",\n      \"hidden_agenda\": \"Sells protection, buries evidence, and manipulates investigations to steer contracts and elections.\"\n    },\n    {\n      \"name\": \"Saint Brigid Mission\",\n      \"public_front\": \"Charity mission providing soup, beds, and medical aid to the poor and dockside drifters.\",\n      \"hidden_agenda\": \"Launders money through donations and maintains blackmail ledgers from confessions and “counseling.”\"\n    }\n  ]\n}\n```",
+      "",
+      "Rain and rumor move faster than trams. **Saint Brigid’s confessional ledger**—names, sins, payoffs—has surfaced in torn pages, and all three power masks hunt the courier: the Mission to retrieve it, the Union to erase dockside entries, the Bureau to “secure” it for leverage. Meanwhile, the **Harbormaster’s Union calls a midnight “safety stoppage”** after a staged crane collapse, freezing cargo and forcing merchants into tribute; Bureau inspectors arrive first, sealing the pier and misfiling witness statements. In the shadows, someone offers Silas a page with his late partner’s name—at a price.\n\n```json\n{\n  \"events\": [\n    {\n      \"name\": \"The Ledger Pages Circulate\",\n      \"description\": \"Torn sheets from Saint Brigid Mission’s confessional/blackmail ledger have begun surfacing through shelters and dockside hands. The Mission is quietly buying them back, the Harbormaster’s Union is intimidating anyone who touched the pages, and the Civic Integrity Bureau is conducting a ‘protective evidence sweep’ to collect—then control—what remains.\",\n      \"stakes\": [\n        \"Whoever controls the ledger can topple or own the city’s three power blocs\",\n        \"Witnesses and couriers start disappearing into ‘protective custody’ or the harbor\",\n        \"Silas may find proof about his partner’s framing—or be baited into a trap\"\n      ]\n    },\n    {\n      \"name\": \"Midnight Safety Stoppage at Pier Nine\",\n      \"description\": \"A crane collapse at Pier Nine triggers a sudden Union-declared safety stoppage that halts cargo movement and squeezes merchants into paying tribute to resume operations. Bureau inspectors arrive suspiciously fast, sealing the site and ‘misfiling’ early statements while Union enforcers steer blame toward a rival crew and a scapegoat foreman.\",\n      \"stakes\": [\n        \"Supply shortages and price spikes ripple through the city, increasing desperation and crime\",\n        \"The stoppage provides cover for a major smuggling run—or the quiet removal of evidence\",\n        \"Silas can exploit the chaos to tail suspects, but risks being marked by Union and Bureau alike\"\n      ]\n    }\n  ]\n}\n```",
+      "Silas Mercer gets the offer in a place where everyone pretends not to see: the back booth of a rain-stained café off Dock Street, windows fogged to milk. A boy from Saint Brigid’s shelter slides a torn ledger page across the table with two fingers like it’s contaminated. Ink blots, cramped penance-entries—names, dates, amounts. Near the bottom: **your late partner’s name**, paired with a dockside timestamp and a note that doesn’t read like confession so much as instruction: *“Transfer to Pier Nine. File under Integrity.”*\n\nThe boy doesn’t ask for money. He asks for **protection**. He says the Mission’s “counselors” have been taking people into back rooms for “prayer” and sending them out hollow-eyed. He says Union men are dragging sleepers out of the shelter by the collar, demanding to know who’s been copying pages. He says the Civic Integrity Bureau showed up first at the crane collapse—before the sirens—already carrying blank forms, already calling it an “evidence sweep.”\n\nOutside, Pier Nine is locked down under the midnight safety stoppage, but the docks are louder than ever: trucks rerouted, crews idled, tempers sharp, bribes flowing like gutter water. Someone is using the chaos to move something—or erase something.\n\nThe ledger page feels like a door left ajar. It could be bait. It could be the first clean thread you’ve had in years. Either way, someone wants it back badly enough to kill for it—and someone else wants you holding it long enough to be blamed."
+    ],
+    "world_seed": null,
+    "simulation": {
+      "scenes": {},
+      "global_watchers": [],
+      "global_fail_conditions": [],
+      "global_timed_events": [],
+      "triggered_elements": [],
+      "current_turn": 0,
+      "current_location": null
+    },
+    "current_location": null,
+    "current_turn": 0,
+    "inventory": [],
+    "abilities": [],
+    "discovered_locations": [],
+    "known_npcs": [],
+    "active_events": [],
+    "message_history": [
+      {
+        "role": "assistant",
+        "content": "Silas shoved the torn page into his coat and caught the boy’s wrist before he could bolt. A heavy boot hit the café door and the glass rattled in its frame.\n\nRain hammered the windowpanes and turned Dock Street into a black mirror. This was a back-booth joint off the harbor, all wet wool and burnt coffee, and Silas Mercer was a private investigator who made his living watching people until they slipped.\n\nThe boy wore Saint Brigid Mission gray, the kind they handed out with soup and sermons. Saint Brigid was a charity on paper, and a church that kept secrets for leverage in practice. The kid’s eyes kept flicking to the kitchen door like he expected hands to come through it.\n\nSilas didn’t read the whole page. He didn’t need to. His method was simple and it kept him alive. He clocked the ink bleed, the date line, the cramped numbers. He found the name he hadn’t seen in print since the funeral. His partner’s name sat above a dockside timestamp and a note like an order. Transfer to Pier Nine. File under Integrity.\n\nThe Civic Integrity Bureau called itself an anti-corruption office, and it buried cases for profit. Pier Nine sat under a midnight “safety stoppage” run by the Harbormaster’s Union, dock bosses who taxed every crate that moved. The page didn’t just point to the docks. It pointed to who had filed the knife.\n\nA familiar face stepped in from the rain. It was Lieutenant Harker from the Bureau, coat too clean for this street, badge tucked like a threat. He saw Silas’s hand at his pocket and smiled like he already owned the evidence."
+      }
+    ],
+    "pending_display": null
+  },
+  "final_state": {
+    "campaign_id": "eae66f67-9cf5-46e7-91e3-de6918c600d6",
+    "phase": "gameplay",
+    "genre": "Noir",
+    "tone": "Gritty",
+    "story_type": "Mystery",
+    "character_sheet": {
+      "name": "Silas Mercer",
+      "background": "Silas Mercer was raised in a dockside tenement where bribes, smuggling, and whispered favors were as common as fog off the harbor. He learned to watch first and speak last, taking odd jobs on the piers until a stint as a police clerk taught him how cases get buried and evidence gets \"misfiled.\" After his investigative partner was framed and died before clearing his name, Silas went independent, carrying a battered notebook and a grudge through the city’s rain-soaked back alleys.",
+      "profession": "Private Investigator specializing in surveillance and methodical casework",
+      "traits": [
+        "Careful",
+        "Observant",
+        "Patient to a fault",
+        "Quietly relentless",
+        "Suspicious of authority"
+      ],
+      "personal_goal": "Identify who framed his late partner and assemble proof strong enough to expose them, even if it means infiltrating the same corrupt networks that turned the city against them.",
+      "stats": {}
+    },
+    "seed_chunks": [
+      "Rain needles the city in slanted sheets, turning streetlamps into smeared halos on slick cobblestone. The harbor breathes rot and brine; diesel scum clings to the air and coats the tongue. Somewhere behind brick walls, a radio hisses jazz through bad wiring, its notes swallowed by foghorns and the clatter of late trams. Alleyways sweat: sour beer, wet ash, cheap perfume ground into grit. Neon signs buzz like insects above shuttered storefronts, throwing jaundiced light across puddles that tremble with each passing car. Every doorway feels watched. Paper sticks to gloved fingers. Even silence has weight here—pressed down by secrets and the steady drip of gutters.",
+      "Rain-polished power in this city wears three masks. The Harbormaster’s Union claims it keeps the docks orderly, but it runs smuggling lanes and “loses” manifests for the right names, squeezing every other crew for tribute. The Civic Integrity Bureau parades as an anti-corruption watchdog; behind closed files it brokers protection, burying cases to steer contracts and elections. The Saint Brigid Mission offers soup, beds, and clean bandages, yet its priests launder money through charities and keep confessional blackmail ledgers. The Union feeds the Mission’s coffers and uses its shelters as dead-drops; the Bureau raids union rivals on cue, then “investigates” itself. When the Mission’s ledger starts circulating, all three quietly hunt the same messenger.\n\n```json\n{\n  \"factions\": [\n    {\n      \"name\": \"Harbormaster’s Union\",\n      \"public_front\": \"Dockworkers’ union maintaining order, safety, and fair wages on the waterfront.\",\n      \"hidden_agenda\": \"Controls smuggling routes, fixes manifests, and extorts crews and merchants through tribute and sabotage.\"\n    },\n    {\n      \"name\": \"Civic Integrity Bureau\",\n      \"public_front\": \"Municipal anti-corruption office auditing police, courts, and public contracts.\",\n      \"hidden_agenda\": \"Sells protection, buries evidence, and manipulates investigations to steer contracts and elections.\"\n    },\n    {\n      \"name\": \"Saint Brigid Mission\",\n      \"public_front\": \"Charity mission providing soup, beds, and medical aid to the poor and dockside drifters.\",\n      \"hidden_agenda\": \"Launders money through donations and maintains blackmail ledgers from confessions and “counseling.”\"\n    }\n  ]\n}\n```",
+      "",
+      "Rain and rumor move faster than trams. **Saint Brigid’s confessional ledger**—names, sins, payoffs—has surfaced in torn pages, and all three power masks hunt the courier: the Mission to retrieve it, the Union to erase dockside entries, the Bureau to “secure” it for leverage. Meanwhile, the **Harbormaster’s Union calls a midnight “safety stoppage”** after a staged crane collapse, freezing cargo and forcing merchants into tribute; Bureau inspectors arrive first, sealing the pier and misfiling witness statements. In the shadows, someone offers Silas a page with his late partner’s name—at a price.\n\n```json\n{\n  \"events\": [\n    {\n      \"name\": \"The Ledger Pages Circulate\",\n      \"description\": \"Torn sheets from Saint Brigid Mission’s confessional/blackmail ledger have begun surfacing through shelters and dockside hands. The Mission is quietly buying them back, the Harbormaster’s Union is intimidating anyone who touched the pages, and the Civic Integrity Bureau is conducting a ‘protective evidence sweep’ to collect—then control—what remains.\",\n      \"stakes\": [\n        \"Whoever controls the ledger can topple or own the city’s three power blocs\",\n        \"Witnesses and couriers start disappearing into ‘protective custody’ or the harbor\",\n        \"Silas may find proof about his partner’s framing—or be baited into a trap\"\n      ]\n    },\n    {\n      \"name\": \"Midnight Safety Stoppage at Pier Nine\",\n      \"description\": \"A crane collapse at Pier Nine triggers a sudden Union-declared safety stoppage that halts cargo movement and squeezes merchants into paying tribute to resume operations. Bureau inspectors arrive suspiciously fast, sealing the site and ‘misfiling’ early statements while Union enforcers steer blame toward a rival crew and a scapegoat foreman.\",\n      \"stakes\": [\n        \"Supply shortages and price spikes ripple through the city, increasing desperation and crime\",\n        \"The stoppage provides cover for a major smuggling run—or the quiet removal of evidence\",\n        \"Silas can exploit the chaos to tail suspects, but risks being marked by Union and Bureau alike\"\n      ]\n    }\n  ]\n}\n```",
+      "Silas Mercer gets the offer in a place where everyone pretends not to see: the back booth of a rain-stained café off Dock Street, windows fogged to milk. A boy from Saint Brigid’s shelter slides a torn ledger page across the table with two fingers like it’s contaminated. Ink blots, cramped penance-entries—names, dates, amounts. Near the bottom: **your late partner’s name**, paired with a dockside timestamp and a note that doesn’t read like confession so much as instruction: *“Transfer to Pier Nine. File under Integrity.”*\n\nThe boy doesn’t ask for money. He asks for **protection**. He says the Mission’s “counselors” have been taking people into back rooms for “prayer” and sending them out hollow-eyed. He says Union men are dragging sleepers out of the shelter by the collar, demanding to know who’s been copying pages. He says the Civic Integrity Bureau showed up first at the crane collapse—before the sirens—already carrying blank forms, already calling it an “evidence sweep.”\n\nOutside, Pier Nine is locked down under the midnight safety stoppage, but the docks are louder than ever: trucks rerouted, crews idled, tempers sharp, bribes flowing like gutter water. Someone is using the chaos to move something—or erase something.\n\nThe ledger page feels like a door left ajar. It could be bait. It could be the first clean thread you’ve had in years. Either way, someone wants it back badly enough to kill for it—and someone else wants you holding it long enough to be blamed."
+    ],
+    "world_seed": null,
+    "simulation": {
+      "scenes": {
+        "Ward The Kitchen Door": {
+          "location": "Ward The Kitchen Door",
+          "location_description": "The kitchen door sits in a narrow service cut between brick walls, its paint blistered by steam and rain. Grease-dark water runs along the threshold into a storm grate that’s been pried up and set back crooked. The brass latch has fresh thumb-polish despite the hour, and the doorframe carries faint chalk ticks—quiet accounting marks disguised as delivery scuffs.",
+          "watchers": [
+            {
+              "id": "watcher_Ward The Kitchen Door_0_4ea383",
+              "name": "Milo 'Tin-Ear' Vance",
+              "description": "A dish-runner posted under the awning across the service cut, pretending to smoke and count crates. He watches who uses the kitchen door, clocks faces, and listens for names tied to the circulating ledger messenger.",
+              "faction": "Saint Brigid Mission",
+              "reports_to": "Brother Halden (Mission almoner)",
+              "triggers": [
+                {
+                  "trigger_type": "keyword",
+                  "keywords": [
+                    "ledger",
+                    "confession",
+                    "Brigid",
+                    "messenger",
+                    "Halden",
+                    "blackmail"
+                  ],
+                  "probability": 0.65
+                }
+              ],
+              "active": true,
+              "triggered": false
+            }
+          ],
+          "hidden_guards": [
+            {
+              "id": "guard_Ward The Kitchen Door_0_a357b8",
+              "name": "Union crate-man with a sap and a raincoat",
+              "guard_type": "armed",
+              "strength": "moderate",
+              "location_within_scene": "Inside the kitchen’s back vestibule, behind stacked fish-crates stamped with a fake cannery mark; he can see the door seam through a gap and hears the latch click.",
+              "triggers": [
+                {
+                  "trigger_type": "keyword",
+                  "keywords": [
+                    "manifest",
+                    "Union",
+                    "Harbormaster",
+                    "tribute",
+                    "dock",
+                    "smuggling"
+                  ],
+                  "probability": 0.9
+                }
+              ],
+              "weaknesses": [
+                "Approach during a delivery knock pattern (two short, one long) to avoid immediate suspicion",
+                "Keep hands visible and carry a plausible parcel or receipt",
+                "Noise masking: time movement with the kitchen exhaust fan surge"
+              ],
+              "active": true,
+              "triggered": false
+            }
+          ],
+          "fail_conditions": [
+            {
+              "id": "fail_Ward The Kitchen Door_0_da1056",
+              "name": "Forcing the kitchen door or lingering at the threshold",
+              "description": "The latch has a crude telltale: a thread-thin wire looped to a bell inside and a chalk mark that gets checked between runs. A hard shove or too much time at the seam reads as a tail or a thief in this neighborhood.",
+              "severity": "moderate",
+              "consequence_narrative": "The bell gives a muffled ping and boots shift behind the crates. Someone opens the door a hand’s width and a sap comes out fast, aiming for the wrist and jaw. If you don’t back off clean, the alley becomes a short, ugly lesson and your face gets remembered.",
+              "triggers": [
+                {
+                  "trigger_type": "keyword",
+                  "keywords": [
+                    "force",
+                    "kick",
+                    "break",
+                    "lockpick",
+                    "pry",
+                    "wait"
+                  ],
+                  "probability": 0.75
+                }
+              ],
+              "can_escape": true,
+              "escape_conditions": [
+                "Back away immediately and apologize as a wrong-door delivery",
+                "Create a distraction at the storm grate (toss a bottle cap or coin) to pull eyes down",
+                "Name-drop a harmless kitchen contact or claim you’re returning a lost item"
+              ],
+              "active": true,
+              "triggered": false
+            }
+          ],
+          "secrets": [
+            {
+              "id": "secret_Ward The Kitchen Door_0_0af0d0",
+              "description": "A damp wax-paper parcel is wedged under the crooked storm grate: a partial manifest strip with dock codes and a Saint Brigid donation routing number, both written in the same hand. The ink is smeared by rain, but the pattern of codes matches known Union lanes.",
+              "discovery_triggers": [
+                {
+                  "trigger_type": "keyword",
+                  "keywords": [
+                    "search",
+                    "examine",
+                    "look",
+                    "storm grate",
+                    "drain",
+                    "under"
+                  ],
+                  "probability": 1.0
+                }
+              ],
+              "discovered": true
+            },
+            {
+              "id": "secret_Ward The Kitchen Door_1_96c884",
+              "description": "Three shallow knife nicks on the inside edge of the doorframe form a date cipher used by the Civic Integrity Bureau to mark controlled entry points. Someone has been auditing this door without leaving paperwork—exactly the kind of quiet oversight that buries cases.",
+              "discovery_triggers": [
+                {
+                  "trigger_type": "keyword",
+                  "keywords": [
+                    "inspect",
+                    "examine",
+                    "doorframe",
+                    "marks",
+                    "scratches",
+                    "look closely"
+                  ],
+                  "probability": 1.0
+                }
+              ],
+              "discovered": false
+            }
+          ],
+          "generated_at_turn": 1
+        }
+      },
+      "global_watchers": [],
+      "global_fail_conditions": [],
+      "global_timed_events": [],
+      "triggered_elements": [
+        "secret_Ward The Kitchen Door_0_0af0d0"
+      ],
+      "current_turn": 0,
+      "current_location": "Ward The Kitchen Door"
+    },
+    "current_location": "Ward The Kitchen Door",
+    "current_turn": 2,
+    "inventory": [],
+    "abilities": [],
+    "discovered_locations": [
+      "Ward The Kitchen Door"
+    ],
+    "known_npcs": [],
+    "active_events": [],
+    "message_history": [
+      {
+        "role": "assistant",
+        "content": "Silas shoved the torn page into his coat and caught the boy’s wrist before he could bolt. A heavy boot hit the café door and the glass rattled in its frame.\n\nRain hammered the windowpanes and turned Dock Street into a black mirror. This was a back-booth joint off the harbor, all wet wool and burnt coffee, and Silas Mercer was a private investigator who made his living watching people until they slipped.\n\nThe boy wore Saint Brigid Mission gray, the kind they handed out with soup and sermons. Saint Brigid was a charity on paper, and a church that kept secrets for leverage in practice. The kid’s eyes kept flicking to the kitchen door like he expected hands to come through it.\n\nSilas didn’t read the whole page. He didn’t need to. His method was simple and it kept him alive. He clocked the ink bleed, the date line, the cramped numbers. He found the name he hadn’t seen in print since the funeral. His partner’s name sat above a dockside timestamp and a note like an order. Transfer to Pier Nine. File under Integrity.\n\nThe Civic Integrity Bureau called itself an anti-corruption office, and it buried cases for profit. Pier Nine sat under a midnight “safety stoppage” run by the Harbormaster’s Union, dock bosses who taxed every crate that moved. The page didn’t just point to the docks. It pointed to who had filed the knife.\n\nA familiar face stepped in from the rain. It was Lieutenant Harker from the Bureau, coat too clean for this street, badge tucked like a threat. He saw Silas’s hand at his pocket and smiled like he already owned the evidence."
+      },
+      {
+        "role": "user",
+        "content": "I loosen my grip on the boy’s wrist but keep him close, eyes flicking to the kitchen door and the café’s back exit. “Lieutenant Harker,” I say evenly. “Didn’t know the Bureau drank this far down the dock—what’s got you out in the rain?”"
+      },
+      {
+        "role": "assistant",
+        "content": "Harker lets the door swing shut behind him with his heel, shutting out the street-noise like a lid on a coffin. Your even tone lands; it buys you half a breath of normalcy.\n\nImmediate outcome: he doesn’t rush you. He also doesn’t answer the question straight. Instead he angles his body so he can see both your hands and the boy, and he lifts two fingers in a lazy, practiced “easy” at the waitress—code for *don’t call anyone, don’t interfere*. She freezes mid-pour, coffee trembling in the pot.\n\nThe café’s back exit sits past the counter to the east, a narrow corridor marked “STAFF,” its door swollen with damp. From the kitchen door—south of you—comes a metallic clatter and a low murmur that stops too cleanly, like someone just remembered to be quiet.\n\nHarker’s eyes flick to the boy’s Mission coat, then to your pocket where the ledger page sits like a hot coal. “Mercer,” he says, voice dry as paper. “I drink wherever the city leaks. Tonight it’s leaking off Dock Street.”\n\nHe steps closer, not enough to crowd you, just enough to make the booth feel smaller. “There was a… misunderstanding at Pier Nine. People got hurt. Rumors got loose. My office is tasked with keeping rumors from becoming riots.” His mouth twitches. “And keeping certain documents from being misread by amateurs.”\n\nThe boy flinches when Harker says “documents,” and you feel his shoulder tense under your loosened grip—ready to bolt, but not sure which door won’t get him killed.\n\nOutside the fogged front window, headlights sweep past slow—one car, then another, crawling the curb like they’re looking for a number on a door. Not patrol speed. Hunting speed.\n\nHarker lowers his voice, conversational, almost kind. “You look tired, Silas. I can put the kid somewhere safe. I can put *you* somewhere safe. All I need is to see what you’ve got—so I can log it properly.” He pauses on the word *properly*, like it’s a joke you’re supposed to share. “You don’t want the Union thinking you’re shopping their business. You don’t want Saint Brigid thinking you stole from their confessional.”\n\nBehind him, the kitchen door handle turns—slow—then stops, as if whoever’s on the other side is waiting for a cue.\n\n**Status updates:** Two cars slow outside; Kitchen presence listening."
+      },
+      {
+        "role": "user",
+        "content": "I smile without warmth and keep my hands visible on the table. “Log it properly? Funny—last time I trusted Bureau paperwork, it got a good man buried.”\n\nI tilt my head toward the kitchen door. “Before we play clerk, tell your friend back there to take his hand off the handle. I don’t like surprises.” Then, to the boy in a low murmur, “When I say ‘coffee,’ you slip for that STAFF door and don’t look back.”"
+      },
+      {
+        "role": "assistant",
+        "content": "Harker’s smile thins. Your line about Bureau paperwork hits where it’s meant to—under the ribs—because his eyes flick for a heartbeat to the ledger-bulge in your coat and then away, like he doesn’t want to acknowledge it has weight.\n\n**Immediate outcome:** the kitchen door handle eases back to neutral. Not all the way—just enough that the message got through. Harker doesn’t look at the door when it happens, but the muscle in his jaw tightens like he’s pulling a leash.\n\nRain ticks the window beside your booth, the glass fogged to milk; to the east, the “STAFF” corridor sits dim and narrow past the counter, lit by a single buzzing bulb that makes everything look jaundiced.\n\nHarker keeps his hands visible too now, palms open on the booth-back like he’s mirroring you. “No friends,” he says softly. “Just a kitchen and a nervous cook who doesn’t want dock boys tearing up his place.” It’s a lie polished smooth—too smooth for a cook.\n\nHe leans in just enough that only you and the boy get it. “The man you’re talking about—your partner—his name’s been showing up in places it shouldn’t. Pier Nine. Integrity files. Donation routes.” He lets that hang, then adds, “You want to know who buried him? Don’t hand that page to the Union. Don’t hand it to the Mission. And don’t make me take it off you in front of witnesses.”\n\nOutside, one of the slow cars stops. Headlights pin the café front like an interrogation lamp. A door opens—no slam, careful—and you catch the silhouette of a man pausing under the awning, looking in through the fogged glass.\n\nThe waitress, still frozen, sets a cup down too hard at a nearby table. The clink is loud in the hush.\n\nHarker’s gaze shifts to the boy, and for the first time his voice loses some of its dryness. “Kid doesn’t walk out that staff door unless you want him found in the harbor by morning. The Union’s sweeping shelters tonight. Saint Brigid’s ‘counselors’ are cleaning their own mess. You keep him close, you’re painting a target on his back—and yours.”\n\nFrom the storm grate under the window by your booth, a thin ribbon of rainwater suddenly burps up, carrying a wad of damp wax paper that lodges against the curb. Something stiff inside it catches the light—paper, folded tight, edges striped with ink.\n\n**Status updates:** Kitchen handle released. Headlights fixed on café. Wax-paper parcel at curb."
+      }
+    ],
+    "pending_display": null
+  },
+  "simulation_snapshots": []
+}

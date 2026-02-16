@@ -1,0 +1,491 @@
+{
+  "metadata": {
+    "playthrough_id": "057dd5f04bd44111993c9c18b92307fe",
+    "started_at": "2026-02-16T16:10:39.056444",
+    "completed_at": "2026-02-16T16:13:13.074434",
+    "genre": "Sci-Fi Horror",
+    "tone": "Tense",
+    "story_type": "Survival",
+    "character_name": "Rika \"Grind\" Morrow",
+    "character_profession": "Contracted boarding specialist and breach-clear operative (ex-Colonial Marine)",
+    "character_background": "Once a decorated colonial marine, Rika survived the Helix Station blackout but became the convenient scapegoat for the dead left in its corridors. Court-martialed on paper and abandoned in practice, she vanished into the contractor underworld, taking jobs no one else wants—derelicts, quarantines, and silent hulks with power still humming behind sealed doors. She keeps a battered Helix-issued wrist tag and a fragmentary audio log that suggests her squad never received the real evacuation orders.",
+    "player_personality": "aggressive",
+    "agent_model": "gpt-5.2",
+    "total_turns": 13,
+    "locations_visited": [
+      "Their Space",
+      "Dockside locker-bay corridor",
+      "Helix-adjacent service crawl (west of locker-bay corridor)"
+    ],
+    "npcs_encountered": [
+      "Sable"
+    ],
+    "simulation_triggers_fired": 1,
+    "completed_normally": true,
+    "error_message": null
+  },
+  "messages": [
+    {
+      "turn": 1,
+      "source": "game",
+      "content": "Welcome to The Narrative Loom (TNL) - your simulation-first Dungeon Master.\n\nPlay anything from a cyberpunk heist-thriller to a dark fairytale revenge story.\n\nSelect a **Genre**, **Tone**, and **Story Type**, or say \"surprise me\" for a random selection.\n\nExamples:\n- \"Noir detective story, gritty tone, mystery thriller\"\n- \"Fantasy, whimsical, coming-of-age adventure\"\n- \"Sci-fi horror, bleak, survival story\"\n- \"surprise me\"\n\nWhat world would you like to explore?",
+      "timestamp": "2026-02-16T16:10:39.056444",
+      "player_reasoning": null,
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 2,
+      "source": "player_agent",
+      "content": "sci-fi, tense, survival",
+      "timestamp": "2026-02-16T16:10:39.056444",
+      "player_reasoning": "Selected: sci-fi, tense, survival",
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 3,
+      "source": "game",
+      "content": "Your world is set:\n\n**Genre:** Sci-Fi Horror\n**Tone:** Tense\n**Story Type:** Survival\n\nMoving to character creation...\n\nPerfect! Your world will be: **Sci-Fi Horror** with a **Tense** tone - a **Survival**.\n\nNow let's shape your protagonist. Tell me about your character:\n\n- **Name** - What should we call you?\n- **Background** - Where are they from? What shaped them?\n- **Profession or Skillset** - What are they good at?\n- **Traits** - A few words capturing temperament, strengths, flaws\n- **Personal Goal** - What do they want (not what fate demands)\n\nYou can describe freely or say \"surprise me\" for a generated character.",
+      "timestamp": "2026-02-16T16:10:39.056444",
+      "player_reasoning": null,
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 4,
+      "source": "player_agent",
+      "content": "Rika “Grind” Morrow is a disgraced colonial marine who survived the Helix Station blackout and got blamed for the bodies left behind. Now she works as a contracted boarding specialist, breaching derelicts and clearing corridors that still smell like burnt wiring and rot. Hard-edged, hypervigilant, and brutally pragmatic, she carries a simmering resentment toward command and anyone who expects obedience. Her goal is to reach Helix’s sealed core, pull the black-box evidence that clears her name, and make the people who set her up pay—if whatever’s still in there doesn’t find her first.",
+      "timestamp": "2026-02-16T16:10:45.023246",
+      "player_reasoning": "Generated aggressive-style character for Sci-Fi Horror Survival",
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 5,
+      "source": "game",
+      "content": "Here's your character:\n\n**Rika \"Grind\" Morrow**\n*Contracted boarding specialist and breach-clear operative (ex-Colonial Marine)*\n\nOnce a decorated colonial marine, Rika survived the Helix Station blackout but became the convenient scapegoat for the dead left in its corridors. Court-martialed on paper and abandoned in practice, she vanished into the contractor underworld, taking jobs no one else wants—derelicts, quarantines, and silent hulks with power still humming behind sealed doors. She keeps a battered Helix-issued wrist tag and a fragmentary audio log that suggests her squad never received the real evacuation orders.\n\n**Traits:** Hard-edged and intimidatingly direct, Hypervigilant, sleep-light, and threat-focused, Brutally pragmatic under pressure, Resentful of command structures and blind obedience, Stubbornly persistent, even self-destructive\n**Goal:** Reach Helix Station’s sealed core, recover the black-box evidence that clears her name, and identify—and punish—the people who framed her, before whatever still lingers inside Helix finishes the job.\n\nReady to lock it in? Say \"yes\" to continue, or tell me what to adjust.",
+      "timestamp": "2026-02-16T16:10:50.845128",
+      "player_reasoning": null,
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 6,
+      "source": "player_agent",
+      "content": "yes",
+      "timestamp": "2026-02-16T16:10:50.948406",
+      "player_reasoning": "Simple confirmation",
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 7,
+      "source": "game",
+      "content": "Character locked in. Weaving your world...\n\nYour world has been fully woven.\n\n**Campaign ID:** `2231d986-bcc9-4bf8-8955-03d798643df8`\n\nKeep this safe - it allows you to resume your journey anytime.\n\nType **continue** when you're ready to begin.",
+      "timestamp": "2026-02-16T16:11:49.525094",
+      "player_reasoning": null,
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 8,
+      "source": "player_agent",
+      "content": "continue",
+      "timestamp": "2026-02-16T16:11:49.625600",
+      "player_reasoning": "Ready to begin the adventure",
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 9,
+      "source": "game",
+      "content": "Dockside, three hours before breach, Rika Morrow sits alone in a rented locker bay and listens to the station’s name like it can cut her. Helix still lives behind her eyes, and every click in the walls feels like a judge’s gavel.\n\nShe tells herself this job is just entry and exit. She doesn’t believe it, because the battered Helix-issued wrist tag in her palm feels warm, like it remembers her pulse.\n\nShe runs a whetstone down her boarding knife and keeps the strokes even. Her ex-marine habits do the thinking for her, and her hypervigilance does the rest, counting the footfalls outside and tracking the pause between breaths. She checks her breach charges, then her mag-boots, then the sealed pouch with the fragmentary audio log she never plays all the way through.\n\nA dead channel pings. The comm unit shouldn’t even handshake, not with old Helix encryption, but it does.\n\nThe sender tag reads a squadmate’s callsign, listed KIA in the Colonial Administration Inquiry Office database—the office that “investigates” disasters and trades favors in silence. Rika’s stomach locks as the payload auto-decrypts.\n\nTwelve seconds of audio fills the locker bay. It’s her voice, flat and official, issuing an evacuation order she never gave.\n\nShe hears the tiny artifacts in the splice, the way the words don’t sit right on her tongue. She watches the timecode under it match the sealed-core black box index, the one Helix Corporate Security uses to bury command logs under “quarantine enforcement.”\n\nThree words flash under the file. CORE STILL LOCKED.\n\nHer wrist tag chirps on its own, trying to authenticate with something that shouldn’t be alive. Outside her door, boots stop, then shift, like someone just got the same alert.",
+      "timestamp": "2026-02-16T16:11:59.624257",
+      "player_reasoning": null,
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 10,
+      "source": "player_agent",
+      "content": "I kill the locker bay lights, palm my boarding knife, and slide to the door’s edge. I snap it open hard and step into their space, blade low. “You stalking me or did Helix just ping you too? Talk—now.”",
+      "timestamp": "2026-02-16T16:12:02.757218",
+      "player_reasoning": "Someone’s outside and timing matters; I’m not getting cornered in a locker bay. I’ll take initiative, weapon ready, and confront before they make the first move.",
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 11,
+      "source": "game",
+      "content": "**IMMEDIATE OUTCOME:** The lights die in your locker bay, and when you snap the door open you catch the person outside flat-footed—close enough that your knife is already in their airspace. They jerk back, hands up, and a compact pistol clatters against the corridor wall as they fumble it instead of drawing clean.\n\nYou step into the corridor’s spill-light: bruised violet emergency strips stuttering overhead, condensation beading on the bulkhead. The air tastes like hot dust and antiseptic.\n\nThe figure is lean, dockside gear—not corporate armor. A cheap rebreather hangs loose at their throat. Their eyes keep flicking to your left wrist.\n\n“Easy—easy,” they say, voice pitched low. “I’m not HCS. If I was, you’d be zip-tied already.”\n\nThey swallow, then nod toward your wrist tag like it’s a live grenade. “Helix pinged me because it pinged *everything* in this block that ever touched Helix auth. You lit up the whole dead-net when your tag chirped. I was tracking the handshake—wanted to see if it was real or a spoof.”\n\nBehind them, down the corridor to the west, a service hatch is half-open—someone’s been using it recently; the screws are finger-loose and the sealant is torn. Past that, faint insectile relay-chatter starts up again, three bursts, then stops, like something listening for your response.\n\nThe dockside operative keeps their palms visible, but their gaze keeps measuring distances—your knife, the dropped pistol, the service hatch. “Name’s Sable,” they say quickly. “Reclaimer-side. Broker didn’t tell you the other part, did he? HCS posted a quarantine bulletin an hour ago—‘armed deserter attempting unauthorized entry.’ No face yet, but they’re pushing patrols into the docks. They’re looking for *your* wrist tag signature.”\n\nAs if to confirm it, your comm unit ticks once—an automated system scan brushing the channel, not a voice, just a cold ping that feels like a searchlight.\n\n**STATUS UPDATES:**  \n- Corridor contact: Reclaimer “Sable”  \n- HCS scan ping: active nearby  \n\n```json\n{\"npcs_add\":[{\"name\":\"Sable\",\"notes\":\"Reclaimer-side operative; claims to have tracked Helix auth handshake; warns HCS bulletin/patrols keyed to wrist tag signature.\"}],\"inventory_add\":[],\"inventory_remove\":[],\"abilities_add\":[],\"locations_add\":[\"Dockside locker-bay corridor\"]}\n```",
+      "timestamp": "2026-02-16T16:12:54.342543",
+      "player_reasoning": null,
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 12,
+      "source": "player_agent",
+      "content": "I hook my boot under the dropped pistol and kick it down the corridor away from both of us. “Sable—either you’re coming or you’re dead weight. That hatch: now.” I grab their collar, shove them toward the half-open service hatch, and slip in right behind them, knife up and eyes on the dark.",
+      "timestamp": "2026-02-16T16:12:57.660684",
+      "player_reasoning": "HCS is sweeping for my tag; talking is wasting time. I’ll use Sable as cover if useful, grab the dropped pistol, and move through that service hatch before the scan tightens.",
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 13,
+      "source": "game",
+      "content": "**IMMEDIATE OUTCOME:** Your boot hooks the pistol clean and you whip it down-corridor; it skitters and spins into the strobing violet light, clacking off a bulkhead before disappearing into mist. Sable flinches at the noise—then you’ve got their collar and they’s stumbling toward the half-open service hatch.\n\nThe hatch gives way with a wet, reluctant pop as you shoulder it wider.\n\nThe world **breathes back**.\n\nA **freezing, sweet-sour fog** punches out of the hatch like a held cough finally released—pressure backwash. It slams into your face and hands, turns your gloves tacky in a heartbeat, and smears the corridor lights into long, bleeding streaks across your vision. Sable chokes and tries to suck their rebreather into place with shaking fingers.\n\nSomething small and fast **skitters** in the turbulence—too many taps to be one set of feet—riding the pressure wave out past your boots and into the corridor you just came from.\n\nThe relay chatter you heard earlier accelerates instantly, insectile clicks stacking into a rhythm that feels like a heartbeat finding a tempo.\n\n**SENSORY GROUNDING:** You’re half-in, half-out of the **service crawl** to the west—ribbed maintenance ducting, damp insulation, and a grated deck slick with condensed mist. Behind you, the locker-bay corridor is now a fogged choke point lit by stuttering emergency strips.\n\nSable’s voice comes ragged through the rebreather seal. “—backwash—damn it, the seal was holding differential—” They grab your forearm hard, not to fight you, but to keep from falling. “If that fog hits a patrol’s optics, they’ll light this whole block up. And if it’s *contaminated*—” They don’t finish, eyes tracking the swirling haze like it might grow teeth.\n\nDown the corridor behind you, the kicked pistol clacks again—either settling… or being nudged by something you can’t see.\n\nInside the crawl ahead, deeper darkness folds around a narrow run of manual equalization valves—old brass-handles, labeled in Helix shorthand. One of them is already half-turned, like someone started venting and panicked.\n\n**STATUS UPDATES:**\n- Service hatch: seal compromised  \n- Visibility: heavily reduced  \n- Fog: spreading into corridor  \n- Skittering: moved outward  \n\n```json\n{\"inventory_add\":[],\"inventory_remove\":[],\"abilities_add\":[],\"locations_add\":[\"Helix-adjacent service crawl (west of locker-bay corridor)\"],\"npcs_add\":[]}\n```",
+      "timestamp": "2026-02-16T16:13:12.972912",
+      "player_reasoning": null,
+      "triggered_elements": [
+        "fail_Their Space_1_4a1590"
+      ],
+      "state_changes": {}
+    }
+  ],
+  "initial_state": {
+    "campaign_id": "2231d986-bcc9-4bf8-8955-03d798643df8",
+    "phase": "gameplay",
+    "genre": "Sci-Fi Horror",
+    "tone": "Tense",
+    "story_type": "Survival",
+    "character_sheet": {
+      "name": "Rika \"Grind\" Morrow",
+      "background": "Once a decorated colonial marine, Rika survived the Helix Station blackout but became the convenient scapegoat for the dead left in its corridors. Court-martialed on paper and abandoned in practice, she vanished into the contractor underworld, taking jobs no one else wants—derelicts, quarantines, and silent hulks with power still humming behind sealed doors. She keeps a battered Helix-issued wrist tag and a fragmentary audio log that suggests her squad never received the real evacuation orders.",
+      "profession": "Contracted boarding specialist and breach-clear operative (ex-Colonial Marine)",
+      "traits": [
+        "Hard-edged and intimidatingly direct",
+        "Hypervigilant, sleep-light, and threat-focused",
+        "Brutally pragmatic under pressure",
+        "Resentful of command structures and blind obedience",
+        "Stubbornly persistent, even self-destructive"
+      ],
+      "personal_goal": "Reach Helix Station’s sealed core, recover the black-box evidence that clears her name, and identify—and punish—the people who framed her, before whatever still lingers inside Helix finishes the job.",
+      "stats": {}
+    },
+    "seed_chunks": [
+      "Cold metal breathes in slow clicks behind the walls, as if the station is trying to remember how to be alive. Emergency strips stutter between bruised violet and dead white, painting corridors in intermittent afterimages. The air tastes of burnt insulation, old disinfectant, and something faintly sweet—like spoiled coolant—caught in the back of the throat. Every surface is tacky with condensed mist; gloves drag, boots whisper, and distant bulkheads answer with a delayed groan. Somewhere deep, a relay chatters in short, insectile bursts, then stops—leaving a pressure-heavy silence that makes your teeth feel too loud.",
+      "Helix Station’s ruin is contested by three powers. **Helix Corporate Security (HCS)** claims it’s enforcing quarantine and “protecting salvage crews,” but it’s really scrubbing command logs and hunting the sealed-core black box before it indicts executives. **The Contractor Underworld—dockside “Reclaimers”** presents itself as independent rescue-and-salvage, yet it runs a quiet auction for Helix biomaterials and pays bounties for living witnesses. **The Colonial Administration Inquiry Office (CAIO)** publicly promises justice for the blackout, but covertly brokers immunity deals to keep the scandal from destabilizing frontier governance. HCS raids Reclaimer teams; Reclaimers leak edited footage to embarrass HCS; CAIO plays both sides, feeding access codes in exchange for deniable cleanup.\n\n```json\n{\"factions\":[{\"name\":\"Helix Corporate Security (HCS)\",\"public_front\":\"Quarantine enforcement and protection of authorized salvage operations around Helix Station.\",\"hidden_agenda\":\"Erase incriminating evacuation/command records, secure the sealed-core black box, and eliminate witnesses tied to the blackout.\"},{\"name\":\"Dockside Reclaimers (Contractor Underworld)\",\"public_front\":\"Independent salvage, boarding, and “rescue” specialists taking jobs no one else will.\",\"hidden_agenda\":\"Auction Helix-derived biomaterials and station tech, capture or sell witnesses, and profit from controlled leaks and deniable violence.\"},{\"name\":\"Colonial Administration Inquiry Office (CAIO)\",\"public_front\":\"Official investigation into Helix Station’s blackout, promising accountability and due process.\",\"hidden_agenda\":\"Contain political fallout via immunity bargains, steer blame onto expendable contractors, and quietly retrieve evidence that threatens colonial leadership.\"}]}\n```",
+      "",
+      "",
+      "Rika “Grind” Morrow’s contract comes in on a dead channel—old Helix encryption, the kind that shouldn’t still handshake. The sender tag is wrong (a squadmate’s callsign, listed KIA), but the payload is worse: a 12‑second audio splice of her own voice issuing an evacuation order she never gave, followed by a timecode that matches the sealed-core black box index. Under it, three words: **CORE STILL LOCKED.**\n\nDockside, a Reclaimer broker offers her a “clean” breach job: board Helix, cut through quarantine doors, and extract a sealed data canister for auction. The pay is obscene. The fine print isn’t—delivery location is an HCS-controlled tender, and the broker insists on a live biometrics handshake using a Helix-issued wrist tag. The same battered tag Rika has kept hidden since the court-martial.\n\nWithin hours, HCS posts a quarantine bulletin naming an “armed deserter” believed to be attempting unauthorized entry. Her face isn’t on it—yet—but the description is too accurate to be a guess. CAIO reaches out through a legal intermediary offering “conditional exoneration” if she turns over any recovered logs immediately. They also ask, casually, whether she still has *anything* from Helix.\n\nHelix Station answers her approach with power flickers and a relay that chatters like an insect trapped in a vent. Something inside still recognizes her credentials. Something else is impersonating the dead.\n\nThe core is the only place that can clear her name. It’s also where everyone else wants her to go first."
+    ],
+    "world_seed": null,
+    "simulation": {
+      "scenes": {},
+      "global_watchers": [],
+      "global_fail_conditions": [],
+      "global_timed_events": [],
+      "triggered_elements": [],
+      "current_turn": 0,
+      "current_location": null
+    },
+    "current_location": null,
+    "current_turn": 0,
+    "inventory": [],
+    "abilities": [],
+    "discovered_locations": [],
+    "known_npcs": [],
+    "active_events": [],
+    "message_history": [
+      {
+        "role": "assistant",
+        "content": "Dockside, three hours before breach, Rika Morrow sits alone in a rented locker bay and listens to the station’s name like it can cut her. Helix still lives behind her eyes, and every click in the walls feels like a judge’s gavel.\n\nShe tells herself this job is just entry and exit. She doesn’t believe it, because the battered Helix-issued wrist tag in her palm feels warm, like it remembers her pulse.\n\nShe runs a whetstone down her boarding knife and keeps the strokes even. Her ex-marine habits do the thinking for her, and her hypervigilance does the rest, counting the footfalls outside and tracking the pause between breaths. She checks her breach charges, then her mag-boots, then the sealed pouch with the fragmentary audio log she never plays all the way through.\n\nA dead channel pings. The comm unit shouldn’t even handshake, not with old Helix encryption, but it does.\n\nThe sender tag reads a squadmate’s callsign, listed KIA in the Colonial Administration Inquiry Office database—the office that “investigates” disasters and trades favors in silence. Rika’s stomach locks as the payload auto-decrypts.\n\nTwelve seconds of audio fills the locker bay. It’s her voice, flat and official, issuing an evacuation order she never gave.\n\nShe hears the tiny artifacts in the splice, the way the words don’t sit right on her tongue. She watches the timecode under it match the sealed-core black box index, the one Helix Corporate Security uses to bury command logs under “quarantine enforcement.”\n\nThree words flash under the file. CORE STILL LOCKED.\n\nHer wrist tag chirps on its own, trying to authenticate with something that shouldn’t be alive. Outside her door, boots stop, then shift, like someone just got the same alert."
+      }
+    ],
+    "pending_display": null
+  },
+  "final_state": {
+    "campaign_id": "2231d986-bcc9-4bf8-8955-03d798643df8",
+    "phase": "gameplay",
+    "genre": "Sci-Fi Horror",
+    "tone": "Tense",
+    "story_type": "Survival",
+    "character_sheet": {
+      "name": "Rika \"Grind\" Morrow",
+      "background": "Once a decorated colonial marine, Rika survived the Helix Station blackout but became the convenient scapegoat for the dead left in its corridors. Court-martialed on paper and abandoned in practice, she vanished into the contractor underworld, taking jobs no one else wants—derelicts, quarantines, and silent hulks with power still humming behind sealed doors. She keeps a battered Helix-issued wrist tag and a fragmentary audio log that suggests her squad never received the real evacuation orders.",
+      "profession": "Contracted boarding specialist and breach-clear operative (ex-Colonial Marine)",
+      "traits": [
+        "Hard-edged and intimidatingly direct",
+        "Hypervigilant, sleep-light, and threat-focused",
+        "Brutally pragmatic under pressure",
+        "Resentful of command structures and blind obedience",
+        "Stubbornly persistent, even self-destructive"
+      ],
+      "personal_goal": "Reach Helix Station’s sealed core, recover the black-box evidence that clears her name, and identify—and punish—the people who framed her, before whatever still lingers inside Helix finishes the job.",
+      "stats": {}
+    },
+    "seed_chunks": [
+      "Cold metal breathes in slow clicks behind the walls, as if the station is trying to remember how to be alive. Emergency strips stutter between bruised violet and dead white, painting corridors in intermittent afterimages. The air tastes of burnt insulation, old disinfectant, and something faintly sweet—like spoiled coolant—caught in the back of the throat. Every surface is tacky with condensed mist; gloves drag, boots whisper, and distant bulkheads answer with a delayed groan. Somewhere deep, a relay chatters in short, insectile bursts, then stops—leaving a pressure-heavy silence that makes your teeth feel too loud.",
+      "Helix Station’s ruin is contested by three powers. **Helix Corporate Security (HCS)** claims it’s enforcing quarantine and “protecting salvage crews,” but it’s really scrubbing command logs and hunting the sealed-core black box before it indicts executives. **The Contractor Underworld—dockside “Reclaimers”** presents itself as independent rescue-and-salvage, yet it runs a quiet auction for Helix biomaterials and pays bounties for living witnesses. **The Colonial Administration Inquiry Office (CAIO)** publicly promises justice for the blackout, but covertly brokers immunity deals to keep the scandal from destabilizing frontier governance. HCS raids Reclaimer teams; Reclaimers leak edited footage to embarrass HCS; CAIO plays both sides, feeding access codes in exchange for deniable cleanup.\n\n```json\n{\"factions\":[{\"name\":\"Helix Corporate Security (HCS)\",\"public_front\":\"Quarantine enforcement and protection of authorized salvage operations around Helix Station.\",\"hidden_agenda\":\"Erase incriminating evacuation/command records, secure the sealed-core black box, and eliminate witnesses tied to the blackout.\"},{\"name\":\"Dockside Reclaimers (Contractor Underworld)\",\"public_front\":\"Independent salvage, boarding, and “rescue” specialists taking jobs no one else will.\",\"hidden_agenda\":\"Auction Helix-derived biomaterials and station tech, capture or sell witnesses, and profit from controlled leaks and deniable violence.\"},{\"name\":\"Colonial Administration Inquiry Office (CAIO)\",\"public_front\":\"Official investigation into Helix Station’s blackout, promising accountability and due process.\",\"hidden_agenda\":\"Contain political fallout via immunity bargains, steer blame onto expendable contractors, and quietly retrieve evidence that threatens colonial leadership.\"}]}\n```",
+      "",
+      "",
+      "Rika “Grind” Morrow’s contract comes in on a dead channel—old Helix encryption, the kind that shouldn’t still handshake. The sender tag is wrong (a squadmate’s callsign, listed KIA), but the payload is worse: a 12‑second audio splice of her own voice issuing an evacuation order she never gave, followed by a timecode that matches the sealed-core black box index. Under it, three words: **CORE STILL LOCKED.**\n\nDockside, a Reclaimer broker offers her a “clean” breach job: board Helix, cut through quarantine doors, and extract a sealed data canister for auction. The pay is obscene. The fine print isn’t—delivery location is an HCS-controlled tender, and the broker insists on a live biometrics handshake using a Helix-issued wrist tag. The same battered tag Rika has kept hidden since the court-martial.\n\nWithin hours, HCS posts a quarantine bulletin naming an “armed deserter” believed to be attempting unauthorized entry. Her face isn’t on it—yet—but the description is too accurate to be a guess. CAIO reaches out through a legal intermediary offering “conditional exoneration” if she turns over any recovered logs immediately. They also ask, casually, whether she still has *anything* from Helix.\n\nHelix Station answers her approach with power flickers and a relay that chatters like an insect trapped in a vent. Something inside still recognizes her credentials. Something else is impersonating the dead.\n\nThe core is the only place that can clear her name. It’s also where everyone else wants her to go first."
+    ],
+    "world_seed": null,
+    "simulation": {
+      "scenes": {
+        "Their Space": {
+          "location": "Their Space",
+          "location_description": "Behind the visible corridor skin, service voids run warm with intermittent power, breathing in slow relay-clicks. Condensation has pooled into tacky films that hide hairline cracks, boot scuffs, and faint drag marks that only appear under the bruised-violet stutter of emergency strips. A low-band carrier hum rides the silence—too regular to be random—suggesting someone is still using the station’s bones to listen.",
+          "watchers": [
+            {
+              "id": "watcher_Their Space_0_803afe",
+              "name": "HCS Microdrone 'Moth-11'",
+              "description": "A palm-sized inspection drone clings magnetically inside a ceiling cable trough, peeking through a misaligned panel seam when the lights stutter. It passively records audio, weapon signatures, and wrist-tag pings, prioritizing any mention of the sealed core or black-box retrieval routes.",
+              "faction": "Helix Corporate Security (HCS)",
+              "reports_to": "Lt. Varrin Kade, HCS Quarantine Scrub Team",
+              "triggers": [
+                {
+                  "trigger_type": "keyword",
+                  "keywords": [
+                    "black box",
+                    "sealed core",
+                    "evac orders",
+                    "Helix-issued tag",
+                    "CAIO",
+                    "command log"
+                  ],
+                  "probability": 0.65
+                }
+              ],
+              "active": true,
+              "triggered": false
+            },
+            {
+              "id": "watcher_Their Space_1_2efee0",
+              "name": "Reclaimer Eavesdrop Node 'Dockmouth'",
+              "description": "A jury-rigged comm tap spliced into an old intercom junction box, using the station’s own relay chatter as cover. It listens for contractor call-signs and auctionable intel, then bursts a compressed packet to a dockside repeater when it hears names tied to Helix Station’s blackout.",
+              "faction": "Dockside Reclaimers (Contractor Underworld)",
+              "reports_to": "Broker 'Sable' (Reclaimer Auction Channel)",
+              "triggers": [
+                {
+                  "trigger_type": "keyword",
+                  "keywords": [
+                    "Grind",
+                    "Morrow",
+                    "Helix blackout",
+                    "witness",
+                    "bounty",
+                    "biomaterial"
+                  ],
+                  "probability": 0.55
+                }
+              ],
+              "active": true,
+              "triggered": false
+            }
+          ],
+          "hidden_guards": [
+            {
+              "id": "guard_Their Space_0_222739",
+              "name": "Ceiling-crawling maintenance unit with improvised cutting arm",
+              "guard_type": "automated",
+              "strength": "moderate",
+              "location_within_scene": "Latched to the underside of a support rib inside the overhead service crawl, directly above the next bulkhead seam where the emergency strip flickers dead-white.",
+              "triggers": [
+                {
+                  "trigger_type": "keyword",
+                  "keywords": [
+                    "weld",
+                    "cut",
+                    "breach",
+                    "panel",
+                    "override",
+                    "torch"
+                  ],
+                  "probability": 0.9
+                }
+              ],
+              "weaknesses": [
+                "Stay out of the overhead crawl and move under the wall-side piping where its line-of-sight is blocked",
+                "EMP burst or power-cycle the local junction (3-second brownout) to drop it inert",
+                "Cold-spray the drive joints; condensation freezes its mag-clamps and forces a fall"
+              ],
+              "active": true,
+              "triggered": false
+            },
+            {
+              "id": "guard_Their Space_1_954bda",
+              "name": "Spore-slicked 'Latchling' nest in the vent return",
+              "guard_type": "creature",
+              "strength": "moderate",
+              "location_within_scene": "Inside the waist-high vent return behind a warped grille; the sweet coolant note is strongest here, masking a wet, organic reek.",
+              "triggers": [
+                {
+                  "trigger_type": "keyword",
+                  "keywords": [
+                    "vent",
+                    "crawl",
+                    "grille",
+                    "airflow",
+                    "sweet smell",
+                    "coolant"
+                  ],
+                  "probability": 0.9
+                }
+              ],
+              "weaknesses": [
+                "Do not open the grille; seal it with tape/foam or weld-putty and move on",
+                "Bright sustained light drives them deeper for a short window",
+                "A sharp percussive shock to the duct (not gunfire) dislodges them without drawing them out"
+              ],
+              "active": true,
+              "triggered": false
+            }
+          ],
+          "fail_conditions": [
+            {
+              "id": "fail_Their Space_0_b5984a",
+              "name": "Hot-mic leak to hostile listeners",
+              "description": "The corridor’s intercom lines are compromised; speaking names, goals, or routes out loud can be harvested and forwarded in seconds. In a place where silence is pressure, words become coordinates.",
+              "severity": "moderate",
+              "consequence_narrative": "A faint insectile burst answers from somewhere deep, then stops. Within minutes, a distant bulkhead cycles once—testing—followed by the soft clack of something repositioning in the walls. HCS or Reclaimer assets begin converging toward the last detected audio source, tightening the station around you.",
+              "triggers": [
+                {
+                  "trigger_type": "keyword",
+                  "keywords": [
+                    "black box",
+                    "sealed core",
+                    "Helix Station",
+                    "Grind",
+                    "Morrow",
+                    "evidence",
+                    "CAIO",
+                    "HCS"
+                  ],
+                  "probability": 0.7
+                }
+              ],
+              "can_escape": true,
+              "escape_conditions": [
+                "Go radio-silent and communicate via hand signals or text-only local link",
+                "Move two compartments away and create a decoy noise source (thrown tool, timed intercom ping) to misdirect",
+                "Cut power to the nearest intercom junction box to break the tap"
+              ],
+              "active": true,
+              "triggered": false
+            },
+            {
+              "id": "fail_Their Space_1_4a1590",
+              "name": "Breach-clear shortcut triggers pressure backwash",
+              "description": "Some doors are holding back differential pressure and contaminated mist; forcing them can create a sudden backwash that blinds optics, fouls filters, and carries whatever is nesting in the ducts into the open.",
+              "severity": "severe",
+              "consequence_narrative": "The seal fails with a wet pop and the corridor exhales a freezing, sweet-sour fog that turns your gloves tacky and your visor into a smear of light. Something skitters in the turbulence, riding the pressure wave, and the station’s relay clicks accelerate like a heartbeat. Your position becomes a choke point with reduced visibility and rising contamination risk.",
+              "triggers": [
+                {
+                  "trigger_type": "keyword",
+                  "keywords": [
+                    "breach",
+                    "kick",
+                    "charge",
+                    "force door",
+                    "pry",
+                    "blow"
+                  ],
+                  "probability": 0.6
+                }
+              ],
+              "can_escape": true,
+              "escape_conditions": [
+                "Back off immediately, reseal with expanding foam/patch plate, and reroute",
+                "Vent the compartment slowly using manual equalization valves before attempting entry",
+                "Use a thermal beacon or flare to regain sightlines and force movement away from the fog front"
+              ],
+              "active": true,
+              "triggered": true
+            }
+          ],
+          "secrets": [
+            {
+              "id": "secret_Their Space_0_afd8b4",
+              "description": "A Helix-issued wrist-tag handshake ghost is still registered in the local access cache—your tag’s ID appears as 'DISCIPLINE HOLD: DO NOT CLEAR' with a timestamp that post-dates the official blackout report. The cache also shows a second tag in your squad’s block that was never logged as evacuated, implying someone edited the roster after the fact.",
+              "discovery_triggers": [
+                {
+                  "trigger_type": "keyword",
+                  "keywords": [
+                    "scan",
+                    "examine",
+                    "access panel",
+                    "wrist tag",
+                    "terminal",
+                    "log"
+                  ],
+                  "probability": 1.0
+                }
+              ],
+              "discovered": false
+            },
+            {
+              "id": "secret_Their Space_1_522564",
+              "description": "Behind a condensation-stuck wall panel is a thin strip of polymer tape with CAIO cipher marks, used to mask a micro-slit camera aimed down the corridor. The camera’s buffer contains a few corrupted frames: HCS personnel escorting a covered crate labeled 'CORE MEDIA' toward a maintenance lift, dated hours after quarantine was declared.",
+              "discovery_triggers": [
+                {
+                  "trigger_type": "keyword",
+                  "keywords": [
+                    "search",
+                    "look",
+                    "panel",
+                    "condensation",
+                    "inspect",
+                    "camera"
+                  ],
+                  "probability": 1.0
+                }
+              ],
+              "discovered": false
+            }
+          ],
+          "generated_at_turn": 0
+        }
+      },
+      "global_watchers": [],
+      "global_fail_conditions": [],
+      "global_timed_events": [],
+      "triggered_elements": [
+        "fail_Their Space_1_4a1590"
+      ],
+      "current_turn": 0,
+      "current_location": "Their Space"
+    },
+    "current_location": "Their Space",
+    "current_turn": 2,
+    "inventory": [],
+    "abilities": [],
+    "discovered_locations": [
+      "Their Space",
+      "Dockside locker-bay corridor",
+      "Helix-adjacent service crawl (west of locker-bay corridor)"
+    ],
+    "known_npcs": [
+      "Sable"
+    ],
+    "active_events": [],
+    "message_history": [
+      {
+        "role": "assistant",
+        "content": "Dockside, three hours before breach, Rika Morrow sits alone in a rented locker bay and listens to the station’s name like it can cut her. Helix still lives behind her eyes, and every click in the walls feels like a judge’s gavel.\n\nShe tells herself this job is just entry and exit. She doesn’t believe it, because the battered Helix-issued wrist tag in her palm feels warm, like it remembers her pulse.\n\nShe runs a whetstone down her boarding knife and keeps the strokes even. Her ex-marine habits do the thinking for her, and her hypervigilance does the rest, counting the footfalls outside and tracking the pause between breaths. She checks her breach charges, then her mag-boots, then the sealed pouch with the fragmentary audio log she never plays all the way through.\n\nA dead channel pings. The comm unit shouldn’t even handshake, not with old Helix encryption, but it does.\n\nThe sender tag reads a squadmate’s callsign, listed KIA in the Colonial Administration Inquiry Office database—the office that “investigates” disasters and trades favors in silence. Rika’s stomach locks as the payload auto-decrypts.\n\nTwelve seconds of audio fills the locker bay. It’s her voice, flat and official, issuing an evacuation order she never gave.\n\nShe hears the tiny artifacts in the splice, the way the words don’t sit right on her tongue. She watches the timecode under it match the sealed-core black box index, the one Helix Corporate Security uses to bury command logs under “quarantine enforcement.”\n\nThree words flash under the file. CORE STILL LOCKED.\n\nHer wrist tag chirps on its own, trying to authenticate with something that shouldn’t be alive. Outside her door, boots stop, then shift, like someone just got the same alert."
+      },
+      {
+        "role": "user",
+        "content": "I kill the locker bay lights, palm my boarding knife, and slide to the door’s edge. I snap it open hard and step into their space, blade low. “You stalking me or did Helix just ping you too? Talk—now.”"
+      },
+      {
+        "role": "assistant",
+        "content": "**IMMEDIATE OUTCOME:** The lights die in your locker bay, and when you snap the door open you catch the person outside flat-footed—close enough that your knife is already in their airspace. They jerk back, hands up, and a compact pistol clatters against the corridor wall as they fumble it instead of drawing clean.\n\nYou step into the corridor’s spill-light: bruised violet emergency strips stuttering overhead, condensation beading on the bulkhead. The air tastes like hot dust and antiseptic.\n\nThe figure is lean, dockside gear—not corporate armor. A cheap rebreather hangs loose at their throat. Their eyes keep flicking to your left wrist.\n\n“Easy—easy,” they say, voice pitched low. “I’m not HCS. If I was, you’d be zip-tied already.”\n\nThey swallow, then nod toward your wrist tag like it’s a live grenade. “Helix pinged me because it pinged *everything* in this block that ever touched Helix auth. You lit up the whole dead-net when your tag chirped. I was tracking the handshake—wanted to see if it was real or a spoof.”\n\nBehind them, down the corridor to the west, a service hatch is half-open—someone’s been using it recently; the screws are finger-loose and the sealant is torn. Past that, faint insectile relay-chatter starts up again, three bursts, then stops, like something listening for your response.\n\nThe dockside operative keeps their palms visible, but their gaze keeps measuring distances—your knife, the dropped pistol, the service hatch. “Name’s Sable,” they say quickly. “Reclaimer-side. Broker didn’t tell you the other part, did he? HCS posted a quarantine bulletin an hour ago—‘armed deserter attempting unauthorized entry.’ No face yet, but they’re pushing patrols into the docks. They’re looking for *your* wrist tag signature.”\n\nAs if to confirm it, your comm unit ticks once—an automated system scan brushing the channel, not a voice, just a cold ping that feels like a searchlight.\n\n**STATUS UPDATES:**  \n- Corridor contact: Reclaimer “Sable”  \n- HCS scan ping: active nearby  \n\n```json\n{\"npcs_add\":[{\"name\":\"Sable\",\"notes\":\"Reclaimer-side operative; claims to have tracked Helix auth handshake; warns HCS bulletin/patrols keyed to wrist tag signature.\"}],\"inventory_add\":[],\"inventory_remove\":[],\"abilities_add\":[],\"locations_add\":[\"Dockside locker-bay corridor\"]}\n```"
+      },
+      {
+        "role": "user",
+        "content": "I hook my boot under the dropped pistol and kick it down the corridor away from both of us. “Sable—either you’re coming or you’re dead weight. That hatch: now.” I grab their collar, shove them toward the half-open service hatch, and slip in right behind them, knife up and eyes on the dark."
+      },
+      {
+        "role": "assistant",
+        "content": "**IMMEDIATE OUTCOME:** Your boot hooks the pistol clean and you whip it down-corridor; it skitters and spins into the strobing violet light, clacking off a bulkhead before disappearing into mist. Sable flinches at the noise—then you’ve got their collar and they’s stumbling toward the half-open service hatch.\n\nThe hatch gives way with a wet, reluctant pop as you shoulder it wider.\n\nThe world **breathes back**.\n\nA **freezing, sweet-sour fog** punches out of the hatch like a held cough finally released—pressure backwash. It slams into your face and hands, turns your gloves tacky in a heartbeat, and smears the corridor lights into long, bleeding streaks across your vision. Sable chokes and tries to suck their rebreather into place with shaking fingers.\n\nSomething small and fast **skitters** in the turbulence—too many taps to be one set of feet—riding the pressure wave out past your boots and into the corridor you just came from.\n\nThe relay chatter you heard earlier accelerates instantly, insectile clicks stacking into a rhythm that feels like a heartbeat finding a tempo.\n\n**SENSORY GROUNDING:** You’re half-in, half-out of the **service crawl** to the west—ribbed maintenance ducting, damp insulation, and a grated deck slick with condensed mist. Behind you, the locker-bay corridor is now a fogged choke point lit by stuttering emergency strips.\n\nSable’s voice comes ragged through the rebreather seal. “—backwash—damn it, the seal was holding differential—” They grab your forearm hard, not to fight you, but to keep from falling. “If that fog hits a patrol’s optics, they’ll light this whole block up. And if it’s *contaminated*—” They don’t finish, eyes tracking the swirling haze like it might grow teeth.\n\nDown the corridor behind you, the kicked pistol clacks again—either settling… or being nudged by something you can’t see.\n\nInside the crawl ahead, deeper darkness folds around a narrow run of manual equalization valves—old brass-handles, labeled in Helix shorthand. One of them is already half-turned, like someone started venting and panicked.\n\n**STATUS UPDATES:**\n- Service hatch: seal compromised  \n- Visibility: heavily reduced  \n- Fog: spreading into corridor  \n- Skittering: moved outward  \n\n```json\n{\"inventory_add\":[],\"inventory_remove\":[],\"abilities_add\":[],\"locations_add\":[\"Helix-adjacent service crawl (west of locker-bay corridor)\"],\"npcs_add\":[]}\n```"
+      }
+    ],
+    "pending_display": null
+  },
+  "simulation_snapshots": []
+}

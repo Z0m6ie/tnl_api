@@ -1,0 +1,66 @@
+{
+  "timestamp": "2026-02-16T16:13:13.083732",
+  "config": {
+    "num_agents": 3,
+    "messages_per_session": 2,
+    "max_concurrent_agents": 5,
+    "vary_genres": true
+  },
+  "total_playthroughs": 3,
+  "successful": 3,
+  "failed": 0,
+  "playthroughs": [
+    {
+      "id": "60ad0e46",
+      "personality": "curious",
+      "genre": "Dark Fantasy",
+      "tone": "Whimsical",
+      "story_type": "fantasy, whimsical, adventure",
+      "character": "Liora Thimblewick",
+      "turns": 13,
+      "locations": 0,
+      "npcs": 0,
+      "triggers_fired": 0,
+      "completed": true,
+      "error": null
+    },
+    {
+      "id": "cc319408",
+      "personality": "cautious",
+      "genre": "Noir",
+      "tone": "Gritty",
+      "story_type": "Mystery",
+      "character": "Silas Mercer",
+      "turns": 13,
+      "locations": 2,
+      "npcs": 4,
+      "triggers_fired": 3,
+      "completed": true,
+      "error": null
+    },
+    {
+      "id": "057dd5f0",
+      "personality": "aggressive",
+      "genre": "Sci-Fi Horror",
+      "tone": "Tense",
+      "story_type": "Survival",
+      "character": "Rika \"Grind\" Morrow",
+      "turns": 13,
+      "locations": 3,
+      "npcs": 1,
+      "triggers_fired": 1,
+      "completed": true,
+      "error": null
+    }
+  ],
+  "genre_distribution": {
+    "Dark Fantasy": 1,
+    "Noir": 1,
+    "Sci-Fi Horror": 1
+  },
+  "personality_distribution": {
+    "curious": 1,
+    "cautious": 1,
+    "aggressive": 1
+  }
+}

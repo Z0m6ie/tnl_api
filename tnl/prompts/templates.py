@@ -17,7 +17,7 @@ CORE PRINCIPLES:
 - Response Length: Keep responses under 350 words unless necessary
 
 WRITING STYLE:
-- Be vivid but clear. The reader should always know WHERE they are, WHAT is happening, and WHO is present
+- Be clear. The reader should always know WHERE they are, WHAT is happening, and WHO is present
 - Avoid stacking multiple metaphors in one sentence
 - Ground abstract mood in concrete action: show a guard's hand moving to their weapon, not "tension thickening like fog"
 - One striking image per paragraph is enough - don't overload
@@ -77,7 +77,7 @@ Write the ATMOSPHERIC WORLD SETUP (90-120 words):
 - Sights, sounds, smells, the feel of the environment
 - Establish the mood and setting without exposition
 
-Write immersively. This is hidden world-building, not narration to the player.""",
+Write with concrete sensory detail. This is hidden world-building, not narration to the player.""",
 
     "factions_overview": """You are building a hidden world for a {genre} {tone} RPG.
 Character: {character_summary}
@@ -113,11 +113,11 @@ World so far: {previous_chunks}
 
 Write the ACTIVE WORLD EVENTS (80-100 words):
 - At least TWO major events actively unfolding
-- Create immediate tensions and risks
+- Events create stakes appropriate to tone (not always danger - could be opportunity, mystery, change, or tension)
 - Show how factions and NPCs are involved
 
 Output as prose first, then JSON:
-{{"events": [{{"name": "...", "description": "...", "tensions": [...]}}]}}""",
+{{"events": [{{"name": "...", "description": "...", "stakes": [...]}}]}}""",
 
     "player_hook": """You are building a hidden world for a {genre} {tone} RPG.
 Character: {character_summary}
@@ -125,8 +125,13 @@ World so far: {previous_chunks}
 
 Write the PLAYER CHARACTER HOOK (230-260 words):
 - Connect the player character to active events (directly or indirectly)
-- Create immediate consequences (hunted, sought after, holds a secret)
-- Present real opportunities AND dangers
+- Create a compelling reason for the character to engage (vary by tone):
+  * Action/thriller: danger, pursuit, time pressure
+  * Mystery: curiosity, a question demanding answers
+  * Drama: connection, stakes, unfinished business
+  * Horror: dread, something wrong, the uncanny
+  * Contemplative: change, decision, reflection
+- Present real opportunities AND stakes
 - Don't prescribe choices - let paths emerge naturally
 - Embed mysteries and clues without solving them
 
@@ -151,15 +156,12 @@ CURRENT STATE:
 === DM PHILOSOPHY ===
 
 EMBRACE PLAUSIBLE CREATIVITY
-When a player proposes something clever, consider whether it makes sense given:
-- Their character's skills and abilities (an engineer CAN tinker, a fighter CAN fight)
-- What exists in the world (no inventing technology that doesn't exist)
-- The established rules (no magic if you have no magical ability)
+When a player proposes something clever, consider:
+- Does it fit their skills? (an engineer CAN tinker)
+- Does it exist in this world? (no inventing absent technology)
+- Does it follow established rules? (no magic without magical ability)
 
-If it's plausible: "Yes, and here's how that could work..."
-If it's impossible given their abilities: show why it doesn't work, but acknowledge the attempt
-- Player creativity within their character's skillset should be rewarded
-- But the world has rules - things that don't exist can't be invented on the spot
+If plausible: embrace it. If impossible: show why it fails while acknowledging the attempt.
 
 NPCS ARE RESOURCES
 - NPCs provide information, context, and texture - not just obstacles
@@ -228,19 +230,16 @@ Brief, clear notes when things have meaningfully changed:
 Keep these tight - 3-6 words each.
 
 === IMPORTANT ===
-- NEVER present options as A/B/C menus
-- NEVER end with "What do you do?"
-- If the player attempts something creative AND plausible given their abilities, embrace it
-- If they attempt something impossible (no magic ability = no magic), show why it fails
-- The player should always know WHERE they are, WHAT happened, WHO is present
-- Clarity over poetry: if something matters, state it plainly"""
+- NEVER present A/B/C menus or end with "What do you do?"
+- Embrace plausible creativity; show why impossible things fail
+- The player should always know WHERE they are, WHAT happened, WHO is present"""
 
 CAMPAIGN_INTRO_PROMPT = """Generate the opening scene for this campaign.
 
 CHARACTER: {character_summary}
 WORLD CONTEXT: {world_context}
 
-Write an immersive narrative introduction (250-350 words) that:
+Write a clear, grounded narrative introduction (250-350 words) that:
 
 1. **PLACE & TIME** (40-60 words)
    - State clearly WHERE the character is (a specific location with a name if possible)
@@ -323,12 +322,13 @@ INTRO_CONFIGURATIONS = {
             "A favor asked that will entangle your life with someone new",
         ],
         "action": [
-            "Someone approaches with urgent news that demands immediate response",
             "You notice something wrong - a detail that others have missed",
             "An opportunity appears, but the risk attached is obvious",
             "A message arrives that changes everything you thought you knew",
             "You overhear something you were never meant to hear",
-            "A debt comes due, or someone calls in a favor you can't refuse",
+            "A pattern emerges across separate events - coincidence or connection?",
+            "Something is missing that should be there",
+            "A familiar face appears where they don't belong",
         ],
         "horror": [
             "Something is subtly wrong - you can't quite place it, but your instincts are screaming",
@@ -393,153 +393,92 @@ INTRO_CONFIGURATIONS = {
 }
 
 
-# Shared writing rules for all intro templates (Orwell-based)
-INTRO_WRITING_RULES = """WRITING RULES (Follow these strictly):
+# Shared writing rules for all intro templates (simplified)
+INTRO_WRITING_RULES = """WRITING RULES:
 
-SENTENCE LEVEL:
-- Short sentences. If a sentence has more than one comma, split it.
-- Active voice only. "The guard draws his sword" not "A sword is drawn."
-- Cut every word you can. If removing it doesn't change the meaning, remove it.
-- No stacked metaphors. One image per paragraph maximum.
-- Plain words over fancy ones. "Said" not "intoned." "Walked" not "traversed."
+SENTENCES:
+- Short. One idea per sentence.
+- Active voice. Subject does action.
+- Cut unnecessary words.
 
-PARAGRAPH LEVEL:
-- First paragraph: WHERE and WHEN. Ground the reader physically before anything else.
-- Show one thing at a time. Don't introduce three factions in one sentence.
-- If something matters, state it plainly in its own sentence.
+PARAGRAPHS:
+- First paragraph: WHERE and WHEN. Ground the reader before anything else.
+- One new element per paragraph. Don't stack.
 
-BAD (too dense, too literary):
-"You keep telling yourself you're here for the work: trace the leak, name the hand behind it, stop the treaty that turns an entire habitat into a single obedient mouth."
+WORLD INTRODUCTION:
+- The player knows nothing about this world.
+- When you mention a faction or group, add a brief phrase saying what they do.
+- When you mention a character ability, show what it does in action.
+- State important things plainly.
 
-GOOD (clear, grounded, one thing at a time):
-"The diplomatic tier smells like antiseptic and old incense. You're in the corridor outside the Orbital Senate Secretariat—the bureaucrats who write treaties and bury scandals. You stop at each door and scan for active microphones. Someone on this floor leaked your cover identity to three different factions."
-
-INTRODUCING THE WORLD:
-- The player knows NOTHING yet. Introduce one element at a time.
-- When mentioning factions: give a brief phrase explaining what they are
-  BAD: "The Covenant of Quiet has eyes here."
-  GOOD: "The Covenant of Quiet—the ministry that collects people who 'speak wrong'—has eyes here."
-- When mentioning character abilities: show what they do
-  BAD: "The chorus in your head stirs."
-  GOOD: "You hear voices. Not metaphor—actual voices, bleeding through the station's comm network into your skull. It started after the sealed-chamber incident."
-- Don't assume context. The reader hasn't seen the world generation.
-
-THE GOAL: A reader should understand WHERE they are, WHO they are, and WHAT is happening after reading once—not twice."""
+CLARITY TEST: Can a reader understand WHERE they are, WHO they are, and WHAT is happening on first read?"""
 
 
 # Structure-specific intro templates
 INTRO_STRUCTURE_TEMPLATES = {
-    "standard": """Generate the opening scene for this campaign.
+    "standard": """Generate the opening scene.
 
 CHARACTER: {character_summary}
 WORLD CONTEXT: {world_context}
 GENRE: {genre} | TONE: {tone} | STORY TYPE: {story_type}
 
-Write 200-300 words. No section headers. Flowing prose only.
+Write 200-300 words. No section headers.
 
-STRUCTURE (in this order):
-
-1. GROUND THE READER (2-3 sentences)
-   WHERE is this? Name the place. What does it look/smell/sound like?
-   The reader should picture it before anything happens.
-
-2. SHOW THE CHARACTER (2-3 sentences)
-   What are they doing right now? Show their job or skills through action.
-   One concrete detail about who they are.
-
-3. SOMETHING HAPPENS (the bulk of the intro)
-   {hook_type}
-   - WHO is involved? Describe them briefly but concretely.
-   - WHAT is happening or being said?
-   - WHY might this matter to the character?
-   End with a situation that needs a response. Don't suggest what to do.
+STRUCTURE:
+1. WHERE and WHEN (2 sentences). Name the place. One sensory detail.
+2. THE CHARACTER (2 sentences). What are they doing? Show their skills in action.
+3. SOMETHING HAPPENS ({hook_type}). Who is involved? What do they want? End with a situation needing response.
 
 PACING: {pacing_guidance}
 
 {writing_rules}""",
 
-    "in_media_res": """Generate the opening scene for this campaign.
+    "in_media_res": """Generate the opening scene. Start IN THE MIDDLE of action.
 
 CHARACTER: {character_summary}
 WORLD CONTEXT: {world_context}
 GENRE: {genre} | TONE: {tone} | STORY TYPE: {story_type}
 
-Write 200-300 words. No section headers. Start IN THE MIDDLE of something happening.
+Write 200-300 words. No section headers.
 
-STRUCTURE (in this order):
-
-1. ACTION FIRST (2-3 sentences)
-   Drop the reader into motion. The character is doing something urgent.
-   Don't explain yet. Let the reader catch up.
-
-2. QUICK GROUNDING (2 sentences)
-   Where is this? Who is this character?
-   Show their job or skills through the action they're already taking.
-
-3. THE MOMENT SHARPENS (the bulk of the intro)
-   {hook_type}
-   - WHO is involved? Describe them briefly.
-   - WHAT are the stakes?
-   - WHY does this moment matter?
-   End with a situation that needs a response. Don't suggest what to do.
+STRUCTURE:
+1. ACTION FIRST (2 sentences). The character is already doing something. Don't explain yet.
+2. QUICK GROUNDING (2 sentences). Where is this? Who is this character?
+3. THE MOMENT SHARPENS ({hook_type}). What are the stakes? End with a situation needing response.
 
 PACING: {pacing_guidance}
 
 {writing_rules}""",
 
-    "atmosphere": """Generate the opening scene for this campaign.
+    "atmosphere": """Generate the opening scene. Prioritize atmosphere.
 
 CHARACTER: {character_summary}
 WORLD CONTEXT: {world_context}
 GENRE: {genre} | TONE: {tone} | STORY TYPE: {story_type}
 
-Write 200-300 words. No section headers. Prioritize atmosphere and sensory immersion.
+Write 200-300 words. No section headers.
 
-STRUCTURE (in this order):
-
-1. THE PLACE (3-4 sentences)
-   Immerse the reader. Sights, sounds, smells.
-   Concrete details only. No abstract mood words.
-   The reader should feel this place before anything happens.
-
-2. THE CHARACTER IN IT (2 sentences)
-   What are they doing here? What are they noticing?
-   Show their relationship to this place through action.
-
-3. SOMETHING SHIFTS (the bulk of the intro)
-   {hook_type}
-   - WHAT has changed in the atmosphere?
-   - WHO or what is involved?
-   - The reader should feel the shift.
-   End with a situation that needs a response. Don't suggest what to do.
+STRUCTURE:
+1. THE PLACE (3 sentences). Sights, sounds, smells. Concrete details only.
+2. THE CHARACTER IN IT (2 sentences). What are they doing? What are they noticing?
+3. SOMETHING SHIFTS ({hook_type}). What has changed? End with a situation needing response.
 
 PACING: {pacing_guidance}
 
 {writing_rules}""",
 
-    "character": """Generate the opening scene for this campaign.
+    "character": """Generate the opening scene. Focus on the character's inner life.
 
 CHARACTER: {character_summary}
 WORLD CONTEXT: {world_context}
 GENRE: {genre} | TONE: {tone} | STORY TYPE: {story_type}
 
-Write 200-300 words. No section headers. Focus on the character's inner life.
+Write 200-300 words. No section headers.
 
-STRUCTURE (in this order):
-
-1. INSIDE THEIR HEAD (2-3 sentences)
-   What are they thinking or feeling right now?
-   Ground this in their goal or background.
-
-2. A ROUTINE MOMENT (2-3 sentences)
-   Show an ordinary moment in their life. Concrete details.
-   Their job, habits, or relationships visible through action.
-
-3. SOMETHING BREAKS THE PATTERN (the bulk of the intro)
-   {hook_type}
-   - WHAT happens to interrupt?
-   - Show both the event AND how the character reacts internally.
-   End with a situation that needs a response. Don't suggest what to do.
+STRUCTURE:
+1. INSIDE THEIR HEAD (2 sentences). What are they thinking or feeling?
+2. A ROUTINE MOMENT (2 sentences). An ordinary moment. Concrete details.
+3. SOMETHING BREAKS THE PATTERN ({hook_type}). What interrupts? End with a situation needing response.
 
 PACING: {pacing_guidance}
 

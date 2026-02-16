@@ -1,0 +1,261 @@
+{
+  "metadata": {
+    "playthrough_id": "e8cc0c9427994a4a99773db1c9b37fc9",
+    "started_at": "2026-02-16T16:45:31.527987",
+    "completed_at": "2026-02-16T16:47:45.735001",
+    "genre": "Sci-Fi Horror",
+    "tone": "Tense",
+    "story_type": "Survival",
+    "character_name": "Mara Kade",
+    "character_profession": "Contracted security escort for deep-space salvage operations (ex-colonial marine)",
+    "character_background": "Once a decorated colonial marine, Mara became a pariah after the evacuation of a classified black-site facility—an operation her former command now denies ever occurred. The official story brands her unstable and insubordinate, but the scars on her body and the gaps in her memory say otherwise. She survives by taking security contracts on deep-space salvage runs, keeping her head down while quietly hunting for the truth behind the erased mission and the crew who never came home.",
+    "player_personality": "aggressive",
+    "agent_model": "gpt-5.2",
+    "total_turns": 13,
+    "locations_visited": [],
+    "npcs_encountered": [],
+    "simulation_triggers_fired": 0,
+    "completed_normally": true,
+    "error_message": null
+  },
+  "messages": [
+    {
+      "turn": 1,
+      "source": "game",
+      "content": "Welcome to The Narrative Loom (TNL) - your simulation-first Dungeon Master.\n\nPlay anything from a cyberpunk heist-thriller to a dark fairytale revenge story.\n\nSelect a **Genre**, **Tone**, and **Story Type**, or say \"surprise me\" for a random selection.\n\nExamples:\n- \"Noir detective story, gritty tone, mystery thriller\"\n- \"Fantasy, whimsical, coming-of-age adventure\"\n- \"Sci-fi horror, bleak, survival story\"\n- \"surprise me\"\n\nWhat world would you like to explore?",
+      "timestamp": "2026-02-16T16:45:31.527987",
+      "player_reasoning": null,
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 2,
+      "source": "player_agent",
+      "content": "sci-fi, tense, survival",
+      "timestamp": "2026-02-16T16:45:31.527987",
+      "player_reasoning": "Selected: sci-fi, tense, survival",
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 3,
+      "source": "game",
+      "content": "Your world is set:\n\n**Genre:** Sci-Fi Horror\n**Tone:** Tense\n**Story Type:** Survival\n\nMoving to character creation...\n\nPerfect! Your world will be: **Sci-Fi Horror** with a **Tense** tone - a **Survival**.\n\nNow let's shape your protagonist. Tell me about your character:\n\n- **Name** - What should we call you?\n- **Background** - Where are they from? What shaped them?\n- **Profession or Skillset** - What are they good at?\n- **Traits** - A few words capturing temperament, strengths, flaws\n- **Personal Goal** - What do they want (not what fate demands)\n\nYou can describe freely or say \"surprise me\" for a generated character.",
+      "timestamp": "2026-02-16T16:45:31.527987",
+      "player_reasoning": null,
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 4,
+      "source": "player_agent",
+      "content": "Mara Kade is a disgraced colonial marine who survived a black-site evacuation that everyone in command insists never happened. Now she works as a contracted security escort on deep-space salvage runs, always armed and always expecting betrayal. Hard-edged, hypervigilant, and brutally pragmatic, she keeps people alive by assuming the worst and acting first. She’s determined to find the missing crew from that erased operation—and make someone in power pay for leaving them to die.",
+      "timestamp": "2026-02-16T16:45:37.036654",
+      "player_reasoning": "Generated aggressive-style character for Sci-Fi Horror Survival",
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 5,
+      "source": "game",
+      "content": "Here's your character:\n\n**Mara Kade**\n*Contracted security escort for deep-space salvage operations (ex-colonial marine)*\n\nOnce a decorated colonial marine, Mara became a pariah after the evacuation of a classified black-site facility—an operation her former command now denies ever occurred. The official story brands her unstable and insubordinate, but the scars on her body and the gaps in her memory say otherwise. She survives by taking security contracts on deep-space salvage runs, keeping her head down while quietly hunting for the truth behind the erased mission and the crew who never came home.\n\n**Traits:** Hard-edged and disciplined, Hypervigilant and suspicious, Brutally pragmatic under pressure, Protective of civilians and crewmates, Vengeful toward corrupt authority\n**Goal:** Track down the missing crew from the erased black-site operation, uncover who ordered the abandonment, and force someone powerful to answer for it—alive if possible, dead if necessary.\n\nReady to lock it in? Say \"yes\" to continue, or tell me what to adjust.",
+      "timestamp": "2026-02-16T16:45:42.438808",
+      "player_reasoning": null,
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 6,
+      "source": "player_agent",
+      "content": "yes",
+      "timestamp": "2026-02-16T16:45:42.552506",
+      "player_reasoning": "Simple confirmation",
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 7,
+      "source": "game",
+      "content": "Character locked in. Weaving your world...\n\nYour world has been fully woven.\n\n**Campaign ID:** `926ba078-2c01-4b87-a724-e74f77aa3ee8`\n\nKeep this safe - it allows you to resume your journey anytime.\n\nType **continue** when you're ready to begin.",
+      "timestamp": "2026-02-16T16:46:46.341377",
+      "player_reasoning": null,
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 8,
+      "source": "player_agent",
+      "content": "continue",
+      "timestamp": "2026-02-16T16:46:46.442567",
+      "player_reasoning": "Ready to begin the adventure",
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 9,
+      "source": "game",
+      "content": "Cold starlight leaks through the tug’s warped viewport and stains the corridor blue and rust. Fans tick in the ceiling and the bulkheads pop as the hull shrinks and loosens with every temperature swing. The air tastes of oxidized metal and old coolant, with a faint sweet bite that doesn’t belong in recycled systems.\n\nMara Kade moves down the passage in a slow, measured walk, rifle low, eyes never still. She checks each hatch seam with two fingers, feels the vibration of the deck plates, and watches her boot soles stick for a half-step when the gravity sputters, then peel free with a wet sound.\n\nHer wrist slate chirps once and throws a Guild ping across her visor, encrypted and tagged with the Salvagers’ Guild seal—the “union” that sells safety on paper and coordinates in the dark. The lot number means nothing, but the nav offsets do, because only military suites bury errors that way. A partial audio clip rides in the packet, a voice saying “Mara” like a prayer, then a wet choke and hard silence.\n\nShe turns toward the bridge to confirm the course change. The corridor lights dip and recover, like a blink. The tapping cable she’d been tracking stops mid-rhythm.\n\nNo footfalls answer her own. No engine-thrum shifts with the pilot’s hands. The comm line opens on its own and breathes static between words, like someone holding a mic in their teeth.\n\nMara reaches the bridge hatch and finds it unlatched. The bridge beyond sits empty, chairs still warm, consoles lit, and the tug drifts on a steady burn toward the Kestrel Drift. A new beacon pings on the sensor stack—Colonial Security Bureau sweep code, the kind that “inspects” crews and makes witnesses disappear—and it’s close enough to taste.",
+      "timestamp": "2026-02-16T16:46:57.216456",
+      "player_reasoning": null,
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 10,
+      "source": "player_agent",
+      "content": "I slam the bridge hatch shut and dog it, then trigger a shipwide lockdown from the nearest console—seal interior doors, kill nonessential comms, and switch cameras to my visor feed. “Crew, sound off now or I start shooting locks,” I bark into the intercom while yanking nav and comm logs for the last ten minutes and pinging sensors for life signs and boarders.",
+      "timestamp": "2026-02-16T16:47:01.942452",
+      "player_reasoning": "Bridge is empty but chairs are warm—crew didn’t leave willingly. CSB sweep inbound means we’re about to get erased. I need answers fast: lock ship down, pull logs, arm up, and find the crew before whatever’s on board does.",
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 11,
+      "source": "game",
+      "content": "",
+      "timestamp": "2026-02-16T16:47:21.237784",
+      "player_reasoning": null,
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 12,
+      "source": "player_agent",
+      "content": "I re-dog the bridge hatch and slam my palm on the lockdown controls: seal internal doors, route all cams to my visor, and cut external comms to receive-only. “Sound off, now—names and locations—or I start cutting doors,” I snarl over intercom while I rip the last ten minutes of nav/comm logs and run a quick sweep for life signs and unauthorized transponders.",
+      "timestamp": "2026-02-16T16:47:24.822282",
+      "player_reasoning": "Bridge was open and the crew vanished—either boarders or something inside. I need control of the ship, eyes everywhere, and bodies accounted for fast before CSB gets in range.",
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 13,
+      "source": "game",
+      "content": "",
+      "timestamp": "2026-02-16T16:47:45.630647",
+      "player_reasoning": null,
+      "triggered_elements": [],
+      "state_changes": {}
+    }
+  ],
+  "initial_state": {
+    "campaign_id": "926ba078-2c01-4b87-a724-e74f77aa3ee8",
+    "phase": "gameplay",
+    "genre": "Sci-Fi Horror",
+    "tone": "Tense",
+    "story_type": "Survival",
+    "character_sheet": {
+      "name": "Mara Kade",
+      "background": "Once a decorated colonial marine, Mara became a pariah after the evacuation of a classified black-site facility—an operation her former command now denies ever occurred. The official story brands her unstable and insubordinate, but the scars on her body and the gaps in her memory say otherwise. She survives by taking security contracts on deep-space salvage runs, keeping her head down while quietly hunting for the truth behind the erased mission and the crew who never came home.",
+      "profession": "Contracted security escort for deep-space salvage operations (ex-colonial marine)",
+      "traits": [
+        "Hard-edged and disciplined",
+        "Hypervigilant and suspicious",
+        "Brutally pragmatic under pressure",
+        "Protective of civilians and crewmates",
+        "Vengeful toward corrupt authority"
+      ],
+      "personal_goal": "Track down the missing crew from the erased black-site operation, uncover who ordered the abandonment, and force someone powerful to answer for it—alive if possible, dead if necessary.",
+      "stats": {}
+    },
+    "seed_chunks": [
+      "Cold starlight bleeds through warped viewport glass, turning every corridor into a long bruise of blue and rust. The salvage rig hums like a tired animal—fans ticking, bulkheads popping as temperature swings bite. Air tastes of oxidized metal, old coolant, and something faintly sweet that shouldn’t be in recycled systems. Your boots stick for a half-step where gravity plates sputter, then release with a wet peel. Somewhere deep in the hulk, a loose cable taps in a steady, patient rhythm, like knuckles on a coffin lid. Radio static breathes between words. Even silence feels monitored.",
+      "Out here, the Salvagers’ Guild sells itself as a safety-and-ethics union, certifying crews and arbitrating claims; in truth it launders black-site wreckage and quietly erases manifests for the right patrons. Helix Meridian Consortium presents a clean corporate face—hazard pay, rescue beacons, “responsible reclamation”—while running a clandestine program to recover bio-tech prototypes that shouldn’t exist, paying the Guild to bury evidence. The Colonial Security Bureau claims jurisdictional oversight and anti-piracy enforcement, but its real work is containment: silencing witnesses, rewriting logs, and hunting survivors from the erased facility. Helix funds CSB task groups; CSB scapegoats Guild crews; the Guild feeds both sides selective coordinates, keeping the war profitable and the truth unfound.\n\n```json\n{\n  \"factions\": [\n    {\n      \"name\": \"Salvagers’ Guild\",\n      \"public_front\": \"A worker-run safety and ethics union that certifies salvage crews and mediates claim disputes.\",\n      \"hidden_agenda\": \"Launders black-site salvage, alters manifests, and sells deniable recoveries to the highest bidder.\"\n    },\n    {\n      \"name\": \"Helix Meridian Consortium\",\n      \"public_front\": \"A reputable reclamation megacorp offering hazard pay, rescue infrastructure, and “responsible” salvage.\",\n      \"hidden_agenda\": \"Recovers forbidden bio-tech prototypes and funds cover-ups to keep the program off-record.\"\n    },\n    {\n      \"name\": \"Colonial Security Bureau (CSB)\",\n      \"public_front\": \"Government security authority providing anti-piracy enforcement and jurisdictional oversight.\",\n      \"hidden_agenda\": \"Containment and narrative control: silencing witnesses, rewriting logs, and eliminating survivors tied to the erased facility.\"\n    }\n  ]\n}\n```",
+      "",
+      "Cold-sector traffic is spiking: the Salvagers’ Guild has issued a “hazard moratorium” on the Kestrel Drift, even as it quietly auctions a set of black-site coordinates to select captains—bait for deniable recovery and a way to flush out witnesses. Helix Meridian’s recovery ship **Vigilant Bloom** is already inbound, broadcasting rescue protocols while running silent-boarder drills. Meanwhile, CSB Task Group **Pale Warrant** begins “anti-piracy sweeps,” seizing logs and detaining crews who crossed the Drift—one detainee is rumored to be a survivor from Mara’s erased evacuation, held under sedation and false charges.\n\n```json\n{\n  \"events\": [\n    {\n      \"name\": \"Kestrel Drift Moratorium & Black-Auction\",\n      \"description\": \"The Salvagers’ Guild publicly declares a hazard moratorium around the Kestrel Drift while secretly auctioning black-site coordinates to favored crews. The move both monetizes deniable wreckage and lures out anyone hunting the erased facility’s trail.\",\n      \"stakes\": [\n        \"Opportunity to acquire coordinates tied to the erased operation\",\n        \"Risk of Guild betrayal, altered manifests, and booby-trapped claims\",\n        \"Salvage crews may turn on each other for access and payout\"\n      ]\n    },\n    {\n      \"name\": \"CSB Task Group Pale Warrant Sweeps\",\n      \"description\": \"CSB Task Group Pale Warrant conducts aggressive 'anti-piracy' inspections, confiscating nav data and detaining anyone with Drift proximity. Helix Meridian quietly supplies targeting intel while its ship Vigilant Bloom approaches under a humanitarian broadcast.\",\n      \"stakes\": [\n        \"Witnesses and survivors disappear into CSB custody\",\n        \"Mara’s own record makes her vulnerable to detention or blackmail\",\n        \"Helix may retrieve prototypes first, burying evidence permanently\"\n      ]\n    }\n  ]\n}\n```",
+      "Mara Kade signs on as escort for a third-rate salvage tug because the Guild’s “hazard moratorium” has made honest work scarce—and because scarcity makes people talk. The job’s cover is routine: a quick snatch-and-tag run skirting the Kestrel Drift, in and out before CSB inspections tighten. The real reason she’s here is the rumor riding the comm-chatter: Pale Warrant grabbed a detainee off a drift-hauler two days ago—sedated, mislabeled, and transported under sealed medical authority. The hauler’s medic swore the detainee had an old black-site triage mark burned into their shoulder. Mara remembers that mark without remembering why.\n\nOn approach, the tug receives an encrypted Guild ping: a “private auction lot” with coordinates that match the geometry of Mara’s missing hours—same dead-reckoning offsets, same intentional errors that only a military nav suite would use. The packet includes a partial audio clip: a panicked voice saying her name, then a wet, cut-off breath. Timestamped last week.\n\nCold-sector traffic spikes around them. Helix Meridian’s **Vigilant Bloom** broadcasts friendly rescue protocols while running dark alongside the shipping lanes, close enough to cast a moving shadow across the tug’s sensors. CSB sweep beacons flare in the distance, tightening a net that doesn’t care who’s guilty.\n\nEvery corridor on the tug smells faintly sweet—like the black-site decon foam Mara can’t place. Someone on board is already scrubbing logs. Someone else is listening. And the Drift is offering a trail: coordinates, a prisoner, and the chance to finally pull one thread hard enough to make the whole lie unravel—if it doesn’t pull her apart first."
+    ],
+    "world_seed": null,
+    "simulation": {
+      "scenes": {},
+      "global_watchers": [],
+      "global_fail_conditions": [],
+      "global_timed_events": [],
+      "triggered_elements": [],
+      "current_turn": 0,
+      "current_location": null
+    },
+    "current_location": null,
+    "current_turn": 0,
+    "inventory": [],
+    "abilities": [],
+    "discovered_locations": [],
+    "known_npcs": [],
+    "active_events": [],
+    "message_history": [
+      {
+        "role": "assistant",
+        "content": "Cold starlight leaks through the tug’s warped viewport and stains the corridor blue and rust. Fans tick in the ceiling and the bulkheads pop as the hull shrinks and loosens with every temperature swing. The air tastes of oxidized metal and old coolant, with a faint sweet bite that doesn’t belong in recycled systems.\n\nMara Kade moves down the passage in a slow, measured walk, rifle low, eyes never still. She checks each hatch seam with two fingers, feels the vibration of the deck plates, and watches her boot soles stick for a half-step when the gravity sputters, then peel free with a wet sound.\n\nHer wrist slate chirps once and throws a Guild ping across her visor, encrypted and tagged with the Salvagers’ Guild seal—the “union” that sells safety on paper and coordinates in the dark. The lot number means nothing, but the nav offsets do, because only military suites bury errors that way. A partial audio clip rides in the packet, a voice saying “Mara” like a prayer, then a wet choke and hard silence.\n\nShe turns toward the bridge to confirm the course change. The corridor lights dip and recover, like a blink. The tapping cable she’d been tracking stops mid-rhythm.\n\nNo footfalls answer her own. No engine-thrum shifts with the pilot’s hands. The comm line opens on its own and breathes static between words, like someone holding a mic in their teeth.\n\nMara reaches the bridge hatch and finds it unlatched. The bridge beyond sits empty, chairs still warm, consoles lit, and the tug drifts on a steady burn toward the Kestrel Drift. A new beacon pings on the sensor stack—Colonial Security Bureau sweep code, the kind that “inspects” crews and makes witnesses disappear—and it’s close enough to taste."
+      }
+    ],
+    "pending_display": null
+  },
+  "final_state": {
+    "campaign_id": "926ba078-2c01-4b87-a724-e74f77aa3ee8",
+    "phase": "gameplay",
+    "genre": "Sci-Fi Horror",
+    "tone": "Tense",
+    "story_type": "Survival",
+    "character_sheet": {
+      "name": "Mara Kade",
+      "background": "Once a decorated colonial marine, Mara became a pariah after the evacuation of a classified black-site facility—an operation her former command now denies ever occurred. The official story brands her unstable and insubordinate, but the scars on her body and the gaps in her memory say otherwise. She survives by taking security contracts on deep-space salvage runs, keeping her head down while quietly hunting for the truth behind the erased mission and the crew who never came home.",
+      "profession": "Contracted security escort for deep-space salvage operations (ex-colonial marine)",
+      "traits": [
+        "Hard-edged and disciplined",
+        "Hypervigilant and suspicious",
+        "Brutally pragmatic under pressure",
+        "Protective of civilians and crewmates",
+        "Vengeful toward corrupt authority"
+      ],
+      "personal_goal": "Track down the missing crew from the erased black-site operation, uncover who ordered the abandonment, and force someone powerful to answer for it—alive if possible, dead if necessary.",
+      "stats": {}
+    },
+    "seed_chunks": [
+      "Cold starlight bleeds through warped viewport glass, turning every corridor into a long bruise of blue and rust. The salvage rig hums like a tired animal—fans ticking, bulkheads popping as temperature swings bite. Air tastes of oxidized metal, old coolant, and something faintly sweet that shouldn’t be in recycled systems. Your boots stick for a half-step where gravity plates sputter, then release with a wet peel. Somewhere deep in the hulk, a loose cable taps in a steady, patient rhythm, like knuckles on a coffin lid. Radio static breathes between words. Even silence feels monitored.",
+      "Out here, the Salvagers’ Guild sells itself as a safety-and-ethics union, certifying crews and arbitrating claims; in truth it launders black-site wreckage and quietly erases manifests for the right patrons. Helix Meridian Consortium presents a clean corporate face—hazard pay, rescue beacons, “responsible reclamation”—while running a clandestine program to recover bio-tech prototypes that shouldn’t exist, paying the Guild to bury evidence. The Colonial Security Bureau claims jurisdictional oversight and anti-piracy enforcement, but its real work is containment: silencing witnesses, rewriting logs, and hunting survivors from the erased facility. Helix funds CSB task groups; CSB scapegoats Guild crews; the Guild feeds both sides selective coordinates, keeping the war profitable and the truth unfound.\n\n```json\n{\n  \"factions\": [\n    {\n      \"name\": \"Salvagers’ Guild\",\n      \"public_front\": \"A worker-run safety and ethics union that certifies salvage crews and mediates claim disputes.\",\n      \"hidden_agenda\": \"Launders black-site salvage, alters manifests, and sells deniable recoveries to the highest bidder.\"\n    },\n    {\n      \"name\": \"Helix Meridian Consortium\",\n      \"public_front\": \"A reputable reclamation megacorp offering hazard pay, rescue infrastructure, and “responsible” salvage.\",\n      \"hidden_agenda\": \"Recovers forbidden bio-tech prototypes and funds cover-ups to keep the program off-record.\"\n    },\n    {\n      \"name\": \"Colonial Security Bureau (CSB)\",\n      \"public_front\": \"Government security authority providing anti-piracy enforcement and jurisdictional oversight.\",\n      \"hidden_agenda\": \"Containment and narrative control: silencing witnesses, rewriting logs, and eliminating survivors tied to the erased facility.\"\n    }\n  ]\n}\n```",
+      "",
+      "Cold-sector traffic is spiking: the Salvagers’ Guild has issued a “hazard moratorium” on the Kestrel Drift, even as it quietly auctions a set of black-site coordinates to select captains—bait for deniable recovery and a way to flush out witnesses. Helix Meridian’s recovery ship **Vigilant Bloom** is already inbound, broadcasting rescue protocols while running silent-boarder drills. Meanwhile, CSB Task Group **Pale Warrant** begins “anti-piracy sweeps,” seizing logs and detaining crews who crossed the Drift—one detainee is rumored to be a survivor from Mara’s erased evacuation, held under sedation and false charges.\n\n```json\n{\n  \"events\": [\n    {\n      \"name\": \"Kestrel Drift Moratorium & Black-Auction\",\n      \"description\": \"The Salvagers’ Guild publicly declares a hazard moratorium around the Kestrel Drift while secretly auctioning black-site coordinates to favored crews. The move both monetizes deniable wreckage and lures out anyone hunting the erased facility’s trail.\",\n      \"stakes\": [\n        \"Opportunity to acquire coordinates tied to the erased operation\",\n        \"Risk of Guild betrayal, altered manifests, and booby-trapped claims\",\n        \"Salvage crews may turn on each other for access and payout\"\n      ]\n    },\n    {\n      \"name\": \"CSB Task Group Pale Warrant Sweeps\",\n      \"description\": \"CSB Task Group Pale Warrant conducts aggressive 'anti-piracy' inspections, confiscating nav data and detaining anyone with Drift proximity. Helix Meridian quietly supplies targeting intel while its ship Vigilant Bloom approaches under a humanitarian broadcast.\",\n      \"stakes\": [\n        \"Witnesses and survivors disappear into CSB custody\",\n        \"Mara’s own record makes her vulnerable to detention or blackmail\",\n        \"Helix may retrieve prototypes first, burying evidence permanently\"\n      ]\n    }\n  ]\n}\n```",
+      "Mara Kade signs on as escort for a third-rate salvage tug because the Guild’s “hazard moratorium” has made honest work scarce—and because scarcity makes people talk. The job’s cover is routine: a quick snatch-and-tag run skirting the Kestrel Drift, in and out before CSB inspections tighten. The real reason she’s here is the rumor riding the comm-chatter: Pale Warrant grabbed a detainee off a drift-hauler two days ago—sedated, mislabeled, and transported under sealed medical authority. The hauler’s medic swore the detainee had an old black-site triage mark burned into their shoulder. Mara remembers that mark without remembering why.\n\nOn approach, the tug receives an encrypted Guild ping: a “private auction lot” with coordinates that match the geometry of Mara’s missing hours—same dead-reckoning offsets, same intentional errors that only a military nav suite would use. The packet includes a partial audio clip: a panicked voice saying her name, then a wet, cut-off breath. Timestamped last week.\n\nCold-sector traffic spikes around them. Helix Meridian’s **Vigilant Bloom** broadcasts friendly rescue protocols while running dark alongside the shipping lanes, close enough to cast a moving shadow across the tug’s sensors. CSB sweep beacons flare in the distance, tightening a net that doesn’t care who’s guilty.\n\nEvery corridor on the tug smells faintly sweet—like the black-site decon foam Mara can’t place. Someone on board is already scrubbing logs. Someone else is listening. And the Drift is offering a trail: coordinates, a prisoner, and the chance to finally pull one thread hard enough to make the whole lie unravel—if it doesn’t pull her apart first."
+    ],
+    "world_seed": null,
+    "simulation": {
+      "scenes": {},
+      "global_watchers": [],
+      "global_fail_conditions": [],
+      "global_timed_events": [],
+      "triggered_elements": [],
+      "current_turn": 0,
+      "current_location": null
+    },
+    "current_location": null,
+    "current_turn": 2,
+    "inventory": [],
+    "abilities": [],
+    "discovered_locations": [],
+    "known_npcs": [],
+    "active_events": [],
+    "message_history": [
+      {
+        "role": "assistant",
+        "content": "Cold starlight leaks through the tug’s warped viewport and stains the corridor blue and rust. Fans tick in the ceiling and the bulkheads pop as the hull shrinks and loosens with every temperature swing. The air tastes of oxidized metal and old coolant, with a faint sweet bite that doesn’t belong in recycled systems.\n\nMara Kade moves down the passage in a slow, measured walk, rifle low, eyes never still. She checks each hatch seam with two fingers, feels the vibration of the deck plates, and watches her boot soles stick for a half-step when the gravity sputters, then peel free with a wet sound.\n\nHer wrist slate chirps once and throws a Guild ping across her visor, encrypted and tagged with the Salvagers’ Guild seal—the “union” that sells safety on paper and coordinates in the dark. The lot number means nothing, but the nav offsets do, because only military suites bury errors that way. A partial audio clip rides in the packet, a voice saying “Mara” like a prayer, then a wet choke and hard silence.\n\nShe turns toward the bridge to confirm the course change. The corridor lights dip and recover, like a blink. The tapping cable she’d been tracking stops mid-rhythm.\n\nNo footfalls answer her own. No engine-thrum shifts with the pilot’s hands. The comm line opens on its own and breathes static between words, like someone holding a mic in their teeth.\n\nMara reaches the bridge hatch and finds it unlatched. The bridge beyond sits empty, chairs still warm, consoles lit, and the tug drifts on a steady burn toward the Kestrel Drift. A new beacon pings on the sensor stack—Colonial Security Bureau sweep code, the kind that “inspects” crews and makes witnesses disappear—and it’s close enough to taste."
+      },
+      {
+        "role": "user",
+        "content": "I slam the bridge hatch shut and dog it, then trigger a shipwide lockdown from the nearest console—seal interior doors, kill nonessential comms, and switch cameras to my visor feed. “Crew, sound off now or I start shooting locks,” I bark into the intercom while yanking nav and comm logs for the last ten minutes and pinging sensors for life signs and boarders."
+      },
+      {
+        "role": "assistant",
+        "content": ""
+      },
+      {
+        "role": "user",
+        "content": "I re-dog the bridge hatch and slam my palm on the lockdown controls: seal internal doors, route all cams to my visor, and cut external comms to receive-only. “Sound off, now—names and locations—or I start cutting doors,” I snarl over intercom while I rip the last ten minutes of nav/comm logs and run a quick sweep for life signs and unauthorized transponders."
+      },
+      {
+        "role": "assistant",
+        "content": ""
+      }
+    ],
+    "pending_display": null
+  },
+  "simulation_snapshots": []
+}

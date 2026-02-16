@@ -1,0 +1,66 @@
+{
+  "timestamp": "2026-02-16T16:48:00.286385",
+  "config": {
+    "num_agents": 3,
+    "messages_per_session": 2,
+    "max_concurrent_agents": 5,
+    "vary_genres": true
+  },
+  "total_playthroughs": 3,
+  "successful": 3,
+  "failed": 0,
+  "playthroughs": [
+    {
+      "id": "e8cc0c94",
+      "personality": "aggressive",
+      "genre": "Sci-Fi Horror",
+      "tone": "Tense",
+      "story_type": "Survival",
+      "character": "Mara Kade",
+      "turns": 13,
+      "locations": 0,
+      "npcs": 0,
+      "triggers_fired": 0,
+      "completed": true,
+      "error": null
+    },
+    {
+      "id": "27fe0db9",
+      "personality": "curious",
+      "genre": "Dark Fantasy",
+      "tone": "Whimsical",
+      "story_type": "fantasy, whimsical, adventure",
+      "character": "Liora Thimblewick",
+      "turns": 13,
+      "locations": 1,
+      "npcs": 3,
+      "triggers_fired": 0,
+      "completed": true,
+      "error": null
+    },
+    {
+      "id": "d73f3564",
+      "personality": "cautious",
+      "genre": "Noir",
+      "tone": "Gritty",
+      "story_type": "Mystery",
+      "character": "Silas Mercer",
+      "turns": 13,
+      "locations": 1,
+      "npcs": 0,
+      "triggers_fired": 1,
+      "completed": true,
+      "error": null
+    }
+  ],
+  "genre_distribution": {
+    "Sci-Fi Horror": 1,
+    "Dark Fantasy": 1,
+    "Noir": 1
+  },
+  "personality_distribution": {
+    "aggressive": 1,
+    "curious": 1,
+    "cautious": 1
+  }
+}

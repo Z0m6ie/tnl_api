@@ -1,0 +1,501 @@
+{
+  "metadata": {
+    "playthrough_id": "cc31940898f84fe89af832ad34406a3e",
+    "started_at": "2026-02-16T16:10:39.047899",
+    "completed_at": "2026-02-16T16:13:11.031723",
+    "genre": "Noir",
+    "tone": "Gritty",
+    "story_type": "Mystery",
+    "character_name": "Silas Mercer",
+    "character_profession": "Private Investigator",
+    "character_background": "Silas Mercer was raised in the back rooms of his family’s failing pawnshop, where he learned to read people by what they clutched, what they sold, and what they couldn’t bear to part with. After a brief stint doing off-the-books skip tracing for a collections outfit, he went legit as a private investigator, building a reputation for methodical work and an almost unnerving attention to detail. A recent case left him with a name he can’t forget—someone he failed to save—and it now anchors his obsession with the city’s strangest pattern of missing dead.",
+    "player_personality": "cautious",
+    "agent_model": "gpt-5.2",
+    "total_turns": 13,
+    "locations_visited": [
+      "St. Brigid Morgue — rear loading bays/service alley",
+      "Ing Raincoats"
+    ],
+    "npcs_encountered": [
+      "Mara Keene (night supervisor)",
+      "Doc Vellum (Halcyon fixer)",
+      "Lanternmen van driver (unidentified)",
+      "Municipal audit team (2 visible)"
+    ],
+    "simulation_triggers_fired": 3,
+    "completed_normally": true,
+    "error_message": null
+  },
+  "messages": [
+    {
+      "turn": 1,
+      "source": "game",
+      "content": "Welcome to The Narrative Loom (TNL) - your simulation-first Dungeon Master.\n\nPlay anything from a cyberpunk heist-thriller to a dark fairytale revenge story.\n\nSelect a **Genre**, **Tone**, and **Story Type**, or say \"surprise me\" for a random selection.\n\nExamples:\n- \"Noir detective story, gritty tone, mystery thriller\"\n- \"Fantasy, whimsical, coming-of-age adventure\"\n- \"Sci-fi horror, bleak, survival story\"\n- \"surprise me\"\n\nWhat world would you like to explore?",
+      "timestamp": "2026-02-16T16:10:39.047899",
+      "player_reasoning": null,
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 2,
+      "source": "player_agent",
+      "content": "noir, gritty, mystery",
+      "timestamp": "2026-02-16T16:10:39.047899",
+      "player_reasoning": "Selected: noir, gritty, mystery",
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 3,
+      "source": "game",
+      "content": "Your world is set:\n\n**Genre:** Noir\n**Tone:** Gritty\n**Story Type:** Mystery\n\nMoving to character creation...\n\nPerfect! Your world will be: **Noir** with a **Gritty** tone - a **Mystery**.\n\nNow let's shape your protagonist. Tell me about your character:\n\n- **Name** - What should we call you?\n- **Background** - Where are they from? What shaped them?\n- **Profession or Skillset** - What are they good at?\n- **Traits** - A few words capturing temperament, strengths, flaws\n- **Personal Goal** - What do they want (not what fate demands)\n\nYou can describe freely or say \"surprise me\" for a generated character.",
+      "timestamp": "2026-02-16T16:10:39.047899",
+      "player_reasoning": null,
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 4,
+      "source": "player_agent",
+      "content": "Silas Mercer grew up in the back rooms of a failing pawnshop, learning early how to read desperation in a person’s hands and eyes. Now a private investigator who double-checks every detail before he ever knocks on a door, he survives by noticing what others miss. Careful, observant, and quietly stubborn, he keeps his thoughts close and his conclusions closer. He’s determined to uncover who’s been laundering bodies through the city’s morgue—because the first name on the list belongs to someone he couldn’t save.",
+      "timestamp": "2026-02-16T16:10:44.571801",
+      "player_reasoning": "Generated cautious-style character for Noir Mystery",
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 5,
+      "source": "game",
+      "content": "Here's your character:\n\n**Silas Mercer**\n*Private Investigator*\n\nSilas Mercer was raised in the back rooms of his family’s failing pawnshop, where he learned to read people by what they clutched, what they sold, and what they couldn’t bear to part with. After a brief stint doing off-the-books skip tracing for a collections outfit, he went legit as a private investigator, building a reputation for methodical work and an almost unnerving attention to detail. A recent case left him with a name he can’t forget—someone he failed to save—and it now anchors his obsession with the city’s strangest pattern of missing dead.\n\n**Traits:** Careful, Observant, Quietly stubborn, Skeptical, Patient\n**Goal:** Uncover who is laundering bodies through the city morgue and why, starting with the first falsified identity on the list—the person Silas couldn’t save—and bring the operation into the light no matter who it implicates.\n\nReady to lock it in? Say \"yes\" to continue, or tell me what to adjust.",
+      "timestamp": "2026-02-16T16:10:50.109048",
+      "player_reasoning": null,
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 6,
+      "source": "player_agent",
+      "content": "yes",
+      "timestamp": "2026-02-16T16:10:50.210322",
+      "player_reasoning": "Simple confirmation",
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 7,
+      "source": "game",
+      "content": "Character locked in. Weaving your world...\n\nYour world has been fully woven.\n\n**Campaign ID:** `3c63d7d0-98de-420a-879b-276b2ca9f299`\n\nKeep this safe - it allows you to resume your journey anytime.\n\nType **continue** when you're ready to begin.",
+      "timestamp": "2026-02-16T16:11:50.052847",
+      "player_reasoning": null,
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 8,
+      "source": "player_agent",
+      "content": "continue",
+      "timestamp": "2026-02-16T16:11:50.153443",
+      "player_reasoning": "Ready to begin the adventure",
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 9,
+      "source": "game",
+      "content": "It is 2:17 a.m. behind St. Brigid Morgue Services, the city contractor that handles the dead, on the lower river road. Rain turns the loading bay asphalt into black glass and makes the sodium lights look sick.\n\nSilas Mercer waits in the gap between a dumpster and a chain-link fence. He counts the seconds between dock door checks and writes them in a pocket notebook with a pencil that still works when paper sweats. He watches hands, not faces, and he clocks who touches keys, who touches badges, and who never lets go of a phone.\n\nA Lanternmen convoy idles in the service alley, the labor outfit that moves freight and muscle for cash. Three vans sit nose-out, engines muttering, wipers ticking like metronomes. A man in a dry coat—Doc Vellum, a fixer for the Halcyon Benevolent Trust that bankrolls clinics and buys silence—leans into the night supervisor’s space and talks without moving his mouth. Mara Keene, St. Brigid’s night supervisor, signs something on a clipboard with a pen that doesn’t belong to her.\n\nSilas sees the error nobody else will. The gurney they rush out carries a toe-tag with Jonah Pike’s name, but the knot is tied wrong for St. Brigid’s usual intake, and the tag stock is newer than the damp paperwork in Keene’s hand. The audit team’s sedan rolls up front, headlights washing the bay door. Keene looks toward the alley, then toward the main entrance, and makes a choice.\n\nThe Lanternmen driver reaches for the van latch. Silas has Jonah’s badge number in his pocket, and one chance to decide whether to open a door or stop a van.",
+      "timestamp": "2026-02-16T16:11:59.283287",
+      "player_reasoning": null,
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 10,
+      "source": "player_agent",
+      "content": "I stay in cover and snap a couple quick photos of the van’s plate and the toe-tag as it bobs past, then I step out just enough to call, “Keene—audit’s here. You want that bay door open or you want them waiting?” keeping my hands visible and my voice like I belong, buying seconds while I watch the driver’s hands on the latch.",
+      "timestamp": "2026-02-16T16:12:03.242844",
+      "player_reasoning": "If that van rolls, Jonah “Pike” disappears for good. But rushing it blind gets me cracked. I need a quick look—plate, driver, any markings—and a way to stall without exposing myself.",
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 11,
+      "source": "game",
+      "content": "Your phone comes up quick from behind the dumpster’s edge. Two shots: the nearest van’s plate, rain-beaded and readable under the alley light; then the gurney as it bumps past—Jonah Pike on the toe-tag, the tag stock too clean, the knot wrong. The second photo catches a corner of the transfer packet clipped to the rail: a stamped block that reads **TRANSFER AUTHORIZED — M. KEENE** before a Lanternman shoulder blocks it.\n\nYou step out just enough to be seen, palms open, voice flat like you’ve said it a thousand times. “Keene—audit’s here. You want that bay door open or you want them waiting?”\n\nImmediate effect: Keene freezes mid-step. Her eyes flick to the front lot where headlights wash the main entrance, then back to you. For half a breath she looks relieved—like you handed her an excuse—then the relief curdles into suspicion. “Who the hell are you?” she snaps, but she’s already moving: she jabs two fingers toward the bay door control panel to her left, then points at the Lanternmen like she’s directing traffic. “Hold. Two minutes.”\n\nThe driver’s hand on the latch stops. Not relaxes—stops. He keeps his fingers hooked under the handle, ready. He looks past you, not at you, like he’s checking for a second set of eyes in the rain. Doc Vellum shifts in close to Keene, voice low but you catch the edge of it over the engines: “If they step into intake, we’re done. Move it.”\n\nBehind you, through the chain-link gap, the front entrance doors open and a pair of municipal types in raincoats start across the lot—clipboards tucked to their chests, one of them already dialing someone, annoyed.\n\nThe alley smells like wet diesel and disinfectant leaking from a cracked service vent to the west wall. The pressure is immediate: if Keene opens the bay now, she’s inviting the audit into the back corridors; if she stalls them, she has to explain why.\n\n**Status updates:**  \n- Photos secured: plate, toe-tag  \n- Keene: stalled transfer, suspicious  \n- Audit team: approaching front entrance  \n\n```json\n{\"inventory_add\":[\"2 phone photos (Lanternmen van plate; Jonah Pike toe-tag + partial transfer packet stamp)\"],\"inventory_remove\":[],\"abilities_add\":[],\"locations_add\":[\"St. Brigid Morgue — rear loading bays/service alley\"],\"npcs_add\":[\"Mara Keene (night supervisor)\",\"Doc Vellum (Halcyon fixer)\",\"Lanternmen van driver (unidentified)\",\"Municipal audit team (2 visible)\"]}```",
+      "timestamp": "2026-02-16T16:12:19.309799",
+      "player_reasoning": null,
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 12,
+      "source": "player_agent",
+      "content": "I keep my palms up and angle my body so I can still see the driver’s hand. “Mercer—contract compliance. I’m the guy you call when paperwork starts sweating.” I nod toward the front lot. “They’re coming in hot; you do not want them standing at the main desk. Open the bay, bring them through intake—looks clean, feels routine.”\n\nWithout waiting for her answer, I step back a half pace and call out toward the approaching raincoats, loud enough to carry: “Audit! Rear intake’s the active door—follow my voice.”",
+      "timestamp": "2026-02-16T16:12:25.554140",
+      "player_reasoning": "I need the audit team to collide with this transfer while the Lanternmen are stalled, but I can’t let Vellum pin me down or the driver decide I’m a threat. I’ll bluff a harmless role, steer Keene toward opening the bay, and physically position myself to watch the latch/plate while creating a clear line for the auditors to see the gurney if it moves.",
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 13,
+      "source": "game",
+      "content": "“Mercer—contract compliance. I’m the guy you call when paperwork starts sweating.”\n\n**Immediate outcome:** Keene buys it—halfway. Not because she believes you, but because your lie gives her a script that keeps the auditors out of her front office and away from whatever’s on the computer terminals.\n\nRain hisses off the bay’s corrugated awning as she snaps, “Rear intake is *not* an active door—unless I say it is.” Then she swipes her badge at the panel anyway. The loading bay door motor groans and starts to climb, spilling a slice of freezer-cold air and bleach stink into the alley.\n\nYou call out, loud, toward the two raincoats crossing the front lot. “Audit! Rear intake’s the active door—follow my voice.”\n\nOne of them stops dead, turns his head, and squints through the rain like he’s trying to place your face. The other—shorter, hair tucked under a hood—keeps walking but changes angle, heading toward the service alley with the annoyed, purposeful stride of someone who doesn’t like surprises. The taller one raises his voice back, sharp: “Who authorized rear intake? Identify yourself!”\n\nKeene leans close enough that you catch cigarette-mint on her breath. “If you’re not on my roster, Mercer, you’re about to be my problem.” But she’s already putting on her “routine” voice, louder, for the auditors to hear: “Evening, municipal. We’re staging overflow through rear intake due to a refrigeration service call.”\n\nTo your left, the Lanternmen driver’s hand tightens on the van latch—knuckles pale. He doesn’t open it yet. Doc Vellum’s eyes flick from the auditors to you, then to Keene, calculating. He murmurs, just audible: “That wasn’t in the plan, Mara.” His tone says *fix it*.\n\nInside the rising bay door, fluorescent light reveals a short corridor: yellow mop bucket, a wall-mounted key box, and a security camera above the doorframe pointed straight down the alley—its red status LED steady, recording.\n\nA figure across the street under an awning—shopfront measuring tape around their neck like a lanyard—pauses mid-cigarette and watches the bay open, then steps back inside as if to “get out of the rain.”\n\n**Status updates:**\n- Bay door: opening, rear corridor exposed  \n- Audit team: rerouting toward alley  \n- Lanternmen transfer: paused, tense",
+      "timestamp": "2026-02-16T16:13:10.930359",
+      "player_reasoning": null,
+      "triggered_elements": [
+        "watcher_Ing Raincoats_0_b0ea5c",
+        "secret_Ing Raincoats_0_b776c6",
+        "secret_Ing Raincoats_1_a2af47"
+      ],
+      "state_changes": {}
+    }
+  ],
+  "initial_state": {
+    "campaign_id": "3c63d7d0-98de-420a-879b-276b2ca9f299",
+    "phase": "gameplay",
+    "genre": "Noir",
+    "tone": "Gritty",
+    "story_type": "Mystery",
+    "character_sheet": {
+      "name": "Silas Mercer",
+      "background": "Silas Mercer was raised in the back rooms of his family’s failing pawnshop, where he learned to read people by what they clutched, what they sold, and what they couldn’t bear to part with. After a brief stint doing off-the-books skip tracing for a collections outfit, he went legit as a private investigator, building a reputation for methodical work and an almost unnerving attention to detail. A recent case left him with a name he can’t forget—someone he failed to save—and it now anchors his obsession with the city’s strangest pattern of missing dead.",
+      "profession": "Private Investigator",
+      "traits": [
+        "Careful",
+        "Observant",
+        "Quietly stubborn",
+        "Skeptical",
+        "Patient"
+      ],
+      "personal_goal": "Uncover who is laundering bodies through the city morgue and why, starting with the first falsified identity on the list—the person Silas couldn’t save—and bring the operation into the light no matter who it implicates.",
+      "stats": {}
+    },
+    "seed_chunks": [
+      "Rain varnishes the streets into black glass, turning neon into bruised halos that wobble in every puddle. The city breathes in slow, cigarette-wet gulps—diesel, cheap cologne, boiled coffee left too long on a burner. Sirens pass like distant arguments you’ve learned to ignore. Inside, radiators knock with impatient knuckles; outside, wind worries at loose signage and the gutters speak in constant whispers. Fluorescents in back corridors buzz like trapped insects, bleaching faces and making skin look borrowed. Paper is always damp at the edges. Metal is always cold. Somewhere beneath the ordinary noise, there’s a steadier rhythm—carts rolling, doors sealing, tags snapping tight.",
+      "Rain-slicked and fluorescent-bleached, the city runs on three polite masks. **St. Brigid Morgue Services** swears it’s modernizing deathcare; behind the chilled doors it reroutes bodies, edits tags, and sells second lives to the highest bidder. **The Halcyon Benevolent Trust** bankrolls clinics and soup lines; in private it funds “continuity” trials—harvesting organs, identities, and silence—using the morgue as its valve. **The Lanternmen** look like union muscle for docks and sanitation; secretly they’re the couriers, moving sealed gurneys and forged paperwork through service tunnels. Halcyon pays, St. Brigid supplies, Lanternmen deliver—until missing relatives, rival crews, and Silas’s questions turn their shared pipeline into a knife fight.\n\n```json\n{\n  \"factions\": [\n    {\n      \"name\": \"St. Brigid Morgue Services\",\n      \"public_front\": \"A reputable municipal contractor modernizing morgue operations and deathcare logistics.\",\n      \"hidden_agenda\": \"Alters toe-tags and intake records to launder bodies and identities through the city system for profit and leverage.\"\n    },\n    {\n      \"name\": \"The Halcyon Benevolent Trust\",\n      \"public_front\": \"A philanthropic foundation funding clinics, shelters, and public health initiatives.\",\n      \"hidden_agenda\": \"Finances covert 'continuity' programs—organ harvesting, identity recycling, and hush payments—using morgue access to source and erase.\"\n    },\n    {\n      \"name\": \"The Lanternmen\",\n      \"public_front\": \"A hard-nosed labor outfit providing dock, sanitation, and security manpower.\",\n      \"hidden_agenda\": \"Runs the transport network for illicit cargo: bodies, paperwork, and bribes moved through tunnels and service corridors.\"\n    }\n  ]\n}\n```",
+      "",
+      "Rain hammers the loading bays at St. Brigid as an internal audit team arrives early—too early—forcing night supervisor **Mara Keene** to rush a “routine transfer” before daylight and before paper trails harden. A Lanternmen convoy idles in the service alley, engines muttering, while **Doc Vellum** (Halcyon’s fixer) leans on Keene to move one particular gurney tagged with Silas’s unforgotten name. Across town, Halcyon’s free clinic suffers a sudden “power failure,” scrambling records and trapping patients—cover for a continuity trial pickup that could turn into a riot if the doors stay locked.\n\n```json\n{\n  \"events\": [\n    {\n      \"name\": \"St. Brigid Surprise Audit & Midnight Transfer\",\n      \"description\": \"A municipal audit team arrives at St. Brigid ahead of schedule, forcing night supervisor Mara Keene to fast-track a sensitive body transfer before intake logs can be compared. A Lanternmen convoy waits in the alley while Halcyon fixer Doc Vellum pressures Keene to move a gurney carrying the first falsified identity—Silas’s anchor case—out through service tunnels.\",\n      \"tensions\": [\n        \"Audit staff could discover altered tags and missing chain-of-custody signatures\",\n        \"Lanternmen may use intimidation or violence if the transfer stalls\",\n        \"Keene risks becoming the scapegoat if Halcyon needs someone to burn\"\n      ]\n    },\n    {\n      \"name\": \"Halcyon Clinic Blackout & Continuity Pickup\",\n      \"description\": \"Halcyon’s flagship free clinic reports an abrupt power failure that wipes terminals and locks down exits. The blackout masks a continuity-trial extraction: patients are rerouted, one is quietly sedated, and a courier team prepares a sealed transport order routed through St. Brigid. If staff or families realize the lockdown isn’t for safety, panic could spike into a street-level riot.\",\n      \"tensions\": [\n        \"Patients and families may force exits, drawing police and media attention\",\n        \"Clinic staff could leak evidence of the extraction if they regain system access\",\n        \"A rushed pickup increases the chance of mislabeling, leaving a trace Silas can follow\"\n      ]\n    }\n  ]\n}\n```",
+      "Silas Mercer hasn’t slept right since the case that ended with a name on his tongue and an empty chair at the precinct—**Jonah Pike**. Officially: overdose, unclaimed, processed through **St. Brigid Morgue Services**. Unofficially: Jonah’s sister slid Silas a damp envelope yesterday—photocopies of an intake sheet that doesn’t match the death certificate. Same date, same toe-tag number, two different fingerprints. In the corner, a smudged stamp: **TRANSFER AUTHORIZED — M. KEENE**.\n\nTonight, rain turns the curb into a mirror outside St. Brigid’s loading bays. A municipal audit team is arriving early. Too early. That kind of surprise only happens when someone wants the books clean or the bodies gone. Through a chain-link gap, Silas spots a Lanternmen convoy idling in the service alley—three vans, engines low, drivers smoking like they’re waiting for a bell. A man in a dry coat—Doc Vellum, if Silas’s old collections contacts are right—leans close to the night supervisor, urgent enough to be threatening.\n\nSilas already has one thing he shouldn’t: a morgue access badge number written on the back of Jonah’s sister’s letter, the ink bled by tears and weather. If he uses it, doors might open. If he mentions it, someone will know he has it.\n\nAcross town, Halcyon’s free clinic goes dark—power failure, locked exits, panicked families. The scanner on Silas’s police-band crackles with the first calls. Two crises, one pipeline. And Jonah’s name is about to move again—unless Silas gets there first, or gets noticed trying."
+    ],
+    "world_seed": null,
+    "simulation": {
+      "scenes": {},
+      "global_watchers": [],
+      "global_fail_conditions": [],
+      "global_timed_events": [],
+      "triggered_elements": [],
+      "current_turn": 0,
+      "current_location": null
+    },
+    "current_location": null,
+    "current_turn": 0,
+    "inventory": [],
+    "abilities": [],
+    "discovered_locations": [],
+    "known_npcs": [],
+    "active_events": [],
+    "message_history": [
+      {
+        "role": "assistant",
+        "content": "It is 2:17 a.m. behind St. Brigid Morgue Services, the city contractor that handles the dead, on the lower river road. Rain turns the loading bay asphalt into black glass and makes the sodium lights look sick.\n\nSilas Mercer waits in the gap between a dumpster and a chain-link fence. He counts the seconds between dock door checks and writes them in a pocket notebook with a pencil that still works when paper sweats. He watches hands, not faces, and he clocks who touches keys, who touches badges, and who never lets go of a phone.\n\nA Lanternmen convoy idles in the service alley, the labor outfit that moves freight and muscle for cash. Three vans sit nose-out, engines muttering, wipers ticking like metronomes. A man in a dry coat—Doc Vellum, a fixer for the Halcyon Benevolent Trust that bankrolls clinics and buys silence—leans into the night supervisor’s space and talks without moving his mouth. Mara Keene, St. Brigid’s night supervisor, signs something on a clipboard with a pen that doesn’t belong to her.\n\nSilas sees the error nobody else will. The gurney they rush out carries a toe-tag with Jonah Pike’s name, but the knot is tied wrong for St. Brigid’s usual intake, and the tag stock is newer than the damp paperwork in Keene’s hand. The audit team’s sedan rolls up front, headlights washing the bay door. Keene looks toward the alley, then toward the main entrance, and makes a choice.\n\nThe Lanternmen driver reaches for the van latch. Silas has Jonah’s badge number in his pocket, and one chance to decide whether to open a door or stop a van."
+      }
+    ],
+    "pending_display": null
+  },
+  "final_state": {
+    "campaign_id": "3c63d7d0-98de-420a-879b-276b2ca9f299",
+    "phase": "gameplay",
+    "genre": "Noir",
+    "tone": "Gritty",
+    "story_type": "Mystery",
+    "character_sheet": {
+      "name": "Silas Mercer",
+      "background": "Silas Mercer was raised in the back rooms of his family’s failing pawnshop, where he learned to read people by what they clutched, what they sold, and what they couldn’t bear to part with. After a brief stint doing off-the-books skip tracing for a collections outfit, he went legit as a private investigator, building a reputation for methodical work and an almost unnerving attention to detail. A recent case left him with a name he can’t forget—someone he failed to save—and it now anchors his obsession with the city’s strangest pattern of missing dead.",
+      "profession": "Private Investigator",
+      "traits": [
+        "Careful",
+        "Observant",
+        "Quietly stubborn",
+        "Skeptical",
+        "Patient"
+      ],
+      "personal_goal": "Uncover who is laundering bodies through the city morgue and why, starting with the first falsified identity on the list—the person Silas couldn’t save—and bring the operation into the light no matter who it implicates.",
+      "stats": {}
+    },
+    "seed_chunks": [
+      "Rain varnishes the streets into black glass, turning neon into bruised halos that wobble in every puddle. The city breathes in slow, cigarette-wet gulps—diesel, cheap cologne, boiled coffee left too long on a burner. Sirens pass like distant arguments you’ve learned to ignore. Inside, radiators knock with impatient knuckles; outside, wind worries at loose signage and the gutters speak in constant whispers. Fluorescents in back corridors buzz like trapped insects, bleaching faces and making skin look borrowed. Paper is always damp at the edges. Metal is always cold. Somewhere beneath the ordinary noise, there’s a steadier rhythm—carts rolling, doors sealing, tags snapping tight.",
+      "Rain-slicked and fluorescent-bleached, the city runs on three polite masks. **St. Brigid Morgue Services** swears it’s modernizing deathcare; behind the chilled doors it reroutes bodies, edits tags, and sells second lives to the highest bidder. **The Halcyon Benevolent Trust** bankrolls clinics and soup lines; in private it funds “continuity” trials—harvesting organs, identities, and silence—using the morgue as its valve. **The Lanternmen** look like union muscle for docks and sanitation; secretly they’re the couriers, moving sealed gurneys and forged paperwork through service tunnels. Halcyon pays, St. Brigid supplies, Lanternmen deliver—until missing relatives, rival crews, and Silas’s questions turn their shared pipeline into a knife fight.\n\n```json\n{\n  \"factions\": [\n    {\n      \"name\": \"St. Brigid Morgue Services\",\n      \"public_front\": \"A reputable municipal contractor modernizing morgue operations and deathcare logistics.\",\n      \"hidden_agenda\": \"Alters toe-tags and intake records to launder bodies and identities through the city system for profit and leverage.\"\n    },\n    {\n      \"name\": \"The Halcyon Benevolent Trust\",\n      \"public_front\": \"A philanthropic foundation funding clinics, shelters, and public health initiatives.\",\n      \"hidden_agenda\": \"Finances covert 'continuity' programs—organ harvesting, identity recycling, and hush payments—using morgue access to source and erase.\"\n    },\n    {\n      \"name\": \"The Lanternmen\",\n      \"public_front\": \"A hard-nosed labor outfit providing dock, sanitation, and security manpower.\",\n      \"hidden_agenda\": \"Runs the transport network for illicit cargo: bodies, paperwork, and bribes moved through tunnels and service corridors.\"\n    }\n  ]\n}\n```",
+      "",
+      "Rain hammers the loading bays at St. Brigid as an internal audit team arrives early—too early—forcing night supervisor **Mara Keene** to rush a “routine transfer” before daylight and before paper trails harden. A Lanternmen convoy idles in the service alley, engines muttering, while **Doc Vellum** (Halcyon’s fixer) leans on Keene to move one particular gurney tagged with Silas’s unforgotten name. Across town, Halcyon’s free clinic suffers a sudden “power failure,” scrambling records and trapping patients—cover for a continuity trial pickup that could turn into a riot if the doors stay locked.\n\n```json\n{\n  \"events\": [\n    {\n      \"name\": \"St. Brigid Surprise Audit & Midnight Transfer\",\n      \"description\": \"A municipal audit team arrives at St. Brigid ahead of schedule, forcing night supervisor Mara Keene to fast-track a sensitive body transfer before intake logs can be compared. A Lanternmen convoy waits in the alley while Halcyon fixer Doc Vellum pressures Keene to move a gurney carrying the first falsified identity—Silas’s anchor case—out through service tunnels.\",\n      \"tensions\": [\n        \"Audit staff could discover altered tags and missing chain-of-custody signatures\",\n        \"Lanternmen may use intimidation or violence if the transfer stalls\",\n        \"Keene risks becoming the scapegoat if Halcyon needs someone to burn\"\n      ]\n    },\n    {\n      \"name\": \"Halcyon Clinic Blackout & Continuity Pickup\",\n      \"description\": \"Halcyon’s flagship free clinic reports an abrupt power failure that wipes terminals and locks down exits. The blackout masks a continuity-trial extraction: patients are rerouted, one is quietly sedated, and a courier team prepares a sealed transport order routed through St. Brigid. If staff or families realize the lockdown isn’t for safety, panic could spike into a street-level riot.\",\n      \"tensions\": [\n        \"Patients and families may force exits, drawing police and media attention\",\n        \"Clinic staff could leak evidence of the extraction if they regain system access\",\n        \"A rushed pickup increases the chance of mislabeling, leaving a trace Silas can follow\"\n      ]\n    }\n  ]\n}\n```",
+      "Silas Mercer hasn’t slept right since the case that ended with a name on his tongue and an empty chair at the precinct—**Jonah Pike**. Officially: overdose, unclaimed, processed through **St. Brigid Morgue Services**. Unofficially: Jonah’s sister slid Silas a damp envelope yesterday—photocopies of an intake sheet that doesn’t match the death certificate. Same date, same toe-tag number, two different fingerprints. In the corner, a smudged stamp: **TRANSFER AUTHORIZED — M. KEENE**.\n\nTonight, rain turns the curb into a mirror outside St. Brigid’s loading bays. A municipal audit team is arriving early. Too early. That kind of surprise only happens when someone wants the books clean or the bodies gone. Through a chain-link gap, Silas spots a Lanternmen convoy idling in the service alley—three vans, engines low, drivers smoking like they’re waiting for a bell. A man in a dry coat—Doc Vellum, if Silas’s old collections contacts are right—leans close to the night supervisor, urgent enough to be threatening.\n\nSilas already has one thing he shouldn’t: a morgue access badge number written on the back of Jonah’s sister’s letter, the ink bled by tears and weather. If he uses it, doors might open. If he mentions it, someone will know he has it.\n\nAcross town, Halcyon’s free clinic goes dark—power failure, locked exits, panicked families. The scanner on Silas’s police-band crackles with the first calls. Two crises, one pipeline. And Jonah’s name is about to move again—unless Silas gets there first, or gets noticed trying."
+    ],
+    "world_seed": null,
+    "simulation": {
+      "scenes": {
+        "Ing Raincoats": {
+          "location": "Ing Raincoats",
+          "location_description": "Ing Raincoats is a narrow, fluorescent-lit shop wedged between a closed diner and a pawn counter that never fully went away. The front smells like wet wool and mothballs; the back smells like solvent and old paper. A service door opens to a shared alley corridor where carts roll at night, and the radiator knocks like it’s trying to warn you.",
+          "watchers": [
+            {
+              "id": "watcher_Ing Raincoats_0_b0ea5c",
+              "name": "Marta 'Tape-Measure' Koenig",
+              "description": "A seamstress with quick hands and slower eyes, she pretends to take Silas’s measurements while clocking his shoes, the way he scans exits, and whether he asks about the back room or the service door. She listens for names tied to the morgue pipeline and repeats them later as if they were just gossip.",
+              "faction": "St. Brigid Morgue Services",
+              "reports_to": "Edwin Prowse (St. Brigid intake supervisor)",
+              "triggers": [
+                {
+                  "trigger_type": "keyword",
+                  "keywords": [
+                    "toe-tag",
+                    "St. Brigid",
+                    "intake",
+                    "morgue",
+                    "falsified identity",
+                    "Lanternmen",
+                    "Halcyon"
+                  ],
+                  "probability": 0.65
+                }
+              ],
+              "active": true,
+              "triggered": true
+            },
+            {
+              "id": "watcher_Ing Raincoats_1_58d794",
+              "name": "Calder Venn, 'Union Rep'",
+              "description": "He waits across the street under a broken awning, reading the shop window like it’s a ledger. He notes who comes in, how long they stay, and whether anything bulky leaves under canvas. If Silas starts asking about tunnels, deliveries, or night pickups, Calder makes a call and follows at a distance that feels like coincidence.",
+              "faction": "The Lanternmen",
+              "reports_to": "Rook Hallow (Lanternmen route boss)",
+              "triggers": [
+                {
+                  "trigger_type": "keyword",
+                  "keywords": [
+                    "service tunnel",
+                    "delivery",
+                    "gurney",
+                    "route",
+                    "night pickup",
+                    "union",
+                    "manifest"
+                  ],
+                  "probability": 0.55
+                }
+              ],
+              "active": true,
+              "triggered": false
+            }
+          ],
+          "hidden_guards": [
+            {
+              "id": "guard_Ing Raincoats_0_d5cc6d",
+              "name": "Back-room cutter with a sap and a short temper",
+              "guard_type": "armed",
+              "strength": "moderate",
+              "location_within_scene": "Behind the bead curtain in the alterations area, posted by the stockroom door that leads to the alley service corridor",
+              "triggers": [
+                {
+                  "trigger_type": "keyword",
+                  "keywords": [
+                    "back room",
+                    "stockroom",
+                    "service door",
+                    "alley corridor",
+                    "Lanternmen"
+                  ],
+                  "probability": 0.9
+                }
+              ],
+              "weaknesses": [
+                "Keep to the front counter and ask for receipts or sizes, not access",
+                "Create a distraction (dropped hanger rack, fitting-room argument) to draw him forward",
+                "Offer cash for a rush repair to keep hands busy and eyes off the door"
+              ],
+              "active": true,
+              "triggered": false
+            },
+            {
+              "id": "guard_Ing Raincoats_1_530b64",
+              "name": "Silent bell-and-buzzer rig on the service door",
+              "guard_type": "automated",
+              "strength": "moderate",
+              "location_within_scene": "Inside the stockroom: a pressure strip under the door mat wired to a buzzer above the front register",
+              "triggers": [
+                {
+                  "trigger_type": "keyword",
+                  "keywords": [
+                    "open the service door",
+                    "slip into the stockroom",
+                    "after hours",
+                    "pick the lock"
+                  ],
+                  "probability": 0.9
+                }
+              ],
+              "weaknesses": [
+                "Avoid stepping on the mat; hug the shelving and step over the strip",
+                "Trigger it intentionally while remaining visible in the front to frame it as a customer mistake",
+                "Cut power at the loose plug behind the coat steamer (risks attention if noticed)"
+              ],
+              "active": true,
+              "triggered": false
+            }
+          ],
+          "fail_conditions": [
+            {
+              "id": "fail_Ing Raincoats_0_df3580",
+              "name": "Pressing for the back corridor too directly",
+              "description": "The shop survives on plausible deniability; anyone who asks the wrong questions is treated like a threat to the pipeline. A direct push for the stockroom or service door makes the watchers stop pretending this is retail.",
+              "severity": "moderate",
+              "consequence_narrative": "Marta’s smile goes thin and she ‘misplaces’ Silas’s coat ticket while Calder drifts closer outside. Within minutes, Silas is boxed into small talk while someone in back calls for muscle. If he lingers, he leaves with a tail and a note made in someone else’s handwriting.",
+              "triggers": [
+                {
+                  "trigger_type": "keyword",
+                  "keywords": [
+                    "let me see the back",
+                    "service corridor",
+                    "tunnel",
+                    "who comes through here at night",
+                    "St. Brigid deliveries",
+                    "Lanternmen route"
+                  ],
+                  "probability": 0.7
+                }
+              ],
+              "can_escape": true,
+              "escape_conditions": [
+                "Pivot to a mundane cover story (lost umbrella, seam tear, insurance claim) and leave calmly",
+                "Pay for a quick alteration to justify the questions as logistics",
+                "Exit through the front immediately and change routes twice to shake the tail"
+              ],
+              "active": true,
+              "triggered": false
+            },
+            {
+              "id": "fail_Ing Raincoats_1_a89302",
+              "name": "Showing or mentioning the falsified identity list",
+              "description": "Paper is currency here, and the wrong paper is a death sentence. Flashing names, tags, or morgue records tells the room exactly what Silas is hunting and who will pay to stop him.",
+              "severity": "severe",
+              "consequence_narrative": "The bell over the door rings once—too clean, too timed—and the front light flickers like a signal. Marta stalls while the back-room cutter steps out, and Calder’s shadow crosses the window. Silas is pressured into a ‘private talk’ in the stockroom where bruises happen quietly and documents disappear.",
+              "triggers": [
+                {
+                  "trigger_type": "keyword",
+                  "keywords": [
+                    "list",
+                    "falsified",
+                    "identity",
+                    "toe-tag number",
+                    "intake record",
+                    "continuity",
+                    "Halcyon Benevolent Trust"
+                  ],
+                  "probability": 0.55
+                }
+              ],
+              "can_escape": true,
+              "escape_conditions": [
+                "Keep documents concealed; speak in partials and let them supply details",
+                "Claim the papers are insurance forms or a missing-persons flyer and offer to leave them a copy later",
+                "Cause a public scene at the front counter to force witnesses and create space to exit"
+              ],
+              "active": true,
+              "triggered": false
+            }
+          ],
+          "secrets": [
+            {
+              "id": "secret_Ing Raincoats_0_b776c6",
+              "description": "A false-bottom drawer under the counter holds carbon copies of delivery slips labeled as raincoat shipments; the timestamps match late-night gurney movements, and the signatures are Lanternmen hand marks disguised as vendor initials.",
+              "discovery_triggers": [
+                {
+                  "trigger_type": "keyword",
+                  "keywords": [
+                    "search",
+                    "examine",
+                    "look",
+                    "drawer",
+                    "counter",
+                    "receipts",
+                    "carbon copy"
+                  ],
+                  "probability": 1.0
+                }
+              ],
+              "discovered": true
+            },
+            {
+              "id": "secret_Ing Raincoats_1_a2af47",
+              "description": "In the fitting-room mirror frame, a thin strip of paper is taped behind the backing: a handwritten conversion key that turns coat sizes into locker numbers and service-corridor door codes, updated weekly in careful block letters.",
+              "discovery_triggers": [
+                {
+                  "trigger_type": "keyword",
+                  "keywords": [
+                    "search",
+                    "examine",
+                    "look",
+                    "mirror",
+                    "fitting room",
+                    "behind",
+                    "frame"
+                  ],
+                  "probability": 1.0
+                }
+              ],
+              "discovered": true
+            }
+          ],
+          "generated_at_turn": 1
+        }
+      },
+      "global_watchers": [],
+      "global_fail_conditions": [],
+      "global_timed_events": [],
+      "triggered_elements": [
+        "watcher_Ing Raincoats_0_b0ea5c",
+        "secret_Ing Raincoats_0_b776c6",
+        "secret_Ing Raincoats_1_a2af47"
+      ],
+      "current_turn": 0,
+      "current_location": "Ing Raincoats"
+    },
+    "current_location": "Ing Raincoats",
+    "current_turn": 2,
+    "inventory": [
+      "2 phone photos (Lanternmen van plate; Jonah Pike toe-tag + partial transfer packet stamp)"
+    ],
+    "abilities": [],
+    "discovered_locations": [
+      "St. Brigid Morgue — rear loading bays/service alley",
+      "Ing Raincoats"
+    ],
+    "known_npcs": [
+      "Mara Keene (night supervisor)",
+      "Doc Vellum (Halcyon fixer)",
+      "Lanternmen van driver (unidentified)",
+      "Municipal audit team (2 visible)"
+    ],
+    "active_events": [],
+    "message_history": [
+      {
+        "role": "assistant",
+        "content": "It is 2:17 a.m. behind St. Brigid Morgue Services, the city contractor that handles the dead, on the lower river road. Rain turns the loading bay asphalt into black glass and makes the sodium lights look sick.\n\nSilas Mercer waits in the gap between a dumpster and a chain-link fence. He counts the seconds between dock door checks and writes them in a pocket notebook with a pencil that still works when paper sweats. He watches hands, not faces, and he clocks who touches keys, who touches badges, and who never lets go of a phone.\n\nA Lanternmen convoy idles in the service alley, the labor outfit that moves freight and muscle for cash. Three vans sit nose-out, engines muttering, wipers ticking like metronomes. A man in a dry coat—Doc Vellum, a fixer for the Halcyon Benevolent Trust that bankrolls clinics and buys silence—leans into the night supervisor’s space and talks without moving his mouth. Mara Keene, St. Brigid’s night supervisor, signs something on a clipboard with a pen that doesn’t belong to her.\n\nSilas sees the error nobody else will. The gurney they rush out carries a toe-tag with Jonah Pike’s name, but the knot is tied wrong for St. Brigid’s usual intake, and the tag stock is newer than the damp paperwork in Keene’s hand. The audit team’s sedan rolls up front, headlights washing the bay door. Keene looks toward the alley, then toward the main entrance, and makes a choice.\n\nThe Lanternmen driver reaches for the van latch. Silas has Jonah’s badge number in his pocket, and one chance to decide whether to open a door or stop a van."
+      },
+      {
+        "role": "user",
+        "content": "I stay in cover and snap a couple quick photos of the van’s plate and the toe-tag as it bobs past, then I step out just enough to call, “Keene—audit’s here. You want that bay door open or you want them waiting?” keeping my hands visible and my voice like I belong, buying seconds while I watch the driver’s hands on the latch."
+      },
+      {
+        "role": "assistant",
+        "content": "Your phone comes up quick from behind the dumpster’s edge. Two shots: the nearest van’s plate, rain-beaded and readable under the alley light; then the gurney as it bumps past—Jonah Pike on the toe-tag, the tag stock too clean, the knot wrong. The second photo catches a corner of the transfer packet clipped to the rail: a stamped block that reads **TRANSFER AUTHORIZED — M. KEENE** before a Lanternman shoulder blocks it.\n\nYou step out just enough to be seen, palms open, voice flat like you’ve said it a thousand times. “Keene—audit’s here. You want that bay door open or you want them waiting?”\n\nImmediate effect: Keene freezes mid-step. Her eyes flick to the front lot where headlights wash the main entrance, then back to you. For half a breath she looks relieved—like you handed her an excuse—then the relief curdles into suspicion. “Who the hell are you?” she snaps, but she’s already moving: she jabs two fingers toward the bay door control panel to her left, then points at the Lanternmen like she’s directing traffic. “Hold. Two minutes.”\n\nThe driver’s hand on the latch stops. Not relaxes—stops. He keeps his fingers hooked under the handle, ready. He looks past you, not at you, like he’s checking for a second set of eyes in the rain. Doc Vellum shifts in close to Keene, voice low but you catch the edge of it over the engines: “If they step into intake, we’re done. Move it.”\n\nBehind you, through the chain-link gap, the front entrance doors open and a pair of municipal types in raincoats start across the lot—clipboards tucked to their chests, one of them already dialing someone, annoyed.\n\nThe alley smells like wet diesel and disinfectant leaking from a cracked service vent to the west wall. The pressure is immediate: if Keene opens the bay now, she’s inviting the audit into the back corridors; if she stalls them, she has to explain why.\n\n**Status updates:**  \n- Photos secured: plate, toe-tag  \n- Keene: stalled transfer, suspicious  \n- Audit team: approaching front entrance  \n\n```json\n{\"inventory_add\":[\"2 phone photos (Lanternmen van plate; Jonah Pike toe-tag + partial transfer packet stamp)\"],\"inventory_remove\":[],\"abilities_add\":[],\"locations_add\":[\"St. Brigid Morgue — rear loading bays/service alley\"],\"npcs_add\":[\"Mara Keene (night supervisor)\",\"Doc Vellum (Halcyon fixer)\",\"Lanternmen van driver (unidentified)\",\"Municipal audit team (2 visible)\"]}```"
+      },
+      {
+        "role": "user",
+        "content": "I keep my palms up and angle my body so I can still see the driver’s hand. “Mercer—contract compliance. I’m the guy you call when paperwork starts sweating.” I nod toward the front lot. “They’re coming in hot; you do not want them standing at the main desk. Open the bay, bring them through intake—looks clean, feels routine.”\n\nWithout waiting for her answer, I step back a half pace and call out toward the approaching raincoats, loud enough to carry: “Audit! Rear intake’s the active door—follow my voice.”"
+      },
+      {
+        "role": "assistant",
+        "content": "“Mercer—contract compliance. I’m the guy you call when paperwork starts sweating.”\n\n**Immediate outcome:** Keene buys it—halfway. Not because she believes you, but because your lie gives her a script that keeps the auditors out of her front office and away from whatever’s on the computer terminals.\n\nRain hisses off the bay’s corrugated awning as she snaps, “Rear intake is *not* an active door—unless I say it is.” Then she swipes her badge at the panel anyway. The loading bay door motor groans and starts to climb, spilling a slice of freezer-cold air and bleach stink into the alley.\n\nYou call out, loud, toward the two raincoats crossing the front lot. “Audit! Rear intake’s the active door—follow my voice.”\n\nOne of them stops dead, turns his head, and squints through the rain like he’s trying to place your face. The other—shorter, hair tucked under a hood—keeps walking but changes angle, heading toward the service alley with the annoyed, purposeful stride of someone who doesn’t like surprises. The taller one raises his voice back, sharp: “Who authorized rear intake? Identify yourself!”\n\nKeene leans close enough that you catch cigarette-mint on her breath. “If you’re not on my roster, Mercer, you’re about to be my problem.” But she’s already putting on her “routine” voice, louder, for the auditors to hear: “Evening, municipal. We’re staging overflow through rear intake due to a refrigeration service call.”\n\nTo your left, the Lanternmen driver’s hand tightens on the van latch—knuckles pale. He doesn’t open it yet. Doc Vellum’s eyes flick from the auditors to you, then to Keene, calculating. He murmurs, just audible: “That wasn’t in the plan, Mara.” His tone says *fix it*.\n\nInside the rising bay door, fluorescent light reveals a short corridor: yellow mop bucket, a wall-mounted key box, and a security camera above the doorframe pointed straight down the alley—its red status LED steady, recording.\n\nA figure across the street under an awning—shopfront measuring tape around their neck like a lanyard—pauses mid-cigarette and watches the bay open, then steps back inside as if to “get out of the rain.”\n\n**Status updates:**\n- Bay door: opening, rear corridor exposed  \n- Audit team: rerouting toward alley  \n- Lanternmen transfer: paused, tense"
+      }
+    ],
+    "pending_display": null
+  },
+  "simulation_snapshots": []
+}
