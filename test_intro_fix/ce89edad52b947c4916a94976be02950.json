@@ -1,0 +1,287 @@
+{
+  "metadata": {
+    "playthrough_id": "ce89edad52b947c4916a94976be02950",
+    "started_at": "2026-02-16T02:15:05.377900",
+    "completed_at": "2026-02-16T02:17:27.999699",
+    "genre": "Noir",
+    "tone": "Gritty",
+    "story_type": "Mystery",
+    "character_name": "Elias Crowe",
+    "character_profession": "Private Investigator (Missing Persons Specialist)",
+    "character_background": "Elias Crowe was raised in a soot-stained tenement district where union strikes, backroom deals, and sudden disappearances were just part of the weather. After his younger sister vanished and the case was quietly shelved, he learned to trust paper trails over promises and to let silence do the heavy lifting. Now he lives above his office with a wall of clippings and case notes, convinced the city’s rot has a name and he’s seen it before.",
+    "player_personality": "cautious",
+    "agent_model": "gpt-5.2",
+    "total_turns": 15,
+    "locations_visited": [],
+    "npcs_encountered": [],
+    "simulation_triggers_fired": 0,
+    "completed_normally": true,
+    "error_message": null
+  },
+  "messages": [
+    {
+      "turn": 1,
+      "source": "game",
+      "content": "Welcome to The Narrative Loom (TNL) - your simulation-first Dungeon Master.\n\nPlay anything from a cyberpunk heist-thriller to a dark fairytale revenge story.\n\nSelect a **Genre**, **Tone**, and **Story Type**, or say \"surprise me\" for a random selection.\n\nExamples:\n- \"Noir detective story, gritty tone, mystery thriller\"\n- \"Fantasy, whimsical, coming-of-age adventure\"\n- \"Sci-fi horror, bleak, survival story\"\n- \"surprise me\"\n\nWhat world would you like to explore?",
+      "timestamp": "2026-02-16T02:15:05.377900",
+      "player_reasoning": null,
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 2,
+      "source": "player_agent",
+      "content": "noir, gritty, mystery",
+      "timestamp": "2026-02-16T02:15:05.377900",
+      "player_reasoning": "Selected: noir, gritty, mystery",
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 3,
+      "source": "game",
+      "content": "Your world is set:\n\n**Genre:** Noir\n**Tone:** Gritty\n**Story Type:** Mystery\n\nMoving to character creation...\n\nPerfect! Your world will be: **Noir** with a **Gritty** tone - a **Mystery**.\n\nNow let's shape your protagonist. Tell me about your character:\n\n- **Name** - What should we call you?\n- **Background** - Where are they from? What shaped them?\n- **Profession or Skillset** - What are they good at?\n- **Traits** - A few words capturing temperament, strengths, flaws\n- **Personal Goal** - What do they want (not what fate demands)\n\nYou can describe freely or say \"surprise me\" for a generated character.",
+      "timestamp": "2026-02-16T02:15:05.377900",
+      "player_reasoning": null,
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 4,
+      "source": "player_agent",
+      "content": "Elias Crowe grew up in a tenement shadowed by union strikes and unsolved disappearances that taught him to watch first and speak last. A private investigator specializing in missing persons, he keeps meticulous notes and never walks into a room without reading it like a crime scene. Careful, observant, and relentlessly patient, he weighs every word as if it might be used against him. He’s driven to find his sister’s killer, even if the truth rots the city’s last clean corners.",
+      "timestamp": "2026-02-16T02:15:10.032822",
+      "player_reasoning": "Generated cautious-style character for Noir Mystery",
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 5,
+      "source": "game",
+      "content": "Here's your character:\n\n**Elias Crowe**\n*Private Investigator (Missing Persons Specialist)*\n\nElias Crowe was raised in a soot-stained tenement district where union strikes, backroom deals, and sudden disappearances were just part of the weather. After his younger sister vanished and the case was quietly shelved, he learned to trust paper trails over promises and to let silence do the heavy lifting. Now he lives above his office with a wall of clippings and case notes, convinced the city’s rot has a name and he’s seen it before.\n\n**Traits:** Careful and methodical, Highly observant, Relentlessly patient, Soft-spoken but incisive, Morally stubborn\n**Goal:** Identify and bring to light the truth behind his sister’s disappearance and murder—no matter who it implicates—while preventing the same machinery from claiming another missing person.\n\nReady to lock it in? Say \"yes\" to continue, or tell me what to adjust.",
+      "timestamp": "2026-02-16T02:15:15.281072",
+      "player_reasoning": null,
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 6,
+      "source": "player_agent",
+      "content": "yes",
+      "timestamp": "2026-02-16T02:15:15.381969",
+      "player_reasoning": "Simple confirmation",
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 7,
+      "source": "game",
+      "content": "Character locked in. Weaving your world...\n\nYour world has been fully woven.\n\n**Campaign ID:** `3389d16f-b8e2-4943-9b39-1d92f2defb7a`\n\nKeep this safe - it allows you to resume your journey anytime.\n\nType **continue** when you're ready to begin.",
+      "timestamp": "2026-02-16T02:16:16.748921",
+      "player_reasoning": null,
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 8,
+      "source": "player_agent",
+      "content": "continue",
+      "timestamp": "2026-02-16T02:16:16.849455",
+      "player_reasoning": "Ready to begin the adventure",
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 9,
+      "source": "game",
+      "content": "You wake before the alarm because you always do when the city starts moving wrong. The rain on the window sounds like fingers testing a lock. You lie still on the narrow bed above your office and count the gaps between factory whistles, like you used to count the days after your sister vanished. You want proof, not a story. You want a name that can’t duck behind a committee vote or a charity banner. Wanting doesn’t help. Paper does.\n\nDownstairs, your office smells of damp wool and old paste. You boil water on the hot plate and lay out yesterday’s notes in a straight line: three addresses, two false ones, one that might hold. Your wall of clippings gets a new pin, placed by habit, not hope. You check the lock on the file cabinet, then the window latch, then the revolver in the desk drawer. You don’t trust the night to stay outside.\n\nThe knock comes while you’re rinsing the cup—three light taps, a pause, then two like someone counting breaths. You don’t move at first. No one who needs help knocks like that. You cross the room without turning on the overhead light and listen to the hallway. Nothing but water in the gutters and a distant trolley. When you open the door, the corridor is empty. On the floor sits a damp envelope, edges dark with rain. It smells faintly of coal tar and chapel incense. Inside is a Civic Virtue League ration chit stamped **TONIGHT—CURFEW ESCORT**, and a torn strip of crate-manifest paper: **PIER NINE / SEAL: VEYLAN**, smeared but readable. On the back, in a careful hand you have not seen since an old postcard, are two words: **DRY DROWN.** Your throat tightens. Your sister’s handwriting should be in a box, not on your doorstep.\n\nYou set the papers on your desk and keep your hands flat beside them so you don’t crumple anything. Someone knows where you live. Someone wants you to move, and they’re using her to do it. You can ignore it and stay alive longer, or you can follow it and find out who learned her hand well enough to cut with it.",
+      "timestamp": "2026-02-16T02:16:27.128997",
+      "player_reasoning": null,
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 10,
+      "source": "player_agent",
+      "content": "I slip the envelope and papers into evidence sleeves, dust them lightly for prints, then kill the lamp and watch the street from behind the blinds for a full five minutes. After that, I make two calls—first to a dock contact to ask what runs through Pier Nine under the Veylan seal, then to the Civic Virtue League office to verify what a “Tonight—Curfew Escort” chit authorizes and who issued it.",
+      "timestamp": "2026-02-16T02:16:31.390783",
+      "player_reasoning": "This feels like bait. Before I move, I need to preserve evidence, check for surveillance, and figure out what “Veylan” and the Civic Virtue League chit really buy someone.",
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 11,
+      "source": "game",
+      "content": "",
+      "timestamp": "2026-02-16T02:16:47.202358",
+      "player_reasoning": null,
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 12,
+      "source": "player_agent",
+      "content": "I slide the envelope and both papers into evidence sleeves, dust them lightly for prints, then cut the lamp and watch the street through the blinds for five full minutes. After that I place two calls—first to my dock contact to ask what’s moving through Pier Nine under the Veylan seal, then to the Civic Virtue League office to confirm what a “Tonight—Curfew Escort” chit authorizes and who signed it.",
+      "timestamp": "2026-02-16T02:16:50.374148",
+      "player_reasoning": "The note could be bait; before heading anywhere I need to preserve evidence, check if I’m being watched, and verify what Pier Nine/Veylan and that curfew chit really mean through contacts who might know.",
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 13,
+      "source": "game",
+      "content": "",
+      "timestamp": "2026-02-16T02:17:08.042330",
+      "player_reasoning": null,
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 14,
+      "source": "player_agent",
+      "content": "I slide the envelope and both papers into evidence sleeves, dust them lightly for prints, then cut the lamp and watch the street through the blinds for five full minutes. After that I place two calls—first to my dock contact to ask what’s moving through Pier Nine under the Veylan seal, then to the Civic Virtue League office to confirm what a “Tonight—Curfew Escort” chit authorizes and who signed it.",
+      "timestamp": "2026-02-16T02:17:10.622807",
+      "player_reasoning": "Someone baited me with my sister’s handwriting; before I move, I need to preserve evidence, check if I’m being watched, and verify the two leads (Pier Nine/Veylan and the League chit) through low-risk calls.",
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 15,
+      "source": "game",
+      "content": "",
+      "timestamp": "2026-02-16T02:17:27.898810",
+      "player_reasoning": null,
+      "triggered_elements": [],
+      "state_changes": {}
+    }
+  ],
+  "initial_state": {
+    "campaign_id": "3389d16f-b8e2-4943-9b39-1d92f2defb7a",
+    "phase": "gameplay",
+    "genre": "Noir",
+    "tone": "Gritty",
+    "story_type": "Mystery",
+    "character_sheet": {
+      "name": "Elias Crowe",
+      "background": "Elias Crowe was raised in a soot-stained tenement district where union strikes, backroom deals, and sudden disappearances were just part of the weather. After his younger sister vanished and the case was quietly shelved, he learned to trust paper trails over promises and to let silence do the heavy lifting. Now he lives above his office with a wall of clippings and case notes, convinced the city’s rot has a name and he’s seen it before.",
+      "profession": "Private Investigator (Missing Persons Specialist)",
+      "traits": [
+        "Careful and methodical",
+        "Highly observant",
+        "Relentlessly patient",
+        "Soft-spoken but incisive",
+        "Morally stubborn"
+      ],
+      "personal_goal": "Identify and bring to light the truth behind his sister’s disappearance and murder—no matter who it implicates—while preventing the same machinery from claiming another missing person.",
+      "stats": {}
+    },
+    "seed_chunks": [
+      "Rain slicks the cobblestones into black glass, turning streetlamps into bruised halos that tremble in every puddle. Coal smoke and hot metal breathe from alley grates, mixing with cheap gin, wet wool, and the sour tang of old paper. Somewhere a factory whistle cuts the night—long, tired, accusing—then is swallowed by distant traffic and the hush that follows footsteps too closely. Neon stutters in shop windows, painting faces in sickly blues and reds before they vanish again into soot-shadow. The air feels worked over, like a secret handled too many times: damp, gritty, and unwilling to come clean.",
+      "Rain-polished streets belong, on paper, to the **Harbor Union Council**, which claims it’s only keeping men fed and contracts fair; in back rooms it runs “protection” routes for bodies and evidence, selling silence to the highest bidder. The **Civic Virtue League** parades as a charity for widows and wayward youth, but it launders blackmail through soup lines and steers missing persons into “rehabilitation” that never ends. Over both leans **Veylan Foundry & Shipping**, a respectable industrial house funding jobs and philanthropy while field-testing a private registry of workers—disappearances as data. The Union extorts Veylan, Veylan bankrolls the League, and the League breaks strikers—each blaming the others when someone vanishes.\n\n```json\n{\n  \"factions\": [\n    {\n      \"name\": \"Harbor Union Council\",\n      \"public_front\": \"Labor organization protecting wages, safety, and fair contracts on the docks and in the mills.\",\n      \"hidden_agenda\": \"Controls illicit transport corridors for people, evidence, and hush money; brokers disappearances as a service.\"\n    },\n    {\n      \"name\": \"Civic Virtue League\",\n      \"public_front\": \"Prominent charity offering shelters, soup lines, and moral reform programs for the poor.\",\n      \"hidden_agenda\": \"Runs a blackmail-and-recruitment pipeline using aid records; funnels select 'cases' into permanent off-book custody.\"\n    },\n    {\n      \"name\": \"Veylan Foundry & Shipping\",\n      \"public_front\": \"Major employer and benefactor providing industrial growth, shipping infrastructure, and civic donations.\",\n      \"hidden_agenda\": \"Operates a covert registry and experimentation program treating workers and missing persons as controllable inventory.\"\n    }\n  ]\n}\n```",
+      "",
+      "Dockside sirens wail as the Harbor Union Council calls an “emergency safety stoppage” after a crate-manifest clerk is found drowned in a dry warehouse—his ledger gone, his pockets stuffed with Civic Virtue League ration chits. The League responds by expanding night “curfew escorts” for soup-line regulars, and three youths vanish between the chapel and the trolley stop. Meanwhile Veylan Foundry & Shipping rushes a sealed midnight shipment through Pier Nine under private guards, bribing union stewards to look away. Rumor says the cargo is people, not parts, and someone’s selling names.\n\n```json\n{\n  \"events\": [\n    {\n      \"name\": \"The Dry-Drown Ledger\",\n      \"description\": \"A Harbor Union Council manifest clerk is found drowned in a warehouse with no standing water; his ledger is missing and Civic Virtue League ration chits are planted on him. The Union declares an emergency stoppage and starts shaking down dockworkers for “answers.”\",\n      \"tensions\": [\n        \"Work stoppage turns the docks volatile; anyone asking questions risks being labeled a scab or a snitch.\",\n        \"The missing ledger could expose protection routes for bodies/evidence, making its holder a target for all three factions.\",\n        \"Planted League chits threaten to spark street retaliation against soup-line patrons and shelter staff.\"\n      ]\n    },\n    {\n      \"name\": \"Pier Nine Midnight Run\",\n      \"description\": \"Veylan Foundry & Shipping pushes a sealed late-night convoy through Pier Nine under private guards, paying off select union stewards to clear the gates. The Civic Virtue League expands ‘curfew escorts’ that coincide with three youths vanishing en route from the chapel to the trolley stop.\",\n      \"tensions\": [\n        \"Union stewards taking bribes risk exposure; whistleblowers may disappear before dawn.\",\n        \"The League’s escorts create a legal-looking abduction corridor that can swallow witnesses and runaways.\",\n        \"If the shipment is human cargo, any investigation threatens to trigger a coordinated cover-up across Union, League, and Veylan security.\"\n      ]\n    }\n  ]\n}\n```",
+      "Elias Crowe wakes to a knock that isn’t a client’s knock—three light taps, a pause, then two like someone counting breaths. Under his office door: a damp envelope that smells faintly of coal tar and chapel incense. Inside, a single Civic Virtue League ration chit stamped with **TONIGHT—CURFEW ESCORT**, and a torn strip of crate-manifest paper with **PIER NINE / SEAL: VEYLAN** half-legible beneath a smear of ink. On the back, in a careful hand he’s seen only once before—his sister’s, from an old postcard—two words: **“DRY DROWN.”**\n\nBy noon, the Harbor Union Council’s “safety men” are prowling the tenements asking after anyone who used to chase missing girls with a notebook and too much patience. Someone has told them Crowe is “sitting on the ledger,” and they’re offering protection with one hand and a river-weighted warning with the other. Across town, the Civic Virtue League posts fresh notices about expanded escort routes; the names of three vanished youths appear in the margins of a shelter intake book—written in pencil, then aggressively erased. A volunteer who recognizes Crowe slips him the address of a chapel side door and begs him not to let the League “reassign” her.\n\nAfter dark, a Veylan runner in a clean coat waits near Crowe’s stairwell, pretending to smoke. He doesn’t threaten—he offers. A paid retainer, access to Pier Nine records, and one quiet question: *What did you find in that envelope?*\n\nSomewhere in the city is a missing ledger, a shipment that shouldn’t exist, and a message that uses his sister’s hand like a knife. Crowe can feel the machinery notice him—gears turning, routes shifting—because someone expects him to move."
+    ],
+    "world_seed": null,
+    "simulation": {
+      "scenes": {},
+      "global_watchers": [],
+      "global_fail_conditions": [],
+      "global_timed_events": [],
+      "triggered_elements": [],
+      "current_turn": 0,
+      "current_location": null
+    },
+    "current_location": null,
+    "current_turn": 0,
+    "inventory": [],
+    "abilities": [],
+    "discovered_locations": [],
+    "known_npcs": [],
+    "active_events": [],
+    "message_history": [
+      {
+        "role": "assistant",
+        "content": "You wake before the alarm because you always do when the city starts moving wrong. The rain on the window sounds like fingers testing a lock. You lie still on the narrow bed above your office and count the gaps between factory whistles, like you used to count the days after your sister vanished. You want proof, not a story. You want a name that can’t duck behind a committee vote or a charity banner. Wanting doesn’t help. Paper does.\n\nDownstairs, your office smells of damp wool and old paste. You boil water on the hot plate and lay out yesterday’s notes in a straight line: three addresses, two false ones, one that might hold. Your wall of clippings gets a new pin, placed by habit, not hope. You check the lock on the file cabinet, then the window latch, then the revolver in the desk drawer. You don’t trust the night to stay outside.\n\nThe knock comes while you’re rinsing the cup—three light taps, a pause, then two like someone counting breaths. You don’t move at first. No one who needs help knocks like that. You cross the room without turning on the overhead light and listen to the hallway. Nothing but water in the gutters and a distant trolley. When you open the door, the corridor is empty. On the floor sits a damp envelope, edges dark with rain. It smells faintly of coal tar and chapel incense. Inside is a Civic Virtue League ration chit stamped **TONIGHT—CURFEW ESCORT**, and a torn strip of crate-manifest paper: **PIER NINE / SEAL: VEYLAN**, smeared but readable. On the back, in a careful hand you have not seen since an old postcard, are two words: **DRY DROWN.** Your throat tightens. Your sister’s handwriting should be in a box, not on your doorstep.\n\nYou set the papers on your desk and keep your hands flat beside them so you don’t crumple anything. Someone knows where you live. Someone wants you to move, and they’re using her to do it. You can ignore it and stay alive longer, or you can follow it and find out who learned her hand well enough to cut with it."
+      }
+    ],
+    "pending_display": null
+  },
+  "final_state": {
+    "campaign_id": "3389d16f-b8e2-4943-9b39-1d92f2defb7a",
+    "phase": "gameplay",
+    "genre": "Noir",
+    "tone": "Gritty",
+    "story_type": "Mystery",
+    "character_sheet": {
+      "name": "Elias Crowe",
+      "background": "Elias Crowe was raised in a soot-stained tenement district where union strikes, backroom deals, and sudden disappearances were just part of the weather. After his younger sister vanished and the case was quietly shelved, he learned to trust paper trails over promises and to let silence do the heavy lifting. Now he lives above his office with a wall of clippings and case notes, convinced the city’s rot has a name and he’s seen it before.",
+      "profession": "Private Investigator (Missing Persons Specialist)",
+      "traits": [
+        "Careful and methodical",
+        "Highly observant",
+        "Relentlessly patient",
+        "Soft-spoken but incisive",
+        "Morally stubborn"
+      ],
+      "personal_goal": "Identify and bring to light the truth behind his sister’s disappearance and murder—no matter who it implicates—while preventing the same machinery from claiming another missing person.",
+      "stats": {}
+    },
+    "seed_chunks": [
+      "Rain slicks the cobblestones into black glass, turning streetlamps into bruised halos that tremble in every puddle. Coal smoke and hot metal breathe from alley grates, mixing with cheap gin, wet wool, and the sour tang of old paper. Somewhere a factory whistle cuts the night—long, tired, accusing—then is swallowed by distant traffic and the hush that follows footsteps too closely. Neon stutters in shop windows, painting faces in sickly blues and reds before they vanish again into soot-shadow. The air feels worked over, like a secret handled too many times: damp, gritty, and unwilling to come clean.",
+      "Rain-polished streets belong, on paper, to the **Harbor Union Council**, which claims it’s only keeping men fed and contracts fair; in back rooms it runs “protection” routes for bodies and evidence, selling silence to the highest bidder. The **Civic Virtue League** parades as a charity for widows and wayward youth, but it launders blackmail through soup lines and steers missing persons into “rehabilitation” that never ends. Over both leans **Veylan Foundry & Shipping**, a respectable industrial house funding jobs and philanthropy while field-testing a private registry of workers—disappearances as data. The Union extorts Veylan, Veylan bankrolls the League, and the League breaks strikers—each blaming the others when someone vanishes.\n\n```json\n{\n  \"factions\": [\n    {\n      \"name\": \"Harbor Union Council\",\n      \"public_front\": \"Labor organization protecting wages, safety, and fair contracts on the docks and in the mills.\",\n      \"hidden_agenda\": \"Controls illicit transport corridors for people, evidence, and hush money; brokers disappearances as a service.\"\n    },\n    {\n      \"name\": \"Civic Virtue League\",\n      \"public_front\": \"Prominent charity offering shelters, soup lines, and moral reform programs for the poor.\",\n      \"hidden_agenda\": \"Runs a blackmail-and-recruitment pipeline using aid records; funnels select 'cases' into permanent off-book custody.\"\n    },\n    {\n      \"name\": \"Veylan Foundry & Shipping\",\n      \"public_front\": \"Major employer and benefactor providing industrial growth, shipping infrastructure, and civic donations.\",\n      \"hidden_agenda\": \"Operates a covert registry and experimentation program treating workers and missing persons as controllable inventory.\"\n    }\n  ]\n}\n```",
+      "",
+      "Dockside sirens wail as the Harbor Union Council calls an “emergency safety stoppage” after a crate-manifest clerk is found drowned in a dry warehouse—his ledger gone, his pockets stuffed with Civic Virtue League ration chits. The League responds by expanding night “curfew escorts” for soup-line regulars, and three youths vanish between the chapel and the trolley stop. Meanwhile Veylan Foundry & Shipping rushes a sealed midnight shipment through Pier Nine under private guards, bribing union stewards to look away. Rumor says the cargo is people, not parts, and someone’s selling names.\n\n```json\n{\n  \"events\": [\n    {\n      \"name\": \"The Dry-Drown Ledger\",\n      \"description\": \"A Harbor Union Council manifest clerk is found drowned in a warehouse with no standing water; his ledger is missing and Civic Virtue League ration chits are planted on him. The Union declares an emergency stoppage and starts shaking down dockworkers for “answers.”\",\n      \"tensions\": [\n        \"Work stoppage turns the docks volatile; anyone asking questions risks being labeled a scab or a snitch.\",\n        \"The missing ledger could expose protection routes for bodies/evidence, making its holder a target for all three factions.\",\n        \"Planted League chits threaten to spark street retaliation against soup-line patrons and shelter staff.\"\n      ]\n    },\n    {\n      \"name\": \"Pier Nine Midnight Run\",\n      \"description\": \"Veylan Foundry & Shipping pushes a sealed late-night convoy through Pier Nine under private guards, paying off select union stewards to clear the gates. The Civic Virtue League expands ‘curfew escorts’ that coincide with three youths vanishing en route from the chapel to the trolley stop.\",\n      \"tensions\": [\n        \"Union stewards taking bribes risk exposure; whistleblowers may disappear before dawn.\",\n        \"The League’s escorts create a legal-looking abduction corridor that can swallow witnesses and runaways.\",\n        \"If the shipment is human cargo, any investigation threatens to trigger a coordinated cover-up across Union, League, and Veylan security.\"\n      ]\n    }\n  ]\n}\n```",
+      "Elias Crowe wakes to a knock that isn’t a client’s knock—three light taps, a pause, then two like someone counting breaths. Under his office door: a damp envelope that smells faintly of coal tar and chapel incense. Inside, a single Civic Virtue League ration chit stamped with **TONIGHT—CURFEW ESCORT**, and a torn strip of crate-manifest paper with **PIER NINE / SEAL: VEYLAN** half-legible beneath a smear of ink. On the back, in a careful hand he’s seen only once before—his sister’s, from an old postcard—two words: **“DRY DROWN.”**\n\nBy noon, the Harbor Union Council’s “safety men” are prowling the tenements asking after anyone who used to chase missing girls with a notebook and too much patience. Someone has told them Crowe is “sitting on the ledger,” and they’re offering protection with one hand and a river-weighted warning with the other. Across town, the Civic Virtue League posts fresh notices about expanded escort routes; the names of three vanished youths appear in the margins of a shelter intake book—written in pencil, then aggressively erased. A volunteer who recognizes Crowe slips him the address of a chapel side door and begs him not to let the League “reassign” her.\n\nAfter dark, a Veylan runner in a clean coat waits near Crowe’s stairwell, pretending to smoke. He doesn’t threaten—he offers. A paid retainer, access to Pier Nine records, and one quiet question: *What did you find in that envelope?*\n\nSomewhere in the city is a missing ledger, a shipment that shouldn’t exist, and a message that uses his sister’s hand like a knife. Crowe can feel the machinery notice him—gears turning, routes shifting—because someone expects him to move."
+    ],
+    "world_seed": null,
+    "simulation": {
+      "scenes": {},
+      "global_watchers": [],
+      "global_fail_conditions": [],
+      "global_timed_events": [],
+      "triggered_elements": [],
+      "current_turn": 0,
+      "current_location": null
+    },
+    "current_location": null,
+    "current_turn": 3,
+    "inventory": [],
+    "abilities": [],
+    "discovered_locations": [],
+    "known_npcs": [],
+    "active_events": [],
+    "message_history": [
+      {
+        "role": "assistant",
+        "content": "You wake before the alarm because you always do when the city starts moving wrong. The rain on the window sounds like fingers testing a lock. You lie still on the narrow bed above your office and count the gaps between factory whistles, like you used to count the days after your sister vanished. You want proof, not a story. You want a name that can’t duck behind a committee vote or a charity banner. Wanting doesn’t help. Paper does.\n\nDownstairs, your office smells of damp wool and old paste. You boil water on the hot plate and lay out yesterday’s notes in a straight line: three addresses, two false ones, one that might hold. Your wall of clippings gets a new pin, placed by habit, not hope. You check the lock on the file cabinet, then the window latch, then the revolver in the desk drawer. You don’t trust the night to stay outside.\n\nThe knock comes while you’re rinsing the cup—three light taps, a pause, then two like someone counting breaths. You don’t move at first. No one who needs help knocks like that. You cross the room without turning on the overhead light and listen to the hallway. Nothing but water in the gutters and a distant trolley. When you open the door, the corridor is empty. On the floor sits a damp envelope, edges dark with rain. It smells faintly of coal tar and chapel incense. Inside is a Civic Virtue League ration chit stamped **TONIGHT—CURFEW ESCORT**, and a torn strip of crate-manifest paper: **PIER NINE / SEAL: VEYLAN**, smeared but readable. On the back, in a careful hand you have not seen since an old postcard, are two words: **DRY DROWN.** Your throat tightens. Your sister’s handwriting should be in a box, not on your doorstep.\n\nYou set the papers on your desk and keep your hands flat beside them so you don’t crumple anything. Someone knows where you live. Someone wants you to move, and they’re using her to do it. You can ignore it and stay alive longer, or you can follow it and find out who learned her hand well enough to cut with it."
+      },
+      {
+        "role": "user",
+        "content": "I slip the envelope and papers into evidence sleeves, dust them lightly for prints, then kill the lamp and watch the street from behind the blinds for a full five minutes. After that, I make two calls—first to a dock contact to ask what runs through Pier Nine under the Veylan seal, then to the Civic Virtue League office to verify what a “Tonight—Curfew Escort” chit authorizes and who issued it."
+      },
+      {
+        "role": "assistant",
+        "content": ""
+      },
+      {
+        "role": "user",
+        "content": "I slide the envelope and both papers into evidence sleeves, dust them lightly for prints, then cut the lamp and watch the street through the blinds for five full minutes. After that I place two calls—first to my dock contact to ask what’s moving through Pier Nine under the Veylan seal, then to the Civic Virtue League office to confirm what a “Tonight—Curfew Escort” chit authorizes and who signed it."
+      },
+      {
+        "role": "assistant",
+        "content": ""
+      },
+      {
+        "role": "user",
+        "content": "I slide the envelope and both papers into evidence sleeves, dust them lightly for prints, then cut the lamp and watch the street through the blinds for five full minutes. After that I place two calls—first to my dock contact to ask what’s moving through Pier Nine under the Veylan seal, then to the Civic Virtue League office to confirm what a “Tonight—Curfew Escort” chit authorizes and who signed it."
+      },
+      {
+        "role": "assistant",
+        "content": ""
+      }
+    ],
+    "pending_display": null
+  },
+  "simulation_snapshots": []
+}

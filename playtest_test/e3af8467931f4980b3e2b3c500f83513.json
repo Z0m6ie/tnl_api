@@ -1,0 +1,303 @@
+{
+  "metadata": {
+    "playthrough_id": "e3af8467931f4980b3e2b3c500f83513",
+    "started_at": "2026-02-15T19:45:26.257272",
+    "completed_at": "2026-02-15T19:47:47.024448",
+    "genre": "Noir",
+    "tone": "Gritty",
+    "story_type": "Mystery",
+    "character_name": "Silas Kearne",
+    "character_profession": "Private Investigator specializing in missing persons and sensitive background inquiries",
+    "character_background": "Silas grew up in the back rooms of a Southside pawnshop, watching people trade heirlooms and lies for quick cash, and learning how to spot fear before it spoke. After a stint as a process server and an off-the-books skip tracer, he turned private investigator, building a reputation for finding “lost” people and prying up secrets that official channels prefer stay buried. His sister Mara vanished three years ago after taking a temp job tied to City Hall, and every lead he follows seems to point upward into the city’s most respectable circles.",
+    "player_personality": "cautious",
+    "agent_model": "gpt-5.2",
+    "total_turns": 15,
+    "locations_visited": [
+      "Kestrel & Vine Pawn (Southside Avenue)"
+    ],
+    "npcs_encountered": [
+      "Rook Danner",
+      "soaked dock-jacket kid (unnamed)",
+      "black-coat dockworker (probable Giltwake enforcer)",
+      "lookout in hat outside (probable Giltwake)"
+    ],
+    "simulation_triggers_fired": 0,
+    "completed_normally": true,
+    "error_message": null
+  },
+  "messages": [
+    {
+      "turn": 1,
+      "source": "game",
+      "content": "Welcome to The Narrative Loom (TNL) - your simulation-first Dungeon Master.\n\nPlay anything from a cyberpunk heist-thriller to a dark fairytale revenge story.\n\nSelect a **Genre**, **Tone**, and **Story Type**, or say \"surprise me\" for a random selection.\n\nExamples:\n- \"Noir detective story, gritty tone, mystery thriller\"\n- \"Fantasy, whimsical, coming-of-age adventure\"\n- \"Sci-fi horror, bleak, survival story\"\n- \"surprise me\"\n\nWhat world would you like to explore?",
+      "timestamp": "2026-02-15T19:45:26.258274",
+      "player_reasoning": null,
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 2,
+      "source": "player_agent",
+      "content": "noir, gritty, mystery",
+      "timestamp": "2026-02-15T19:45:26.258274",
+      "player_reasoning": "Selected: noir, gritty, mystery",
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 3,
+      "source": "game",
+      "content": "Your world is set:\n\n**Genre:** Noir\n**Tone:** Gritty\n**Story Type:** Mystery\n\nMoving to character creation...\n\nPerfect! Your world will be: **Noir** with a **Gritty** tone - a **Mystery**.\n\nNow let's shape your protagonist. Tell me about your character:\n\n- **Name** - What should we call you?\n- **Background** - Where are they from? What shaped them?\n- **Profession or Skillset** - What are they good at?\n- **Traits** - A few words capturing temperament, strengths, flaws\n- **Personal Goal** - What do they want (not what fate demands)\n\nYou can describe freely or say \"surprise me\" for a generated character.",
+      "timestamp": "2026-02-15T19:45:26.258274",
+      "player_reasoning": null,
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 4,
+      "source": "player_agent",
+      "content": "Silas Kearne grew up in the back rooms of a Southside pawnshop, learning early how to read desperation in a man’s eyes. Now he works as a private investigator who specializes in “lost” people and buried secrets the cops don’t want to dig up. Careful, observant, and slow to trust, he weighs every word like it might be evidence. He’s hunting the truth behind his sister’s disappearance, convinced the city’s cleanest hands are the dirtiest.",
+      "timestamp": "2026-02-15T19:45:31.026709",
+      "player_reasoning": "Generated cautious-style character for Noir Mystery",
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 5,
+      "source": "game",
+      "content": "Here's your character:\n\n**Silas Kearne**\n*Private Investigator specializing in missing persons and sensitive background inquiries*\n\nSilas grew up in the back rooms of a Southside pawnshop, watching people trade heirlooms and lies for quick cash, and learning how to spot fear before it spoke. After a stint as a process server and an off-the-books skip tracer, he turned private investigator, building a reputation for finding “lost” people and prying up secrets that official channels prefer stay buried. His sister Mara vanished three years ago after taking a temp job tied to City Hall, and every lead he follows seems to point upward into the city’s most respectable circles.\n\n**Traits:** Careful and methodical, Keenly observant, Slow to trust, Dry-witted under pressure, Stubbornly principled\n**Goal:** Uncover what happened to his sister Mara and expose the powerful figures he believes orchestrated her disappearance, even if it means burning his remaining connections and becoming the next person who goes missing.\n\nReady to lock it in? Say \"yes\" to continue, or tell me what to adjust.",
+      "timestamp": "2026-02-15T19:45:36.495679",
+      "player_reasoning": null,
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 6,
+      "source": "player_agent",
+      "content": "yes",
+      "timestamp": "2026-02-15T19:45:36.595972",
+      "player_reasoning": "Simple confirmation",
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 7,
+      "source": "game",
+      "content": "Character locked in. Weaving your world...\n\nYour world has been fully woven.\n\n**Campaign ID:** `5d8e48ac-ed88-4f24-91cf-b74e2f5138c6`\n\nKeep this safe - it allows you to resume your journey anytime.\n\nType **continue** when you're ready to begin.",
+      "timestamp": "2026-02-15T19:46:35.707259",
+      "player_reasoning": null,
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 8,
+      "source": "player_agent",
+      "content": "continue",
+      "timestamp": "2026-02-15T19:46:35.807453",
+      "player_reasoning": "Ready to begin the adventure",
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 9,
+      "source": "game",
+      "content": "It’s just after midnight at **Kestrel & Vine Pawn**, the old storefront wedged between a closed laundromat and a payday lender on Southside Avenue. Rain needles the window glass and runs in dirty ribbons down the neon “OPEN” sign. Inside, the air smells like damp cardboard and metal polish, and the bell over the door twitches with every gust.\n\nYou stand at the counter where you used to sort watches into trays and learn which stories didn’t match the hands shaking around them. Your notepad is open, pen uncapped, the way you keep it when you’re working a missing-persons lead and don’t want to look like you’re working at all. The temp badge with Mara’s misspelling sits half-hidden under your palm, and you keep your eyes on reflections—display case glass, the dark TV screen—more than on the room itself.\n\nThe back-room door opens without the bell. **Rook Danner**, your old boss, steps out in shirtsleeves with a revolver low at his thigh like it’s part of his routine. He’s older, but his hands are steady. Behind him, a kid in a soaked dockworker jacket hovers near the shelves, breathing hard, eyes cutting to the front window. Rook doesn’t ask why you’re here. He slides a small cloth pouch across the counter. It lands with a dull, heavy clink.\n\n“Coins,” he says, voice flat. “They’re back in circulation. Same batch as the last time you came asking about Mara.” The kid swallows and blurts, “Two Giltwake guys are outside—black union coats. They told me to tell you the river man wasn’t an accident. They said if you go to **Harrow Street Station** again, you’ll follow him.”\n\nRook taps the pouch once. “And Renewal’s people came by this afternoon. Asked for you by name. Like they had a file.”\n\nThe bell doesn’t ring, but the shop’s front door handle turns anyway, slow and deliberate. You hear wet boots on the threshold, and Rook raises the revolver an inch.\n\nYou have the pouch, the badge, and the locker key in your pocket, and someone is coming in.",
+      "timestamp": "2026-02-15T19:46:49.407445",
+      "player_reasoning": null,
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 10,
+      "source": "player_agent",
+      "content": "I slide the pouch into my coat pocket and take one step sideways to put the glass display case between me and the door, hands open and low. Without looking away from the threshold, I murmur to Rook, “Hold. Let me see who it is before you make noise,” then to the kid: “Union coats—names? Did they say ‘Giltwake’ out loud?”",
+      "timestamp": "2026-02-15T19:46:53.317075",
+      "player_reasoning": "Someone’s entering and Rook’s already armed; I don’t want a shootout in the open. I need to identify who it is, keep my hands visible, and position for cover while getting quick intel from the kid.",
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 11,
+      "source": "game",
+      "content": "The pouch disappears into your coat with a soft drag of cloth on cloth. You sidestep; the glass display case is now a waist-high barrier between you and the door. Your hands stay open, low—nothing to grab, nothing to shoot.\n\nRook’s jaw tightens, but he listens. The revolver doesn’t rise; it just stays ready, angled down, finger straight along the frame. He shifts half a step so he can see the door and you at once.\n\nThe kid wipes rain off his upper lip with the back of his hand, eyes fixed on the threshold like he expects it to bite. “Names—no. Didn’t give names.” His voice cracks, then steadies. “They didn’t say ‘Giltwake’ like a business card. They said ‘the docks,’ and ‘we keep things orderly.’ One of ’em had a ring—anchor with a notch. I seen it before on union boys.”\n\nThe door opens inward. A man in a black coat with a dockworker cut steps in, letting the rain follow him. He’s broad through the shoulders, hair plastered back, cheeks raw from wind. No union patch on the chest—just clean wool and the kind of calm that isn’t natural at midnight.\n\nBehind him, in the gap before the door swings shut, you catch the second one: slimmer, hat brim low, staying outside under the awning, watching the street more than the shop.\n\nThe one inside doesn’t look at the kid. He looks at the counter, then at you behind the glass. His eyes flick to Rook’s hand and stop there.\n\n“Evening,” he says, polite enough to be a threat. “We’re looking for Silas Kearne. Heard he still drops by old friends when he’s got questions.”\n\nRook doesn’t answer. The man takes one step further in—slow—hands visible, empty. But his coat hangs heavy on the right side like something’s riding the seam.\n\nYou are now face-to-face with one probable Giltwake enforcer inside the shop, and a second acting as lookout just outside the door.\n\n```json\n{\"inventory_add\":[\"cloth pouch of old coins\"],\"inventory_remove\":[],\"abilities_add\":[],\"locations_add\":[\"Kestrel & Vine Pawn (Southside Avenue)\"],\"npcs_add\":[\"Rook Danner\",\"soaked dock-jacket kid (unnamed)\",\"black-coat dockworker (probable Giltwake enforcer)\",\"lookout in hat outside (probable Giltwake)\"]}",
+      "timestamp": "2026-02-15T19:47:09.515525",
+      "player_reasoning": null,
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 12,
+      "source": "player_agent",
+      "content": "I keep my hands visible and my voice even. “You found him. What do the docks want with me—specifically?” I glance past him toward the awning, then back. “And if this is a friendly chat, your partner can come in out of the rain where I can see him.”",
+      "timestamp": "2026-02-15T19:47:12.628044",
+      "player_reasoning": "I don’t want a gunfight in Rook’s shop; better to control the conversation, confirm who they are, and keep exits/options open while watching the lookout.",
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 13,
+      "source": "game",
+      "content": "The man’s eyes narrow a fraction at “specifically,” like you’ve asked for a receipt he didn’t plan to print. He doesn’t move closer, but his weight settles onto the balls of his feet.\n\n“Docks don’t want trouble,” he says. “Docks want quiet. You’ve been asking about a Renewal temp—your sister. That kind of asking makes people nervous.”\n\nAt the mention of Mara, the kid flinches; Rook’s face goes still, the way it does when he’s counting exits.\n\nYou angle your gaze past the man toward the awning. The lookout is there—hat brim low, cigarette ember a small orange dot. He doesn’t come in. Instead, he turns his head slightly, like he’s listening to something you can’t hear over the rain. Then he taps ash off the cigarette with a measured flick and keeps watching the street.\n\nInside, the man gives you a small, humorless smile. “He’s fine where he is. He’s watching for cops and… other problems.”\n\nHe slides one hand into his coat—slow enough to look casual, not slow enough to be safe—and pulls out a folded paper. Not a gun. He places it on the glass display case near you, but not within easy snatch range unless you lean forward.\n\nA single line is typed on it, like it came off an office machine:\n\n**STOP DIGGING. BRAMM WAS A WARNING.**\n\nUnder it, in pen, a second message:\n\n**Kestrel & Vine isn’t neutral ground anymore. Leave. Alone.**\n\nThe man’s other hand stays visible, empty, but his right shoulder remains dipped—whatever’s on that side of his coat is still there.\n\nRook finally speaks, voice low. “Message delivered. Now get out of my shop.”\n\nThe enforcer doesn’t leave yet. He watches you over the case. “We’ll know if you don’t listen, Silas. The city always knows.”\n\nOutside, the lookout shifts his stance, turning slightly toward the doorway—ready to move if this turns loud. The threat is clear: they’re here to intimidate, and they’re armed even if they haven’t shown it.",
+      "timestamp": "2026-02-15T19:47:27.056844",
+      "player_reasoning": null,
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 14,
+      "source": "player_agent",
+      "content": "I lean forward just enough to hook the folded paper with two fingers and draw it to me without lunging, keeping my other hand open. “Bramm’s name doesn’t mean anything to me—yet. Who exactly is nervous: Giltwake, Renewal, or someone at City Hall?” I nod toward the door. “And tell your friend outside to stop listening to ghosts and come in where I can see both your hands.”",
+      "timestamp": "2026-02-15T19:47:31.575402",
+      "player_reasoning": "They want me rattled and reacting. I need information—who sent them, what “Bramm” ties to—and I don’t want a shootout in Rook’s shop. I’ll de-escalate, pocket the note if I can, and get them talking while keeping eyes on the lookout.",
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 15,
+      "source": "game",
+      "content": "You hook the folded paper and draw it to your side of the glass. It comes easy—no sudden grab from him, no flinch. Just that steady stare tracking your fingers like he’s memorizing them.\n\nAt “Bramm,” something changes: not fear, not surprise—recognition. His eyes flick once toward Rook, then back to you.\n\n“Doesn’t matter what it means to you,” he says. “It means someone already decided you’re in the same book.”\n\nYou press on—Giltwake, Renewal, City Hall—and his jaw works like he’s chewing a nail. He doesn’t answer cleanly. Instead he gives you the kind of half-truth that can’t be pinned down in court.\n\n“People who sign papers get nervous when dockhands start finding bodies,” he says. “People who move cargo get nervous when auditors start counting too close. You’re stepping where both of those meet.”\n\nYou nod toward the door, telling him to bring the lookout in.\n\nHe turns his head slightly, not fully taking his eyes off you, and lifts two fingers in a small, sharp motion—more command than request.\n\nOutside, the lookout doesn’t come in. He takes one last drag, drops the cigarette into a puddle, and grinds it out with his heel. Then he walks—fast but not running—down the sidewalk to the corner and out of view, like he’s heading to a payphone or a parked car.\n\nThe man inside watches him go through the glass for a beat, then looks back at you. The polite mask is thinner now.\n\n“You don’t get to set terms,” he says. “Not tonight.”\n\nHis right hand finally comes out of his coat. Not a pistol—yet. A leather sap, short and heavy, hanging loose from his fingers. He doesn’t swing it. He just lets you see it.\n\nRook’s revolver comes up a few inches, unmistakable now. The kid edges backward into the aisle, trying to make himself small.\n\nThe threat is immediate and physical: one armed enforcer inside within a few steps of you, his partner has just peeled off to report or bring more, and Rook is on the edge of turning this into gunfire in a cramped shop.",
+      "timestamp": "2026-02-15T19:47:46.923859",
+      "player_reasoning": null,
+      "triggered_elements": [],
+      "state_changes": {}
+    }
+  ],
+  "initial_state": {
+    "campaign_id": "5d8e48ac-ed88-4f24-91cf-b74e2f5138c6",
+    "phase": "gameplay",
+    "genre": "Noir",
+    "tone": "Gritty",
+    "story_type": "Mystery",
+    "character_sheet": {
+      "name": "Silas Kearne",
+      "background": "Silas grew up in the back rooms of a Southside pawnshop, watching people trade heirlooms and lies for quick cash, and learning how to spot fear before it spoke. After a stint as a process server and an off-the-books skip tracer, he turned private investigator, building a reputation for finding “lost” people and prying up secrets that official channels prefer stay buried. His sister Mara vanished three years ago after taking a temp job tied to City Hall, and every lead he follows seems to point upward into the city’s most respectable circles.",
+      "profession": "Private Investigator specializing in missing persons and sensitive background inquiries",
+      "traits": [
+        "Careful and methodical",
+        "Keenly observant",
+        "Slow to trust",
+        "Dry-witted under pressure",
+        "Stubbornly principled"
+      ],
+      "personal_goal": "Uncover what happened to his sister Mara and expose the powerful figures he believes orchestrated her disappearance, even if it means burning his remaining connections and becoming the next person who goes missing.",
+      "stats": {}
+    },
+    "seed_chunks": [
+      "Rain slicks the streets into black glass, turning every neon sign into a bruise of color that won’t wash off. The air tastes of burnt coffee, damp paper, and the metallic bite of old coins—like the city’s been chewing on secrets too long. Somewhere below the traffic hiss, steam vents sigh and rattle, warm breath rising from grates to fog the ankles of passersby. Alleyways sweat refuse and cheap cologne; courthouse steps reek of polished stone and antiseptic pride. Radios murmur behind thin office walls, punctuated by typewriter clacks and the distant wail of sirens that never sound surprised. Even daylight feels borrowed.",
+      "In Kestrel City, three hands steer the same wheel. The **Civic Renewal Office** sells “efficiency” at City Hall—grants, permits, clean audits—while quietly laundering favors through temp contracts and sealed personnel files. The **Giltwake Syndicate** keeps the docks “orderly” with union muscle and security work, but runs missing people as commodities, trading identities to the highest bidder. Above them, the **Vellum Club** hosts charity galas and scholarship drives, yet curates blackmail ledgers and buries scandals in courtroom dust. Renewal needs Giltwake’s deniable enforcement; Giltwake fears Vellum’s ledgers. Vellum bankrolls Renewal, then demands silence—until someone like Silas starts pulling receipts.\n\n```json\n{\n  \"factions\": [\n    {\n      \"name\": \"Civic Renewal Office\",\n      \"public_front\": \"City Hall reform bureau handling permits, grants, audits, and contractor oversight.\",\n      \"hidden_agenda\": \"Routes patronage through temp agencies, erases personnel trails, and trades favors for political leverage.\"\n    },\n    {\n      \"name\": \"Giltwake Syndicate\",\n      \"public_front\": \"Dockside union influence and private security services that 'keep commerce moving.'\",\n      \"hidden_agenda\": \"Traffics in people and identities, using disappearances and forged records as a revenue stream.\"\n    },\n    {\n      \"name\": \"The Vellum Club\",\n      \"public_front\": \"Elite philanthropic society funding hospitals, scholarships, and civic arts.\",\n      \"hidden_agenda\": \"Maintains blackmail archives, fixes trials, and suppresses scandals by buying silence or burying witnesses.\"\n    }\n  ]\n}\n```",
+      "",
+      "",
+      "Three nights ago, someone slid an envelope under your office door—no knock, no footsteps, just wet paper on worn linoleum. Inside: a Civic Renewal temp badge with Mara’s name misspelled the way only family ever did, a key to a downtown locker, and a single photocopied page from a sealed personnel file. The page is mostly blacked out, except for a line-item: **“VELLUM—GALA SERVICES (OVERTIME APPROVED)”** and a handwritten note in the margin: *“If he asks, send him to Kestrel & Vine. Tell him the coins lie.”*\n\nYou haven’t been to Kestrel & Vine since the pawnshop days—back when old coins came in warm from pockets and cold from graves. The timing isn’t coincidence. That morning, a Renewal auditor named **Elias Bramm** turned up face-down in the river, pockets neatly emptied. By noon, two men in dockworker jackets lingered across from your building, smoking like they had nowhere else to be.\n\nThe locker key fits a unit at **Harrow Street Station**. Inside: a cheap burner phone with one saved number labeled “M,” a list of dates that match Vellum charity events, and a ferry ticket stub punched for a route that doesn’t officially run. The phone has one unsent draft: *“Silas—don’t trust the—”* then nothing.\n\nIf you show any of it to the wrong desk, it vanishes. If you sit on it, someone assumes you already talked. Either way, Kestrel City just noticed you noticed it back."
+    ],
+    "world_seed": null,
+    "simulation": {
+      "scenes": {},
+      "global_watchers": [],
+      "global_fail_conditions": [],
+      "global_timed_events": [],
+      "triggered_elements": [],
+      "current_turn": 0,
+      "current_location": null
+    },
+    "current_location": null,
+    "current_turn": 0,
+    "inventory": [],
+    "abilities": [],
+    "discovered_locations": [],
+    "known_npcs": [],
+    "active_events": [],
+    "message_history": [
+      {
+        "role": "assistant",
+        "content": "It’s just after midnight at **Kestrel & Vine Pawn**, the old storefront wedged between a closed laundromat and a payday lender on Southside Avenue. Rain needles the window glass and runs in dirty ribbons down the neon “OPEN” sign. Inside, the air smells like damp cardboard and metal polish, and the bell over the door twitches with every gust.\n\nYou stand at the counter where you used to sort watches into trays and learn which stories didn’t match the hands shaking around them. Your notepad is open, pen uncapped, the way you keep it when you’re working a missing-persons lead and don’t want to look like you’re working at all. The temp badge with Mara’s misspelling sits half-hidden under your palm, and you keep your eyes on reflections—display case glass, the dark TV screen—more than on the room itself.\n\nThe back-room door opens without the bell. **Rook Danner**, your old boss, steps out in shirtsleeves with a revolver low at his thigh like it’s part of his routine. He’s older, but his hands are steady. Behind him, a kid in a soaked dockworker jacket hovers near the shelves, breathing hard, eyes cutting to the front window. Rook doesn’t ask why you’re here. He slides a small cloth pouch across the counter. It lands with a dull, heavy clink.\n\n“Coins,” he says, voice flat. “They’re back in circulation. Same batch as the last time you came asking about Mara.” The kid swallows and blurts, “Two Giltwake guys are outside—black union coats. They told me to tell you the river man wasn’t an accident. They said if you go to **Harrow Street Station** again, you’ll follow him.”\n\nRook taps the pouch once. “And Renewal’s people came by this afternoon. Asked for you by name. Like they had a file.”\n\nThe bell doesn’t ring, but the shop’s front door handle turns anyway, slow and deliberate. You hear wet boots on the threshold, and Rook raises the revolver an inch.\n\nYou have the pouch, the badge, and the locker key in your pocket, and someone is coming in."
+      }
+    ],
+    "pending_display": null
+  },
+  "final_state": {
+    "campaign_id": "5d8e48ac-ed88-4f24-91cf-b74e2f5138c6",
+    "phase": "gameplay",
+    "genre": "Noir",
+    "tone": "Gritty",
+    "story_type": "Mystery",
+    "character_sheet": {
+      "name": "Silas Kearne",
+      "background": "Silas grew up in the back rooms of a Southside pawnshop, watching people trade heirlooms and lies for quick cash, and learning how to spot fear before it spoke. After a stint as a process server and an off-the-books skip tracer, he turned private investigator, building a reputation for finding “lost” people and prying up secrets that official channels prefer stay buried. His sister Mara vanished three years ago after taking a temp job tied to City Hall, and every lead he follows seems to point upward into the city’s most respectable circles.",
+      "profession": "Private Investigator specializing in missing persons and sensitive background inquiries",
+      "traits": [
+        "Careful and methodical",
+        "Keenly observant",
+        "Slow to trust",
+        "Dry-witted under pressure",
+        "Stubbornly principled"
+      ],
+      "personal_goal": "Uncover what happened to his sister Mara and expose the powerful figures he believes orchestrated her disappearance, even if it means burning his remaining connections and becoming the next person who goes missing.",
+      "stats": {}
+    },
+    "seed_chunks": [
+      "Rain slicks the streets into black glass, turning every neon sign into a bruise of color that won’t wash off. The air tastes of burnt coffee, damp paper, and the metallic bite of old coins—like the city’s been chewing on secrets too long. Somewhere below the traffic hiss, steam vents sigh and rattle, warm breath rising from grates to fog the ankles of passersby. Alleyways sweat refuse and cheap cologne; courthouse steps reek of polished stone and antiseptic pride. Radios murmur behind thin office walls, punctuated by typewriter clacks and the distant wail of sirens that never sound surprised. Even daylight feels borrowed.",
+      "In Kestrel City, three hands steer the same wheel. The **Civic Renewal Office** sells “efficiency” at City Hall—grants, permits, clean audits—while quietly laundering favors through temp contracts and sealed personnel files. The **Giltwake Syndicate** keeps the docks “orderly” with union muscle and security work, but runs missing people as commodities, trading identities to the highest bidder. Above them, the **Vellum Club** hosts charity galas and scholarship drives, yet curates blackmail ledgers and buries scandals in courtroom dust. Renewal needs Giltwake’s deniable enforcement; Giltwake fears Vellum’s ledgers. Vellum bankrolls Renewal, then demands silence—until someone like Silas starts pulling receipts.\n\n```json\n{\n  \"factions\": [\n    {\n      \"name\": \"Civic Renewal Office\",\n      \"public_front\": \"City Hall reform bureau handling permits, grants, audits, and contractor oversight.\",\n      \"hidden_agenda\": \"Routes patronage through temp agencies, erases personnel trails, and trades favors for political leverage.\"\n    },\n    {\n      \"name\": \"Giltwake Syndicate\",\n      \"public_front\": \"Dockside union influence and private security services that 'keep commerce moving.'\",\n      \"hidden_agenda\": \"Traffics in people and identities, using disappearances and forged records as a revenue stream.\"\n    },\n    {\n      \"name\": \"The Vellum Club\",\n      \"public_front\": \"Elite philanthropic society funding hospitals, scholarships, and civic arts.\",\n      \"hidden_agenda\": \"Maintains blackmail archives, fixes trials, and suppresses scandals by buying silence or burying witnesses.\"\n    }\n  ]\n}\n```",
+      "",
+      "",
+      "Three nights ago, someone slid an envelope under your office door—no knock, no footsteps, just wet paper on worn linoleum. Inside: a Civic Renewal temp badge with Mara’s name misspelled the way only family ever did, a key to a downtown locker, and a single photocopied page from a sealed personnel file. The page is mostly blacked out, except for a line-item: **“VELLUM—GALA SERVICES (OVERTIME APPROVED)”** and a handwritten note in the margin: *“If he asks, send him to Kestrel & Vine. Tell him the coins lie.”*\n\nYou haven’t been to Kestrel & Vine since the pawnshop days—back when old coins came in warm from pockets and cold from graves. The timing isn’t coincidence. That morning, a Renewal auditor named **Elias Bramm** turned up face-down in the river, pockets neatly emptied. By noon, two men in dockworker jackets lingered across from your building, smoking like they had nowhere else to be.\n\nThe locker key fits a unit at **Harrow Street Station**. Inside: a cheap burner phone with one saved number labeled “M,” a list of dates that match Vellum charity events, and a ferry ticket stub punched for a route that doesn’t officially run. The phone has one unsent draft: *“Silas—don’t trust the—”* then nothing.\n\nIf you show any of it to the wrong desk, it vanishes. If you sit on it, someone assumes you already talked. Either way, Kestrel City just noticed you noticed it back."
+    ],
+    "world_seed": null,
+    "simulation": {
+      "scenes": {},
+      "global_watchers": [],
+      "global_fail_conditions": [],
+      "global_timed_events": [],
+      "triggered_elements": [],
+      "current_turn": 0,
+      "current_location": null
+    },
+    "current_location": null,
+    "current_turn": 3,
+    "inventory": [
+      "cloth pouch of old coins"
+    ],
+    "abilities": [],
+    "discovered_locations": [
+      "Kestrel & Vine Pawn (Southside Avenue)"
+    ],
+    "known_npcs": [
+      "Rook Danner",
+      "soaked dock-jacket kid (unnamed)",
+      "black-coat dockworker (probable Giltwake enforcer)",
+      "lookout in hat outside (probable Giltwake)"
+    ],
+    "active_events": [],
+    "message_history": [
+      {
+        "role": "assistant",
+        "content": "It’s just after midnight at **Kestrel & Vine Pawn**, the old storefront wedged between a closed laundromat and a payday lender on Southside Avenue. Rain needles the window glass and runs in dirty ribbons down the neon “OPEN” sign. Inside, the air smells like damp cardboard and metal polish, and the bell over the door twitches with every gust.\n\nYou stand at the counter where you used to sort watches into trays and learn which stories didn’t match the hands shaking around them. Your notepad is open, pen uncapped, the way you keep it when you’re working a missing-persons lead and don’t want to look like you’re working at all. The temp badge with Mara’s misspelling sits half-hidden under your palm, and you keep your eyes on reflections—display case glass, the dark TV screen—more than on the room itself.\n\nThe back-room door opens without the bell. **Rook Danner**, your old boss, steps out in shirtsleeves with a revolver low at his thigh like it’s part of his routine. He’s older, but his hands are steady. Behind him, a kid in a soaked dockworker jacket hovers near the shelves, breathing hard, eyes cutting to the front window. Rook doesn’t ask why you’re here. He slides a small cloth pouch across the counter. It lands with a dull, heavy clink.\n\n“Coins,” he says, voice flat. “They’re back in circulation. Same batch as the last time you came asking about Mara.” The kid swallows and blurts, “Two Giltwake guys are outside—black union coats. They told me to tell you the river man wasn’t an accident. They said if you go to **Harrow Street Station** again, you’ll follow him.”\n\nRook taps the pouch once. “And Renewal’s people came by this afternoon. Asked for you by name. Like they had a file.”\n\nThe bell doesn’t ring, but the shop’s front door handle turns anyway, slow and deliberate. You hear wet boots on the threshold, and Rook raises the revolver an inch.\n\nYou have the pouch, the badge, and the locker key in your pocket, and someone is coming in."
+      },
+      {
+        "role": "user",
+        "content": "I slide the pouch into my coat pocket and take one step sideways to put the glass display case between me and the door, hands open and low. Without looking away from the threshold, I murmur to Rook, “Hold. Let me see who it is before you make noise,” then to the kid: “Union coats—names? Did they say ‘Giltwake’ out loud?”"
+      },
+      {
+        "role": "assistant",
+        "content": "The pouch disappears into your coat with a soft drag of cloth on cloth. You sidestep; the glass display case is now a waist-high barrier between you and the door. Your hands stay open, low—nothing to grab, nothing to shoot.\n\nRook’s jaw tightens, but he listens. The revolver doesn’t rise; it just stays ready, angled down, finger straight along the frame. He shifts half a step so he can see the door and you at once.\n\nThe kid wipes rain off his upper lip with the back of his hand, eyes fixed on the threshold like he expects it to bite. “Names—no. Didn’t give names.” His voice cracks, then steadies. “They didn’t say ‘Giltwake’ like a business card. They said ‘the docks,’ and ‘we keep things orderly.’ One of ’em had a ring—anchor with a notch. I seen it before on union boys.”\n\nThe door opens inward. A man in a black coat with a dockworker cut steps in, letting the rain follow him. He’s broad through the shoulders, hair plastered back, cheeks raw from wind. No union patch on the chest—just clean wool and the kind of calm that isn’t natural at midnight.\n\nBehind him, in the gap before the door swings shut, you catch the second one: slimmer, hat brim low, staying outside under the awning, watching the street more than the shop.\n\nThe one inside doesn’t look at the kid. He looks at the counter, then at you behind the glass. His eyes flick to Rook’s hand and stop there.\n\n“Evening,” he says, polite enough to be a threat. “We’re looking for Silas Kearne. Heard he still drops by old friends when he’s got questions.”\n\nRook doesn’t answer. The man takes one step further in—slow—hands visible, empty. But his coat hangs heavy on the right side like something’s riding the seam.\n\nYou are now face-to-face with one probable Giltwake enforcer inside the shop, and a second acting as lookout just outside the door.\n\n```json\n{\"inventory_add\":[\"cloth pouch of old coins\"],\"inventory_remove\":[],\"abilities_add\":[],\"locations_add\":[\"Kestrel & Vine Pawn (Southside Avenue)\"],\"npcs_add\":[\"Rook Danner\",\"soaked dock-jacket kid (unnamed)\",\"black-coat dockworker (probable Giltwake enforcer)\",\"lookout in hat outside (probable Giltwake)\"]}"
+      },
+      {
+        "role": "user",
+        "content": "I keep my hands visible and my voice even. “You found him. What do the docks want with me—specifically?” I glance past him toward the awning, then back. “And if this is a friendly chat, your partner can come in out of the rain where I can see him.”"
+      },
+      {
+        "role": "assistant",
+        "content": "The man’s eyes narrow a fraction at “specifically,” like you’ve asked for a receipt he didn’t plan to print. He doesn’t move closer, but his weight settles onto the balls of his feet.\n\n“Docks don’t want trouble,” he says. “Docks want quiet. You’ve been asking about a Renewal temp—your sister. That kind of asking makes people nervous.”\n\nAt the mention of Mara, the kid flinches; Rook’s face goes still, the way it does when he’s counting exits.\n\nYou angle your gaze past the man toward the awning. The lookout is there—hat brim low, cigarette ember a small orange dot. He doesn’t come in. Instead, he turns his head slightly, like he’s listening to something you can’t hear over the rain. Then he taps ash off the cigarette with a measured flick and keeps watching the street.\n\nInside, the man gives you a small, humorless smile. “He’s fine where he is. He’s watching for cops and… other problems.”\n\nHe slides one hand into his coat—slow enough to look casual, not slow enough to be safe—and pulls out a folded paper. Not a gun. He places it on the glass display case near you, but not within easy snatch range unless you lean forward.\n\nA single line is typed on it, like it came off an office machine:\n\n**STOP DIGGING. BRAMM WAS A WARNING.**\n\nUnder it, in pen, a second message:\n\n**Kestrel & Vine isn’t neutral ground anymore. Leave. Alone.**\n\nThe man’s other hand stays visible, empty, but his right shoulder remains dipped—whatever’s on that side of his coat is still there.\n\nRook finally speaks, voice low. “Message delivered. Now get out of my shop.”\n\nThe enforcer doesn’t leave yet. He watches you over the case. “We’ll know if you don’t listen, Silas. The city always knows.”\n\nOutside, the lookout shifts his stance, turning slightly toward the doorway—ready to move if this turns loud. The threat is clear: they’re here to intimidate, and they’re armed even if they haven’t shown it."
+      },
+      {
+        "role": "user",
+        "content": "I lean forward just enough to hook the folded paper with two fingers and draw it to me without lunging, keeping my other hand open. “Bramm’s name doesn’t mean anything to me—yet. Who exactly is nervous: Giltwake, Renewal, or someone at City Hall?” I nod toward the door. “And tell your friend outside to stop listening to ghosts and come in where I can see both your hands.”"
+      },
+      {
+        "role": "assistant",
+        "content": "You hook the folded paper and draw it to your side of the glass. It comes easy—no sudden grab from him, no flinch. Just that steady stare tracking your fingers like he’s memorizing them.\n\nAt “Bramm,” something changes: not fear, not surprise—recognition. His eyes flick once toward Rook, then back to you.\n\n“Doesn’t matter what it means to you,” he says. “It means someone already decided you’re in the same book.”\n\nYou press on—Giltwake, Renewal, City Hall—and his jaw works like he’s chewing a nail. He doesn’t answer cleanly. Instead he gives you the kind of half-truth that can’t be pinned down in court.\n\n“People who sign papers get nervous when dockhands start finding bodies,” he says. “People who move cargo get nervous when auditors start counting too close. You’re stepping where both of those meet.”\n\nYou nod toward the door, telling him to bring the lookout in.\n\nHe turns his head slightly, not fully taking his eyes off you, and lifts two fingers in a small, sharp motion—more command than request.\n\nOutside, the lookout doesn’t come in. He takes one last drag, drops the cigarette into a puddle, and grinds it out with his heel. Then he walks—fast but not running—down the sidewalk to the corner and out of view, like he’s heading to a payphone or a parked car.\n\nThe man inside watches him go through the glass for a beat, then looks back at you. The polite mask is thinner now.\n\n“You don’t get to set terms,” he says. “Not tonight.”\n\nHis right hand finally comes out of his coat. Not a pistol—yet. A leather sap, short and heavy, hanging loose from his fingers. He doesn’t swing it. He just lets you see it.\n\nRook’s revolver comes up a few inches, unmistakable now. The kid edges backward into the aisle, trying to make himself small.\n\nThe threat is immediate and physical: one armed enforcer inside within a few steps of you, his partner has just peeled off to report or bring more, and Rook is on the edge of turning this into gunfire in a cramped shop."
+      }
+    ],
+    "pending_display": null
+  },
+  "simulation_snapshots": []
+}

@@ -36,6 +36,25 @@ class SceneDetector:
     # Words to strip from extracted locations
     STRIP_WORDS = ["the", "a", "an", "to", "into", "inside"]
 
+    # Trailing phrases to remove from location names
+    TRAILING_PHRASES = [
+        "at the coordinates",
+        "at the coordinate",
+        "at coordinates",
+        "on the map",
+        "from the note",
+        "that was mentioned",
+        "where",
+        "at the",
+    ]
+
+    # Phrases that indicate NOT a location (actions, not places)
+    NON_LOCATION_WORDS = [
+        "avoid", "escape", "evade", "hide", "fight", "attack",
+        "run", "flee", "dodge", "them", "him", "her", "it",
+        "trouble", "danger", "agents", "guards", "police",
+    ]
+
     def detect_scene_transition(
         self,
         player_input: str,
@@ -94,14 +113,27 @@ class SceneDetector:
 
     def _normalize_location(self, location: str) -> str:
         """Clean up and normalize a location name."""
-        words = location.lower().split()
+        loc_lower = location.lower()
+
+        # Remove trailing phrases
+        for phrase in self.TRAILING_PHRASES:
+            if phrase in loc_lower:
+                idx = loc_lower.find(phrase)
+                loc_lower = loc_lower[:idx].strip()
+
+        words = loc_lower.split()
+
+        # Check if this looks like an action, not a location
+        for word in words:
+            if word in self.NON_LOCATION_WORDS:
+                return None  # Not a valid location
 
         # Remove leading articles and prepositions
         while words and words[0] in self.STRIP_WORDS:
             words = words[1:]
 
         if not words:
-            return location.title()
+            return None
 
         # Capitalize each word
         return " ".join(word.capitalize() for word in words)

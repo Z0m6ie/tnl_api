@@ -1,0 +1,521 @@
+{
+  "metadata": {
+    "playthrough_id": "b1bc2495aa4940ca9a9cc0cd4c355ac7",
+    "started_at": "2026-02-16T02:15:05.388496",
+    "completed_at": "2026-02-16T02:18:02.435712",
+    "genre": "Sci-Fi Horror",
+    "tone": "Tense",
+    "story_type": "Survival",
+    "character_name": "Mara Vance",
+    "character_profession": "Salvage Security Contractor (ex-Colonial Marine)",
+    "character_background": "Once a decorated colonial marine, Mara was the lone survivor of a classified black-site boarding action that was erased from official records and pinned on her as a catastrophic failure. Discharged in disgrace and hounded by quiet threats whenever she asks questions, she now takes off-the-books salvage protection jobs to stay armed, mobile, and out of reach. The incident left her with a hair-trigger vigilance and a private certainty that what killed her squad wasn’t human—and it remembers her.",
+    "player_personality": "aggressive",
+    "agent_model": "gpt-5.2",
+    "total_turns": 15,
+    "locations_visited": [
+      "Latchkey airlock (docked to Sable Hymn)",
+      "Sable Hymn docking corridor",
+      "Airlock"
+    ],
+    "npcs_encountered": [
+      "Juno Rake (tightbeam contact)"
+    ],
+    "simulation_triggers_fired": 1,
+    "completed_normally": true,
+    "error_message": null
+  },
+  "messages": [
+    {
+      "turn": 1,
+      "source": "game",
+      "content": "Welcome to The Narrative Loom (TNL) - your simulation-first Dungeon Master.\n\nPlay anything from a cyberpunk heist-thriller to a dark fairytale revenge story.\n\nSelect a **Genre**, **Tone**, and **Story Type**, or say \"surprise me\" for a random selection.\n\nExamples:\n- \"Noir detective story, gritty tone, mystery thriller\"\n- \"Fantasy, whimsical, coming-of-age adventure\"\n- \"Sci-fi horror, bleak, survival story\"\n- \"surprise me\"\n\nWhat world would you like to explore?",
+      "timestamp": "2026-02-16T02:15:05.388496",
+      "player_reasoning": null,
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 2,
+      "source": "player_agent",
+      "content": "sci-fi, tense, survival",
+      "timestamp": "2026-02-16T02:15:05.388496",
+      "player_reasoning": "Selected: sci-fi, tense, survival",
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 3,
+      "source": "game",
+      "content": "Your world is set:\n\n**Genre:** Sci-Fi Horror\n**Tone:** Tense\n**Story Type:** Survival\n\nMoving to character creation...\n\nPerfect! Your world will be: **Sci-Fi Horror** with a **Tense** tone - a **Survival**.\n\nNow let's shape your protagonist. Tell me about your character:\n\n- **Name** - What should we call you?\n- **Background** - Where are they from? What shaped them?\n- **Profession or Skillset** - What are they good at?\n- **Traits** - A few words capturing temperament, strengths, flaws\n- **Personal Goal** - What do they want (not what fate demands)\n\nYou can describe freely or say \"surprise me\" for a generated character.",
+      "timestamp": "2026-02-16T02:15:05.388496",
+      "player_reasoning": null,
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 4,
+      "source": "player_agent",
+      "content": "Mara Vance is a disgraced colonial marine who survived a black-site boarding action that everyone else officially “forgot.” Now working as a salvage security contractor, she’s combat-ready, sharp-eyed, and relentlessly stubborn, with a simmering resentment toward command and anyone who talks like a suit. She trusts her rifle more than people and meets every problem head-on, even when it’s smarter to run. Her goal is to recover the sealed flight recorder from that lost op—before whatever hunted her crew finds her again.",
+      "timestamp": "2026-02-16T02:15:10.667993",
+      "player_reasoning": "Generated aggressive-style character for Sci-Fi Horror Survival",
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 5,
+      "source": "game",
+      "content": "Here's your character:\n\n**Mara Vance**\n*Salvage Security Contractor (ex-Colonial Marine)*\n\nOnce a decorated colonial marine, Mara was the lone survivor of a classified black-site boarding action that was erased from official records and pinned on her as a catastrophic failure. Discharged in disgrace and hounded by quiet threats whenever she asks questions, she now takes off-the-books salvage protection jobs to stay armed, mobile, and out of reach. The incident left her with a hair-trigger vigilance and a private certainty that what killed her squad wasn’t human—and it remembers her.\n\n**Traits:** Combat-ready and disciplined under fire, Sharp-eyed and hypervigilant, Relentlessly stubborn, Deeply distrustful of authority and corporate \"suits\", Confrontational courage that borders on reckless\n**Goal:** Recover the sealed flight recorder from the erased boarding action to expose what really happened—before the same presence that hunted her crew tracks her down and finishes the job.\n\nReady to lock it in? Say \"yes\" to continue, or tell me what to adjust.",
+      "timestamp": "2026-02-16T02:15:16.184318",
+      "player_reasoning": null,
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 6,
+      "source": "player_agent",
+      "content": "yes",
+      "timestamp": "2026-02-16T02:15:16.297658",
+      "player_reasoning": "Simple confirmation",
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 7,
+      "source": "game",
+      "content": "Character locked in. Weaving your world...\n\nYour world has been fully woven.\n\n**Campaign ID:** `3965af7f-105b-4bb4-a617-aab5b9a80d80`\n\nKeep this safe - it allows you to resume your journey anytime.\n\nType **continue** when you're ready to begin.",
+      "timestamp": "2026-02-16T02:16:16.783188",
+      "player_reasoning": null,
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 8,
+      "source": "player_agent",
+      "content": "continue",
+      "timestamp": "2026-02-16T02:16:16.884755",
+      "player_reasoning": "Ready to begin the adventure",
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 9,
+      "source": "game",
+      "content": "**PLACE & TIME**  \nYou’re in the cramped cockpit of the *Latchkey*, tucked behind a dead comm buoy in the outer lanes. Shiptime reads 02:17—deep night, no sun-glare, just instrument glow. Condensation beads on the canopy frame. The air smells like old ozone and gun oil. Ahead, the derelict **Sable Hymn** hangs black and huge.\n\n**CHARACTER IN SCENE**  \nYou run your pre-boarding checks like you were trained to. Mag-boots. Cutter charge. Two spare seals. Rifle locked, chamber flagged, then unflagged. Your hands don’t shake. They don’t have the luxury. You angle the *Latchkey*’s thrusters to keep your approach cold and quiet, minimizing burn to dodge long-range scans.\n\n**THE HOOK**  \nThe Hymn’s “rescue” beacon keeps pulsing—old format, wrong checksum, and a cadence that makes your jaw tighten. Not distress. Something else. Your tightbeam relay clicks and **Juno Rake** slides into your headset, voice thin and controlled. Union broker. Dirty contacts. “Recorder’s real,” Juno says. “Sealed. Crash cradle. Heat-scored but intact. You pull it, you get paid. I’m sending you a falsified transponder now.”  \nA second voice cuts in over open-band static—flat, official, too clean. **CSD Valiant**. “Operation Clean Ledger in effect. All vessels reduce thrust and prepare for inspection.” The words aren’t a threat. They’re a trap with paperwork. If they board you, you won’t be arrested. You’ll be erased.  \nThen you hear it. Not through speakers. Through the ship’s frame. Three soft impacts—tap, tap, tap—like knuckles on a bulkhead. Your console flickers in time with it. Your suit log pings an encrypted handshake request using a key that should be dead.\n\n**THE MOMENT**  \nThe falsified transponder arrives. The Valiant’s scan beam sweeps closer. The Hymn’s docking collar drifts into alignment, waiting. Tap, tap, tap—again, nearer. Your comm cursor hovers over **ACCEPT** as your ship’s hull answers with a faint, involuntary creak.",
+      "timestamp": "2026-02-16T02:16:28.968706",
+      "player_reasoning": null,
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 10,
+      "source": "player_agent",
+      "content": "I slam **ACCEPT** on Juno’s falsified transponder and kill every nonessential emitter. “Juno, shut up and stay tightbeam—if that key pings again, I’m ripping the comm stack out.” I roll the *Latchkey* hard and burn just enough to slip into the **Sable Hymn’s** hull shadow, lining up for docking while I bring the rifle up and sweep the canopy and suit sensors for whatever’s tapping my ship.",
+      "timestamp": "2026-02-16T02:16:32.782967",
+      "player_reasoning": "If the Valiant boards me, I’m done. I need to disappear fast—get under the Hymn’s shadow, take the fake transponder, and I’m not answering any ghost-handshake.",
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 11,
+      "source": "game",
+      "content": "",
+      "timestamp": "2026-02-16T02:16:49.944205",
+      "player_reasoning": null,
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 12,
+      "source": "player_agent",
+      "content": "I key my suit’s external mics to max gain and thump the bulkhead back with my boot—hard. “Show yourself.” Then I snap the *Latchkey* onto the Hymn’s collar, clamp, and cycle the airlock with rifle shouldered, ready to light up anything that moved.",
+      "timestamp": "2026-02-16T02:16:53.369114",
+      "player_reasoning": "No feedback means something’s wrong—either comms jammed or the thing is already on me. I’m not sitting in open space waiting to get inspected; I’m docking and clearing the immediate threat first.",
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 13,
+      "source": "game",
+      "content": "Your boot hits the *Latchkey*’s inner bulkhead with a dull clang that you feel up your tibia.\n\nFor half a second: nothing.\n\nThen the sound comes back—not through your speakers, through the metal. Three soft impacts answering from *outside* your hull, close to the starboard airlock ring. Tap. Tap. Tap. Immediately after, your external mics flood with a thin, wet scrape like fingertips dragging across frost. The waveform spikes in a way that doesn’t match vibration; it’s *air-borne*—meaning something is moving in the narrow gap between your ship and the Hymn’s collar.\n\nYour suit HUD flashes a warning: **OPEN-BAND TRANSMIT DETECTED**—your “Show yourself” jumped channels for a fraction of a second despite your emitter kill. Something in your comm stack “helped.”\n\nJuno’s tightbeam cuts in, voice suddenly sharp. “Mara—don’t—” and then the tightbeam *stutters* like it’s being stepped on from the inside. “—don’t answer it. Don’t—” The rest dissolves into a soft hiss.\n\nYou snap the *Latchkey* in, clamp, and the docking latches bite with a heavy, satisfying thunk. The moment the hard seal forms, the Hymn’s emergency strips on the far side of the collar flicker in a heartbeat rhythm—three pulses, a pause, three pulses.\n\nYou cycle the airlock.\n\nPressure equalizes too fast. Not explosive, but wrong—your ears pop inside the helmet and your suit’s seal integrity ticks yellow for a beat before stabilizing. The inner door unlocks with a reluctant clack, like it had to be convinced.\n\nWhen it swings open, you’re staring into the Hymn’s docking corridor: grated deck, amber strips pulsing, dust drifting like ash.\n\nAnd there’s something else.\n\nA smear of fresh condensation on the left bulkhead—hand-shaped, five long streaks—forming as you watch, as if something just pressed there from the other side of the metal and is pulling away. No body. No silhouette. Just the wet print, sliding downward in slow motion.\n\nBehind you, from the *Latchkey*’s side of the airlock, comes one soft impact—single tap—against your ship’s hull, like a punctuation mark.\n\nYour rifle is up. The corridor ahead is empty, but the tapping is now on both sides of the threshold.\n\n```json\n{\"inventory_add\":[],\"inventory_remove\":[],\"abilities_add\":[],\"locations_add\":[\"Latchkey airlock (docked to Sable Hymn)\",\"Sable Hymn docking corridor\"],\"npcs_add\":[\"Juno Rake (tightbeam contact)\"]}\n```",
+      "timestamp": "2026-02-16T02:17:09.846453",
+      "player_reasoning": null,
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 14,
+      "source": "player_agent",
+      "content": "I back up a half-step into the airlock, rifle trained down the corridor, and slam the *Latchkey* side door control to **CLOSE**—I’m not letting anything slip in behind me. Then I lean out and fire a short burst into the deck grating and bulkhead where that condensation handprint is sliding, watching for splash, sparks, anything. “Juno—talk. What the hell is ‘it’ and how do I kill it?”",
+      "timestamp": "2026-02-16T02:17:14.066734",
+      "player_reasoning": "Something’s in the gap and it’s messing with comms; I’m not letting it trap me in the threshold. I need hard intel fast and a fallback route.",
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 15,
+      "source": "game",
+      "content": "The *Latchkey* side door control chirps and the outer airlock door starts to slide—then stops three centimeters short of fully shut. It shudders as if something is holding it on the track. Your panel flashes **OBSTRUCTION / MANUAL OVERRIDE REQUIRED**.\n\nFrom the gap, a thin ribbon of cold fog spills inward, crawling along the deck plates against the airflow like it has weight and intent.\n\nYou lean out and fire a short, disciplined burst.\n\nRounds hammer the Hymn’s deck grating and the left bulkhead where the condensation handprint is sliding. Sparks skitter off the metal. The grating rings like a gong. Two rounds punch through something deeper—hollow space—kicking up a puff of rust and old insulation dust. There’s no blood. No meat-splash. But the condensation reacts: the hand-shape *jerks* as if flinching, smearing into a long drag-mark… and then it reforms, five streaks again, higher up the bulkhead, like it “stepped” without a body.\n\nYour suit audio spikes: a close, wet inhale that isn’t yours, right at the edge of the open door gap. The door shudders harder. The obstruction isn’t physical in the usual way—no visible limb, no tool—just resistance, like trying to close on a pressure differential that shouldn’t exist.\n\nYou key Juno. Tightbeam tries to lock and fails twice. On the third attempt you get a broken thread of voice, layered with another signal under it—your old squad encryption key, ghosting the packet.\n\n“—Mara, listen—” Juno says, breathy, scared. “It’s the *three-tap*. It rides open comms and structure. You—” A burst of static. Then, clearer but not Juno’s cadence, a voiceprint that makes your teeth ache: **“Vance.”**\n\nThe corridor lights answer with three amber pulses.\n\nAnd now the tapping is inside the airlock with you: tap, tap, tap—coming from the *inner* faceplate of your helmet, like someone knocking from the wrong side of the glass.",
+      "timestamp": "2026-02-16T02:18:02.335168",
+      "player_reasoning": null,
+      "triggered_elements": [
+        "secret_Airlock_1_4cca44"
+      ],
+      "state_changes": {}
+    }
+  ],
+  "initial_state": {
+    "campaign_id": "3965af7f-105b-4bb4-a617-aab5b9a80d80",
+    "phase": "gameplay",
+    "genre": "Sci-Fi Horror",
+    "tone": "Tense",
+    "story_type": "Survival",
+    "character_sheet": {
+      "name": "Mara Vance",
+      "background": "Once a decorated colonial marine, Mara was the lone survivor of a classified black-site boarding action that was erased from official records and pinned on her as a catastrophic failure. Discharged in disgrace and hounded by quiet threats whenever she asks questions, she now takes off-the-books salvage protection jobs to stay armed, mobile, and out of reach. The incident left her with a hair-trigger vigilance and a private certainty that what killed her squad wasn’t human—and it remembers her.",
+      "profession": "Salvage Security Contractor (ex-Colonial Marine)",
+      "traits": [
+        "Combat-ready and disciplined under fire",
+        "Sharp-eyed and hypervigilant",
+        "Relentlessly stubborn",
+        "Deeply distrustful of authority and corporate \"suits\"",
+        "Confrontational courage that borders on reckless"
+      ],
+      "personal_goal": "Recover the sealed flight recorder from the erased boarding action to expose what really happened—before the same presence that hunted her crew tracks her down and finishes the job.",
+      "stats": {}
+    },
+    "seed_chunks": [
+      "Cold metal sweats in the dark, beading along bulkheads like the ship is breathing through its skin. Emergency strips pulse a sick amber, strobed by drifting dust that looks too much like ash. Every sound carries—boot soles on grated deck, the distant tick of cooling pipes, a low hull-groan that rises and falls like a throat clearing. The air tastes of old ozone and burnt plastic under a film of machine oil; when you inhale, it feels used. Somewhere deep, something taps—three soft impacts—then stops, as if listening back. Static crawls through comm speakers with a wet whisper, and the corridor ahead smells faintly of salt and copper.",
+      "In the outer lanes, power wears a clean badge and a dirty glove. **HelixKline Interstellar** sells “hazard mitigation” and salvage arbitration, underwriting rescue beacons while quietly buying wrecks that should never be found. Opposing them, the **Colonial Security Directorate** claims to protect shipping with lawful inspections, but runs erased black-site raids and hunts loose evidence like Mara. Between them drift the **Gutterlight Salvagers’ Union**, a ragged mutual-aid network that “keeps crews alive” with contracts and safe docks—yet traffics in forbidden flight recorders and maps of dead ships. HelixKline funds Directorate tasking; the Directorate squeezes the Union; the Union leaks corporate secrets to hurt both—until something in the derelicts starts using all three.\n\n```json\n{\n  \"factions\": [\n    {\n      \"name\": \"HelixKline Interstellar\",\n      \"public_front\": \"Corporate hazard mitigation, salvage arbitration, and rescue underwriting.\",\n      \"hidden_agenda\": \"Acquire and quarantine anomalous wrecks while erasing logs, witnesses, and competing claims.\"\n    },\n    {\n      \"name\": \"Colonial Security Directorate\",\n      \"public_front\": \"Lawful shipping protection through inspections, patrols, and anti-piracy actions.\",\n      \"hidden_agenda\": \"Operate black-site boarding actions and suppress any proof of nonhuman contact or prior failures.\"\n    },\n    {\n      \"name\": \"Gutterlight Salvagers’ Union\",\n      \"public_front\": \"Mutual-aid collective providing crews with contracts, safe docks, and emergency support.\",\n      \"hidden_agenda\": \"Smuggle restricted tech and flight recorders, selling truths to the highest bidder to break corporate control.\"\n    }\n  ]\n}\n```",
+      "",
+      "HelixKline has quietly reactivated a “rescue” beacon on the derelict **Sable Hymn**, drawing scav crews like moths while a Directorate cutter, **CSD Valiant**, claims quarantine authority and begins stop-and-search seizures. The Gutterlight Union’s broker **Juno Rake** races to extract a sealed flight recorder before either side locks the hulk down—offering Mara a cut and a falsified transponder. Meanwhile, survivors from nearby wrecks report the same three-tap signal in their walls; power flickers in rhythmic bursts, and anyone who answers on open comms goes missing within the hour.\n\n```json\n{\n  \"events\": [\n    {\n      \"name\": \"The Sable Hymn Beacon Trap\",\n      \"description\": \"HelixKline reactivates a 'distress' beacon on the derelict Sable Hymn to lure salvage crews, then moves to claim and quarantine the wreck under arbitration.\",\n      \"tensions\": [\n        \"Salvagers risk being baited into an anomalous kill-zone\",\n        \"HelixKline legal teams and contracted security move to seize any recovered data\",\n        \"False beacon pings create a time pressure window before lockdown\"\n      ]\n    },\n    {\n      \"name\": \"CSD Quarantine Sweep: Operation Clean Ledger\",\n      \"description\": \"The Colonial Security Directorate cutter CSD Valiant declares quarantine jurisdiction and begins aggressive inspections, confiscating flight recorders and detaining crews with erased paperwork.\",\n      \"tensions\": [\n        \"Mara is at high risk of recognition and disappearance if boarded\",\n        \"Union safe-docks are raided, forcing crews into unsafe routes\",\n        \"Any recorded anomaly evidence becomes a trigger for lethal suppression\"\n      ]\n    },\n    {\n      \"name\": \"The Three-Tap Contagion\",\n      \"description\": \"A repeating three-impact signal propagates through derelict comms and ship structures; those who respond on open channels vanish, and multiple wrecks experience synchronized power flickers.\",\n      \"tensions\": [\n        \"Crew paranoia spikes as the sound appears to 'listen back'\",\n        \"Factions blame each other, escalating armed encounters in tight corridors\",\n        \"The presence seems to be triangulating responders—turning comms into a weapon\"\n      ]\n    }\n  ]\n}\n```",
+      "Mara Vance is three jumps out of CSD space when the **Sable Hymn** “rescue” beacon lights up—old format, obsolete checksum, and a cadence that makes her teeth ache. Not the distress tone. The *other* one. The one that lived under her squad’s screams in a black-site corridor that officially never existed.\n\nJuno Rake (Gutterlight Union) pings her through a tightbeam relay: a **sealed flight recorder** is rumored aboard the Hymn, still locked in a heat-scored crash cradle. Juno offers a falsified transponder and a cut big enough to re-arm for a year. The catch is time—**HelixKline** arbitration teams are already drafting a quarantine claim, and the **CSD Valiant** has declared **Operation Clean Ledger**, stopping anything that burns propellant near the hulk. If Mara is scanned, she won’t be arrested; she’ll be *processed*.\n\nOn approach, her comms pick up the **three soft impacts**—tap, tap, tap—coming through *metal*, not speakers. A second later, the Hymn’s emergency strips flicker in rhythmic bursts that match the taps like a heartbeat trying to remember a body. Her suit logs register a phantom handshake: an encrypted ping using a key that should have died with her squad.\n\nMara has leverage and liability in the same breath: someone wants that recorder, someone wants her silence, and something inside the wreck seems to recognize her presence—waiting to see if she answers back."
+    ],
+    "world_seed": null,
+    "simulation": {
+      "scenes": {},
+      "global_watchers": [],
+      "global_fail_conditions": [],
+      "global_timed_events": [],
+      "triggered_elements": [],
+      "current_turn": 0,
+      "current_location": null
+    },
+    "current_location": null,
+    "current_turn": 0,
+    "inventory": [],
+    "abilities": [],
+    "discovered_locations": [],
+    "known_npcs": [],
+    "active_events": [],
+    "message_history": [
+      {
+        "role": "assistant",
+        "content": "**PLACE & TIME**  \nYou’re in the cramped cockpit of the *Latchkey*, tucked behind a dead comm buoy in the outer lanes. Shiptime reads 02:17—deep night, no sun-glare, just instrument glow. Condensation beads on the canopy frame. The air smells like old ozone and gun oil. Ahead, the derelict **Sable Hymn** hangs black and huge.\n\n**CHARACTER IN SCENE**  \nYou run your pre-boarding checks like you were trained to. Mag-boots. Cutter charge. Two spare seals. Rifle locked, chamber flagged, then unflagged. Your hands don’t shake. They don’t have the luxury. You angle the *Latchkey*’s thrusters to keep your approach cold and quiet, minimizing burn to dodge long-range scans.\n\n**THE HOOK**  \nThe Hymn’s “rescue” beacon keeps pulsing—old format, wrong checksum, and a cadence that makes your jaw tighten. Not distress. Something else. Your tightbeam relay clicks and **Juno Rake** slides into your headset, voice thin and controlled. Union broker. Dirty contacts. “Recorder’s real,” Juno says. “Sealed. Crash cradle. Heat-scored but intact. You pull it, you get paid. I’m sending you a falsified transponder now.”  \nA second voice cuts in over open-band static—flat, official, too clean. **CSD Valiant**. “Operation Clean Ledger in effect. All vessels reduce thrust and prepare for inspection.” The words aren’t a threat. They’re a trap with paperwork. If they board you, you won’t be arrested. You’ll be erased.  \nThen you hear it. Not through speakers. Through the ship’s frame. Three soft impacts—tap, tap, tap—like knuckles on a bulkhead. Your console flickers in time with it. Your suit log pings an encrypted handshake request using a key that should be dead.\n\n**THE MOMENT**  \nThe falsified transponder arrives. The Valiant’s scan beam sweeps closer. The Hymn’s docking collar drifts into alignment, waiting. Tap, tap, tap—again, nearer. Your comm cursor hovers over **ACCEPT** as your ship’s hull answers with a faint, involuntary creak."
+      }
+    ],
+    "pending_display": null
+  },
+  "final_state": {
+    "campaign_id": "3965af7f-105b-4bb4-a617-aab5b9a80d80",
+    "phase": "gameplay",
+    "genre": "Sci-Fi Horror",
+    "tone": "Tense",
+    "story_type": "Survival",
+    "character_sheet": {
+      "name": "Mara Vance",
+      "background": "Once a decorated colonial marine, Mara was the lone survivor of a classified black-site boarding action that was erased from official records and pinned on her as a catastrophic failure. Discharged in disgrace and hounded by quiet threats whenever she asks questions, she now takes off-the-books salvage protection jobs to stay armed, mobile, and out of reach. The incident left her with a hair-trigger vigilance and a private certainty that what killed her squad wasn’t human—and it remembers her.",
+      "profession": "Salvage Security Contractor (ex-Colonial Marine)",
+      "traits": [
+        "Combat-ready and disciplined under fire",
+        "Sharp-eyed and hypervigilant",
+        "Relentlessly stubborn",
+        "Deeply distrustful of authority and corporate \"suits\"",
+        "Confrontational courage that borders on reckless"
+      ],
+      "personal_goal": "Recover the sealed flight recorder from the erased boarding action to expose what really happened—before the same presence that hunted her crew tracks her down and finishes the job.",
+      "stats": {}
+    },
+    "seed_chunks": [
+      "Cold metal sweats in the dark, beading along bulkheads like the ship is breathing through its skin. Emergency strips pulse a sick amber, strobed by drifting dust that looks too much like ash. Every sound carries—boot soles on grated deck, the distant tick of cooling pipes, a low hull-groan that rises and falls like a throat clearing. The air tastes of old ozone and burnt plastic under a film of machine oil; when you inhale, it feels used. Somewhere deep, something taps—three soft impacts—then stops, as if listening back. Static crawls through comm speakers with a wet whisper, and the corridor ahead smells faintly of salt and copper.",
+      "In the outer lanes, power wears a clean badge and a dirty glove. **HelixKline Interstellar** sells “hazard mitigation” and salvage arbitration, underwriting rescue beacons while quietly buying wrecks that should never be found. Opposing them, the **Colonial Security Directorate** claims to protect shipping with lawful inspections, but runs erased black-site raids and hunts loose evidence like Mara. Between them drift the **Gutterlight Salvagers’ Union**, a ragged mutual-aid network that “keeps crews alive” with contracts and safe docks—yet traffics in forbidden flight recorders and maps of dead ships. HelixKline funds Directorate tasking; the Directorate squeezes the Union; the Union leaks corporate secrets to hurt both—until something in the derelicts starts using all three.\n\n```json\n{\n  \"factions\": [\n    {\n      \"name\": \"HelixKline Interstellar\",\n      \"public_front\": \"Corporate hazard mitigation, salvage arbitration, and rescue underwriting.\",\n      \"hidden_agenda\": \"Acquire and quarantine anomalous wrecks while erasing logs, witnesses, and competing claims.\"\n    },\n    {\n      \"name\": \"Colonial Security Directorate\",\n      \"public_front\": \"Lawful shipping protection through inspections, patrols, and anti-piracy actions.\",\n      \"hidden_agenda\": \"Operate black-site boarding actions and suppress any proof of nonhuman contact or prior failures.\"\n    },\n    {\n      \"name\": \"Gutterlight Salvagers’ Union\",\n      \"public_front\": \"Mutual-aid collective providing crews with contracts, safe docks, and emergency support.\",\n      \"hidden_agenda\": \"Smuggle restricted tech and flight recorders, selling truths to the highest bidder to break corporate control.\"\n    }\n  ]\n}\n```",
+      "",
+      "HelixKline has quietly reactivated a “rescue” beacon on the derelict **Sable Hymn**, drawing scav crews like moths while a Directorate cutter, **CSD Valiant**, claims quarantine authority and begins stop-and-search seizures. The Gutterlight Union’s broker **Juno Rake** races to extract a sealed flight recorder before either side locks the hulk down—offering Mara a cut and a falsified transponder. Meanwhile, survivors from nearby wrecks report the same three-tap signal in their walls; power flickers in rhythmic bursts, and anyone who answers on open comms goes missing within the hour.\n\n```json\n{\n  \"events\": [\n    {\n      \"name\": \"The Sable Hymn Beacon Trap\",\n      \"description\": \"HelixKline reactivates a 'distress' beacon on the derelict Sable Hymn to lure salvage crews, then moves to claim and quarantine the wreck under arbitration.\",\n      \"tensions\": [\n        \"Salvagers risk being baited into an anomalous kill-zone\",\n        \"HelixKline legal teams and contracted security move to seize any recovered data\",\n        \"False beacon pings create a time pressure window before lockdown\"\n      ]\n    },\n    {\n      \"name\": \"CSD Quarantine Sweep: Operation Clean Ledger\",\n      \"description\": \"The Colonial Security Directorate cutter CSD Valiant declares quarantine jurisdiction and begins aggressive inspections, confiscating flight recorders and detaining crews with erased paperwork.\",\n      \"tensions\": [\n        \"Mara is at high risk of recognition and disappearance if boarded\",\n        \"Union safe-docks are raided, forcing crews into unsafe routes\",\n        \"Any recorded anomaly evidence becomes a trigger for lethal suppression\"\n      ]\n    },\n    {\n      \"name\": \"The Three-Tap Contagion\",\n      \"description\": \"A repeating three-impact signal propagates through derelict comms and ship structures; those who respond on open channels vanish, and multiple wrecks experience synchronized power flickers.\",\n      \"tensions\": [\n        \"Crew paranoia spikes as the sound appears to 'listen back'\",\n        \"Factions blame each other, escalating armed encounters in tight corridors\",\n        \"The presence seems to be triangulating responders—turning comms into a weapon\"\n      ]\n    }\n  ]\n}\n```",
+      "Mara Vance is three jumps out of CSD space when the **Sable Hymn** “rescue” beacon lights up—old format, obsolete checksum, and a cadence that makes her teeth ache. Not the distress tone. The *other* one. The one that lived under her squad’s screams in a black-site corridor that officially never existed.\n\nJuno Rake (Gutterlight Union) pings her through a tightbeam relay: a **sealed flight recorder** is rumored aboard the Hymn, still locked in a heat-scored crash cradle. Juno offers a falsified transponder and a cut big enough to re-arm for a year. The catch is time—**HelixKline** arbitration teams are already drafting a quarantine claim, and the **CSD Valiant** has declared **Operation Clean Ledger**, stopping anything that burns propellant near the hulk. If Mara is scanned, she won’t be arrested; she’ll be *processed*.\n\nOn approach, her comms pick up the **three soft impacts**—tap, tap, tap—coming through *metal*, not speakers. A second later, the Hymn’s emergency strips flicker in rhythmic bursts that match the taps like a heartbeat trying to remember a body. Her suit logs register a phantom handshake: an encrypted ping using a key that should have died with her squad.\n\nMara has leverage and liability in the same breath: someone wants that recorder, someone wants her silence, and something inside the wreck seems to recognize her presence—waiting to see if she answers back."
+    ],
+    "world_seed": null,
+    "simulation": {
+      "scenes": {
+        "Airlock": {
+          "location": "Airlock",
+          "location_description": "The airlock’s inner door has been cycled too many times without proper purge; condensation beads in patterns that resemble fingerprints on the frame. A faint, intermittent three-tap vibration travels through the docking ring, as if something is testing the seal from the other side. The emergency amber strips are slightly out of phase here, creating a subtle strobe that can mask movement in peripheral vision.",
+          "watchers": [
+            {
+              "id": "watcher_Airlock_0_3e4761",
+              "name": "HelixKline Arbitration Listener Node (HK-ALN/9)",
+              "description": "A concealed acoustic/EM sniffer embedded in the airlock intercom plate monitors voice, suit telemetry pings, and tool signatures. It flags mentions of restricted evidence and transmits burst packets when the outer hull groan peaks, using the noise as cover.",
+              "faction": "HelixKline Interstellar",
+              "reports_to": "HelixKline Salvage Arbitration Desk, Remote Compliance Cell",
+              "triggers": [
+                {
+                  "trigger_type": "keyword",
+                  "keywords": [
+                    "flight recorder",
+                    "black-site",
+                    "erase",
+                    "HelixKline",
+                    "boarding action",
+                    "Mara Vance",
+                    "sealed",
+                    "evidence"
+                  ],
+                  "probability": 0.65
+                }
+              ],
+              "active": true,
+              "triggered": false
+            },
+            {
+              "id": "watcher_Airlock_1_27f19c",
+              "name": "Directorate Ghost-Ping Trace (CSD SIGINT Sweep)",
+              "description": "A passive sweep riding old rescue-beacon infrastructure watches for unauthorized comms and transponder anomalies near derelicts. It correlates voiceprints and call-sign fragments to archived disciplinary files, looking specifically for the lone survivor who keeps resurfacing.",
+              "faction": "Colonial Security Directorate",
+              "reports_to": "CSD Black-Site Oversight, Case Officer 'Kestrel'",
+              "triggers": [
+                {
+                  "trigger_type": "keyword",
+                  "keywords": [
+                    "Directorate",
+                    "CSD",
+                    "transponder",
+                    "beacon",
+                    "Mayday",
+                    "classified",
+                    "recorder",
+                    "coordinates"
+                  ],
+                  "probability": 0.55
+                }
+              ],
+              "active": true,
+              "triggered": false
+            }
+          ],
+          "hidden_guards": [
+            {
+              "id": "guard_Airlock_0_146efa",
+              "name": "Airlock Purge Sentry (maintenance drone on fail-safe)",
+              "guard_type": "automated",
+              "strength": "moderate",
+              "location_within_scene": "Mag-locked in the ceiling service trench above the inner door, behind a slotted vent panel slick with condensation.",
+              "triggers": [
+                {
+                  "trigger_type": "keyword",
+                  "keywords": [
+                    "override",
+                    "manual cycle",
+                    "force",
+                    "cut",
+                    "breach",
+                    "jam"
+                  ],
+                  "probability": 0.9
+                }
+              ],
+              "weaknesses": [
+                "Avoid touching the intercom plate or manual wheel; use standard cycle controls to prevent wake-up.",
+                "Kill power to the airlock lighting circuit (not the door circuit) to disrupt its optical tracking for 20 seconds.",
+                "A short-range EMP pulse or ripping the vent panel and severing its mag-clamps drops it hard, stunning it briefly."
+              ],
+              "active": true,
+              "triggered": false
+            },
+            {
+              "id": "guard_Airlock_1_cd45c4",
+              "name": "The Remembering Film (anomalous residue)",
+              "guard_type": "creature",
+              "strength": "moderate",
+              "location_within_scene": "A near-invisible oily sheen pooled in the door gasket and along the grated deck seam where condensation collects, especially under the amber strip nearest the outer hatch.",
+              "triggers": [
+                {
+                  "trigger_type": "keyword",
+                  "keywords": [
+                    "blood",
+                    "open",
+                    "listen",
+                    "Mara",
+                    "again",
+                    "mine"
+                  ],
+                  "probability": 0.9
+                }
+              ],
+              "weaknesses": [
+                "Do not bleed: even a pinprick gives it a chemical trail to follow; seal suit punctures immediately.",
+                "Flood the threshold with alcohol-based solvent or high-salinity rinse to break its adhesion.",
+                "Maintain steady light (no strobing) and avoid lingering at the seam; it reacts to hesitation and proximity."
+              ],
+              "active": true,
+              "triggered": false
+            }
+          ],
+          "fail_conditions": [
+            {
+              "id": "fail_Airlock_0_d31a6a",
+              "name": "Purge Cycle Desynchronization",
+              "description": "The airlock’s purge logic is partially corrupted; forcing a manual cycle can lock both doors or dump pressure unpredictably. The strobing amber strips and hull-groan timing can mask the warning chimes until it’s too late.",
+              "severity": "severe",
+              "consequence_narrative": "The lock alarms cough once, then the chamber tries to equalize against a false reading. Your ears slam with pressure and the inner door shudders as the system attempts a hard seal; loose dust and ash-like grit become a cutting cloud. Something on the far side answers with three soft taps, closer than before.",
+              "triggers": [
+                {
+                  "trigger_type": "keyword",
+                  "keywords": [
+                    "manual",
+                    "override",
+                    "cycle",
+                    "purge",
+                    "depressurize",
+                    "emergency"
+                  ],
+                  "probability": 0.75
+                }
+              ],
+              "can_escape": true,
+              "escape_conditions": [
+                "Abort within the first warning chirp and return to standard cycle controls.",
+                "Brace and seal: clamp to the handholds and switch suit to internal air until pressure stabilizes.",
+                "Pull the purge fuse (panel behind the left bulkhead access plate) to stop the cycle mid-action."
+              ],
+              "active": true,
+              "triggered": false
+            },
+            {
+              "id": "fail_Airlock_1_7734d6",
+              "name": "Comms Whisper Backscatter",
+              "description": "Static in the intercom isn’t just interference; certain phrases cause the system to retransmit a distorted echo that carries farther down the ship than it should. That echo can be triangulated by corporate listeners—or answered by something that recognizes the voice.",
+              "severity": "moderate",
+              "consequence_narrative": "The speaker hisses with a wet whisper that repeats your words half a second late, pitched wrong, intimate. A burst of signal rides the echo out through the beacon lattice, and somewhere in the corridor ahead, metal answers with a careful tap-tap-tap. Your position feels suddenly less private, like a light clicked on behind your eyes.",
+              "triggers": [
+                {
+                  "trigger_type": "keyword",
+                  "keywords": [
+                    "HelixKline",
+                    "flight recorder",
+                    "black-site",
+                    "where are you",
+                    "who's there",
+                    "Mara"
+                  ],
+                  "probability": 0.7
+                }
+              ],
+              "can_escape": true,
+              "escape_conditions": [
+                "Go silent and switch to tight-beam or line-of-sight comms only.",
+                "Physically disconnect the intercom plate (two screws under the condensation lip) to stop the backscatter.",
+                "Mask speech with continuous white-noise from a suit emitter while moving away from the airlock."
+              ],
+              "active": true,
+              "triggered": false
+            }
+          ],
+          "secrets": [
+            {
+              "id": "secret_Airlock_0_2b5330",
+              "description": "Behind the intercom plate is a HelixKline micro-transceiver piggybacked onto the airlock’s speaker line, stamped with an arbitration claim code that matches erased-wreck procedures. Its memory buffer holds recent voiceprint hashes and a time-stamped burst schedule keyed to hull-groan peaks.",
+              "discovery_triggers": [
+                {
+                  "trigger_type": "keyword",
+                  "keywords": [
+                    "search",
+                    "examine",
+                    "intercom",
+                    "plate",
+                    "unscrew",
+                    "wiring",
+                    "listen"
+                  ],
+                  "probability": 1.0
+                }
+              ],
+              "discovered": false
+            },
+            {
+              "id": "secret_Airlock_1_4cca44",
+              "description": "A hairline scratch pattern on the inner door’s rim isn’t tool wear—it’s a repeated, deliberate scoring that forms a partial coordinate string and an old Marine boarding mark. The final digits are missing, as if someone stopped mid-etch when they heard the three taps.",
+              "discovery_triggers": [
+                {
+                  "trigger_type": "keyword",
+                  "keywords": [
+                    "look",
+                    "examine",
+                    "door",
+                    "rim",
+                    "scratch",
+                    "light",
+                    "scan"
+                  ],
+                  "probability": 1.0
+                }
+              ],
+              "discovered": true
+            }
+          ],
+          "generated_at_turn": 2
+        }
+      },
+      "global_watchers": [],
+      "global_fail_conditions": [],
+      "global_timed_events": [],
+      "triggered_elements": [
+        "secret_Airlock_1_4cca44"
+      ],
+      "current_turn": 0,
+      "current_location": "Airlock"
+    },
+    "current_location": "Airlock",
+    "current_turn": 3,
+    "inventory": [],
+    "abilities": [],
+    "discovered_locations": [
+      "Latchkey airlock (docked to Sable Hymn)",
+      "Sable Hymn docking corridor",
+      "Airlock"
+    ],
+    "known_npcs": [
+      "Juno Rake (tightbeam contact)"
+    ],
+    "active_events": [],
+    "message_history": [
+      {
+        "role": "assistant",
+        "content": "**PLACE & TIME**  \nYou’re in the cramped cockpit of the *Latchkey*, tucked behind a dead comm buoy in the outer lanes. Shiptime reads 02:17—deep night, no sun-glare, just instrument glow. Condensation beads on the canopy frame. The air smells like old ozone and gun oil. Ahead, the derelict **Sable Hymn** hangs black and huge.\n\n**CHARACTER IN SCENE**  \nYou run your pre-boarding checks like you were trained to. Mag-boots. Cutter charge. Two spare seals. Rifle locked, chamber flagged, then unflagged. Your hands don’t shake. They don’t have the luxury. You angle the *Latchkey*’s thrusters to keep your approach cold and quiet, minimizing burn to dodge long-range scans.\n\n**THE HOOK**  \nThe Hymn’s “rescue” beacon keeps pulsing—old format, wrong checksum, and a cadence that makes your jaw tighten. Not distress. Something else. Your tightbeam relay clicks and **Juno Rake** slides into your headset, voice thin and controlled. Union broker. Dirty contacts. “Recorder’s real,” Juno says. “Sealed. Crash cradle. Heat-scored but intact. You pull it, you get paid. I’m sending you a falsified transponder now.”  \nA second voice cuts in over open-band static—flat, official, too clean. **CSD Valiant**. “Operation Clean Ledger in effect. All vessels reduce thrust and prepare for inspection.” The words aren’t a threat. They’re a trap with paperwork. If they board you, you won’t be arrested. You’ll be erased.  \nThen you hear it. Not through speakers. Through the ship’s frame. Three soft impacts—tap, tap, tap—like knuckles on a bulkhead. Your console flickers in time with it. Your suit log pings an encrypted handshake request using a key that should be dead.\n\n**THE MOMENT**  \nThe falsified transponder arrives. The Valiant’s scan beam sweeps closer. The Hymn’s docking collar drifts into alignment, waiting. Tap, tap, tap—again, nearer. Your comm cursor hovers over **ACCEPT** as your ship’s hull answers with a faint, involuntary creak."
+      },
+      {
+        "role": "user",
+        "content": "I slam **ACCEPT** on Juno’s falsified transponder and kill every nonessential emitter. “Juno, shut up and stay tightbeam—if that key pings again, I’m ripping the comm stack out.” I roll the *Latchkey* hard and burn just enough to slip into the **Sable Hymn’s** hull shadow, lining up for docking while I bring the rifle up and sweep the canopy and suit sensors for whatever’s tapping my ship."
+      },
+      {
+        "role": "assistant",
+        "content": ""
+      },
+      {
+        "role": "user",
+        "content": "I key my suit’s external mics to max gain and thump the bulkhead back with my boot—hard. “Show yourself.” Then I snap the *Latchkey* onto the Hymn’s collar, clamp, and cycle the airlock with rifle shouldered, ready to light up anything that moved."
+      },
+      {
+        "role": "assistant",
+        "content": "Your boot hits the *Latchkey*’s inner bulkhead with a dull clang that you feel up your tibia.\n\nFor half a second: nothing.\n\nThen the sound comes back—not through your speakers, through the metal. Three soft impacts answering from *outside* your hull, close to the starboard airlock ring. Tap. Tap. Tap. Immediately after, your external mics flood with a thin, wet scrape like fingertips dragging across frost. The waveform spikes in a way that doesn’t match vibration; it’s *air-borne*—meaning something is moving in the narrow gap between your ship and the Hymn’s collar.\n\nYour suit HUD flashes a warning: **OPEN-BAND TRANSMIT DETECTED**—your “Show yourself” jumped channels for a fraction of a second despite your emitter kill. Something in your comm stack “helped.”\n\nJuno’s tightbeam cuts in, voice suddenly sharp. “Mara—don’t—” and then the tightbeam *stutters* like it’s being stepped on from the inside. “—don’t answer it. Don’t—” The rest dissolves into a soft hiss.\n\nYou snap the *Latchkey* in, clamp, and the docking latches bite with a heavy, satisfying thunk. The moment the hard seal forms, the Hymn’s emergency strips on the far side of the collar flicker in a heartbeat rhythm—three pulses, a pause, three pulses.\n\nYou cycle the airlock.\n\nPressure equalizes too fast. Not explosive, but wrong—your ears pop inside the helmet and your suit’s seal integrity ticks yellow for a beat before stabilizing. The inner door unlocks with a reluctant clack, like it had to be convinced.\n\nWhen it swings open, you’re staring into the Hymn’s docking corridor: grated deck, amber strips pulsing, dust drifting like ash.\n\nAnd there’s something else.\n\nA smear of fresh condensation on the left bulkhead—hand-shaped, five long streaks—forming as you watch, as if something just pressed there from the other side of the metal and is pulling away. No body. No silhouette. Just the wet print, sliding downward in slow motion.\n\nBehind you, from the *Latchkey*’s side of the airlock, comes one soft impact—single tap—against your ship’s hull, like a punctuation mark.\n\nYour rifle is up. The corridor ahead is empty, but the tapping is now on both sides of the threshold.\n\n```json\n{\"inventory_add\":[],\"inventory_remove\":[],\"abilities_add\":[],\"locations_add\":[\"Latchkey airlock (docked to Sable Hymn)\",\"Sable Hymn docking corridor\"],\"npcs_add\":[\"Juno Rake (tightbeam contact)\"]}\n```"
+      },
+      {
+        "role": "user",
+        "content": "I back up a half-step into the airlock, rifle trained down the corridor, and slam the *Latchkey* side door control to **CLOSE**—I’m not letting anything slip in behind me. Then I lean out and fire a short burst into the deck grating and bulkhead where that condensation handprint is sliding, watching for splash, sparks, anything. “Juno—talk. What the hell is ‘it’ and how do I kill it?”"
+      },
+      {
+        "role": "assistant",
+        "content": "The *Latchkey* side door control chirps and the outer airlock door starts to slide—then stops three centimeters short of fully shut. It shudders as if something is holding it on the track. Your panel flashes **OBSTRUCTION / MANUAL OVERRIDE REQUIRED**.\n\nFrom the gap, a thin ribbon of cold fog spills inward, crawling along the deck plates against the airflow like it has weight and intent.\n\nYou lean out and fire a short, disciplined burst.\n\nRounds hammer the Hymn’s deck grating and the left bulkhead where the condensation handprint is sliding. Sparks skitter off the metal. The grating rings like a gong. Two rounds punch through something deeper—hollow space—kicking up a puff of rust and old insulation dust. There’s no blood. No meat-splash. But the condensation reacts: the hand-shape *jerks* as if flinching, smearing into a long drag-mark… and then it reforms, five streaks again, higher up the bulkhead, like it “stepped” without a body.\n\nYour suit audio spikes: a close, wet inhale that isn’t yours, right at the edge of the open door gap. The door shudders harder. The obstruction isn’t physical in the usual way—no visible limb, no tool—just resistance, like trying to close on a pressure differential that shouldn’t exist.\n\nYou key Juno. Tightbeam tries to lock and fails twice. On the third attempt you get a broken thread of voice, layered with another signal under it—your old squad encryption key, ghosting the packet.\n\n“—Mara, listen—” Juno says, breathy, scared. “It’s the *three-tap*. It rides open comms and structure. You—” A burst of static. Then, clearer but not Juno’s cadence, a voiceprint that makes your teeth ache: **“Vance.”**\n\nThe corridor lights answer with three amber pulses.\n\nAnd now the tapping is inside the airlock with you: tap, tap, tap—coming from the *inner* faceplate of your helmet, like someone knocking from the wrong side of the glass."
+      }
+    ],
+    "pending_display": null
+  },
+  "simulation_snapshots": []
+}

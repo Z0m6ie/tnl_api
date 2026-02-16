@@ -25,24 +25,18 @@ from ..models.simulation import (
 logger = logging.getLogger(__name__)
 
 
-SCENE_SIMULATION_PROMPT = """Generate HIDDEN simulation elements for this specific scene.
+SCENE_SIMULATION_PROMPT = """Generate HIDDEN simulation elements for this scene as JSON.
 
 LOCATION: {location}
 GENRE: {genre} | TONE: {tone}
 CHARACTER: {character_summary}
-WORLD CONTEXT (factions, NPCs, events):
-{world_context}
+WORLD CONTEXT: {world_context}
 
-The player is about to enter this location. Generate pre-existing hidden elements
-that will apply ONLY to this scene. These exist BEFORE the player acts.
+Generate pre-existing hidden elements that exist BEFORE the player acts.
 
-Consider:
-- What factions might have presence here?
-- What security exists?
-- What actions would be risky here?
-- What secrets might be discovered?
+IMPORTANT: Output ONLY valid JSON, no explanation text. Start with {{ and end with }}.
 
-Output JSON (1-3 of each type, appropriate to location):
+Output this exact JSON structure (1-2 of each type):
 {{
     "location_description": "Brief hidden notes about this place",
 
@@ -88,7 +82,9 @@ Output JSON (1-3 of each type, appropriate to location):
     ]
 }}
 
-Match the {genre} and {tone}. Be creative but consistent with the world context."""
+Match the {genre} and {tone}. Be creative but consistent with the world context.
+
+CRITICAL: Output ONLY the JSON object. No markdown code blocks, no explanation, no text before or after. Just the raw JSON starting with {{ and ending with }}."""
 
 
 class SceneSimulationGenerator:
@@ -125,11 +121,15 @@ class SceneSimulationGenerator:
         )
 
         try:
+            logger.debug(f"Generating simulation for location: {location}")
+            # GPT-5.2 Thinking model uses internal reasoning tokens, so we need
+            # higher max_tokens to ensure the actual output isn't truncated
             response = self.llm.generate(
                 prompt=prompt,
-                max_tokens=1000,
+                max_tokens=4000,
                 temperature=0.7,
             )
+            logger.debug(f"Got response of length {len(response) if response else 0}")
 
             scene = self._parse_response(response, location, state.current_turn)
             logger.info(f"Generated simulation for '{location}': "
@@ -158,7 +158,7 @@ class SceneSimulationGenerator:
         json_str = self._extract_json(response)
 
         if not json_str:
-            logger.warning("No JSON found in simulation response")
+            logger.warning(f"No JSON found in simulation response. Response preview: {response[:200] if response else 'EMPTY'}")
             return SceneSimulation(location=location, generated_at_turn=current_turn)
 
         try:

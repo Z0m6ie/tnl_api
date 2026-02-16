@@ -9,7 +9,7 @@ from ..llm import LLMClient
 from ..models.campaign import CampaignPhase, CampaignState
 from ..models.simulation import TriggerResult
 from ..persistence import CampaignRepository
-from ..prompts import CAMPAIGN_INTRO_PROMPT, GAMEPLAY_RESPONSE_PROMPT, GAMEPLAY_SYSTEM_PROMPT
+from ..prompts import GAMEPLAY_RESPONSE_PROMPT, GAMEPLAY_SYSTEM_PROMPT, build_intro_prompt
 from ..simulation import SceneDetector, SceneSimulationGenerator, SimulationEvaluator
 from .base import Phase, PhaseResult
 
@@ -70,10 +70,14 @@ class GameplayPhase(Phase):
             )
 
     def _generate_intro(self, state: CampaignState) -> str:
-        """Generate the campaign opening scene."""
+        """Generate the campaign opening scene with genre-aware variety."""
         world_context = "\n\n".join(state.seed_chunks)
 
-        prompt = CAMPAIGN_INTRO_PROMPT.format(
+        # Use genre-aware prompt builder for variety
+        prompt = build_intro_prompt(
+            genre=state.genre or "Fantasy",
+            tone=state.tone or "Gritty",
+            story_type=state.story_type or "Adventure",
             character_summary=state.character_sheet.summary(),
             world_context=world_context,
         )
@@ -225,8 +229,13 @@ class GameplayPhase(Phase):
 
             if "npcs_add" in changes:
                 for npc in changes["npcs_add"]:
-                    if npc not in state.known_npcs:
-                        state.known_npcs.append(npc)
+                    # Handle both string and dict formats
+                    if isinstance(npc, dict):
+                        npc_name = npc.get("name", str(npc))
+                    else:
+                        npc_name = str(npc)
+                    if npc_name not in state.known_npcs:
+                        state.known_npcs.append(npc_name)
 
             logger.info(f"Applied state changes: {changes}")
 

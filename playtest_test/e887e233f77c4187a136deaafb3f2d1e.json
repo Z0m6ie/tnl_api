@@ -1,0 +1,490 @@
+{
+  "metadata": {
+    "playthrough_id": "e887e233f77c4187a136deaafb3f2d1e",
+    "started_at": "2026-02-15T19:41:57.527951",
+    "completed_at": "2026-02-15T19:44:45.770959",
+    "genre": "Noir",
+    "tone": "Gritty",
+    "story_type": "Mystery",
+    "character_name": "Elias Mercer",
+    "character_profession": "Private investigator specializing in discreet surveillance and missing-person cases",
+    "character_background": "Elias Mercer was raised in the back rooms of the Ashwick Tenement Hotel, a once-busy flop house that slowly rotted into debt, mold, and quiet violence. He learned to survive by noticing who came and went, what they carried, and which lies sounded rehearsed—skills that followed him into adulthood after his younger sister, Maren, vanished without a trace. Now he works the rain-dark streets of the city with a case file in his pocket and a long memory for faces, convinced someone profited from her disappearance.",
+    "player_personality": "cautious",
+    "agent_model": "gpt-5.2",
+    "total_turns": 15,
+    "locations_visited": [
+      "Ashwick Tenement Hotel (exterior/entry stairwell)",
+      "Rain And Away From"
+    ],
+    "npcs_encountered": [
+      "Tomas Vell",
+      "Unknown raincoat figure"
+    ],
+    "simulation_triggers_fired": 2,
+    "completed_normally": true,
+    "error_message": null
+  },
+  "messages": [
+    {
+      "turn": 1,
+      "source": "game",
+      "content": "Welcome to The Narrative Loom (TNL) - your simulation-first Dungeon Master.\n\nPlay anything from a cyberpunk heist-thriller to a dark fairytale revenge story.\n\nSelect a **Genre**, **Tone**, and **Story Type**, or say \"surprise me\" for a random selection.\n\nExamples:\n- \"Noir detective story, gritty tone, mystery thriller\"\n- \"Fantasy, whimsical, coming-of-age adventure\"\n- \"Sci-fi horror, bleak, survival story\"\n- \"surprise me\"\n\nWhat world would you like to explore?",
+      "timestamp": "2026-02-15T19:41:57.528954",
+      "player_reasoning": null,
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 2,
+      "source": "player_agent",
+      "content": "noir, gritty, mystery",
+      "timestamp": "2026-02-15T19:41:57.528954",
+      "player_reasoning": "Selected: noir, gritty, mystery",
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 3,
+      "source": "game",
+      "content": "Your world is set:\n\n**Genre:** Noir\n**Tone:** Gritty\n**Story Type:** Mystery\n\nMoving to character creation...\n\nPerfect! Your world will be: **Noir** with a **Gritty** tone - a **Mystery**.\n\nNow let's shape your protagonist. Tell me about your character:\n\n- **Name** - What should we call you?\n- **Background** - Where are they from? What shaped them?\n- **Profession or Skillset** - What are they good at?\n- **Traits** - A few words capturing temperament, strengths, flaws\n- **Personal Goal** - What do they want (not what fate demands)\n\nYou can describe freely or say \"surprise me\" for a generated character.",
+      "timestamp": "2026-02-15T19:41:57.528954",
+      "player_reasoning": null,
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 4,
+      "source": "player_agent",
+      "content": "Elias Mercer grew up in the back rooms of a failing tenement hotel, learning early to watch doors, shadows, and people who talked too much. Now a private investigator who specializes in quiet surveillance and missing-person cases, he moves through rain-soaked streets with deliberate patience. Careful, observant, and restrained, he thinks three steps ahead and trusts evidence more than instincts. His goal is to find the sister who vanished years ago—while proving to himself he’s not just another man the city chewed up and forgot.",
+      "timestamp": "2026-02-15T19:42:02.563238",
+      "player_reasoning": "Generated cautious-style character for Noir Mystery",
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 5,
+      "source": "game",
+      "content": "Here's your character:\n\n**Elias Mercer**\n*Private investigator specializing in discreet surveillance and missing-person cases*\n\nElias Mercer was raised in the back rooms of the Ashwick Tenement Hotel, a once-busy flop house that slowly rotted into debt, mold, and quiet violence. He learned to survive by noticing who came and went, what they carried, and which lies sounded rehearsed—skills that followed him into adulthood after his younger sister, Maren, vanished without a trace. Now he works the rain-dark streets of the city with a case file in his pocket and a long memory for faces, convinced someone profited from her disappearance.\n\n**Traits:** Careful, Observant, Patient, Restrained, Methodical\n**Goal:** Find his missing sister, Maren, by following evidence wherever it leads—while proving he can outlast the city’s grind without becoming another forgotten casualty.\n\nReady to lock it in? Say \"yes\" to continue, or tell me what to adjust.",
+      "timestamp": "2026-02-15T19:42:07.934183",
+      "player_reasoning": null,
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 6,
+      "source": "player_agent",
+      "content": "yes",
+      "timestamp": "2026-02-15T19:42:08.035612",
+      "player_reasoning": "Simple confirmation",
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 7,
+      "source": "game",
+      "content": "Character locked in. Weaving your world...\n\nYour world has been fully woven.\n\n**Campaign ID:** `1d9827e2-472a-4c9c-8b39-028ba496aa20`\n\nKeep this safe - it allows you to resume your journey anytime.\n\nType **continue** when you're ready to begin.",
+      "timestamp": "2026-02-15T19:43:09.844529",
+      "player_reasoning": null,
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 8,
+      "source": "player_agent",
+      "content": "continue",
+      "timestamp": "2026-02-15T19:43:09.945544",
+      "player_reasoning": "Ready to begin the adventure",
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 9,
+      "source": "game",
+      "content": "Night settles over **Ashwick Tenement Hotel** on Grindle Street, and the rain comes down hard enough to turn the sidewalk into a slick, black mirror. It’s late—after midnight—when most windows go dark on purpose. Steam leaks from a street grate and smells like old radiator heat and wet brick.\n\nYou stand under the Ashwick’s broken awning with your collar up, keeping still the way you learned as a kid in these halls: watch first, move second. Your thumb rubs the damp **ASHWICK 3B** key tag in your pocket until the stamped letters feel sharp. In your other hand, a small flashlight stays off; you don’t give light away unless you have to. You count the new nails in the boards across the third-floor landing in your head, the same methodical habit you use on surveillance—details that don’t argue back.\n\nThe stairwell door opens behind you without a slam. A man steps out, mid-thirties, Wardens’ Union jacket over dock boots, face shaved too clean for the waterfront. He doesn’t look surprised to see you; that’s what makes your stomach tighten. He keeps his hands visible, palms empty, and speaks low like he’s practiced it. “Mercer. Don’t go upstairs.” He nods toward the boarded corridor. “That key tag—someone paid for it to show up.” Rain ticks off his shoulders as he glances past you at the street, where a sedan sits idling with its lights off. “The Trust has eyes on this building tonight. The Choir’s been asking for you by name. If you open 3B, you’re not just opening a room.”\n\nHe pulls a folded page from his pocket and holds it out without stepping closer: a photocopy of a container manifest with a familiar scrawl—**MERCER / M.**—and, in the margin, **H.T.** circled in red. “Three days after your sister vanished,” he says. “That’s not a coincidence. That’s a handoff.”\n\nThe stairwell above you creaks—one careful step, then another—coming down from the third floor. You have the key, the boards are new, and someone is already inside the Ashwick, moving toward you.",
+      "timestamp": "2026-02-15T19:43:21.777695",
+      "player_reasoning": null,
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 10,
+      "source": "player_agent",
+      "content": "I take the photocopy without breaking eye contact. “Name,” I say to him, then angle my body so I can see the stairwell and the sedan at the same time. In a low voice: “And how do you know about Maren—are you Warden, Trust, or Choir?”",
+      "timestamp": "2026-02-15T19:43:25.047135",
+      "player_reasoning": "Someone’s coming down the stairs and there’s a car outside—getting boxed in is the fastest way to die. I need the paper, the man’s name, and a better position with exits while I assess who’s approaching.",
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 11,
+      "source": "game",
+      "content": "The paper is damp at the fold and gritty with dock dust; you take it cleanly and keep your eyes on him. Under the awning light you catch a detail: the Union jacket is real, but newer than the boots—like it was issued for a purpose, not earned.\n\nHe swallows once, then gives you half of what you asked for. “Tomas Vell,” he says. He doesn’t offer a hand. “Wardens’ Union. On paper.”\n\nAt your second question his gaze flicks—too quick—to the stairwell door behind him, then back to you. “I’m not Choir,” he says, like it tastes bad. “And I’m not Trust.” He lowers his voice further. “I know about Maren because her name is in a Union ledger page that wasn’t meant to leave the docks. Because someone’s been paying overtime for silence since the week she disappeared. And because I was there the night a container got flagged with **MERCER / M.** and nobody would tell me what was inside.”\n\nThe creak above becomes a soft scrape: something dragged across a step. Then a shoe sole touches down on the landing behind Vell—third floor to second—slow and deliberate. A figure appears in the stairwell’s gloom: raincoat, brimmed hat, face still hidden by the angle and shadow. They stop two steps up, not rushing, like they’re counting bodies and exits.\n\nVell doesn’t turn fully, but his shoulders tighten. “That’s not one of mine,” he mutters.\n\nOutside, the sedan across the street finally gives itself away: the cigarette ember in the driver’s window flares, then dims. A second later the engine note changes—idling to ready—without the headlights coming on.\n\nThe figure in the stairwell speaks, voice flat and close enough to carry. “Mr. Mercer. You’ve got something that doesn’t belong to you.” A pause. “Come upstairs. Alone. We’ll trade.”\n\nVell shifts his weight, edging one boot back toward the street as if he’s deciding whether to vanish or intervene. His eyes stay on you, waiting to see which way you break.  \n\n```json\n{\"inventory_add\":[\"Photocopy of container manifest (MERCER / M., H.T. circled)\"],\"inventory_remove\":[],\"abilities_add\":[],\"locations_add\":[\"Ashwick Tenement Hotel (exterior/entry stairwell)\"],\"npcs_add\":[{\"name\":\"Tomas Vell\",\"faction\":\"Wardens’ Union (on paper)\",\"notes\":\"Claims knowledge of Maren via Union ledger and flagged container\"},{\"name\":\"Unknown raincoat figure\",\"faction\":\"Unknown\",\"notes\":\"Inside stairwell; demands Mercer come upstairs alone to trade\"}]}\n```",
+      "timestamp": "2026-02-15T19:43:42.745818",
+      "player_reasoning": null,
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 12,
+      "source": "player_agent",
+      "content": "I keep my feet planted and don’t reach for the key. “Trade for what?” I call up to the raincoat, calm. Then, without looking away from the stairs, I murmur to Vell: “If that sedan moves, tell me now—are they here for me, or for what’s behind 3B?”",
+      "timestamp": "2026-02-15T19:43:46.025683",
+      "player_reasoning": "Going upstairs alone is a trap, and there’s a car ready to move—likely a snatch. I need to stall, learn what they want, and keep an exit while gauging if Vell is an ally or another hook.",
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 13,
+      "source": "game",
+      "content": "The raincoat figure doesn’t come down another step. They tilt their head slightly, as if listening to your tone more than your words.\n\n“Trade for the key tag,” they answer. “And the negatives. You don’t know what you’re holding.” Their voice is practiced—gender hard to place, city-flat, no wasted syllables. “You come up to the third-floor landing. You hand them over. You get a name. A real one. The girl’s transfer didn’t end at the docks.”\n\nVell keeps his eyes on the stairwell, but his jaw works like he’s chewing something bitter. At your murmur, he gives you the truth in pieces. “Sedan’s not Union,” he whispers. “Union doesn’t sit dark like that. Trust does. Or Trust hires it done.”\n\nAcross the street, the sedan rolls forward a few feet—slow, tires hissing on wet asphalt—then stops again. No headlights. It’s adjusting position, not leaving.\n\nVell continues, voice tight. “They’re here for both. You’re the loose end, but 3B is the hook.” He nods almost imperceptibly toward the boards upstairs. “Whatever’s behind that door—Trust doesn’t want it opened in public, and the Choir doesn’t want it opened at all. If you go up alone, you’re walking into a hallway with one way out.”\n\nIn the stairwell, the raincoat figure shifts their weight. You hear the faint click of something metal against tile—could be a ring, could be a gun body tapping a stair rail. Then a second voice, lower, from somewhere above the raincoat—higher floor or just deeper shadow—says, “He’s stalling.”\n\nThe raincoat figure answers without looking back. “Mr. Mercer. Last time. Upstairs. Alone.”\n\nThe threat is clear now: at least two people in the stairwell, one in view and one above; an unlit sedan repositioning to control the street; and an ultimatum that ends with force if you don’t move.",
+      "timestamp": "2026-02-15T19:43:58.758927",
+      "player_reasoning": null,
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 14,
+      "source": "player_agent",
+      "content": "I back a step into the rain and away from the stairwell mouth, putting the awning post between me and the stairs. “No,” I call up. “You want a trade, you bring the name down here—where your friend and that sedan can’t pretend they’re not part of it.”  \n\nWithout looking away, I murmur to Vell, “Can you get me a plate or a make on that driver? And if you’re lying to me, tell me now before we both bleed for it.”",
+      "timestamp": "2026-02-15T19:44:03.232466",
+      "player_reasoning": "“Alone” is a setup, and they’re already in position. I need distance, cover, and a way to learn more without stepping into that stairwell kill-box; Vell might be a usable distraction or ally.",
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 15,
+      "source": "game",
+      "content": "",
+      "timestamp": "2026-02-15T19:44:45.669929",
+      "player_reasoning": null,
+      "triggered_elements": [
+        "secret_Rain And Away From_0_33bb15",
+        "secret_Rain And Away From_1_b971ba"
+      ],
+      "state_changes": {}
+    }
+  ],
+  "initial_state": {
+    "campaign_id": "1d9827e2-472a-4c9c-8b39-028ba496aa20",
+    "phase": "gameplay",
+    "genre": "Noir",
+    "tone": "Gritty",
+    "story_type": "Mystery",
+    "character_sheet": {
+      "name": "Elias Mercer",
+      "background": "Elias Mercer was raised in the back rooms of the Ashwick Tenement Hotel, a once-busy flop house that slowly rotted into debt, mold, and quiet violence. He learned to survive by noticing who came and went, what they carried, and which lies sounded rehearsed—skills that followed him into adulthood after his younger sister, Maren, vanished without a trace. Now he works the rain-dark streets of the city with a case file in his pocket and a long memory for faces, convinced someone profited from her disappearance.",
+      "profession": "Private investigator specializing in discreet surveillance and missing-person cases",
+      "traits": [
+        "Careful",
+        "Observant",
+        "Patient",
+        "Restrained",
+        "Methodical"
+      ],
+      "personal_goal": "Find his missing sister, Maren, by following evidence wherever it leads—while proving he can outlast the city’s grind without becoming another forgotten casualty.",
+      "stats": {}
+    },
+    "seed_chunks": [
+      "Rain combs the avenues into black glass, pooling neon into bruised colors that tremble under passing tires. Alley mouths breathe steam and sour rot; the air tastes of wet brick, cheap gin, and old radiator heat leaking from tenement grates. Somewhere a freight horn moans, slow as regret, answered by a distant siren that never seems to arrive. Footsteps are careful here—soles whispering over grit, then stopping when a window goes dark. Inside the Ashwick’s sagging bones, pipes knock like coded warnings, and mold-sweet wallpaper peels in curls. Every hallway holds a stale hush, as if the city is listening back.",
+      "Rain-polished Ashwick City runs on three smiles and a knife. The Harrow Trust presents itself as civic salvation—grants, shelters, “renewal”—while quietly buying condemned blocks to excavate something sealed beneath the old rail tunnels. The Wardens’ Union, longshore and freight muscle, claims to protect honest labor, but launders contraband and people through the docks, keeping ledgers of everyone who owes them. The Glass Choir, a storefront revival and hotline for the lost, offers comfort and “visions,” yet harvests secrets from runaways and sells curated disappearances to the highest bidder. The Trust funds the Choir’s outreach; the Union moves their shipments. When bodies surface, each blames the other—and hires men like Mercer to misdirect the trail.\n\n```json\n{\"factions\":[{\"name\":\"The Harrow Trust\",\"public_front\":\"A philanthropic foundation backing shelters, grants, and urban renewal projects.\",\"hidden_agenda\":\"Quietly acquires condemned property to access and excavate something sealed beneath the old rail tunnels.\"},{\"name\":\"Wardens’ Union\",\"public_front\":\"Dockworkers and freight labor union that claims to keep the waterfront safe and wages fair.\",\"hidden_agenda\":\"Runs smuggling routes and traffics people through the docks, maintaining blackmail ledgers on officials and rivals.\"},{\"name\":\"The Glass Choir\",\"public_front\":\"A small revival church and missing-person support hotline offering counseling and ‘visions.’\",\"hidden_agenda\":\"Collects confessions and secrets from the vulnerable, then brokers disappearances and information to paying clients.\"}]}\n```",
+      "",
+      "",
+      "Elias Mercer hasn’t slept right since the Ashwick’s basement boiler coughed up a new sound—metal on metal, like a train wheel turning underground. Two nights later, a woman from the Glass Choir’s hotline left a message on his office phone without giving her name: *“Maren’s file wasn’t lost. It was sold. Don’t go to the docks.”* The call ends with a freight-horn note that doesn’t match any line on the city schedule.\n\nThis morning, a plain envelope is slid under his door. Inside: a damp key tag stamped **ASHWICK 3B**, a strip of 35mm negatives, and a Wardens’ Union ledger page torn clean from a bound book. The ledger lists a container transfer marked **MERCER / M.** with a date three days after Maren vanished—signed off by someone using the initials **H.T.** in the margin, as if the Trust was watching the books. The negatives show a corridor of old tile and riveted steel—too clean for the Ashwick, too narrow for any subway Elias knows—and a blurry figure in a raincoat carrying a girl with Maren’s hair.\n\nBy noon, Elias notices the city noticing him: a car that idles too long across from his office, a dockhand who stares like he recognizes a ghost, a Choir volunteer asking careful questions about “closure.” Someone wants the key back. Someone else wants Elias to use it.\n\nThe Ashwick’s Room 3B has been boarded for years. Tonight, the nails look new."
+    ],
+    "world_seed": null,
+    "simulation": {
+      "scenes": {},
+      "global_watchers": [],
+      "global_fail_conditions": [],
+      "global_timed_events": [],
+      "triggered_elements": [],
+      "current_turn": 0,
+      "current_location": null
+    },
+    "current_location": null,
+    "current_turn": 0,
+    "inventory": [],
+    "abilities": [],
+    "discovered_locations": [],
+    "known_npcs": [],
+    "active_events": [],
+    "message_history": [
+      {
+        "role": "assistant",
+        "content": "Night settles over **Ashwick Tenement Hotel** on Grindle Street, and the rain comes down hard enough to turn the sidewalk into a slick, black mirror. It’s late—after midnight—when most windows go dark on purpose. Steam leaks from a street grate and smells like old radiator heat and wet brick.\n\nYou stand under the Ashwick’s broken awning with your collar up, keeping still the way you learned as a kid in these halls: watch first, move second. Your thumb rubs the damp **ASHWICK 3B** key tag in your pocket until the stamped letters feel sharp. In your other hand, a small flashlight stays off; you don’t give light away unless you have to. You count the new nails in the boards across the third-floor landing in your head, the same methodical habit you use on surveillance—details that don’t argue back.\n\nThe stairwell door opens behind you without a slam. A man steps out, mid-thirties, Wardens’ Union jacket over dock boots, face shaved too clean for the waterfront. He doesn’t look surprised to see you; that’s what makes your stomach tighten. He keeps his hands visible, palms empty, and speaks low like he’s practiced it. “Mercer. Don’t go upstairs.” He nods toward the boarded corridor. “That key tag—someone paid for it to show up.” Rain ticks off his shoulders as he glances past you at the street, where a sedan sits idling with its lights off. “The Trust has eyes on this building tonight. The Choir’s been asking for you by name. If you open 3B, you’re not just opening a room.”\n\nHe pulls a folded page from his pocket and holds it out without stepping closer: a photocopy of a container manifest with a familiar scrawl—**MERCER / M.**—and, in the margin, **H.T.** circled in red. “Three days after your sister vanished,” he says. “That’s not a coincidence. That’s a handoff.”\n\nThe stairwell above you creaks—one careful step, then another—coming down from the third floor. You have the key, the boards are new, and someone is already inside the Ashwick, moving toward you."
+      }
+    ],
+    "pending_display": null
+  },
+  "final_state": {
+    "campaign_id": "1d9827e2-472a-4c9c-8b39-028ba496aa20",
+    "phase": "gameplay",
+    "genre": "Noir",
+    "tone": "Gritty",
+    "story_type": "Mystery",
+    "character_sheet": {
+      "name": "Elias Mercer",
+      "background": "Elias Mercer was raised in the back rooms of the Ashwick Tenement Hotel, a once-busy flop house that slowly rotted into debt, mold, and quiet violence. He learned to survive by noticing who came and went, what they carried, and which lies sounded rehearsed—skills that followed him into adulthood after his younger sister, Maren, vanished without a trace. Now he works the rain-dark streets of the city with a case file in his pocket and a long memory for faces, convinced someone profited from her disappearance.",
+      "profession": "Private investigator specializing in discreet surveillance and missing-person cases",
+      "traits": [
+        "Careful",
+        "Observant",
+        "Patient",
+        "Restrained",
+        "Methodical"
+      ],
+      "personal_goal": "Find his missing sister, Maren, by following evidence wherever it leads—while proving he can outlast the city’s grind without becoming another forgotten casualty.",
+      "stats": {}
+    },
+    "seed_chunks": [
+      "Rain combs the avenues into black glass, pooling neon into bruised colors that tremble under passing tires. Alley mouths breathe steam and sour rot; the air tastes of wet brick, cheap gin, and old radiator heat leaking from tenement grates. Somewhere a freight horn moans, slow as regret, answered by a distant siren that never seems to arrive. Footsteps are careful here—soles whispering over grit, then stopping when a window goes dark. Inside the Ashwick’s sagging bones, pipes knock like coded warnings, and mold-sweet wallpaper peels in curls. Every hallway holds a stale hush, as if the city is listening back.",
+      "Rain-polished Ashwick City runs on three smiles and a knife. The Harrow Trust presents itself as civic salvation—grants, shelters, “renewal”—while quietly buying condemned blocks to excavate something sealed beneath the old rail tunnels. The Wardens’ Union, longshore and freight muscle, claims to protect honest labor, but launders contraband and people through the docks, keeping ledgers of everyone who owes them. The Glass Choir, a storefront revival and hotline for the lost, offers comfort and “visions,” yet harvests secrets from runaways and sells curated disappearances to the highest bidder. The Trust funds the Choir’s outreach; the Union moves their shipments. When bodies surface, each blames the other—and hires men like Mercer to misdirect the trail.\n\n```json\n{\"factions\":[{\"name\":\"The Harrow Trust\",\"public_front\":\"A philanthropic foundation backing shelters, grants, and urban renewal projects.\",\"hidden_agenda\":\"Quietly acquires condemned property to access and excavate something sealed beneath the old rail tunnels.\"},{\"name\":\"Wardens’ Union\",\"public_front\":\"Dockworkers and freight labor union that claims to keep the waterfront safe and wages fair.\",\"hidden_agenda\":\"Runs smuggling routes and traffics people through the docks, maintaining blackmail ledgers on officials and rivals.\"},{\"name\":\"The Glass Choir\",\"public_front\":\"A small revival church and missing-person support hotline offering counseling and ‘visions.’\",\"hidden_agenda\":\"Collects confessions and secrets from the vulnerable, then brokers disappearances and information to paying clients.\"}]}\n```",
+      "",
+      "",
+      "Elias Mercer hasn’t slept right since the Ashwick’s basement boiler coughed up a new sound—metal on metal, like a train wheel turning underground. Two nights later, a woman from the Glass Choir’s hotline left a message on his office phone without giving her name: *“Maren’s file wasn’t lost. It was sold. Don’t go to the docks.”* The call ends with a freight-horn note that doesn’t match any line on the city schedule.\n\nThis morning, a plain envelope is slid under his door. Inside: a damp key tag stamped **ASHWICK 3B**, a strip of 35mm negatives, and a Wardens’ Union ledger page torn clean from a bound book. The ledger lists a container transfer marked **MERCER / M.** with a date three days after Maren vanished—signed off by someone using the initials **H.T.** in the margin, as if the Trust was watching the books. The negatives show a corridor of old tile and riveted steel—too clean for the Ashwick, too narrow for any subway Elias knows—and a blurry figure in a raincoat carrying a girl with Maren’s hair.\n\nBy noon, Elias notices the city noticing him: a car that idles too long across from his office, a dockhand who stares like he recognizes a ghost, a Choir volunteer asking careful questions about “closure.” Someone wants the key back. Someone else wants Elias to use it.\n\nThe Ashwick’s Room 3B has been boarded for years. Tonight, the nails look new."
+    ],
+    "world_seed": null,
+    "simulation": {
+      "scenes": {
+        "Rain And Away From": {
+          "location": "Rain And Away From",
+          "location_description": "A rain-slick stretch behind the Ashwick Tenement where the streetlights die early and the gutters run like thin veins. Steam breathes from a service grate near the old rail cut, carrying radiator heat and sour rot; footsteps here sound too loud unless you know where the puddles are shallow. The brickwork has fresh mortar patches that don’t match the surrounding decay—someone has been sealing and unsealing the same access points for weeks.",
+          "watchers": [
+            {
+              "id": "watcher_Rain And Away From_0_88ae5d",
+              "name": "Milo 'Ledger' Kline",
+              "description": "A dock runner posted under a broken awning, pretending to smoke while counting who passes the service grate and which direction they favor. He’s watching for anyone tailing Union couriers or asking about missing girls; he memorizes faces and repeats them later like inventory.",
+              "faction": "Wardens’ Union",
+              "reports_to": "Foreman Rusk (Union night dispatcher)",
+              "triggers": [
+                {
+                  "trigger_type": "keyword",
+                  "keywords": [
+                    "Maren",
+                    "Ashwick",
+                    "missing",
+                    "Wardens",
+                    "ledger",
+                    "tunnels"
+                  ],
+                  "probability": 0.65
+                }
+              ],
+              "active": true,
+              "triggered": false
+            },
+            {
+              "id": "watcher_Rain And Away From_1_d59213",
+              "name": "Sister Caldra Venn",
+              "description": "A soft-voiced hotline volunteer in a plain coat, standing under a flickering neon sign as if waiting for a bus that never comes. She watches reflections in the black glass of storefront windows, listening for names and grief; she’s looking for anyone desperate enough to be steered toward the Choir’s 'help'—or silenced before they find the wrong door.",
+              "faction": "The Glass Choir",
+              "reports_to": "Pastor Lorne Sable",
+              "triggers": [
+                {
+                  "trigger_type": "keyword",
+                  "keywords": [
+                    "Glass Choir",
+                    "vision",
+                    "hotline",
+                    "confession",
+                    "runaway",
+                    "Maren"
+                  ],
+                  "probability": 0.55
+                }
+              ],
+              "active": true,
+              "triggered": false
+            }
+          ],
+          "hidden_guards": [
+            {
+              "id": "guard_Rain And Away From_0_0aeb10",
+              "name": "Plainclothes Trust 'maintenance' pair",
+              "guard_type": "armed",
+              "strength": "moderate",
+              "location_within_scene": "Inside a parked municipal utility van with fogged windows, engine idling two blocks off the service grate; they watch through a pinhole gap in the rear curtain.",
+              "triggers": [
+                {
+                  "trigger_type": "keyword",
+                  "keywords": [
+                    "Harrow",
+                    "Trust",
+                    "renewal",
+                    "excavation",
+                    "rail",
+                    "permit"
+                  ],
+                  "probability": 0.9
+                }
+              ],
+              "weaknesses": [
+                "Stay out of the van’s direct line of sight; use the rain and parked cars to break silhouettes",
+                "Approach from the rear passenger side where the mirror is cracked and visibility is poor",
+                "Create a harmless distraction (dropped bottle, car alarm) to draw them out of the van"
+              ],
+              "active": true,
+              "triggered": false
+            }
+          ],
+          "fail_conditions": [
+            {
+              "id": "fail_Rain And Away From_0_d795ea",
+              "name": "Spook the watcher into making a call",
+              "description": "In this stretch, one nervous glance becomes a phone call and a phone call becomes a closed street. If Mercer is too direct—asking names, flashing a badge, or lingering near the grate—someone decides he’s a problem worth solving.",
+              "severity": "moderate",
+              "consequence_narrative": "A low whistle cuts through the rain, and within minutes a second set of footsteps appears where there shouldn’t be any. The tail doesn’t confront him at first; it just tightens the circle until the only exits are bright and exposed.",
+              "triggers": [
+                {
+                  "trigger_type": "keyword",
+                  "keywords": [
+                    "badge",
+                    "police",
+                    "detective",
+                    "Maren",
+                    "tunnels",
+                    "Union"
+                  ],
+                  "probability": 0.75
+                }
+              ],
+              "can_escape": true,
+              "escape_conditions": [
+                "Change pace and route twice using reflections and storefront glass to confirm the tail",
+                "Duck into the Ashwick’s service corridor and exit through a different stairwell",
+                "Blend with a small cluster (bus stop, bodega line) and let the watcher lose timing in the crowd"
+              ],
+              "active": true,
+              "triggered": false
+            },
+            {
+              "id": "fail_Rain And Away From_1_5f21b4",
+              "name": "Step onto the wrong patched brick",
+              "description": "The fresh mortar patches hide a compromised section above an old utility void leading toward the sealed rail access. In the rain, it looks like any other dark brick; under weight, it can give way with a sound that carries.",
+              "severity": "minor",
+              "consequence_narrative": "The brick shifts and drops an inch, jolting the ankle and cracking a sharp noise into the alley. Steam belches up like a sigh, and every watcher within earshot suddenly has a reason to look your way.",
+              "triggers": [
+                {
+                  "trigger_type": "keyword",
+                  "keywords": [
+                    "run",
+                    "chase",
+                    "hurry",
+                    "jump",
+                    "climb"
+                  ],
+                  "probability": 0.6
+                }
+              ],
+              "can_escape": true,
+              "escape_conditions": [
+                "Move slowly and test footing along the wall where the brick is older and stable",
+                "Use a cane/umbrella tip or similar to probe the patched section before stepping",
+                "If it gives, don’t run—walk it off and keep posture calm to avoid drawing pursuit"
+              ],
+              "active": true,
+              "triggered": false
+            }
+          ],
+          "secrets": [
+            {
+              "id": "secret_Rain And Away From_0_33bb15",
+              "description": "Behind the service grate, a rusted access panel has been opened recently; the screws are mismatched, one still bright with machine oil. Scratched into the inner lip is a neat set of tally marks and the letters 'MV'—a quiet inventory that doesn’t belong to city maintenance.",
+              "discovery_triggers": [
+                {
+                  "trigger_type": "keyword",
+                  "keywords": [
+                    "search",
+                    "examine",
+                    "look",
+                    "inspect",
+                    "grate",
+                    "panel"
+                  ],
+                  "probability": 1.0
+                }
+              ],
+              "discovered": true
+            },
+            {
+              "id": "secret_Rain And Away From_1_b971ba",
+              "description": "A waterlogged flyer stuck to a pole advertises the Glass Choir hotline, but the tear-off tabs are handwritten with dock codes and times in pencil. Under the paper, a second layer shows an older notice for a 'renewal survey' stamped with a Harrow Trust seal—both posted in the same spot, like one message hides the other on purpose.",
+              "discovery_triggers": [
+                {
+                  "trigger_type": "keyword",
+                  "keywords": [
+                    "search",
+                    "examine",
+                    "look",
+                    "peel",
+                    "flyer",
+                    "notice"
+                  ],
+                  "probability": 1.0
+                }
+              ],
+              "discovered": true
+            }
+          ],
+          "generated_at_turn": 2
+        }
+      },
+      "global_watchers": [],
+      "global_fail_conditions": [],
+      "global_timed_events": [],
+      "triggered_elements": [
+        "secret_Rain And Away From_0_33bb15",
+        "secret_Rain And Away From_1_b971ba"
+      ],
+      "current_turn": 0,
+      "current_location": "Rain And Away From"
+    },
+    "current_location": "Rain And Away From",
+    "current_turn": 3,
+    "inventory": [
+      "Photocopy of container manifest (MERCER / M., H.T. circled)"
+    ],
+    "abilities": [],
+    "discovered_locations": [
+      "Ashwick Tenement Hotel (exterior/entry stairwell)",
+      "Rain And Away From"
+    ],
+    "known_npcs": [
+      "Tomas Vell",
+      "Unknown raincoat figure"
+    ],
+    "active_events": [],
+    "message_history": [
+      {
+        "role": "assistant",
+        "content": "Night settles over **Ashwick Tenement Hotel** on Grindle Street, and the rain comes down hard enough to turn the sidewalk into a slick, black mirror. It’s late—after midnight—when most windows go dark on purpose. Steam leaks from a street grate and smells like old radiator heat and wet brick.\n\nYou stand under the Ashwick’s broken awning with your collar up, keeping still the way you learned as a kid in these halls: watch first, move second. Your thumb rubs the damp **ASHWICK 3B** key tag in your pocket until the stamped letters feel sharp. In your other hand, a small flashlight stays off; you don’t give light away unless you have to. You count the new nails in the boards across the third-floor landing in your head, the same methodical habit you use on surveillance—details that don’t argue back.\n\nThe stairwell door opens behind you without a slam. A man steps out, mid-thirties, Wardens’ Union jacket over dock boots, face shaved too clean for the waterfront. He doesn’t look surprised to see you; that’s what makes your stomach tighten. He keeps his hands visible, palms empty, and speaks low like he’s practiced it. “Mercer. Don’t go upstairs.” He nods toward the boarded corridor. “That key tag—someone paid for it to show up.” Rain ticks off his shoulders as he glances past you at the street, where a sedan sits idling with its lights off. “The Trust has eyes on this building tonight. The Choir’s been asking for you by name. If you open 3B, you’re not just opening a room.”\n\nHe pulls a folded page from his pocket and holds it out without stepping closer: a photocopy of a container manifest with a familiar scrawl—**MERCER / M.**—and, in the margin, **H.T.** circled in red. “Three days after your sister vanished,” he says. “That’s not a coincidence. That’s a handoff.”\n\nThe stairwell above you creaks—one careful step, then another—coming down from the third floor. You have the key, the boards are new, and someone is already inside the Ashwick, moving toward you."
+      },
+      {
+        "role": "user",
+        "content": "I take the photocopy without breaking eye contact. “Name,” I say to him, then angle my body so I can see the stairwell and the sedan at the same time. In a low voice: “And how do you know about Maren—are you Warden, Trust, or Choir?”"
+      },
+      {
+        "role": "assistant",
+        "content": "The paper is damp at the fold and gritty with dock dust; you take it cleanly and keep your eyes on him. Under the awning light you catch a detail: the Union jacket is real, but newer than the boots—like it was issued for a purpose, not earned.\n\nHe swallows once, then gives you half of what you asked for. “Tomas Vell,” he says. He doesn’t offer a hand. “Wardens’ Union. On paper.”\n\nAt your second question his gaze flicks—too quick—to the stairwell door behind him, then back to you. “I’m not Choir,” he says, like it tastes bad. “And I’m not Trust.” He lowers his voice further. “I know about Maren because her name is in a Union ledger page that wasn’t meant to leave the docks. Because someone’s been paying overtime for silence since the week she disappeared. And because I was there the night a container got flagged with **MERCER / M.** and nobody would tell me what was inside.”\n\nThe creak above becomes a soft scrape: something dragged across a step. Then a shoe sole touches down on the landing behind Vell—third floor to second—slow and deliberate. A figure appears in the stairwell’s gloom: raincoat, brimmed hat, face still hidden by the angle and shadow. They stop two steps up, not rushing, like they’re counting bodies and exits.\n\nVell doesn’t turn fully, but his shoulders tighten. “That’s not one of mine,” he mutters.\n\nOutside, the sedan across the street finally gives itself away: the cigarette ember in the driver’s window flares, then dims. A second later the engine note changes—idling to ready—without the headlights coming on.\n\nThe figure in the stairwell speaks, voice flat and close enough to carry. “Mr. Mercer. You’ve got something that doesn’t belong to you.” A pause. “Come upstairs. Alone. We’ll trade.”\n\nVell shifts his weight, edging one boot back toward the street as if he’s deciding whether to vanish or intervene. His eyes stay on you, waiting to see which way you break.  \n\n```json\n{\"inventory_add\":[\"Photocopy of container manifest (MERCER / M., H.T. circled)\"],\"inventory_remove\":[],\"abilities_add\":[],\"locations_add\":[\"Ashwick Tenement Hotel (exterior/entry stairwell)\"],\"npcs_add\":[{\"name\":\"Tomas Vell\",\"faction\":\"Wardens’ Union (on paper)\",\"notes\":\"Claims knowledge of Maren via Union ledger and flagged container\"},{\"name\":\"Unknown raincoat figure\",\"faction\":\"Unknown\",\"notes\":\"Inside stairwell; demands Mercer come upstairs alone to trade\"}]}\n```"
+      },
+      {
+        "role": "user",
+        "content": "I keep my feet planted and don’t reach for the key. “Trade for what?” I call up to the raincoat, calm. Then, without looking away from the stairs, I murmur to Vell: “If that sedan moves, tell me now—are they here for me, or for what’s behind 3B?”"
+      },
+      {
+        "role": "assistant",
+        "content": "The raincoat figure doesn’t come down another step. They tilt their head slightly, as if listening to your tone more than your words.\n\n“Trade for the key tag,” they answer. “And the negatives. You don’t know what you’re holding.” Their voice is practiced—gender hard to place, city-flat, no wasted syllables. “You come up to the third-floor landing. You hand them over. You get a name. A real one. The girl’s transfer didn’t end at the docks.”\n\nVell keeps his eyes on the stairwell, but his jaw works like he’s chewing something bitter. At your murmur, he gives you the truth in pieces. “Sedan’s not Union,” he whispers. “Union doesn’t sit dark like that. Trust does. Or Trust hires it done.”\n\nAcross the street, the sedan rolls forward a few feet—slow, tires hissing on wet asphalt—then stops again. No headlights. It’s adjusting position, not leaving.\n\nVell continues, voice tight. “They’re here for both. You’re the loose end, but 3B is the hook.” He nods almost imperceptibly toward the boards upstairs. “Whatever’s behind that door—Trust doesn’t want it opened in public, and the Choir doesn’t want it opened at all. If you go up alone, you’re walking into a hallway with one way out.”\n\nIn the stairwell, the raincoat figure shifts their weight. You hear the faint click of something metal against tile—could be a ring, could be a gun body tapping a stair rail. Then a second voice, lower, from somewhere above the raincoat—higher floor or just deeper shadow—says, “He’s stalling.”\n\nThe raincoat figure answers without looking back. “Mr. Mercer. Last time. Upstairs. Alone.”\n\nThe threat is clear now: at least two people in the stairwell, one in view and one above; an unlit sedan repositioning to control the street; and an ultimatum that ends with force if you don’t move."
+      },
+      {
+        "role": "user",
+        "content": "I back a step into the rain and away from the stairwell mouth, putting the awning post between me and the stairs. “No,” I call up. “You want a trade, you bring the name down here—where your friend and that sedan can’t pretend they’re not part of it.”  \n\nWithout looking away, I murmur to Vell, “Can you get me a plate or a make on that driver? And if you’re lying to me, tell me now before we both bleed for it.”"
+      },
+      {
+        "role": "assistant",
+        "content": ""
+      }
+    ],
+    "pending_display": null
+  },
+  "simulation_snapshots": []
+}

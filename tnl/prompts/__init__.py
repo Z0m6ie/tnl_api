@@ -9,6 +9,7 @@ from .templates import (
     GAMEPLAY_SYSTEM_PROMPT,
     GAMEPLAY_RESPONSE_PROMPT,
     CAMPAIGN_INTRO_PROMPT,
+    build_intro_prompt,
 )
 
 __all__ = [
@@ -20,4 +21,5 @@ __all__ = [
     "GAMEPLAY_SYSTEM_PROMPT",
     "GAMEPLAY_RESPONSE_PROMPT",
     "CAMPAIGN_INTRO_PROMPT",
+    "build_intro_prompt",
 ]

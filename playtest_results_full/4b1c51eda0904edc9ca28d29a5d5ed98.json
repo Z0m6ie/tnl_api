@@ -1,0 +1,123 @@
+{
+  "metadata": {
+    "playthrough_id": "4b1c51eda0904edc9ca28d29a5d5ed98",
+    "started_at": "2026-02-15T19:50:49.491267",
+    "completed_at": "2026-02-15T19:51:06.343731",
+    "genre": "Steampunk",
+    "tone": "Dreamlike",
+    "story_type": "Heist thriller",
+    "character_name": "",
+    "character_profession": "",
+    "character_background": "",
+    "player_personality": "chaotic",
+    "agent_model": "gpt-5.2",
+    "total_turns": 7,
+    "locations_visited": [],
+    "npcs_encountered": [],
+    "simulation_triggers_fired": 0,
+    "completed_normally": true,
+    "error_message": null
+  },
+  "messages": [
+    {
+      "turn": 1,
+      "source": "game",
+      "content": "Welcome to The Narrative Loom (TNL) - your simulation-first Dungeon Master.\n\nPlay anything from a cyberpunk heist-thriller to a dark fairytale revenge story.\n\nSelect a **Genre**, **Tone**, and **Story Type**, or say \"surprise me\" for a random selection.\n\nExamples:\n- \"Noir detective story, gritty tone, mystery thriller\"\n- \"Fantasy, whimsical, coming-of-age adventure\"\n- \"Sci-fi horror, bleak, survival story\"\n- \"surprise me\"\n\nWhat world would you like to explore?",
+      "timestamp": "2026-02-15T19:50:49.491267",
+      "player_reasoning": null,
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 2,
+      "source": "player_agent",
+      "content": "steampunk, quirky, heist",
+      "timestamp": "2026-02-15T19:50:49.491267",
+      "player_reasoning": "Selected: steampunk, quirky, heist",
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 3,
+      "source": "game",
+      "content": "Your world is set:\n\n**Genre:** Steampunk\n**Tone:** Dreamlike\n**Story Type:** Heist thriller\n\nMoving to character creation...\n\nPerfect! Your world will be: **Steampunk** with a **Dreamlike** tone - a **Heist thriller**.\n\nNow let's shape your protagonist. Tell me about your character:\n\n- **Name** - What should we call you?\n- **Background** - Where are they from? What shaped them?\n- **Profession or Skillset** - What are they good at?\n- **Traits** - A few words capturing temperament, strengths, flaws\n- **Personal Goal** - What do they want (not what fate demands)\n\nYou can describe freely or say \"surprise me\" for a generated character.",
+      "timestamp": "2026-02-15T19:50:49.491267",
+      "player_reasoning": null,
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 4,
+      "source": "player_agent",
+      "content": "Nyx Calder, once a clockmaker’s apprentice who vanished into the city’s fog-laced underworks, returned with pockets full of impossible gears and half-remembered dreams. Now a rogue “aether-runner” and sabotage artist for hire, she slips through vented rooftops and velvet-lit canals to crack vaults no blueprint admits exist. Unpredictable, slyly charismatic, and recklessly curious, Nyx treats every rule like a suggestion whispered by a dying machine. She’s chasing the rumored Somnograph Engine—not for profit, but to rewrite the one night she can’t wake from.",
+      "timestamp": "2026-02-15T19:50:56.230311",
+      "player_reasoning": "Generated chaotic-style character for Steampunk Heist thriller",
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 5,
+      "source": "game",
+      "content": "Here's your character:\n\n**Nyx Calder**\n*Aether-runner and sabotage artist for hire (heist infiltrator/lockbreaker)*\n\nRaised in the soot-bright workshops of Brasswater, Nyx apprenticed under a meticulous clockmaker until she vanished into the fog-laced underworks after a job went wrong and her memories began to fracture. She resurfaced months later with impossible gears that hum with aether and dream-logic, along with a half-remembered night that loops in her sleep. Since then, she’s lived between rooftops, canals, and hidden service tunnels, trading sabotage for secrets while the city’s machines seem to recognize her like an old mistake.\n\n**Traits:** Unpredictably inventive, Slyly charismatic, Recklessly curious, Cool under pressure, Rule-averse and improvisational\n**Goal:** Find the rumored Somnograph Engine and use it to rewrite the one night she can’t wake from—before the city’s dream-eaten machinery (and whoever built the Engine) rewrites her first.\n\nReady to lock it in? Say \"yes\" to continue, or tell me what to adjust.",
+      "timestamp": "2026-02-15T19:51:01.078451",
+      "player_reasoning": null,
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 6,
+      "source": "player_agent",
+      "content": "sure whatever lets go",
+      "timestamp": "2026-02-15T19:51:01.178709",
+      "player_reasoning": "Chaotic quick confirmation",
+      "triggered_elements": [],
+      "state_changes": {}
+    },
+    {
+      "turn": 7,
+      "source": "game",
+      "content": "Here's your character:\n\n**Juno 'Sure' Calder**\n*Dreamscape Infiltrator & Heist Scout*\n\nJuno grew up in the soot-bright underlevels of Aerolith City, running errands through pipe-tunnels and clockwork service corridors where the law rarely followed. After a botched job for a guild of dream-distillers, Juno discovered an odd talent: slipping into the city's shared dreamscape to scout places that can’t be mapped in waking life. Now they take jobs with a shrug and a grin, but they never forget who still holds their old debt.\n\n**Traits:** Unflappable, Improvisational, Street-smart, Dryly humorous, Secretive\n**Goal:** Pull off one flawless score that buys their freedom from the dream-distillers—then burn the ledger that proves they ever belonged to anyone.\n\nReady to lock it in? Say \"yes\" to continue, or tell me what to adjust.",
+      "timestamp": "2026-02-15T19:51:06.243353",
+      "player_reasoning": null,
+      "triggered_elements": [],
+      "state_changes": {}
+    }
+  ],
+  "initial_state": null,
+  "final_state": {
+    "campaign_id": null,
+    "phase": "character",
+    "genre": "Steampunk",
+    "tone": "Dreamlike",
+    "story_type": "Heist thriller",
+    "character_sheet": {
+      "name": "",
+      "background": "",
+      "profession": "",
+      "traits": [],
+      "personal_goal": "",
+      "stats": {}
+    },
+    "seed_chunks": [],
+    "world_seed": null,
+    "simulation": {
+      "scenes": {},
+      "global_watchers": [],
+      "global_fail_conditions": [],
+      "global_timed_events": [],
+      "triggered_elements": [],
+      "current_turn": 0,
+      "current_location": null
+    },
+    "current_location": null,
+    "current_turn": 0,
+    "inventory": [],
+    "abilities": [],
+    "discovered_locations": [],
+    "known_npcs": [],
+    "active_events": [],
+    "message_history": [],
+    "pending_display": null
+  },
+  "simulation_snapshots": []
+}

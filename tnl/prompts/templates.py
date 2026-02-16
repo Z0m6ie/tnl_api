@@ -222,3 +222,339 @@ WRITING RULES:
 - Concrete details over abstract mood: "The guard's hand rests on his sword hilt" not "tension fills the air"
 - If something is important, state it plainly
 - Atmosphere emerges from clear details, not from dense imagery"""
+
+
+# Genre-aware intro configuration for variety
+INTRO_CONFIGURATIONS = {
+    # Map specific genres to broader categories for hook selection
+    "genre_categories": {
+        "romance": [
+            "contemporary romance", "romantasy", "historical romance", "rom-com",
+            "romance", "slow-burn", "enemies-to-lovers", "forbidden love", "fated mates",
+        ],
+        "action": [
+            "noir", "thriller", "heist", "cyberpunk", "action", "post-apocalyptic",
+            "spy", "crime", "revenge",
+        ],
+        "horror": [
+            "horror", "sci-fi horror", "gothic", "dark fantasy", "cosmic horror",
+            "psychological horror", "survival horror",
+        ],
+        "fantasy": [
+            "fantasy", "mythic", "steampunk", "urban fantasy", "high fantasy",
+            "dark fantasy", "fairy tale", "epic fantasy",
+        ],
+        "mystery": [
+            "mystery", "detective", "whodunit", "noir", "conspiracy",
+        ],
+        "scifi": [
+            "sci-fi", "space opera", "cyberpunk", "post-apocalyptic", "dystopian",
+        ],
+        "contemplative": [
+            "literary", "slice-of-life", "melancholic", "drama", "coming-of-age",
+        ],
+    },
+
+    # Genre-appropriate hooks (not all confrontation-based!)
+    "hooks": {
+        "romance": [
+            "A chance encounter - your eyes meet theirs across the space, and something shifts",
+            "A shared moment of unexpected vulnerability or kindness between strangers",
+            "An unexpected invitation or letter arrives, promising something you'd given up on",
+            "A misunderstanding or situation that forces close proximity with someone",
+            "Returning to a place heavy with complicated memories - and finding someone there",
+            "Being assigned to work closely with someone you'd rather avoid",
+            "A favor asked that will entangle your life with someone new",
+        ],
+        "action": [
+            "Someone approaches with urgent news that demands immediate response",
+            "You notice something wrong - a detail that others have missed",
+            "An opportunity appears, but the risk attached is obvious",
+            "A message arrives that changes everything you thought you knew",
+            "You overhear something you were never meant to hear",
+            "A debt comes due, or someone calls in a favor you can't refuse",
+        ],
+        "horror": [
+            "Something is subtly wrong - you can't quite place it, but your instincts are screaming",
+            "The familiar becomes suddenly, inexplicably unfamiliar",
+            "You're alone when you shouldn't be, and the silence feels wrong",
+            "A discovery you can't unsee - something that shouldn't exist",
+            "The growing certainty that something is watching, waiting",
+            "A pattern emerges that no one else seems to notice",
+        ],
+        "fantasy": [
+            "A strange occurrence breaks the ordinary rhythm of the day",
+            "A summons or prophecy touches your life in a way you can't ignore",
+            "An artifact, creature, or being appears where it shouldn't",
+            "The world shifts in a way that only you seem to notice",
+            "An old legend or story proves disturbingly real",
+            "Magic stirs - whether you wanted it to or not",
+        ],
+        "mystery": [
+            "A clue presents itself - a question that won't let go",
+            "Someone appears who shouldn't be here, or shouldn't exist at all",
+            "Evidence surfaces of something wrong, something hidden",
+            "A request for help arrives with hidden complications",
+            "Something doesn't add up about a routine situation",
+            "A connection forms between unrelated events",
+        ],
+        "scifi": [
+            "An anomaly appears in the data, the readings, the signal",
+            "A transmission arrives from somewhere it shouldn't",
+            "Technology behaves in a way it never has before",
+            "Someone offers information about something that was supposed to be secret",
+            "The system glitches - but what if it's not a glitch?",
+            "A discovery challenges everything you thought you understood",
+        ],
+        "contemplative": [
+            "A moment of quiet reflection is gently interrupted",
+            "A memory surfaces, triggered by something in the present",
+            "A small decision presents itself with larger implications",
+            "Something ordinary reveals depths you hadn't noticed",
+            "A letter, photo, or object reconnects you to something you'd let go",
+            "Someone asks a simple question that isn't simple at all",
+        ],
+    },
+
+    # Pacing guidance by tone
+    "pacing": {
+        "tense": "Quick, immediate pressure. Short sentences. Urgency in every line.",
+        "gritty": "Direct and grounded. No softening. Stakes are real and felt.",
+        "warm": "Slower build. Character-focused. Gentle tension if any. Let moments breathe.",
+        "whimsical": "Playful rhythm. Wonder and curiosity over danger. Delight in small details.",
+        "melancholic": "Reflective pace. Emotional weight settles in. Quiet moments matter.",
+        "bleak": "Sparse. Heavy. Let silence and space do work. Nothing is easy.",
+        "passionate": "Emotionally charged from the start. Intensity building. Heat present.",
+        "dramatic": "Building tension. Stakes felt immediately. Significant moments.",
+        "sardonic": "Wry observations. Ironic distance. Dark humor allowed.",
+        "dreamlike": "Flowing, associative. Boundaries blur. Atmosphere first, logic second.",
+        "epic": "Grand scope hinted. Fate and consequence. The weight of something larger.",
+        "quirky": "Unexpected details. Off-beat observations. Charm in the unusual.",
+    },
+
+    # Structural variations (4 types)
+    "structures": ["standard", "in_media_res", "atmosphere", "character"],
+}
+
+
+# Shared writing rules for all intro templates
+INTRO_WRITING_RULES = """WRITING RULES:
+- Write in second person ("You...")
+- Clarity over poetry: the reader should never have to re-read a sentence
+- One vivid image per paragraph maximum - don't stack metaphors
+- Concrete details over abstract mood
+- If something is important, state it plainly
+- Atmosphere emerges from clear details, not dense imagery
+- The reader should always know WHERE they are and WHAT is happening"""
+
+
+# Structure-specific intro templates
+INTRO_STRUCTURE_TEMPLATES = {
+    "standard": """Generate the opening scene for this campaign.
+
+CHARACTER: {character_summary}
+WORLD CONTEXT: {world_context}
+GENRE: {genre} | TONE: {tone} | STORY TYPE: {story_type}
+
+Write an immersive narrative introduction (250-350 words).
+
+PACING GUIDANCE: {pacing_guidance}
+
+STRUCTURE:
+1. **PLACE & TIME** (40-60 words)
+   - State clearly WHERE the character is (a specific location with a name if possible)
+   - WHEN this is happening (morning, night, during a storm, etc.)
+   - One or two concrete sensory details that establish mood
+   - The reader should be able to picture the scene immediately
+
+2. **CHARACTER IN SCENE** (40-60 words)
+   - What is the character doing right now? Be specific.
+   - Reference something from their profession or background
+   - Show they belong here through action, not explanation
+
+3. **THE HOOK** (120-160 words)
+   {hook_type}
+
+   Write this clearly:
+   - WHO is involved (describe them briefly but concretely)
+   - WHAT is happening or being said
+   - WHY it matters to the character
+
+4. **THE MOMENT** (30-50 words)
+   - End with a clear situation requiring response
+   - The character must decide or act
+   - Do NOT suggest what to do
+
+{writing_rules}""",
+
+    "in_media_res": """Generate the opening scene for this campaign.
+
+CHARACTER: {character_summary}
+WORLD CONTEXT: {world_context}
+GENRE: {genre} | TONE: {tone} | STORY TYPE: {story_type}
+
+Write an immersive narrative introduction (250-350 words) that starts IN THE MIDDLE of something happening.
+
+PACING GUIDANCE: {pacing_guidance}
+
+STRUCTURE:
+1. **MID-ACTION** (60-80 words)
+   - Drop the reader into an ongoing moment. Something is already happening.
+   - The character is in motion - physically, emotionally, or both.
+   - Don't explain yet - let the reader catch up.
+
+2. **QUICK GROUNDING** (40-60 words)
+   - Orient the reader: where is this, who is this character
+   - Just enough to anchor - don't over-explain
+   - Show profession or background through what they're doing
+
+3. **THE HOOK CRYSTALLIZES** (100-140 words)
+   {hook_type}
+
+   The significance of what's happening becomes clear:
+   - WHO is involved
+   - WHAT the stakes are
+   - WHY this moment matters
+
+4. **NOW WHAT** (30-50 words)
+   - The immediate situation demanding response
+   - No suggested actions - just the choice they face
+
+{writing_rules}""",
+
+    "atmosphere": """Generate the opening scene for this campaign.
+
+CHARACTER: {character_summary}
+WORLD CONTEXT: {world_context}
+GENRE: {genre} | TONE: {tone} | STORY TYPE: {story_type}
+
+Write an immersive narrative introduction (250-350 words) that prioritizes atmosphere and sensory immersion before action.
+
+PACING GUIDANCE: {pacing_guidance}
+
+STRUCTURE:
+1. **THE WORLD BREATHES** (80-100 words)
+   - Immerse the reader in this place. Sights, sounds, textures, smells.
+   - Let them feel it before anything happens.
+   - Establish mood through concrete, specific details - not abstract descriptions.
+
+2. **THE CHARACTER WITHIN** (50-70 words)
+   - The character as part of this environment, not separate from it
+   - What they're doing, thinking, noticing
+   - Their relationship to this place (familiar? foreign? complicated?)
+
+3. **SOMETHING SHIFTS** (80-120 words)
+   {hook_type}
+
+   The atmosphere changes. Something enters or changes:
+   - WHAT has shifted
+   - WHO or what is involved
+   - The reader should feel the change
+
+4. **ATTENTION REQUIRED** (30-50 words)
+   - The situation now demands response
+   - The mood has broken or intensified
+   - What does the character face?
+
+{writing_rules}""",
+
+    "character": """Generate the opening scene for this campaign.
+
+CHARACTER: {character_summary}
+WORLD CONTEXT: {world_context}
+GENRE: {genre} | TONE: {tone} | STORY TYPE: {story_type}
+
+Write an immersive narrative introduction (250-350 words) that is deeply character-focused before external events intrude.
+
+PACING GUIDANCE: {pacing_guidance}
+
+STRUCTURE:
+1. **INNER LIFE** (60-80 words)
+   - What is the character thinking, feeling, wanting right now?
+   - Ground this in their goal or background
+   - Let the reader into their head briefly
+
+2. **THE ROUTINE** (40-60 words)
+   - A moment from their ordinary life, rendered specifically
+   - Show their world through small, concrete details
+   - Their profession, habits, relationships visible in action
+
+3. **THE INTERRUPTION** (100-140 words)
+   {hook_type}
+
+   Something disrupts the ordinary:
+   - WHAT happens to break the pattern
+   - Show both what happens AND how the character internally responds
+   - The outside world demanding attention
+
+4. **THE CHOICE FORMS** (30-50 words)
+   - A decision takes shape in their mind
+   - What they face, not what they should do
+   - The moment before action
+
+{writing_rules}""",
+}
+
+
+def build_intro_prompt(
+    genre: str,
+    tone: str,
+    story_type: str,
+    character_summary: str,
+    world_context: str,
+) -> str:
+    """
+    Build a genre/tone-aware intro prompt with randomization.
+
+    Selects appropriate hooks based on genre category, applies tone-based
+    pacing guidance, and randomly selects from structural variations.
+
+    Args:
+        genre: The campaign genre (e.g., "Noir", "Contemporary Romance")
+        tone: The campaign tone (e.g., "Gritty", "Warm")
+        story_type: The story type (e.g., "Mystery", "Slow-burn Romance")
+        character_summary: Character description from CharacterSheet.summary()
+        world_context: Joined seed chunks from world generation
+
+    Returns:
+        Complete prompt string for LLM intro generation
+    """
+    import random
+
+    config = INTRO_CONFIGURATIONS
+    genre_lower = genre.lower() if genre else ""
+    story_lower = story_type.lower() if story_type else ""
+    tone_lower = tone.lower() if tone else "gritty"
+
+    # Determine genre category by checking keywords
+    category = "action"  # default fallback
+    for cat, keywords in config["genre_categories"].items():
+        if any(kw in genre_lower or kw in story_lower for kw in keywords):
+            category = cat
+            break
+
+    # Select random hook from the appropriate pool
+    hooks = config["hooks"].get(category, config["hooks"]["action"])
+    selected_hook = random.choice(hooks)
+
+    # Get pacing guidance based on tone
+    pacing = config["pacing"].get(tone_lower, "Clear and direct. Stakes should be felt.")
+
+    # Select structure (weighted - standard more common to avoid too much chaos)
+    structures = config["structures"]
+    weights = [0.4, 0.2, 0.2, 0.2]  # standard, in_media_res, atmosphere, character
+    selected_structure = random.choices(structures, weights=weights)[0]
+
+    # Get the template and format it
+    template = INTRO_STRUCTURE_TEMPLATES[selected_structure]
+
+    return template.format(
+        character_summary=character_summary,
+        world_context=world_context,
+        genre=genre,
+        tone=tone,
+        story_type=story_type,
+        hook_type=selected_hook,
+        pacing_guidance=pacing,
+        writing_rules=INTRO_WRITING_RULES,
+    )
